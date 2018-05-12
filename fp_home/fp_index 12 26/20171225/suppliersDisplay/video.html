@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style>
+			
+			.wrapVideo{
+				
+				    width: 890px;
+				    height: 400px;
+			}
+			
+			.video_Widge{
+				
+				background-color: transparent;
+			    border-radius: 0px;
+			    padding: 0px;
+			    overflow: visible;
+			    position: relative;
+			    overflow: hidden;
+			    width: 890px;
+			    height: 400px;
+			}
+			
+			
+			
+			.video_shadow{
+				    display: block;
+				    height: 82px;
+				    position: absolute;
+				    bottom: 10px;
+				    z-index: 0; 
+				    width: 890px;
+			}
+			
+			.video_shadow .video_left {
+			    background: url(img/shad_lhs.png) no-repeat;	    clear: both;
+			}
+		
+			.video_left, .video_right {
+				background: url(img/shad_rhs.png) no-repeat;
+			    float: left;
+			    width: 100px;
+			    height: 82px;
+			}
+
+
+			.video_shadow .video_middle {
+			    background: url(img/shad_tile.png) repeat-x;
+			    			    float: left;
+			    height: 82px;
+			    
+			    width: 690px;
+			}
+
+
+			
+			.videoWrap {
+		    display: block;
+		    position: relative;
+		    overflow: hidden;
+		    padding: 15px;
+		    
+		    width: 860px;
+		    height: 320px;
+		    background-color: #bdbab8;
+		    -moz-border-radius: 10px;
+		    -webkit-border-radius: 10px;
+		    border-radius: 10px;
+
+    
+    	}
+
+
+			.video_frame{
+				
+		
+				    width: 860px;
+				    height: 320px;
+				    display: block;
+				    left: 0px;
+				    overflow: hidden;
+				    opacity: 1;
+				    background: #fff;
+
+			}
+			
+			
+			.video_control {
+			    display: block;
+			    position: relative;
+			    height: 50px;
+			    overflow: hidden;
+			    margin-top: -16px;
+			}
+			
+			.video_control .video_holder {
+			    height: 50px;
+			    position: relative;
+			    overflow: hidden;
+			    margin-top: -6px;
+			}
+			
+			.video_control .video_mainPanel{
+				margin-left: 348px;
+				background: url(img/controls_bg.png) repeat-x;
+			    -moz-border-radius: 6px;
+			    -webkit-border-radius: 6px;
+			    border-radius: 6px;
+			    position: relative;
+			    overflow: hidden;
+			    height: 50px;
+			    float: left;
+			}
+
+
+			.video_slideBtns {
+			    border-right: 1px solid #ccc;
+			    margin-top: 15px;
+			    margin-bottom: 15px;
+			    padding-left: 15px;
+			    padding-right: 15px;
+			    list-style-type: none;
+			    text-align: center;
+			    height: 23px;
+			    float: left;
+			    position: relative;
+			}
+			
+			.video_slideBtns li{
+				
+			    position: relative;		
+			    height: 23px;		
+			    width: 26px;
+			    float: left;
+			    display: inline;
+			    float: left;
+			}
+			
+			.video_slideBtns a {
+			
+					background: url(img/buttons.png) no-repeat -44px 1px;;
+				    width: 22px;
+				    height: 24px;
+				    position: absolute;
+				    z-index: 1;
+				    left: 0px;
+				    color: transparent;
+			}
+			
+
+		
+			 ul,li {
+			    margin: 0;
+			    padding: 0;
+			    border: 0;
+			    outline: 0;
+			}
+
+
+		.video_arrows {
+			border-left: 1px solid #fff;
+		    float: left;
+		    margin-top: 15px;
+		    margin-bottom: 15px;
+		    padding-left: 8px;
+		    padding-right: 8px;
+		    line-height: 23px;
+		    width: 76px;
+		    text-indent: -9999px;
+		}
+
+
+		
+		.video_prev {
+		    background: url(img/buttons.png) no-repeat 6px -24px;
+		   	padding-left: 10px;
+		    padding-right: 5px;
+		}
+
+		 .video_prev, .video_next {
+		    height: 23px;
+		    width: 22px;
+		    display: block;
+		    float: left;	
+		    color: transparent;			    
+		}	
+					
+		.video_next {
+		    background: url(img/buttons.png) no-repeat 10px -48px;
+		    padding-left: 5px;
+			padding-right: 10px;
+		}
+
+		.video_slideBtns .active a{
+		    background: url(img/buttons.png) no-repeat 0px 1px;
+		
+		}
+
+		.video_arrows .active{
+			background-position-x:-36px;
+			
+		}
+		.video_iebg{
+			margin-top: 2px;    height: 48px;
+		}
+		
+		</style>
+	</head>
+	<body  style="margin:50px auto;">
+		
+		
+		
+
+		<script src="js/jquery.min.js"></script>		
+	<script type="text/javascript">
+		
+		
+		
+$(document).ready(function(){
+	
+	
+	generateVideo( linkArr );
+	
+	
+});
+
+		
+	var linkArr=["http://player.youku.com/player.php/sid/XMjk0MzkzMDc3Ng==/v.swf","http://player.youku.com/player.php/sid/XNTMyNzM4MzA4/v.swf","http://player.youku.com/player.php/sid/XNTMyNzQ1MjQw/v.swf","http://player.youku.com/player.php/sid/XNTMyODE3NTU2/v.swf"];
+
+function generateVideo( linkArr ){
+
+	var len = linkArr.length ;
+	
+	if( !len ){
+		$('#video').hide();
+		return false ;
+	}
+
+	var str='';
+
+	for( var i = 0;i < len ; i++){
+		
+		if( i == 0 ){
+			var $li = '<li class="active"  index="'+i+'"  ><a href="javascript:;" class="video_currentSlide" > &nbsp; </a></li> ';
+		}else{
+			var $li = '<li index="'+i+'"  ><a href="javascript:;" class="video_currentSlide"  > &nbsp; </a></li> ';			
+		}
+		str += $li;
+	}
+	
+	
+	var $videoSlideBtns = $('#videoSlideBtns');
+	
+	var $video_mainPanel   = $('.video_mainPanel') ;
+	
+	$videoSlideBtns.html( str );
+	
+	$video_mainPanel.css({"margin-left":( 890 -   $video_mainPanel.width() ) / 2 }); 
+
+	var current = 0 ;
+	var $js_videoCon_1 =$('#js_videoCon_1');
+	var $allLi =$videoSlideBtns.find('li');
+	var $next = $('#videoNext');
+	var $prev = $('#videoPrev');
+	
+	
+	$allLi.click(function(){
+		
+		var obj = $(this);
+		obj.addClass("active").siblings().removeClass("active");
+		var index = $(this).attr("index");
+		current = index;
+		$js_videoCon_1.attr({"src":linkArr[index]});
+	});
+	
+	
+	
+	
+	$prev.click(function(){
+		
+		var index = $videoSlideBtns.find('.active').index();
+		if( index == 0){
+			$(this).addClass("active").attr("title","First");
+			return false;
+		}
+		
+		current = index - 1;
+		
+		$(this).add( $next ).removeClass("active").attr("title","video");
+		
+		$allLi .removeClass("active").eq(current).addClass("active");
+		
+		$js_videoCon_1.attr({"src":linkArr[current]});
+		
+	});
+	
+	$next.click(function(){
+		
+		var index = $videoSlideBtns.find('.active').index();
+		if( index == len - 1 ){
+			$(this).addClass("active").attr("title","Last");;
+			return false;
+		}
+		
+		current = index + 1;
+		
+		$(this).add( $prev ).removeClass("active").attr("title","video");;
+		$allLi.removeClass("active").eq(current).addClass("active");
+		$js_videoCon_1.attr({"src":linkArr[current]});
+		
+	});
+	
+}
+
+
+</script>
+	
+	
+	</body>
+	
+	
+</html>

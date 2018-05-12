@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>freshport</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+
+
+	</head>
+
+	<body class="fly-full">
+
+		<!--头部  -->
+		<div class="header">
+
+			<div class="main">
+
+				<div class="nav">
+
+					<a href="newIndex.html" class="first">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="newIndex.html#Importers"><i class="icon-love"></i> &nbsp;Importers</a>
+					<a href="newIndex.html#Exporters"><i class="icon-love"></i>&nbsp;Exporters</a>
+					<a href="contact.html">Contact</a>
+					<a href="">中文</a>
+				</div>
+
+				<!--未登录-->
+				<div class="nav-user" id="LoginU">
+					<a href="javascript:;" class="social-icons" id="login">Login</a>
+				</div>
+
+				<!--登录-->
+				<div class="nav-user" id="LoginA" style="display: none;">
+					<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="logout">Logout</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="enterFP">My Freshport</a>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<!-- 搜索-->
+		<div class="wrapWhite wrapLogo">
+			<div class="main">
+				<div class="logo">
+
+					<a class="navg" href="newIndex.html">
+						<span class="solgan">
+					Online Information & Service Platform for Imported Fruits Industry
+				</span>
+					</a>
+
+				</div>
+
+				<div class="search">
+					<div id="searchInput">
+						<input type="text" value="" placeholder="what are you looking for..." id="ser" />
+
+						
+
+						<div id="wrapBtn">
+							<a href="#" class="ser-btn">
+								<img src="images/search.png" />
+								<span>Search</span>
+							</a>
+
+						</div>
+					</div>
+					
+					<div id="searchBar" >
+
+						<div class="searchValue">
+							<span id="searchbarDisplay">Importers</span>
+							<span class="searchbarArrow" id="searchbarArrow">
+								<em></em>
+								<b></b>		
+							</span>
+
+						</div>
+
+						<ul class="searchbarOptions" >
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Importers" rel="nofollow">Importers</a>
+							</li>
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Exporters" rel="nofollow">Exporters</a>
+							</li>
+						
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="advanceSearch"> Advanced Search:&nbsp;&nbsp;
+					<a href="newSearch.html" alt="Importers" title="Importers" class="advanceSearchItem">Importers</a>
+					<a href="ExportersSearch.html" class="advanceSearchItem">Exporters</a>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="js/jquery.min.js"></script>
+
+		<script>
+			var $searchbarOptions = $('.searchbarOptions');
+			var clicked = false ;
+			
+			
+			$searchbarOptions.hide();
+			$('.searchValue').click(function(){
+				
+				if(clicked){
+					$searchbarOptions.hide();
+				}else{
+					$searchbarOptions.show();
+				}
+				
+				clicked = !clicked;			
+			})
+			
+
+			
+			$('.searchbarOption').hover(function(){
+				$(this).css({"background":"#efefef"});
+			},function(){
+				$(this).css({"background":"#ffffff"});
+			});
+			
+			$searchbarOptions.delegate('li','click',function(){
+
+				
+				$('#searchbarDisplay').text( $(this).find('a').text()  );
+				$searchbarOptions.hide();
+				clicked = !clicked;	
+			})
+		</script>
+	</body>
+
+</html>

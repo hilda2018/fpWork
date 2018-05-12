@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body,html{height: 100%;width:100%;overflow-x: hidden;
+				background: url(images/bg5.jpg) no-repeat center center;
+				background-size: cover;margin:0px;padding: 0px;
+			}
+			h2,p,ul,li{margin: 0px;padding: 0;}
+			.container{width:1000px;height: 560px;margin:50px auto;border-radius: 20px;
+			background: rgba(255,255,255,0.84);
+			}
+			
+			.container h2{
+				font-size: 20px;
+				text-align: center;
+			}
+			
+			
+			body,html{overflow-x:hidden;margin:0;padding:0;width:100%;height:100%}
+body,html{background-size:cover;font-family:Open Sans,sans-serif}
+body,p{line-height:1.5em}
+.container h2{padding:30px 0 20px;border-bottom:1px solid green;text-align:center;position:relative;display:block;margin:0;;padding-bottom:1pc;color:#558b2f;text-transform:uppercase;letter-spacing:4px;font-weight:700;
+font-size:26px;margin-bottom:8px;line-height:1.2em}
+.content-template{width:90%;margin-left:5%;}
+li{list-style: none;}
+.content-template ul li {
+ 
+    line-height: 26px;
+    padding: 8px  1em 8px;font-size:15px;color: #555;
+    text-indent: -0.9375em;letter-spacing:1px;border-bottom: 1px dotted #aaa;
+}
+
+.content-template ul .last {border-bottom: 0px;
+}
+.content-template ul li svg{
+	height:20px;width:20px;margin-right: 14px;display: inline; 
+	  line-height: 30px;position: relative;top:5px;fill:#888;
+}		</style>
+	</head>
+	<body>
+		
+		
+		<div class="container">
+						
+					<h2>
+				      Service For Importers
+				    </h2>
+
+				    <div class="content-template">
+				        <ul>
+							<li>
+										<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_correct"></use>
+								</svg>Display company information on-line
+
+							</li>
+							<li>
+						<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_correct"></use>
+								</svg>View Chinese wholesale market importing fruits price index
+
+							</li>
+							<li>
+									<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_correct"></use>
+								</svg>View the selling information on line and contact with the exporters to buy and have further discussion
+
+							</li>
+							<li>
+									<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_correct"></use>
+								</svg>Publish buying demands on web
+						</li>
+							<li>
+									<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_correct"></use>
+								</svg>Participate platform organized business exchange meeting both in China and abroad to have direct business talks with exporters
+
+	
+							
+							</li>
+							<li>
+									<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_correct"></use>
+								</svg>	Express business requirement and get introduction of suitable sellers
+	
+							</li>
+							
+								<li>
+									<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_correct"></use>
+								</svg> Get enterprise management system
+				
+							</li>
+							
+								<li>
+									<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_correct"></use>
+								</svg>
+Acquire financial service 
+
+							
+							</li>
+								<li class="last">
+								<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_correct"></use>
+								</svg>
+						
+Use data inquiring function on Freshport to see all daily transaction data, including logistics (sea&air) status, payment status, cargo information, cost details, etc.
+
+							
+							</li>
+						</ul>
+				    </div>
+				    <br>
+				</div>
+<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" style="display: none;">
+<symbol id="svg_correct" viewBox="0 0 1024 1024" ><path d="M823.157746 1023.999948 198.89001 1023.999948C89.265339 1023.999948 2.6e-05 934.811969 2.6e-05 825.178705L2.6e-05 200.849102C2.6e-05 91.217557 89.265339 1.959118 198.89001 1.959118l624.195558 0c109.705442 0 198.955288 89.258439 198.955288 198.889984l0 624.260862C1022.042575 934.811969 932.79101 1023.999948 823.157746 1023.999948L823.157746 1023.999948zM198.89001 34.93932c-91.502832 0-165.909783 74.400077-165.909783 165.909783l0 624.260862c0 91.435809 74.406951 165.837604 165.909783 165.837604l624.195558 0c91.513143 0 165.902908-74.401795 165.902908-165.837604L988.988477 200.849102c0-91.509706-74.389766-165.909783-165.902908-165.909783L198.89001 34.93932 198.89001 34.93932zM446.907451 539.956929l-171.570602-136.131192-77.192679 51.100323 291.626716 297.897612c0 0 171.563728-374.480215 403.153794-553.272056L867.167438 165.48187C867.167438 165.48187 506.944101 420.792729 446.907451 539.956929L446.907451 539.956929 446.907451 539.956929zM446.907451 539.956929" p-id="4562"></path></symbol>
+</svg>	
+	</body>
+</html>

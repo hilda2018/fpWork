@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增资讯</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+
+
+
+    <div class="add-form">
+    <ul class="form-list">
+        <li>
+            <label>资讯分类<em class="red">*</em></label>
+            <select>
+                <option>请选择分类...</option>
+            </select>
+        </li>
+        <li>
+            <label>资讯标题<em class="red">*</em></label>
+            <input type="text" />
+        </li>
+        <li>
+            <label>关键字</label>
+            <input type="text" />
+        </li>
+        <li>
+            <label>发布时间<em class="red">*</em></label>
+            <input class="laydate-icon" type="text" />
+            <span class="checkbox-col">
+            <input type="checkbox" /><span>暂不发布</span>
+            </span>
+        </li>
+        <li class="editor-col" id="attachments" style="margin-bottom:10px;">
+            <label>附件上传</label>
+            <div class="upload">
+            <span class="upload-col">
+            <input type="file" />
+                <button type="button" class="green-border-btn">上传文件</button>
+            </span>
+                <button type="button" class="green-btn right-btn" id="addBtn">新增</button>
+            </div>
+
+        </li>
+        <li>
+            <label>来源</label>
+            <input type="text" />
+        </li>
+
+
+        <li class="editor-col">
+            <label>内容<em class="red">*</em></label>
+            <textarea style="height:300px;resize: none;width:500px;"></textarea>
+        </li>
+
+
+    </ul>
+
+
+        <div class="btn-col">
+
+            <button type="button" class="green-btn">保存</button>
+            &nbsp;&nbsp;
+            <button type="button" class="green-border-btn">预览</button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+    <script>
+
+        $("#addBtn").click(function()
+        {
+            $("#attachments").append('<div class="upload">'+
+                    '<span class="upload-col">'+
+                    '<input type="file">'+
+                    '<button type="button" class="green-border-btn">上传文件</button>'+
+                    '</span>'+
+                    '<button type="button" class="green-border-btn right-btn delete-btn" >删除</button>'+
+                    '</div>');
+
+        });
+
+        $("#attachments").on("click",".delete-btn",function()
+        {
+
+            $(this).parent().remove();
+
+        });
+
+
+
+    </script>
+
+
+</body>
+</html>

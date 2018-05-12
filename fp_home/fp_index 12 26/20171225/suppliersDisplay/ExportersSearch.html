@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>freshport</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/exporterSearch.css" rel="stylesheet" type="text/css" media="all">
+
+		<style>
+
+		</style>
+	</head>
+
+	<body class="fly-full">
+
+	<!--头部  -->
+		<div class="header">
+
+			<div class="main">
+
+				<div class="nav">
+
+					<a href="newIndex.html" class="first">Home</a>
+					<a href="about.html">About us</a>
+					<a href="newIndex.html#Importers"><i class="icon-love"></i> &nbsp;Importers</a>
+					<a href="newIndex.html#Exporters"><i class="icon-love"></i>&nbsp;Exporters</a>
+					<a href="contact.html">Contact</a>
+					<a href="">中文</a>
+				</div>
+
+				<!--未登录-->
+				<div class="nav-user" id="LoginU">
+					<a href="javascript:;" class="social-icons">Sign Up</a>
+				</div>
+
+				<!--登录-->
+				<div class="nav-user" id="LoginA" style="display: none;">
+					<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="signUp">Sign In</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="enterFP">My Freshport</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 搜索-->
+		<div class="wrapWhite wrapLogo">
+			<div class="main">
+				<div class="logo">
+
+					<a class="navg" href="newIndex.html">
+						<span class="solgan">
+					Online Information & Service Platform for Imported Fruits Industry
+				</span>
+					</a>
+
+				</div>
+
+				<div class="search">
+					<div id="searchInput">
+						<input type="text" value="" placeholder="what are you looking for..." id="ser" />
+
+						
+
+						<div id="wrapBtn">
+							<a href="#" class="ser-btn">
+								<img src="images/search.png" />
+								<span>Search</span>
+							</a>
+
+						</div>
+					</div>
+					
+					<div id="searchBar" >
+
+						<div class="searchValue">
+							<span id="searchbarDisplay">Importers</span>
+							<span class="searchbarArrow" id="searchbarArrow">
+								<em></em>
+								<b></b>		
+							</span>
+
+						</div>
+
+						<ul class="searchbarOptions" >
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Importers" rel="nofollow">Importers</a>
+							</li>
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Exporters" rel="nofollow">Exporters</a>
+							</li>
+						
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="advanceSearch"> advance search:&nbsp;&nbsp;
+					<a href="newSearch.html" alt="Importers" title="Importers" class="advanceSearchItem">Importers</a>
+					<a href="" class="advanceSearchItem">Exporters</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 搜索 界面  -->
+		<div class="wrapSearch">
+
+			<div class="main" id="wrapSearch">
+
+				<div id="section">
+
+					<ul id="type">
+
+					</ul>
+
+					<select id="startMonth" style="width: 120px;">
+						<option value="0" >choose</option>
+						<option value="1">January</option>
+						<option value="2">February</option>
+						<option value="3" >March</option>
+						<option value="4" >April</option>
+						<option value="5" >May</option>
+						<option value="6" >June</option>
+						<option value="7" >July</option>
+						<option value="8" >August</option>
+						<option value="9" >September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>
+					
+					<select id="endMonth"  style="width:120px;margin-left: 20px;">
+						<option value="0" >choose</option>
+						<option value="1">January</option>
+						<option value="2" >February</option>
+						<option value="3" >March</option>
+						<option value="4" >April</option>
+						<option value="5" >May</option>
+						<option value="6" >June</option>
+						<option value="7" >July</option>
+						<option value="8" >August</option>
+						<option value="9" >September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>
+					
+					<div id="chooseWrap" style="float:left">
+						<p id="choose" style="float:left">
+							<a href="javascript:;" class="chooseText" style="">Choose:</a>
+							<a href="javascript:;" id="chooseShow"> </a>
+							<a id="delete" class="clear-choice" href="javascript:;">清空所有</a>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<br />
+		<!-- 商品列表 界面 -->
+
+		<div class="wrapWhite wrapSupplier">
+			<div class="main" id="showSupplier">
+				<h3> We Found  &nbsp;<span id="total">30 </span> &nbsp;  Fruit Buyers  <span id="icons-list"></span> </h3>
+				<ul class="thumbnails" id="list">
+
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="wrapWhite wrapPagination" style="height: 100px;">
+			<div class="main" style="height: 100px;line-height: 1.5em;">
+				
+					<div class="pagination-col">
+						<div id="pageSize" class="pagination" >
+							<strong>Show:&nbsp;&nbsp;</strong>
+							<span>20</span>
+							<span>30</span>
+							<span>40</span>
+							<span>50</span>
+						</div>	
+						<div class="pagination" id="pagination"></div>											
+					</div>
+					
+
+			</div>
+		</div>
+
+
+		<!--footer start here-->
+		<div id="footeCompany" class="wrapGray" style="clear:both">
+
+			<div class="main footer">
+				<p>备案/许可证号 沪ICP备15035308 &nbsp;&nbsp;|&nbsp;&nbsp;<span> 2015 Freshport.com. All rights reserved </span></p>
+			</div>
+
+		</div>
+
+		<!--footer end here-->
+
+		<script src="js/jquery.min.js"></script>		
+		<script type="text/javascript" src="layer/layer.js"></script>
+		<script type="text/javascript" src="js/jquery.pagination.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>	
+		<script src="js/exporterSearch.js"></script>
+		<!--每个页面都有
+        -->
+		<script>
+			
+			var $searchbarOptions = $('.searchbarOptions');
+			var clicked = false ;
+			
+			
+			$searchbarOptions.hide();
+			$('.searchValue').click(function(){
+				
+				if(clicked){
+					$searchbarOptions.hide();
+				}else{
+					$searchbarOptions.show();
+				}
+				
+				clicked = !clicked;			
+			})
+			
+
+			
+			$('.searchbarOption').hover(function(){
+				$(this).css({"background":"#efefef"});
+			},function(){
+				$(this).css({"background":"#ffffff"});
+			});
+			
+			$searchbarOptions.delegate('li','click',function(){
+
+				
+				$('#searchbarDisplay').text( $(this).find('a').text()  );
+				$searchbarOptions.hide();
+				clicked = !clicked;	
+			})
+		</script>
+	</body>
+
+</html>

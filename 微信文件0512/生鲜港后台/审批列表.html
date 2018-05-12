@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>审批列表</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+
+    <div class="table-col">
+    <div class="search-col">
+
+        <span>
+        <label>提交日期：</label>
+        <input type="text" class="laydate-icon" onclick="laydate()" /><span class="unit">至</span>
+        <input type="text" class="laydate-icon" onclick="laydate()" />
+        </span>
+
+        <span>
+        <label>申请单位：</label><input type="text" placeholder="请输入关键字搜索" />
+        </span>
+
+        <span>
+        <label>审核状态：</label>
+        <select>
+             <option>全部</option>
+            <option>不展示</option>
+            <option>展示</option>
+        </select>
+        </span>
+
+        <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+            <button type="button" class="green-border-btn">清空</button>
+
+
+        </span>
+
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>选择</th>
+                <th>审核状态</th>
+                <th>提交日期</th>
+                <th>审核日期</th>
+                <th>申请单位</th>
+                <th>申请状态</th>
+                <th>审核人员</th>
+                <th>审核意见</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <button type="button" class="green-btn">展示</button>
+                    <button type="button" class="green-border-btn">不展示</button>
+                </td>
+                <td>待审核</td>
+                <td>2017.06.25</td>
+                <td>2017.06.24</td>
+                <td>上海锐芙贸易有限公司</td>
+                <td>新增</td>
+                <td>Bob</td>
+                <td>审核意见审核意见</td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="green-btn">展示</button>
+                    <button type="button" class="green-border-btn">不展示</button>
+                </td>
+                <td>待审核</td>
+                <td>2017.06.25</td>
+                <td>2017.06.24</td>
+                <td>上海锐芙贸易有限公司</td>
+                <td>新增</td>
+                <td>Bob</td>
+                <td>审核意见审核意见</td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="green-btn">展示</button>
+                    <button type="button" class="green-border-btn">不展示</button>
+                </td>
+                <td>待审核</td>
+                <td>2017.06.25</td>
+                <td>2017.06.24</td>
+                <td>上海锐芙贸易有限公司</td>
+                <td>新增</td>
+                <td>Bob</td>
+                <td>审核意见审核意见</td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="green-btn">展示</button>
+                    <button type="button" class="green-border-btn">不展示</button>
+                </td>
+                <td>待审核</td>
+                <td>2017.06.25</td>
+                <td>2017.06.24</td>
+                <td>上海锐芙贸易有限公司</td>
+                <td>新增</td>
+                <td>Bob</td>
+                <td>审核意见审核意见</td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="green-btn">展示</button>
+                    <button type="button" class="green-border-btn">不展示</button>
+                </td>
+                <td>未提交</td>
+                <td>2017.06.25</td>
+                <td>2017.06.24</td>
+                <td>上海锐芙贸易有限公司</td>
+                <td>新增</td>
+                <td>Bob</td>
+                <td>审核意见审核意见</td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="green-btn">展示</button>
+                    <button type="button" class="green-border-btn">不展示</button>
+                </td>
+                <td>待审核</td>
+                <td>2017.06.25</td>
+                <td>2017.06.24</td>
+                <td>上海锐芙贸易有限公司</td>
+                <td>新增</td>
+                <td>Bob</td>
+                <td>审核意见审核意见</td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="green-btn">展示</button>
+                    <button type="button" class="green-border-btn">不展示</button>
+                </td>
+                <td>审核不通过</td>
+                <td>2017.06.25</td>
+                <td>2017.06.24</td>
+                <td>上海锐芙贸易有限公司</td>
+                <td>新增</td>
+                <td>Bob</td>
+                <td>审核意见审核意见</td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+    </div>
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+
+</body>
+</html>

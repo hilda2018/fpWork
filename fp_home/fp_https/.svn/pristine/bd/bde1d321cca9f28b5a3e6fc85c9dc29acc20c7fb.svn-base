@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<style>
+			
+			body,html{height: 100%;width:100%;padding:0;margin:0;
+				font-family: "microsoft yahei";letter-spacing: 1px;
+			}
+			.header{width:780px;margin:0 auto;height:300px;
+			text-align:center;line-height:2em;color:#fff;
+			}
+			h2,h3{padding:0;margin:0;}
+			.containerHeader{width:100%;background: #4786d5;height:300px;}
+		
+			
+			.header h2{letter-spacing:2px;
+				font-size: 28px;padding-top:30px;line-height:2em;
+			}
+			.header p{
+				font-size: 20px;padding-top:10px;line-height:2em;
+			}
+			
+			.containerStep1,.containerStep2{
+				height:1200px;width:100%;background: #63b855;color:#FFFFFF;margin-top:20px;
+			}
+			.containerStep2{background: #ce67bb;}
+			
+			.step1,.step2{
+			width:780px;margin:0 auto;height:1200px;
+			text-align:left;line-height:2em;color:#fff;	
+			position: relative;
+			}
+			.containerStep2,.step2{height:1300px;}
+			.step1 h2,.step2 h2{position: absolute;font-size:20px;font-weight:normal;width:500px;height:46px;
+				background: #fff;color:#63b855;  top:-35px;left:50%;
+				margin-left:-250px;line-height: 46px;text-align: center;
+			}
+	
+			.step2 h2{
+				color:#ce67bb;
+			}
+			.step2 {	text-align: center;}
+			.step2 .span{
+				color:#fff;
+				display: inline-block;
+				font-size: 15px;
+				padding-top:10px;
+			}
+			.step1 h3,.step2 h3{text-align:left;padding-top:26px;
+			font-weight:500;margin:0px;padding-bottom: 10px;
+			}
+			.step1 p,.step2 p{text-align:left;padding-top:10px;
+			margin:0px;padding-bottom: 0px;font-size: 16px;color:#f1f1f1;
+			}
+			
+			.step1 strong,.step2 strong{font-weight: 600;
+			}
+			
+			.step2 .detail{
+				font-size: 14px;
+			}
+			p.img{text-align: center;margin-top:20px;}
+			hr{border-bottom: 1px dashed #eee;}
+		</style>
+	</head>
+	<body>
+		
+		<div class="containerHeader">
+			<div class="header">
+			
+			<h2>关于生鲜港APP物流模块定位查询功能<br/>操作说明</h2>
+			<p>为了更好地为市场内外进出口商提供服务，我司开发了手机APP物流定位查询功能，<br/>现对该功能操作使用进行如下说明。</p>
+		</div>
+			
+		</div>
+
+		
+		<div class="containerStep1" >
+				<div class="step1">
+			
+			<h2>一、关于APP的下载以及版本更新问题</h2>
+			
+			<h3>（一）、APP下载<em style="color: yellow;font-style: normal;font-size: 17px;">（版本是v2.4以上，则无须更新）</em></h3>
+	
+				
+			
+				<p><strong>方法一：应用市场下载安装（推荐使用）</strong><br/>
+1、IOS系统：请在APP STORE中搜索“ 生鲜港 ”，点击下载安装即可。<br/>
+2、Android系统：请在"应用宝”或“360手机助手”中搜索“ 生鲜港 ”，点击下载</p>
+			
+				<p class="method2"><strong>方法二：扫码下载安装</strong></p>
+				<p class="method2Img"  style="margin-left:200px;" >				
+					<img src="img/erweima.png" alt="二维码"/></p>
+		
+			
+			<hr/>
+			<h3 style="padding-top: 20px;">			（二）、APP版本更新<span style="font-size: 17px;">（如果觉得这种更新缓慢，可以直接删除原来的老版本，直接在安卓或ISO应用市场下载最新版的方式来更新;<em style="color: yellow;font-style: normal;">版本是v2.4以上，则无须更新</em>）</span></h3>
+
+			<p> <strong>1、IOS系统，如左图所示</strong><br/>
+打开APP后会自动跳出提示版本更新的对话框，请选择“确定”更新，从APP STORE 完成更新，如下：</p>
+
+			<p><strong>2、Android系统，如右图所示</strong><br/>
+打开APP后，在“关于我们”中，通过关闭后台重新进入APP的方式更新版本至v2.315（低于这个版本号，获取新版本会报错），然后点击右上角“获取新的版本”,下载并安装，操作如下： </p>
+
+			<p class="img">
+				<img  style="margin-left:70px;"  src="img/tu1.png" alt="APP版本更新"/>
+
+			</p>
+		</div>
+		
+			
+			
+		</div>
+	
+			<div class="containerStep2" >
+		<div class="step2">
+			<h2>一、关于APP的下载以及版本更新问题</h2>
+			<span class="span">(截图为Android版，IOS系统略有不同）</span><br />
+			
+			
+			<h3>● <strong>海运物流Step1：</strong>点击“物流—海运物流—待还箱—检疫送货”，如图1 :<br/>
+● <strong>空运物流Step1：</strong>点击“物流—空运物流—待送达—物流进度”，如图2 :
+</h3>
+
+			<p class="img">		<img src="img/tu2.png" alt="物流"/></p>
+			
+			
+			<p><strong>Step2：点击“定位查询”</strong>，以下为检疫送货进度在已出港区及未送达时间范围内，可以进行实时“定位查询”（包括在地图上的位置和车速信息），绿色车辆以及绿色文字表明车辆在正常行驶中，红色则表示该车为停止状态，定位信号每隔30秒会发送一次，可以通过点击右上角定位按钮，来刷新车辆的实时位置，如图3、图4:
+</p>
+
+				<p class="img">		<img  style="margin-left:90px;" src="img/tu3.png" alt="物流"/></p>
+			<p class="detail">
+				【注】检疫送货进度中定位查询的状态节点为出港区时间至送达时间，超出此时间范围内，定位系统关闭，“定位查询”按钮默认关闭，为灰色的。另外，如果在出港区时间和送达时间段内，“定位查询”还是灰色的，有可能是该车的定位信息获取不到的缘故。
+			</p>
+			
+		</div>
+		
+		</div>
+	</body>
+</html>

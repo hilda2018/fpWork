@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品分类</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+
+
+    <div class="table-col">
+    <div class="search-col">
+
+
+        <span>
+        <label>编号：</label><input type="text"  />
+        </span>
+
+        <span>
+        <label>大类：</label><input type="text" placeholder="英文或中文"  />
+        </span>
+
+        <span>
+        <label>品名：</label><input type="text" placeholder="英文或中文"  />
+        </span>
+
+        <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+             <button type="button" class="green-btn" id="addParent">增加大类</button>
+
+             <button type="button" class="green-border-btn">清空</button>
+
+
+        </span>
+
+    </div>
+    <table class="type-table-col">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>大类（中文）</th>
+                <th>大类（英文）</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="mainTbody">
+
+
+        </tbody>
+    </table>
+    </div>
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+
+    <script>
+
+        var list=[{
+            id:1,
+            p_id:0,
+            no:'1',
+            name:"柑橘类",
+            e_name:"Citrus",
+            child:[
+                {
+                    id:3,
+                    p_id:1,
+                    no:"3",
+                    name:"橙子",
+                    e_name:"Oranges",
+                },
+                {
+                    id:4,
+                    p_id:1,
+                    no:"4",
+                    name:"橙子",
+                    e_name:"Oranges",
+                }
+            ]
+
+        },
+            {
+                id:2,
+                p_id:0,
+                no:'1',
+                name:"柑橘类",
+                e_name:"Citrus",
+                child:[
+                    {
+                        id:5,
+                        p_id:2,
+                        no:"5",
+                        name:"橙子",
+                        e_name:"Oranges",
+                    },
+                    {
+                        id:6,
+                        p_id:2,
+                        no:"6",
+                        name:"橙子",
+                        e_name:"Oranges",
+                    }
+                ]
+
+            }];
+
+
+        var html='';
+        for(var i=0;i<list.length;i++)
+        {
+            html=html+'<tr>'+
+                    '<td>001</td>'+
+                    '<td>柑橘类</td>'+
+                    '<td>Citrus</td>'+
+                    '<td>'+
+                    '<div class="operate-col">'+
+                    '<button type="button" class="green-btn edit-parent">编辑</button>'+
+                    '<button type="button" class="green-btn delete-parent">删除</button>'+
+                    '<button type="button" class="green-border-btn add-child">新增子类</button>'+
+                    '<span class="open-close">展开</span>'+
+                    '</div>'+
+                    '</td>'+
+                    '</tr> <tr class="child-tr hide">'+
+                    '<td colspan="4">'+
+                    '<table class="child-table">'+
+                    '<thead>'+
+                    '<th>编号</th>'+
+                    '<th>商品名（中文）</th>'+
+                    '<th>商品名（英文）</th>'+
+                    '<th>操作</th>'+
+                    '</thead>'+
+                    '<tbody>';
+            for(var j=0;j<list[i].child.length;j++)
+            {
+                html=html+' <tr>'+
+                        '<td>002</td>'+
+                        '<td>橙子</td>'+
+                        '<td>Oranges</td>'+
+                        ' <td>'+
+                        '<button type="button" class="green-btn edit-child">编辑</button>'+
+                        '<button type="button" class="green-border-btn delete-child">删除</button>'+
+                        '</td>'+
+                        '</tr>'
+            }
+            html=html+' </tbody></table></td></tr>';
+        }
+
+
+        $("#mainTbody").append(html);
+
+        $(".type-table-col").on("click",".edit-child",function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>商品名（中文）</label><input type='text'></li>" +
+                    "<li class='row'><label>商品名（英文）</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'编辑子类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+        });
+
+
+        $(".type-table-col").on("click",".add-child",function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>商品名（中文）</label><input type='text'></li>" +
+                    "<li class='row'><label>商品名（英文）</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'新增子类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+        });
+
+        $(".type-table-col").on("click",".edit-parent",function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>大类（中文）</label><input type='text'></li>" +
+                    "<li class='row'><label>大类（英文）</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'编辑大类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+        });
+
+
+        $("#addParent").click(function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>大类（中文）</label><input type='text'></li>" +
+                    "<li class='row'><label>大类（英文）</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'新增大类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+
+        });
+
+        $(".type-table-col").on("click",".delete-parent",function()
+        {
+            layer.confirm("是否删除？");
+
+        });
+
+        $(".type-table-col").on("click",".delete-child",function()
+        {
+            layer.confirm("是否删除？");
+
+        });
+
+
+
+        $(".type-table-col").on("click",".open-close",function()
+        {
+
+            if($(this).hasClass("active"))
+            {
+                $(this).removeClass("active");
+                $(this).text("展开");
+                $(this).parent().parent().parent().next().hide();
+            }
+            else {
+                $(this).addClass("active");
+                $(this).text("关闭");
+                $(this).parent().parent().parent().next().show();
+            }
+
+
+        });
+
+    </script>
+
+</body>
+</html>

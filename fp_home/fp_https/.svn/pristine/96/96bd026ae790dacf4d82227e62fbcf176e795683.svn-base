@@ -1,0 +1,115 @@
+
+/*采购商列表*/
+.buyer-list{
+	width: 1190px;
+	margin: 0 auto;
+}
+.buyer-list .map{
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+}
+.buyer-list .map a{
+	display: inline-block;
+	padding: 0 5px;
+	color: #54637a;
+	font-weight: bold;
+}
+.buyer-list .map .ser{
+	width: 170px;
+	height: 20px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+.buyer-list .map .ser input{
+	width: 140px;
+	height: 20px;
+	padding-left:5px; 
+	border: none;
+	float: left;
+}
+.buyer-list .map .ser em{
+	width: 25px;
+	height: 20px;
+	background: url(../images/ser.png) no-repeat center center;
+	display: inline-block; 
+	cursor: pointer;
+	vertical-align: middle;
+}
+.buyer-list .map span{
+	font-size: 14px;
+	color: #54637a;
+	vertical-align: middle;
+}
+.buyer-list .ser-tip{
+	width: 1188px;
+	border: 1px solid #ccc;
+}
+.buyer-list .ser-tip dl{
+	border-bottom: 1px dashed #ccc;
+	font-size: 16px;
+	padding: 5px 0;
+}
+.buyer-list .ser-tip dl.last{border-bottom:none;}
+.buyer-list .ser-tip dl dt a{
+	width: 80px;
+	height:37px;
+	line-height: 37px;
+	float: left;
+	text-align: center;
+	color: #54637a;
+}
+.buyer-list .ser-tip dl dd{
+	width: 1108px;
+	line-height: 37px;
+	float: left;
+}
+.buyer-list .ser-tip dl dd select{
+	height:28px;
+	border:1px solid #ccc;
+	margin:0 5px;
+}
+.buyer-list .ser-tip dl dd a{
+	padding: 0 8px;
+	display: inline-block;
+	color: #54637a;
+}
+.buyer-list .ser-tip dl dd a:hover{text-decoration: underline;}
+.buyer-list .ser-tip dl dd a.cc{color: #4287F0}
+.buyer-list table{
+	width: 1188px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin-top: 35px;
+	font-size: 15px;
+}
+.buyer-list table thead td{
+	background: #f6f7fb;
+	font-weight: bold;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+.buyer-list table td{
+	height: 67px;
+	line-height: 25px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.buyer-list table .t1{width: 360px;}
+.buyer-list table .t2{width: 144px;}
+.buyer-list table .t3{width: 278px;}
+.buyer-list table .t4{width: 403px;}
+.buyer-list table td a:hover{text-decoration: underline;}
+.buyer-list table td img {
+  vertical-align: middle;
+  width: 55px;
+  height: 55px;
+  margin-right:10px;
+}
+.buyer-list table td span{
+	vertical-align: middle;
+	color: #00509b;
+}

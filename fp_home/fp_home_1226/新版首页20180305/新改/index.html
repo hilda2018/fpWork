@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/home.css" rel="stylesheet" />
+		
+	</head>
+
+	<body>
+<div id="nav" class="header_menu" >
+
+			<a href="index.html" class="logo"><img src="images/logo.png" /> </a>
+
+			<ul class="memenu">
+				<li>
+					<a href="#" class="navActive">Home</a>
+				</li>
+				<li>
+					<a href="#">About Us</a>
+				</li>
+				<li>
+					<a href="#">Associations</a>
+				</li>
+				<li>
+					<a href="#">Importers</a>
+				</li>
+				<li>
+					<a href="#">Exporters</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+				<li>
+					<a href="#" > <span class="china" >中</span> </a>
+				</li>
+			</ul>
+
+			<div class="subnav">
+					<a id="search" href="#"><img src="./images/search.png" /></a>
+
+
+
+
+			
+				<div class="nav-user" id="LoginU" >
+					<a class="nava"> Sign up</a>
+					<a class="nava2"> Login </a>
+				</div>
+
+				<!--登录-->
+				<div class="nav-user" id="LoginA" style="display: none;" >
+							<a href="javascript:;" id="enterFP" class="linear-wipe" >My Freshport</a>
+								<a href="javascript:;">|</a>
+								<a href="javascript:;" id="logout">Logout</a>						
+		<a href="javascript:;">|</a>
+				
+<span ><svg class="icon" style="width:20px; height:18px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19014">
+					<path d="M514.594 71.112c-144.11 0-260.979 118.46-260.979 264.558 0 88.783 43.497 166.928 109.711 214.898-135.361 59.354-230.159 195.858-230.159 354.931h0.894c1.541 21.375 18.641 38.377 40.117 38.377s38.575-17.051 40.117-38.377h0.645c0-0.944-0.099-1.79-0.099-2.734 0-0.050 0-0.099 0-0.149 0-0.099-0.050-0.149-0.050-0.199 0.050-159.967 120-291.054 273.009-304.924 8.948 0.944 17.598 2.734 26.844 2.734 144.11 0 260.979-118.46 260.979-264.558s-116.919-264.558-261.029-264.558zM514.594 518.455c-99.769 0-180.698-81.972-180.698-183.183s80.879-183.183 180.698-183.183c99.719 0 180.647 81.972 180.647 183.183s-80.879 183.183-180.647 183.183zM896.021 902.615c0-0.348-0.199-0.645-0.199-0.994-1.043-105.038-43.397-200.034-111.35-269.131v0c-7.157-7.357-17.001-11.98-27.986-11.98-21.574 0-39.122 17.747-39.122 39.668 0 11.135 4.573 21.127 11.83 28.334l-0.099 0.050c52.742 55.229 85.302 130.589 85.302 213.853 0 1.043-0.149 1.987-0.149 3.034h0.994c1.491 21.375 18.691 38.377 40.117 38.377 21.475 0 38.575-17.051 40.117-38.377h0.597c0-0.796-0.099-1.491-0.099-2.287-0.050-0.149 0.050-0.348 0.050-0.547z" p-id="19015"></path>
+				</svg></span>
+						<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+			
+				</div>
+
+
+				<div class="clearfix"> </div>
+
+			</div>
+
+		</div>
+
+
+<div class="searchShow"  id="searchForm"  >
+	<div id="page">
+		<div style="padding-top:20px;">
+			<form name="searchform" method="post"  class="search radius6">
+				<input name='ecmsfrom' type='hidden' value='9'>
+				<input type="hidden" name="show" value="title,newstext">
+				<select name="classid" id="choose">
+					<option value="0">Importers</option>
+					<option value="1">Exporters</option>
+					<option value="3">Associations</option>
+				</select> 
+				<input class="inp_srh" name="keyboard"  placeholder="Search" >
+				<input class="btn_srh" type="submit" name="submit" value="search">
+
+			</form>
+			
+				<div class="quickLinkALl"><span>Advanced Search:</span> <a class="quickLink" href="#">Associations</a> <a class="quickLink"  href="#" >Importers</a> <a class="quickLink"  href="#"> Exporters</a></div>
+				<a id="searchClose">X</a>
+			
+		</div>
+	</div>
+</div>
+
+<div class="box">
+			<div class="pic">
+				<ul id="picShow">
+				
+		
+				
+				</ul>
+			</div>
+			<div class="nav">
+				<ul id="smallNav">
+				<!--	<li class="bg"></li>-->
+				</ul>
+			</div>
+
+			<a id="boxPrev" class="boxBtn"> </a>
+			<a id="boxNext" class="boxBtn"> </a>
+		</div>
+
+	<div class="Service-module cleafix Light">
+					<div class="Top">
+						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_association"></use></svg>
+						<div class="Title"><p>Service For </p>
+						<h3> Associations/Organizations</h3></div>
+					</div>
+					<div class="Top">
+						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_buyer"></use></svg>
+						<div class="Title  title2"><p>Service For Importers</p></div>
+					</div>
+					<div class="Top last">	
+						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_supplier"></use></svg>
+						<div class="Title title2"><p>Service For  Exporters</p></div>
+						
+					</div>
+				</div>
+
+	<div class="content">
+
+			<div class="content1" id="indexNews">
+
+					<div class="news-header">INDUSTRIAL NEWS AND ANNOUNCEMENTS</div>
+				    <div class="news-wrapper" id="vscroller">
+				    	
+					    <ul class="tab">
+				        	 <li class="activ">ENGLISH</li>
+			                 <li>CHINESE</li>
+			            </ul>
+			            <div class="tabCon">
+			                 <div class="newslist01 on"></div>
+			        		 <div  class="newslist01"></div>
+			            </div>
+			            
+				    </div>
+				
+
+			</div>
+
+			<div class="content2">
+				<div class="content2_sub">
+					<a class="content2_top shadow" href="" >
+						<img width="100%" src="images/right0.jpg">
+						<span ></span>
+						<div id="Widget">
+							<h4><span id="requirementTitle">Customer Requirements </span><span id="requirementprev">&gt;</span><span id="requirementnext">&lt;</span></h4>
+							<div id="box2" class="wrapRequire">
+								<ul id="boxRequirement" class="requireItems">
+									
+									</ul>
+							</div>
+							<div class="buttonAndSeparatorSidebar">
+								<span class="sidebarSeparator"></span>
+								<button class="more white" href="">More</button>
+							</div>
+						</div>
+					</a>
+					<a class="content2_bottom_left shadow"  href="">
+					
+					<img src="https://infostatic.freshport.com/static/infoshow/home/images/right2.jpg?v=20180211">
+
+						<p class="contenttext">
+
+							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_chart"></use></svg>
+
+							<strong>CHINA IMPORTED<br> FRUIT PRICE</strong>
+						</p>
+					</a>
+					<a class="content2_bottom_center shadow"  href="" >
+						<p class="contenttext">
+							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_port"></use></svg>
+							<strong>Chinese market <br/> wholesale price </strong></p>
+					</a>			
+					<a class="content2_bottom_right shadow nomargin" href="" >
+						<p class="contenttext">
+							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#international"></use></svg>
+							<strong>International Fruits   <br> Procurement  Price</strong></p>
+					</a>
+				
+				
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+
+		</div>
+
+	
+	
+	
+	
+		<div id="work" class="awesome-work">
+			<div class="bgWork"></div>
+			<div class="text-center">
+				<div class="textBg"></div>
+				<h2>Members</h2>
+				
+				<p class="max-para">Real-time window to know about China market, the professional platform to connect importers, exporters and association to promote the trade, solve the problems during negotiation and after transaction. Find new cooperation opportunities, build mutual trust, guarantee the payment and trade security.
+				</p>
+	
+           
+			</div>
+			<div>
+			<div id="filters" class="button-group">
+				<a class="button is-checked"><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_association"></use></svg><span>Associations</span>
+					</a>
+				<a class="button"><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_buyer"></use></svg><span>Importers</span></a>
+				<a class="button"><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_supplier"></use></svg><span>Exporters</span></a>
+
+			</div>
+
+			<div class="wrapMenberShow">
+		
+					<div class="button_show">
+				<ul class="button_items" id="button_items">
+					
+					
+					<li class="button_item">
+						<div class="shadow">
+							<div class="button_itemsImg">
+			<img src="images/association.png" /><span></span>
+							</div>
+							
+							<p>1111Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi</p>
+							<a class="btnMember"><span>Read More </span><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg></a>
+						</div>
+					</li>
+					<li class="button_item">
+						<div class="shadow">
+							<div class="button_itemsImg">
+								
+								
+			<img src="images/association.png" /><span></span>
+							</div>
+							
+							<p>1111Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi</p>
+							<a class="btnMember"><span>Read More  </span><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg></a>
+						</div>
+					</li>	<li class="button_item">
+						<div class="shadow">
+							<div class="button_itemsImg">
+			<img src="images/association.png" /><span></span>
+							</div>
+							
+							<p>1111Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi</p>
+							<a class="btnMember"><span>Read More  </span><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg></a>
+						</div>
+					</li>	<li class="button_item">
+						<div class="shadow">
+							<div class="button_itemsImg">
+			<img src="images/association.png" /><span></span>
+							</div>
+							
+							<p>1111Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi</p>
+							<a class="btnMember"><span>Read More </span><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg></a>
+						</div>
+					</li>	<li class="button_item">
+						<div class="shadow">
+							<div class="button_itemsImg">
+			<img src="images/association.png" /><span></span>
+							</div>
+							
+							<p>1111Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi</p>
+							<a class="btnMember"><span>Read More </span><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg></a>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+			<a id="prev" class="prevMember buttonA"><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_left"></use></svg></a>
+			<a id="next" class="buttonA nextMember"><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_right"></use></svg></a>
+			</div>
+			<a href="" class="showMoreWork">
+                <span>click here to view more</span><svg ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg>
+            </a>
+            </div>
+		</div>
+
+	<div class="base-footer">
+			<div class="footBg"></div>
+			<div class="row">
+				
+				<div class="col-2 about">
+					<h4>About FreshPort</h4>
+					<p>
+						<a href="#">Focus on Importing Fruits Service 15 years, <span class="click">click here to view more</span></a>
+					</p>
+				</div>
+				<div class="col-2">
+					<h4>Service For</h4>
+					<p>
+						<a href="#">Association/Organization</a><br>
+						<a href="#">Importers</a><br>
+						<a href="#">Exporters</a>
+					</p>
+				</div>
+				<div class="col-2">
+					<h4>Links</h4>
+					<p>
+						<a href="http://freshcargoperu.com.pe">freshcargoperu</a>
+					</p>
+				</div>
+				<div class="col-area"><a  href="地图" ><img src="images/area.jpg"/></a></div>
+			</div>
+			<div class="copyright">
+				<a href="li" target="_blank" title="">备案/许可证号 沪ICP备15035308 | 2015 Freshport.com. All rights reserved</a>
+			</div>
+		</div>
+		
+		<!--footer end here-->
+		<!--低版本 IE 提醒 -->
+		<div id="contentBrowser">
+			<div class="contentBrowserWrap">
+
+				<div class="browserLogo">
+					<img src="images/logo.png" />
+				</div>
+
+				<div class="browserText"> Your browser is too old to support this type of interactive web page.<br/> You may not be aware that better browsers are freely available for all major operationg systems
+					<a id="goHead" href="javascript:;" onclick="layer.closeAll();">&nbsp;>>skip this step</a>
+				</div>
+
+				<div class="browserAll">
+
+					<div class="ie-1-4-box">
+						<a class="ie-a" href="https://www.microsoft.com/zh-cn/download/internet-explorer-11-for-windows-7-details.aspx" target="_blank">
+							<img src="images/IE.png">
+							<p>Internet Explorter</p>
+						</a>
+					</div>
+
+					<div class="ie-1-4-box">
+						<a class="ie-a" href="http://opera.apponic.com/" target="_blank">
+							<img src="images/opera.png">
+							<p>Opera</p>
+						</a>
+					</div>
+
+					<div class="ie-1-4-box">
+						<a class="ie-a" href="http://google-chrome.apponic.com/" target="_blank">
+							<img src="images/chrome.png">
+							<p>Google Chrome</p>
+						</a>
+					</div>
+
+					<div class="ie-1-4-box">
+						<a class="ie-a" href="http://mozilla-firefox.apponic.com/" target="_blank">
+							<img src="images/firefox.png">
+							<p>Mozilla FireFox</p>
+						</a>
+					</div>
+
+					<!--				<div class="ie-1-4-box">
+						<a class="ie-a" href="https://support.apple.com/zh_CN/downloads/safari" target="_blank">
+							<img src="images/safari.png">
+							<p>Apple Safari</p>
+						</a>
+					</div>-->
+				</div>
+				<div style="clear:both"></div>
+				<div class="browserFoot">
+					备案/许可证号 沪ICP备15035308 | 2015 Freshport.com. All rights reserved
+				</div>
+			</div>
+
+		</div>
+		<!--低版本 IE 提醒 -->
+		
+		
+<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" style="display: none;">
+<symbol id="svg_arrow" viewBox="0 0 1024 1024" ><path d="M537.365202 236.041948 537.367249 236.038878 537.365202 236.036831ZM637.353474 136.529513 537.367249 236.038878 744.019843 443.686125 24.731776 443.686125 24.731776 578.113767 742.257709 578.113767 537.365202 783.986601 637.353474 883.505175 1009.042845 510.016833Z" p-id="1682"></path></symbol>
+<symbol id="svg_supplier" viewBox="0 0 1024 1024" ><path d="M960,724.4c-6.4-51.2-38.4-73.6-86.4-57.6h-3.2c-32,6.4-124.8,48-156.8,57.6C668.8,734,624,750,582.4,759.6
+	c-3.2-6.4-3.2-9.6-6.4-16c-3.2-9.6-6.4-19.2-12.8-32c-12.8-16-35.2-32-51.2-41.6c-57.6-35.2-121.6-67.2-179.2-102.4
+	c-16-16-28.8-22.4-44.8-25.6c-25.6-6.4-48-6.4-73.6-6.4c-19.2,3.2-41.6,6.4-57.6,16c-48,19.2-92.8,51.2-137.6,80
+	c-19.2,12.8-25.6,35.2-9.6,48c12.8,16,32,12.8,51.2,0c38.4-25.6,76.8-48,118.4-67.2c19.2-6.4,38.4-9.6,57.6-6.4
+	c16,0,38.4,6.4,54.4,16c19.2,9.6,41.6,25.6,60.8,35.2c3.2,0,3.2,3.2,6.4,3.2l134.4,76.8c3.2,0,3.2,3.2,6.4,3.2
+	c9.6,6.4,19.2,16,12.8,32c-6.4,12.8-16,12.8-32,9.6c-32-9.6-57.6-19.2-89.6-32c-12.8-3.2-32-6.4-48-9.6c-16,0-28.8,12.8-28.8,32
+	c0,19.2,16,28.8,35.2,35.2c32,9.6,64,16,96,32c38.4,16,73.6,12.8,105.6,3.2C640,814,796.8,762.8,889.6,734l3.2,3.2
+	c-3.2,6.4-3.2,16-9.6,19.2c-6.4,9.6-16,16-28.8,25.6c-73.6,48-211.2,121.6-291.2,156.8c-38.4,16-76.8,19.2-118.4,9.6
+	c-19.2-6.4-44.8-9.6-64-16C278.4,894,176,868.4,64,874.8c-9.6,0-19.2,0-35.2,3.2C12.8,884.4,0,897.2,0,910c0,16,6.4,28.8,25.6,32
+	c9.6,3.2,16,3.2,28.8,3.2c73.6,0,144-3.2,214.4,16c51.2,12.8,105.6,32,156.8,44.8c48,12.8,99.2,16,147.2-3.2
+	c102.4-41.6,262.4-131.2,355.2-192C956.8,788.4,963.2,756.4,960,724.4z"/><g><g><path d="M861.9,401.3L861.9,401.3c-52-157.1-171.1-41.8-171.1-41.8s-15.9,1.2-34.6,7.3c-0.7-0.6-1.5-0.8-2.2-0.9
+			c-40.9-37.5-115.3-14-115.3-14S398.1,305,414.6,462.1c7.6,67.2,59.6,110.2,131.8,110.2c36.7,0,68.4-11.4,91.2-30.4
+			c38,34.2,93.8,40.5,149.5,15.2C855.5,526.7,883.4,465.9,861.9,401.3z M494.4,400l-26.6,67.2c-1.3,2.5-1.3,2.5-2.5,2.5
+			c-5.1,0-11.4-3.8-12.7-10.1c-12.7-52,17.7-73.5,30.4-81.1c6.3-3.8,13.9-1.3,16.5,5.1C503.3,389.9,500.7,397.5,494.4,400z"/>
+	</g><path d="M702.2,335.4c-1.3-3.8-2.5-6.3-3.8-10.1c0-1.3-1.3-2.5-1.3-3.8c-1.3-2.5-1.3-5.1-2.5-6.3c-1.3-2.5-1.3-3.8-2.5-6.3
+		c-1.3-2.5-1.3-3.8-1.3-6.3c-1.3-2.5-1.3-5.1-2.5-6.3c-1.3-2.5-1.3-5.1-2.5-7.6c0-1.3-1.3-2.5-1.3-3.8c-1.3-2.5-1.3-5.1-1.3-7.6
+		c0-1.3,0-2.5-1.3-3.8c0-2.5-1.3-5.1-1.3-7.6c0-1.3,0-2.5-1.3-3.8c0-2.5-1.3-5.1-1.3-7.6v-2.5v-7.6v-3.8v-7.6v-2.5v-7.6v-2.5v-6.3
+		v-3.8v-5.1v-3.8v-3.8c0-1.3,0-2.5,1.3-5.1v-2.5c0-1.3,1.3-3.8,1.3-5.1V182c0-2.5,1.3-3.8,1.3-6.3v-1.3c0-2.5,1.3-3.8,1.3-6.3
+		c7.6-26.6,20.3-44.3,25.3-50.7c1.3,0,2.5-1.3,2.5-1.3c6.3-2.5,8.9-10.1,6.3-16.5c-2.5-6.3-6.3-11.4-12.7-8.9c0,0-1.3,0-1.3,1.3
+		c-1.3,0-2.5,0-3.8,1.3c-1.3,0-1.3,1.3-2.5,2.5C521,175.7,527.3,368.3,527.3,369.6c0,6.3,6.3,12.7,12.7,12.7
+		c7.6,0,12.7-6.3,12.7-12.7c0-1.3-5.1-148.3,116.6-230.6c-19,46.9-34.2,128,24.1,237c2.5,3.8,6.3,6.3,11.4,6.3c2.5,0,3.8,0,6.3-1.3
+		c5.1-2.5,7.6-7.6,6.3-12.7c0-1.3-1.3-3.8-1.3-5.1c-2.5-5.1-5.1-10.1-7.6-13.9V348C706,344.2,703.5,339.2,702.2,335.4L702.2,335.4z"
+		/><path d="M818.8,255.5c-22.8-24.1,36.7-164.7-114-164.7C618.6,258.1,818.8,255.5,818.8,255.5z"/></g></symbol>
+<symbol id="svg_association" viewBox="0 0 1024 1024" ><path class="st0"  d="M597.3,1024c-131.6-0.3-301.7-17.3-365-98.9c-23.1-29.4-30.5-68.1-19.9-103.9
+	c21.2-80.1,115.1-135.9,259.4-155.2v-8c-50.3-44.2-84.9-103.6-98.6-169.2c-15.1-67.5-17.3-137.2-6.4-205.5
+	c21.7-100.4,85.1-156.7,183.8-162.7c31.2-1.6,62.5-1.6,93.7,0c98.6,7,162.1,63.3,183.5,162.7c10.9,68.3,8.7,138-6.5,205.5
+	c-13.6,65.6-48.2,125-98.6,169.2v8c144.4,19.3,238.2,75.1,259.4,155.2c10.6,35.8,3.2,74.5-19.8,103.9
+	C899,1006.7,728.9,1023.7,597.3,1024L597.3,1024z M599.1,189.2c-16.5,0-33.3,0.3-44.3,1c-66.5,4-104.4,38.3-119.4,107.9
+	c-8.7,58.1-6.6,117.3,6,174.7c10.6,55,40.7,104.2,84.9,138.7c9.8,6.4,15.7,17.3,15.7,29v56.6c-0.1,18.1-13.9,33.2-31.9,34.8
+	C382.7,743.4,294.6,784.7,280.3,839c-5.1,14.8-2.3,31.3,7.5,43.6c34.2,44.1,152.7,71.6,309.4,71.8c156.6-0.3,275.1-27.8,309.4-71.8
+	c9.8-12.3,12.7-28.7,7.5-43.6c-14.4-54.3-102.5-95.6-229.8-107.1c-18-1.6-31.9-16.7-31.9-34.8v-56.6c0-11.7,5.9-22.6,15.7-29
+	c44.1-34.4,74.3-83.7,84.8-138.7c12.7-57.4,14.8-116.6,6.1-174.7C744.1,229.3,706,195,639,190.2c-10-0.8-24.9-1-40-1L599.1,189.2z
+	 M1159,744.7c-15.9,0-29.8-10.7-34-26c-14.4-54.6-102.5-95.6-229.9-107.4c-18-1.4-31.9-16.5-31.9-34.5v-56.8
+	c0.1-11.7,5.9-22.6,15.7-29c44.2-34.4,74.4-83.7,84.9-138.7c12.7-57.4,14.7-116.6,6.1-174.7c-14.3-66.1-51.8-99.4-121.6-107.9
+	c-19.2-2.4-32.8-19.8-30.5-39c2.3-18.9,19.5-32.4,38.4-30.1c0.3,0,0.5,0.1,0.8,0.1c99.9,12.3,161,66.8,181.7,162.4
+	c10.9,68.2,8.7,137.9-6.4,205.3c-13.7,65.7-48.2,125.1-98.6,169.5v8c144.4,19,238.2,74.8,259.5,155.2c4.9,18.6-6.3,37.7-25,42.5
+	c0,0-0.1,0-0.1,0C1165.2,744.2,1162.1,744.6,1159,744.7L1159,744.7z M35.4,744.7c-3,0-6-0.5-8.9-1.3c-18.6-4.7-29.8-23.6-25.1-42.2
+	c0-0.1,0.1-0.2,0.1-0.4c21.2-80.1,115.1-136.2,259.4-155.2v-8c-50.3-44.4-84.9-103.8-98.6-169.5c-15.2-67.4-17.4-137-6.5-205.3
+	C176.5,67.3,237.6,12.8,337.6,0.5c19-2.6,36.5,10.6,39.1,29.6c0,0.2,0,0.3,0.1,0.5c2.4,19.2-11.3,36.7-30.5,39
+	c-69.9,8.5-107.5,41.8-121.7,107.9c-8.7,58.1-6.6,117.3,6.1,174.7c10.5,55.1,40.7,104.4,84.8,138.9c9.8,6.4,15.7,17.3,15.7,29v56.6
+	c0,18.1-13.9,33.1-31.9,34.5C171.8,623,83.8,664.1,69.4,718.6C65.2,734,51.3,744.6,35.4,744.7L35.4,744.7z"/></symbol>
+<symbol id="svg_buyer" viewBox="0 0 1024 1024" ><path d="M987.3,677.7H412.9c-38.9,0-48.3-25-49.9-30.3c-0.9-3.2-5.3-19-12.1-42.9l583.2-71.8c29.3,0,53.1-23.8,53.1-53.1V292.3
+	c0-29.3-23.8-53.1-53.1-53.1H247.8c-16.3-57.1-29-101.5-33.3-116c-17-59.2-60.3-65.9-65.2-66.5L45.6,56.6
+	c-17.9,0-32.4,14.5-32.4,32.4c0,17.9,14.5,32.4,32.4,32.4h94.9c2.5,1.6,7.8,6.4,11.8,20.1c3.7,12.8,14.3,49.5,28,97.7
+	c31.9,112.1,81.3,287,105.6,373.2c8.8,31.1,14.2,50.8,14.5,51.5c6.8,27.2,39,78.6,112.5,78.6h574.4c17.9,0,32.4-14.5,32.4-32.4
+	C1019.7,692.3,1005.2,677.7,987.3,677.7 M380.4,806.1c-29.1,0-52.6,23.5-52.6,52.6c0,29.1,23.6,52.7,52.6,52.7
+	c29.1,0,52.7-23.6,52.7-52.7C433.1,829.6,409.5,806.1,380.4,806.1 M874.9,806.1c-29.1,0-52.7,23.5-52.7,52.6
+	c0,29.1,23.6,52.7,52.7,52.7s52.7-23.6,52.7-52.7C927.6,829.6,904,806.1,874.9,806.1"></path></symbol>
+<symbol id="svg_left" viewBox="0 0 1024 1024" ><path d="M19.407 504.524c0 268.009 217.268 485.268 485.276 485.268 268.001 0 485.26-217.258 485.26-485.268 0-268.008-217.258-485.265-485.26-485.268-268.009-0.001-485.276 217.259-485.276 485.266zM929.291 504.524c0 234.511-190.111 424.607-424.607 424.607-234.501 0-424.608-190.098-424.608-424.607 0-234.501 190.109-424.606 424.608-424.606 234.498-0.001 424.607 190.106 424.608 424.606zM367.124 477.882c-7.281 7.264-13.253 17.223-11.601 26.641-1.653 9.419 4.32 19.38 11.601 26.658l232.226 232.226c11.847 11.83 31.045 11.828 42.892 0 11.847-11.847 11.848-31.054 0-42.902l-215.981-215.982 215.981-215.974c11.847-11.845 11.847-31.052 0-42.9-11.845-11.839-31.043-11.839-42.892 0l-232.226 232.23z" ></path></symbol>
+<symbol id="svg_right" viewBox="0 0 1024 1024" ><g><path class="st0"style="fill:none;" d="M504.7,79.9C270.2,79.9,80.1,270,80.1,504.5c0,234.5,190.1,424.6,424.6,424.6c234.5,0,424.6-190.1,424.6-424.6
+		h0C929.3,270,739.2,79.9,504.7,79.9z M642.2,763.4c-11.8,11.8-31,11.8-42.9,0L367.1,531.2c-7.3-7.3-13.3-17.2-11.6-26.7
+		c-1.7-9.4,4.3-19.4,11.6-26.6l0,0l232.2-232.2c11.8-11.8,31-11.8,42.9,0c11.8,11.8,11.8,31.1,0,42.9l-216,216l216,216
+		C654.1,732.4,654.1,751.6,642.2,763.4z"/><path d="M580.1,504.5l-216,216c-11.8,11.8-11.8,31.1,0,42.9c11.8,11.8,31,11.8,42.9,0l232.2-232.2l0,0c7.3-7.3,13.3-17.2,11.6-26.6
+		c1.7-9.4-4.3-19.4-11.6-26.7L407,245.6c-11.8-11.8-31-11.8-42.9,0c-11.8,11.8-11.8,31.1,0,42.9L580.1,504.5z"/><path d="M504.7,19.3c-268,0-485.3,217.3-485.3,485.3v0c0,268,217.3,485.3,485.3,485.3c268,0,485.3-217.3,485.3-485.3
+		C989.9,236.5,772.7,19.3,504.7,19.3z M504.7,929.1C270.2,929.1,80.1,739,80.1,504.5C80.1,270,270.2,79.9,504.7,79.9
+		c234.5,0,424.6,190.1,424.6,424.6h0C929.3,739,739.2,929.1,504.7,929.1z"/></g></symbol>
+		
+<symbol id="svg_address" viewBox="0 0 1024 1024"><path d="M490.251673 861.44474l20.157085 20.079314 20.207227-20.031219c8.683776-8.608052 213.303061-211.878618 267.36842-304.442804 29.597085-50.669006 45.24139-108.629069 45.24139-167.613462 0-88.8854-34.614355-172.45063-97.464799-235.301074C682.911578 91.281983 599.344301 56.667627 510.457878 56.667627S338.007247 91.281983 275.156804 154.13345c-62.851467 62.851467-97.465822 146.416697-97.465822 235.301074 0 60.614519 16.463973 119.959116 47.612391 171.614589C279.666514 651.196249 481.677391 852.901157 490.251673 861.44474zM510.457878 206.668966c83.101673 0 150.46899 67.36834 150.46899 150.470013s-67.367317 150.46899-150.46899 150.46899-150.470013-67.367317-150.470013-150.46899S427.356204 206.668966 510.457878 206.668966zM779.38377 902.224516 243.493663 902.224516c-15.786545 0-28.630061 12.843516-28.630061 28.629038 0 15.786545 12.843516 28.630061 28.630061 28.630061l535.890107 0c15.786545 0 28.629038-12.843516 28.629038-28.630061C808.012807 915.068032 795.170315 902.224516 779.38377 902.224516z" /></symbol>
+<symbol id="svg_tele" viewBox="0 0 1024 1024" >	<path d="M516.96 242.95c-5.906 0-11.662 0.546-17.486 0.89v105.774c5.858-0.528 11.49-1.758 17.486-1.758 106.22 0 192.326 86.106 192.326 192.326 0 18.304-3.38 35.67-8.162 52.452h108.164c3.042-17.058 4.902-34.524 4.902-52.452 0-164.152-133.078-297.23-297.23-297.23z m0-209.81c-5.906 0-11.628 0.684-17.486 0.89v104.906c5.842-0.254 11.578-0.888 17.486-0.888 222.086 0 402.136 180.032 402.136 402.134 0 17.826-1.554 35.244-3.808 52.452h106c1.722-15.722 2.706-33.966 2.714-52.44 0-280.048-227.004-507.05-507.04-507.05z m184.352 713.88c-58.226-22.268-113.374-50.918-177.3 8.76-39.458 36.828-67.99 32.8-93.788 19.086-25.784-13.712-184.628-175.88-206.312-228.932s-9.97-60.222 0-76.306c9.956-16.102 79.124-53.666 37.512-171.7-41.628-118.036-74.308-206.926-243.838 0-17.586 21.462 0 114.466 0 114.466S137.124 803.142 542.76 965.638c62.97 25.22 205.182-14.718 262.586-114.466 28.136-48.884-12.668-69.22-104.034-104.154z"/></symbol>
+
+
+<symbol id="svg_chart" viewBox="0 0 1024 1024" >	
+<path d="M929.28 896 65.28 896 65.28 623.68l184.448-184.448C261.76 444.736 275.072 448 289.28 448s27.456-3.264 39.552-8.768l129.216 129.216C452.48 580.48 449.28 593.856 449.28 608c0 52.992 43.008 96 96 96s96-43.008 96-96c0-14.144-3.264-27.52-8.768-39.552l317.44-317.44c13.824-13.76 13.824-36.096 0-49.92-13.76-13.76-36.096-13.76-49.92 0L581.76 519.296C570.496 514.624 558.208 512 545.28 512S520 514.624 508.736 519.296L377.984 388.48C382.656 377.28 385.28 364.928 385.28 352c0-52.992-43.008-96-96-96s-96 43.008-96 96c0 12.928 2.624 25.28 7.296 36.48L65.28 523.84 65.28 160c0-17.664-14.336-32-32-32s-32 14.336-32 32l0 437.312c-0.832 4.288-0.832 8.576 0 12.864L1.28 928c0 17.664 14.336 32 32 32l896 0c17.664 0 32-14.336 32-32S946.944 896 929.28 896zM545.28 576c17.664 0 32 14.336 32 32S562.944 640 545.28 640s-32-14.336-32-32S527.552 576 545.28 576zM289.28 320c17.664 0 32 14.336 32 32S306.944 384 289.28 384s-32-14.336-32-32S271.552 320 289.28 320z"></path>
+</symbol>
+
+<symbol id="svg_name" viewBox="0 0 1024 1024" >	<path d="M84.48 437.72v524.8H64V1024h83.22V483.21L473.679 369.9v647.76h232.92V956.1h-48.01V355.88l-122.84-72.35-135.09 46.75v-87.71L727.08 94.72v925.38h232.96V958.15h-47.97V76.169L787.18 0 340.52 205.43v145.29l-256.04 87z m100.51 80.66v94.13l241.27-69.12V436.5l-241.27 81.88z m0 133.12v92.79l241.27-44.82v-108.7L184.99 651.5z m0 135.09v92.199l241.27-20.52V749.41l-241.27 37.18z m-0.67 136.9v92.2h241.31V906.87l-241.31 16.62z" /></symbol>
+<symbol id="svg_port" viewBox="0 0 1024 1024"  >
+	<path d="M870.2 816c-16.2 0-30.6 1.2-43.5 3.2l129.2-247.6c4.6-8.8 5.4-19.1 2.1-28.5-3.3-9.4-10.3-17-19.4-21L739 433.6V230c0-12-5.9-23.1-15.9-29.8l-191-129c-12.1-8.2-28-8.2-40.2-0.1l-193 129c-10 6.7-16 17.9-16 29.9v204.7L85.4 522.1c-9.1 4-16.1 11.6-19.4 20.9-3.3 9.3-2.6 19.6 1.9 28.5l155.6 302.9c-18 8.3-38.6 13.7-69.8 13.7-19.9 0-35.2-2.3-47.5-5.6-16.1-4.3-32.9 3.2-40.3 18.2-0.2 0.3-0.3 0.6-0.5 1-10 20.4 1.1 44.9 23.1 50.7 20 5.3 41.2 7.8 65.2 7.8 69.7 0 106-21.9 138-41.2 28.6-17.2 51.1-30.8 100.8-30.8 49.7 0 72.2 13.6 100.8 30.8 32 19.3 68.3 41.2 138 41.2s106-21.9 138-41.2c28.6-17.2 51.1-30.8 100.8-30.8 19.6 0 34.8 2.2 47 5.4 16.5 4.3 33.7-3.7 41.2-19 10-20.4-1.1-44.9-23.1-50.7-19.8-5.4-41-7.9-65-7.9zM355 249.2l156.9-104.9L667 249.1v152.5l-139.9-62c-9.3-4.1-19.9-4.1-29.2 0L355 402.8V249.2z m192 617.6V540c0-19.9-16.1-36-36-36s-36 16.1-36 36v289.1c-21.6-7.7-47.9-13.1-82.4-13.1-48.1 0-80.3 10.4-106.1 23.2l-137-266.7 363-160.6 361.9 160.4-151.7 290.5c-24.5 14.4-47.2 25.2-91.3 25.2-39.9 0-62.3-8.8-84.4-21.2z" p-id="3230"></path>
+</symbol>
+<symbol id="international"  viewBox="0 0 1024 1024" >
+<path d="M162.816 672h199.68c-5.472-40.192-8.96-83.2-10.08-128H129.28c3.744 45.344 15.36 88.48 33.504 128z m37.248 64a384.32 384.32 0 0 0 223.712 149.824c-20.64-38.272-37.92-89.6-50.368-149.824H200.064z m661.12-64c18.144-39.52 29.76-82.656 33.504-128h-223.104a1166.624 1166.624 0 0 1-10.08 128h199.68z m-37.248 64H650.56c-12.448 60.192-29.728 111.552-50.368 149.824A384.32 384.32 0 0 0 823.904 736z m-399.232-64h174.592c4.544-39.52 7.424-82.656 8.384-128h-191.36c0.96 45.344 3.84 88.48 8.384 128z m9.312 64c17.44 96.896 45.856 160 77.984 160 32.128 0 60.544-63.104 77.984-160h-155.968z m-304.704-256h223.104c1.12-44.8 4.608-87.808 10.08-128h-199.68a381.632 381.632 0 0 0-33.504 128z m765.376 0a381.632 381.632 0 0 0-33.504-128h-199.68c5.472 40.192 8.96 83.2 10.08 128h223.104zM416.32 480h191.36a1379.936 1379.936 0 0 0-8.384-128h-174.592a1379.936 1379.936 0 0 0-8.384 128zM200.064 288h173.344c12.448-60.192 29.728-111.552 50.368-149.824A384.32 384.32 0 0 0 200.096 288z m623.872 0a384.32 384.32 0 0 0-223.712-149.824c20.64 38.272 37.92 89.6 50.368 149.824h173.344zM434.016 288h155.968C572.544 191.104 544.128 128 512 128c-32.128 0-60.544 63.104-77.984 160zM512 960C264.576 960 64 759.424 64 512S264.576 64 512 64s448 200.576 448 448-200.576 448-448 448z" fill="#8bc34a" p-id="1320"></path>
+</symbol>
+</svg>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="js/news.js"></script>
+<script type="text/javascript" src="js/requirement.js"></script>
+<script type="text/javascript" src="js/member.js"></script>
+
+
+</body>
+
+</html>

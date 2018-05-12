@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b35541e-fe51-46d8-bfd9-b2585dc0140b" name="默认的" comment="" />
+    <ignored path="webStorm.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="webStorm" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="fpPriceChart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/fpPriceChart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="182" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!block;n#makeChart#0" expanded="false" />
+                <marker date="1524881784439" expanded="true" signature="4832:4849" placeholder="..." />
+                <marker date="1524881784439" expanded="true" signature="5268:5295" placeholder="..." />
+                <marker date="1524881784439" expanded="true" signature="5385:5396" placeholder="..." />
+                <marker date="1524881784439" expanded="true" signature="12104:12179" placeholder="..." />
+                <marker date="1524881784439" expanded="true" signature="13591:13667" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20171114.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/20171114.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="222" column="14" selection-start-line="222" selection-start-column="14" selection-end-line="222" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index/home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.83980584">
+              <caret line="947" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="948" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="banner.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4241010/js/banner.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="38" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#38#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="banner.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index/banner.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="svg.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4241010/js/svg.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="311" column="13" selection-start-line="11" selection-start-column="4" selection-end-line="311" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#symbol#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#1;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#2;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#3;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#4;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#path#0;n#g#0;n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#symbol#6;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#7;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#8;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#9;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#10;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#11;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#12;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#13;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#14;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#15;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#0;n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#1;n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#2;n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#3;n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="svg.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index/svg.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1220" column="7" selection-start-line="1220" selection-start-column="7" selection-end-line="1220" selection-end-column="7" />
+              <folding>
+                <element signature="n#symbol#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#1;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#2;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#3;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#4;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#6;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#7;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#8;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#9;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#10;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#11;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#0;n#symbol#11;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#12;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#13;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#14;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#15;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#17;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#18;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#19;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#symbol#20;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Html5" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/css/我去.js" />
+        <option value="$PROJECT_DIR$/js/w.js" />
+        <option value="$PROJECT_DIR$/2.html" />
+        <option value="$PROJECT_DIR$/20171114.html" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/sidebar.html" />
+        <option value="F:/googledownload/now-ui-dashboard-html-v1/now-ui-dashboard-html-v1/assets/demo/demo.js" />
+        <option value="F:/googledownload/now-ui-dashboard-html-v1/now-ui-dashboard-html-v1/examples/dashboard.html" />
+        <option value="F:/googledownload/now-ui-dashboard-html-v1/assets/demo/demo.js" />
+        <option value="F:/googledownload/now-ui-dashboard-html-v1/examples/dashboard.html" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/css/fpIndex.css" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/content.html" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/css/port.css" />
+        <option value="G:/微信文件/WeChat Files/fancyfishes/Files/newIndex_svg.html" />
+        <option value="G:/微信文件/WeChat Files/fancyfishes/Files/newIndex.html" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/11.js" />
+        <option value="G:/微信文件/WeChat Files/fancyfishes/Files/11.js" />
+        <option value="F:/googledownload/jq221505192144104818/jquery-nav-150519214407/css/style.css" />
+        <option value="F:/googledownload/jq221505192144104818/jquery-nav-150519214407/index.html" />
+        <option value="F:/googledownload/jq22pd-6ccd0868-2db0-11e4-8b02-000c29f61318 (2)/ReSmenu-master/demo/index.htm" />
+        <option value="F:/googledownload/jq22pd-6ccd0868-2db0-11e4-8b02-000c29f61318 (2)/ReSmenu-master/jquery.resmenu.js" />
+        <option value="F:/googledownload/jq22pd-5a94e2aa-73a7-11e4-8b9a-00163e001348/nav-141124145848/js/jquery.nicenav.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$4/jquery.plugins-min.js" />
+        <option value="F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/ww.js" />
+        <option value="F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/jquery.plugins-min.js" />
+        <option value="$PROJECT_DIR$/index/index.html" />
+        <option value="$PROJECT_DIR$/index/style.css" />
+        <option value="F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/index.html" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/banner.css" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/ban.js" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/index.html" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/css/home.css" />
+        <option value="F:/googledownload/shopping.svg" />
+        <option value="$USER_HOME$/Desktop/未标题-1.svg" />
+        <option value="F:/googledownload/jq22pd-0e48884a-665d-11e4-a48c-00163e001348/jquerywin8-141107170414/index.html" />
+        <option value="F:/googledownload/jq22pd-0e48884a-665d-11e4-a48c-00163e001348/jquerywin8-141107170414/index_1.html" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/newFreshPort.html" />
+        <option value="$PROJECT_DIR$/20180403FRESHPORT/Foundation/ww.html" />
+        <option value="$USER_HOME$/Desktop/home.css" />
+        <option value="$PROJECT_DIR$/4241010/js/fpPriceChart.js" />
+        <option value="$PROJECT_DIR$/css/price.css" />
+        <option value="$PROJECT_DIR$/4241010/js/w'w.css" />
+        <option value="G:/微信文件/WeChat Files/fancyfishes/Files/footer.html" />
+        <option value="G:/微信文件/WeChat Files/fancyfishes/Files/base.css" />
+        <option value="$PROJECT_DIR$/4241010/js/svg.html" />
+        <option value="$PROJECT_DIR$/index/svg.html" />
+        <option value="$PROJECT_DIR$/index/footer.html" />
+        <option value="$PROJECT_DIR$/js/fpPriceChart.js" />
+        <option value="$PROJECT_DIR$/4241010/js/banner.js" />
+        <option value="$PROJECT_DIR$/index/banner.js" />
+        <option value="$PROJECT_DIR$/index/home.css" />
+        <option value="$PROJECT_DIR$/index/base.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="添加" />
+    <OptionsSetting value="true" id="移除" />
+    <OptionsSetting value="true" id="签出" />
+    <OptionsSetting value="true" id="更新" />
+    <OptionsSetting value="true" id="状态" />
+    <OptionsSetting value="true" id="编辑" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FullScreen" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="TODO_SCOPE" value="当前文件" />
+    <property name="recentsLimit" value="5" />
+    <property name="SearchEverywhereHistoryKey" value="none&#9;null&#9;null" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index/base.css" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\webStorm\index" />
+      <recent name="G:\webStorm\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\webStorm" />
+      <recent name="G:\webStorm\css" />
+    </key>
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.fpPriceChart.js">
+    <configuration default="false" name="fpPriceChart.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="fpPriceChart.js" working-dir="$PROJECT_DIR$/js">
+      <browser start="true" with-js-debugger="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.fpPriceChart.js" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.fpPriceChart.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b35541e-fe51-46d8-bfd9-b2585dc0140b" name="默认的" comment="" />
+      <created>1524404712992</created>
+      <option name="number" value="Default" />
+      <updated>1524404712992</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="top" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.51552105" sideWeight="0.49555555" order="0" side_tool="false" content_ui="combo" x="-22" y="165" width="192" height="900" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32333332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.054323725" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.006651885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14533965" sideWeight="0.5044444" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="层次结构" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.067625135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34958383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32333332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34958383" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14533965" sideWeight="0.49555555" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496329" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14533965" sideWeight="0.5044444" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://E:/工作/20180305国际价格行情/js/fpPriceChart.js</url>
+          <line>368</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://E:/工作/20180305国际价格行情/js/fpPriceChart.js</url>
+          <line>491</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/price_select2.js</url>
+          <line>184</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://E:/工作/20180305国际价格行情/js/fpPriceChart.js</url>
+          <line>325</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/price_select2.js</url>
+          <line>324</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/price_select2.js</url>
+          <line>121</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/price_select2.js</url>
+          <line>140</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/price_select2.js</url>
+          <line>132</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/price_select2.js</url>
+          <line>78</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/price_select2.js</url>
+          <line>417</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://E:/工作/价格行情页面/1120/22.js</url>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/action.js</url>
+          <line>98</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/fpPriceChart.js</url>
+          <line>218</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/now-ui-dashboard-html-v1/now-ui-dashboard-html-v1/assets/demo/demo.js</url>
+          <line>289</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/now-ui-dashboard-html-v1/now-ui-dashboard-html-v1/assets/demo/demo.js</url>
+          <line>19</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/now-ui-dashboard-html-v1/now-ui-dashboard-html-v1/assets/demo/demo.js</url>
+          <line>121</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/fpPriceChart.js</url>
+          <line>279</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/fpPriceChart.js</url>
+          <line>175</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="NONE" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/ww.js</url>
+          <log-expression expression="(function (c) {&#10;    var b = &quot;rollIn fadeIn fadeInUp fadeInDown fadeInLeft fadeInRight fadeInRight bounceIn bounceInDown bounceInUp bounceInLeft bounceInRight rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight&quot;.split(&quot; &quot;), d = b.length;&#10;    c.fn.oneByOne = function (a) {&#10;        function e(a) {&#10;            g.slideShow &amp;&amp; f();&#10;            l.stop(!0, !0).animate({left: -a * j}, g.delay, function () {&#10;                a != t &amp;&amp; (r = t, q[r] &amp;&amp; (!c.browser.msie &amp;&amp; !c.browser.opera &amp;&amp; q[r].fadeOut(), c(&quot;.buttonArea a:eq(&quot; + r + &quot;)&quot;, n).removeClass(&quot;active&quot;)), c(&quot;.buttonArea a:eq(&quot; + a + &quot;)&quot;, n).addClass(&quot;active&quot;),&#10;                    &quot;random&quot; != g.easeType.toLowerCase() ? q[a].show().children().each(function (a) {&#10;                        if (c(this).hasClass(g.easeType)) {&#10;                            c(this).removeClass(g.easeType);&#10;                            c(this).hide()&#10;                        }&#10;                        c(this).show().addClass(&quot;animate&quot; + a + &quot; &quot; + g.easeType)&#10;                    }) : (v = b[Math.floor(Math.random() * d)], w[a] = v, q[r] &amp;&amp; q[r].children().each(function () {&#10;                        if (c(this).hasClass(w[r])) {&#10;                            c(this).removeClass(w[r]);&#10;                            c(this).fadeOut(&quot;medium&quot;)&#10;                        }&#10;                    }), q[a].show().children().each(function (a) {&#10;                        c(this).show().addClass(&quot;animate&quot; + a + &quot; &quot; + v)&#10;                    })), l.delay(200 * q[a].children().length).queue(function () {&#10;                    g.slideShow &amp;&amp;&#10;                    h()&#10;                }), p &amp;&amp; p.css(&quot;cursor&quot;, &quot;pointer&quot;), t = a)&#10;            })&#10;        }&#10;&#10;        function f() {&#10;            clearInterval(l.data(&quot;interval&quot;))&#10;        }&#10;&#10;        function h() {&#10;            clearInterval(l.data(&quot;interval&quot;));&#10;            slideShowInt = setInterval(function () {&#10;                k()&#10;            }, g.slideShowDelay);&#10;            l.data(&quot;interval&quot;, slideShowInt)&#10;        }&#10;&#10;        function k() {&#10;            var a = t;&#10;            a++;&#10;            a = a &gt;= m ? 0 : a;&#10;            e(a)&#10;        }&#10;&#10;        var g = {&#10;            className: &quot;oneByOne&quot;,&#10;            sliderClassName: &quot;oneByOne_item&quot;,&#10;            easeType: &quot;fadeInLeft&quot;,&#10;            width: 960,&#10;            height: 420,&#10;            delay: 300,&#10;            tolerance: 0.25,&#10;            enableDrag: !0,&#10;            showArrow: !0,&#10;            showButton: !0,&#10;            slideShow: !1,&#10;            slideShowDelay: 3E3&#10;        };&#10;        a &amp;&amp; c.extend(g, a);&#10;        var n, l, t = -1, j =&#10;            g.width, s = 0, i = !1, w = [], v, q = [], m = 0, r = 0, o, p;&#10;        l = this;&#10;        l.wrap('&lt;div class=&quot;' + g.className + '&quot;/&gt;');&#10;        n = l.parent();&#10;        n.css(&quot;overflow&quot;, &quot;hidden&quot;);&#10;        l.find(&quot;.&quot; + g.sliderClassName).each(function (a) {&#10;            c(this).hide();&#10;            m++;&#10;            c(this).css(&quot;left&quot;, j * a);&#10;            q[a] = c(this)&#10;        });&#10;        l.bind(&quot;touchstart&quot;, function (a) {&#10;            a.preventDefault();&#10;            a = a.originalEvent.touches[0] || a.originalEvent.changedTouches[0];&#10;            i || (i = !0, this.mouseX = a.pageX);&#10;            o &amp;&amp; o.fadeIn();&#10;            p &amp;&amp; p.fadeIn();&#10;            return !1&#10;        });&#10;        l.bind(&quot;touchmove&quot;, function (a) {&#10;            a.preventDefault();&#10;            a = a.originalEvent.touches[0] || a.originalEvent.changedTouches[0];&#10;            i &amp;&amp; (s = a.pageX - this.mouseX, l.css(&quot;left&quot;, -t * j + s), g.slideShow &amp;&amp; f());&#10;            return !1&#10;        });&#10;        l.bind(&quot;touchend&quot;, function (a) {&#10;            var b = t;&#10;            a.preventDefault();&#10;            i = !1;&#10;            if (!s)return !1;&#10;            var a = parseInt(g.width), c = a / 2;&#10;            -s &gt; c - a * g.tolerance ? (b++, b = b &gt;= m ? m - 1 : b, e(b)) : s &gt; c - a * g.tolerance ? (b--, e(0 &gt; b ? 0 : b)) : (e(b), g.slideShow &amp;&amp; h());&#10;            s = 0;&#10;            o &amp;&amp; o.delay(400).fadeOut();&#10;            p &amp;&amp; p.delay(400).fadeOut();&#10;            return !1&#10;        });&#10;        g.enableDrag &amp;&amp; (l.mousedown(function (a) {&#10;            i || (i = !0, this.mouseX = a.pageX);&#10;            return !1&#10;        }), l.mousemove(function (a) {&#10;            i &amp;&amp; (s = a.pageX - this.mouseX, l.css(&quot;left&quot;, -t * j + s),&#10;            g.slideShow &amp;&amp; f());&#10;            return !1&#10;        }), l.mouseup(function () {&#10;            i = !1;&#10;            var a = t;&#10;            if (!s)return !1;&#10;            var b = parseInt(g.width), c = b / 2;&#10;            -s &gt; c - b * g.tolerance ? (a++, a = a &gt;= m ? m - 1 : a, e(a)) : s &gt; c - b * g.tolerance ? (a--, e(0 &gt; a ? 0 : a)) : (e(a), g.slideShow &amp;&amp; h());&#10;            s = 0;&#10;            return !1&#10;        }), l.mouseleave(function () {&#10;            c(this).mouseup()&#10;        }));&#10;        n.mouseover(function () {&#10;            o &amp;&amp; o.fadeIn();&#10;            p &amp;&amp; p.fadeIn()&#10;        });&#10;        n.mouseleave(function () {&#10;            o &amp;&amp; o.fadeOut();&#10;            p &amp;&amp; p.fadeOut()&#10;        });&#10;        if (g.showButton) {&#10;            a = c('&lt;div class=&quot;buttonArea&quot;&gt;&lt;div class=&quot;buttonCon&quot;&gt;&lt;/div&gt;&lt;/div&gt;');&#10;            n.append(a);&#10;            o = a.find(&quot;.buttonCon&quot;);&#10;            for (var u =&#10;                0; u &lt; m; u++)o.append('&lt;a class=&quot;theButton&quot; rel=&quot;' + u + '&quot;&gt;' + (u + 1) + &quot;&lt;/a&gt;&quot;).css(&quot;cursor&quot;, &quot;pointer&quot;);&#10;            c(&quot;.buttonCon a:eq(&quot; + t + &quot;)&quot;, a).addClass(&quot;active&quot;);&#10;            c(&quot;.buttonCon a&quot;, a).bind(&quot;click&quot;, function () {&#10;                if (c(this).hasClass(&quot;active&quot;))return false;&#10;                var a = c(this).attr(&quot;rel&quot;);&#10;                e(a)&#10;            })&#10;        }&#10;        g.showArrow &amp;&amp; (p = c('&lt;div class=&quot;arrowButton&quot;&gt;&lt;div class=&quot;prevArrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;nextArrow&quot;&gt;&lt;/div&gt;&lt;/div&gt;'), n.append(p), c(&quot;.nextArrow&quot;, p).bind(&quot;click&quot;, function () {&#10;            k()&#10;        }), c(&quot;.prevArrow&quot;, p).bind(&quot;click&quot;, function () {&#10;            var a = t;&#10;            a--;&#10;            a = a &lt; 0 ? m - 1 : a;&#10;            e(a)&#10;        }));&#10;        o &amp;&amp; o.hide();&#10;        p &amp;&amp; p.hide();&#10;        e(0);&#10;        g.slideShow &amp;&amp; (slideShowInt = setInterval(function () {&#10;            k()&#10;        }, g.slideShowDelay), l.data(&quot;interval&quot;, slideShowInt));&#10;        return this&#10;    }&#10;})(jQuery);&#10;(function (c) {&#10;    c.fn.touchwipe = function (b) {&#10;        var d = {&#10;            min_move_x: 20, min_move_y: 20, wipeLeft: function () {&#10;            }, wipeRight: function () {&#10;            }, wipeUp: function () {&#10;            }, wipeDown: function () {&#10;            }, preventDefaultEvents: !0&#10;        };&#10;        b &amp;&amp; c.extend(d, b);&#10;        this.each(function () {&#10;            function a() {&#10;                this.removeEventListener(&quot;touchmove&quot;, b);&#10;                h = null;&#10;                g = !1&#10;            }&#10;&#10;            function b(c) {&#10;                d.preventDefaultEvents &amp;&amp; c.preventDefault();&#10;                if (g) {&#10;                    var e = h - c.touches[0].pageX, c = k - c.touches[0].pageY;&#10;                    Math.abs(e) &gt;= d.min_move_x ? (a(), 0 &lt; e ? d.wipeLeft() : d.wipeRight()) : Math.abs(c) &gt;= d.min_move_y &amp;&amp; (a(), 0 &lt; c ?&#10;                        d.wipeDown() : d.wipeUp())&#10;                }&#10;            }&#10;&#10;            function c(a) {&#10;                1 == a.touches.length &amp;&amp; (h = a.touches[0].pageX, k = a.touches[0].pageY, g = !0, this.addEventListener(&quot;touchmove&quot;, b, !1))&#10;            }&#10;&#10;            var h, k, g = !1;&#10;            &quot;ontouchstart&quot;in document.documentElement &amp;&amp; this.addEventListener(&quot;touchstart&quot;, c, !1)&#10;        });&#10;        return this&#10;    }&#10;})(jQuery);" language="JavaScript" />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/ww.js</url>
+          <line>29</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/ww.js</url>
+          <line>33</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/ww.js</url>
+          <line>39</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/jquery.plugins-min.js</url>
+          <line>50</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/jquery.plugins-min.js</url>
+          <line>10</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/jquery.plugins-min.js</url>
+          <line>5</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/jquery.plugins-min.js</url>
+          <line>132</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/jquery.plugins-min.js</url>
+          <line>117</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/jquery.plugins-min.js</url>
+          <line>31</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/jquery.plugins-min.js</url>
+          <line>43</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="74" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/chart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/founction.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="258" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/founction2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/css/port.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="553" column="0" selection-start-line="553" selection-start-column="0" selection-end-line="553" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/11.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-6ccd0868-2db0-11e4-8b02-000c29f61318 (2)/ReSmenu-master/demo/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-6ccd0868-2db0-11e4-8b02-000c29f61318 (2)/ReSmenu-master/jquery.resmenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="128" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-6ccd0868-2db0-11e4-8b02-000c29f61318 (2)/ReSmenu-master/demo/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-5a94e2aa-73a7-11e4-8b9a-00163e001348/nav-141124145848/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3034398">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-5a94e2aa-73a7-11e4-8b9a-00163e001348/nav-141124145848/js/jquery.nicenav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/ww.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="154" selection-end-column="11" />
+          <folding>
+            <element signature="e#308#1676#0" expanded="false" />
+            <element signature="e#1699#1756#0" expanded="false" />
+            <element signature="e#1879#1914#0" expanded="false" />
+            <element signature="e#2012#2112#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/html5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="86" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/js/jquery.plugins-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="165" column="11" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="11" />
+          <folding>
+            <element signature="e#290#6955#0" expanded="false" />
+            <element signature="e#2319#2681#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.1">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-23eae902-a570-11e4-81a8-00163e001348/alpha-150126232935/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40425533">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/css/fpIndex.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28295043">
+          <caret line="89" column="2" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-7d376660-af4e-11e4-a013-00163e001348 (2)/jquery-lunbo-150208125352/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45306632">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/ban.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="58" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/css/2222.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28751576">
+          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/banner.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="558" column="1" selection-start-line="558" selection-start-column="1" selection-end-line="558" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.189655">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HB 项目 新首页 12 26/111/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.785714">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/未标题-1.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-0e48884a-665d-11e4-a48c-00163e001348/jquerywin8-141107170414/css/style_1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.071428575">
+          <caret line="163" column="21" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2380953">
+          <caret line="251" column="114" selection-start-line="251" selection-start-column="114" selection-end-line="251" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-0e48884a-665d-11e4-a48c-00163e001348/jquerywin8-141107170414/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47619048">
+          <caret line="96" column="6" selection-start-line="68" selection-start-column="12" selection-end-line="96" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/jq22pd-0e48884a-665d-11e4-a48c-00163e001348/jquerywin8-141107170414/index_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/googledownload/shopping.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5520581">
+          <caret line="24" column="98" selection-start-line="24" selection-start-column="98" selection-end-line="24" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/ww.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="21" column="46" selection-start-line="10" selection-start-column="0" selection-end-line="119" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="223" column="14" selection-start-line="223" selection-start-column="14" selection-end-line="223" selection-end-column="14" />
+          <folding>
+            <element signature="e#714#991#0" expanded="false" />
+            <element signature="e#1047#1717#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="http://">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="299" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="299" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/price.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1621" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1621" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180403FRESHPORT/Foundation/newFreshPort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.964285">
+          <caret line="816" column="10" selection-start-line="186" selection-start-column="7" selection-end-line="734" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0423/js/fpPriceChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.512196">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4241010/js/w'w.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11572327">
+          <caret line="264" column="14" selection-start-line="264" selection-start-column="14" selection-end-line="264" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/svg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1220" column="7" selection-start-line="1220" selection-start-column="7" selection-end-line="1220" selection-end-column="7" />
+          <folding>
+            <element signature="n#symbol#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#1;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#2;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#3;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#4;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#6;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#7;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#8;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#9;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#10;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#11;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#g#0;n#symbol#11;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#12;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#13;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#14;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#15;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#17;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#18;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#19;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#20;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.607143">
+          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4241010/js/fpPriceChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25333333">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171114.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="222" column="14" selection-start-line="222" selection-start-column="14" selection-end-line="222" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/fpPriceChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="182" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!block;n#makeChart#0" expanded="false" />
+            <marker date="1524881784439" expanded="true" signature="4832:4849" placeholder="..." />
+            <marker date="1524881784439" expanded="true" signature="5268:5295" placeholder="..." />
+            <marker date="1524881784439" expanded="true" signature="5385:5396" placeholder="..." />
+            <marker date="1524881784439" expanded="true" signature="12104:12179" placeholder="..." />
+            <marker date="1524881784439" expanded="true" signature="13591:13667" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4241010/js/svg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="311" column="13" selection-start-line="11" selection-start-column="4" selection-end-line="311" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#symbol#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#1;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#2;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#3;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#4;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#path#0;n#g#0;n#symbol#5;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#symbol#6;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#7;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#8;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#9;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#10;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#11;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#12;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#13;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#14;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#symbol#15;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#g#0;n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#g#1;n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#g#2;n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#g#3;n#g#0;n#symbol#16;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4241010/js/banner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="38" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/banner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83980584">
+          <caret line="947" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="948" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资讯分类管理</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+
+
+    <div class="table-col">
+    <div class="search-col">
+
+
+        <span>
+        <label>分类编号：</label><input type="text"  />
+        </span>
+
+        <span>
+        <label>分类名称：</label><input type="text"  />
+        </span>
+
+        <span>
+        <label>状态：</label><input type="text"   />
+        </span>
+
+        <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+             <button type="button" class="green-border-btn">清空</button>
+
+               <button type="button" class="green-btn" id="addParent">增加大类</button>
+
+
+        </span>
+
+    </div>
+
+
+
+        <table id="typeTable">
+            <thead>
+            <tr>
+                <th>操作</th>
+                <th>分类编号</th>
+                <th>分类名称中文</th>
+                <th>分类名称英文</th>
+                <th>状态</th>
+                <th>运维操作人员</th>
+                <th>操作时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <button type="button" class="green-btn edit-btn">编辑</button>
+                    <button type="button" class="green-border-btn">禁用</button>
+                </td>
+                <td>137</td>
+                <td>新闻资讯</td>
+                <td>News</td>
+                <td>有效</td>
+                <td>Bob</td>
+                <td>2017-12-06 11:29:22</td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="green-btn">启用</button>
+                </td>
+                <td>137</td>
+                <td>新闻资讯</td>
+                <td>News</td>
+                <td class="red">禁用</td>
+                <td>Bob</td>
+                <td>2017-12-06 11:29:22</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+
+        <div class="pagination-col">
+
+            <span class="pagination" id="pagination"></span>
+
+        </div>
+
+    </div>
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+    <script>
+
+
+        //分页
+        var initPagination = function() {
+            var num_entries =100;
+            // 创建分页
+            $("#pagination").pagination(num_entries, {
+                num_edge_entries: 1, //边缘页数
+                num_display_entries: 4, //主体页数
+                callback: pageselectCallback,
+                items_per_page:1 //每页显示1项
+            });
+        }();
+
+        function pageselectCallback(page_index, jq){
+
+            //回调函数 写ajax 添加数据
+
+        }
+
+
+
+        $("#typeTable").on("click",".edit-btn",function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分类编号：</label><span style='display: inline-block;width:155px;text-align: left;padding-left:20px;box-sizing: border-box;'>137</span></li>" +
+                    "<li class='row'><label>分类名称中文<em class='red'>*</em>：</label><input type='text'></li>" +
+                    "<li class='row'><label>分类名称英文：</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'编辑分类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+        });
+
+
+        $("#addParent").click(function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>分类名称中文<em class='red'>*</em>：</label><input type='text'></li>" +
+                    "<li class='row'><label>分类名称英文：</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'新增分类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+
+        });
+
+        $(".type-table-col").on("click",".delete-parent",function()
+        {
+            layer.confirm("是否删除？");
+
+        });
+
+        $(".type-table-col").on("click",".delete-child",function()
+        {
+            layer.confirm("是否删除？");
+
+        });
+
+
+
+
+    </script>
+
+</body>
+</html>

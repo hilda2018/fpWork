@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国际采购价格</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+
+    <div class="table-col">
+    <div class="search-col">
+
+        <div class="search-row">
+
+             <span>
+                <label>制表日期：</label>
+                <input type="text" class="laydate-icon"  onclick="laydate();" />
+                 &nbsp;至&nbsp;
+                 <input type="text"  class="laydate-icon" onclick="laydate();" />
+
+            </span>
+
+              <span>
+                <label>关键字：</label>
+                 <input type="text"  />
+             </span>
+
+             <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+            <button type="button" class="green-border-btn" id="addBtn">新增价格</button>
+
+
+            </span>
+
+        </div>
+
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+
+                <th>操作</th>
+
+                <th>
+
+                    制表日期
+
+                </th>
+                <th>水果名称</th>
+                <th>国家</th>
+                <th>品种</th>
+                <th>品牌</th>
+
+                <th>等级</th>
+                <th>规格</th>
+                <th>净重</th>
+                <th>运输方式</th>
+                <th>价格方式</th>
+                <th>单价(USD)</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>
+                    <button type="button" class="green-btn edit-btn">修改</button>
+                    <button type="button" class="green-border-btn delete-btn">删除</button>
+                </td>
+
+                <td>
+                    2017/9/29
+                </td>
+                <td>鲜鳄梨</td>
+                <td>鲜鳄梨</td>
+                <td>鲜鳄梨</td>
+                <td>鲜鳄梨</td>
+                <td>属性集1</td>
+                <td>属性集1的维度内容</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+        <div class="pagination-col">
+
+            <span class="pagination" id="pagination"></span>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="shadow hide"></div>
+
+    <div class="modal hide" id="addPriceDialog">
+
+        <div class="modal-dialog">
+
+            <div class="modal-header">
+
+                <h4 class="modal-title">国际采购价格录入</h4>
+                <span class="close cancel-modal">×</span>
+
+            </div>
+
+
+            <div class="dialog-body">
+
+                <ul class="info-list">
+                    <li>
+                        <label>水果名称*</label>
+                        <select>
+                            <option>avocado - 鲜鳄梨</option>
+                        </select>
+
+                        <button type="button" class="green-border-btn">确定</button>
+
+
+                    </li>
+
+                    <li>
+                        <label>制表日期*</label>
+                            <span>
+                             <input type="text" />
+                            </span>
+
+
+                        <label>国家*</label>
+                            <span>
+                                <select>
+                                    <option>请选择国家</option>
+                                </select>
+                            </span>
+
+                    </li>
+
+
+
+                    <li>
+                        <label>品种</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+
+                        <label>品牌</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+                    </li>
+
+                    <li>
+                        <label>等级</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+
+                        <label>规格</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+                    </li>
+
+
+                    <li>
+                        <label>箱数</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+
+                        <label>净重</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+                    </li>
+                    <li>
+                        <label>运输方式*</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+
+                        <label>价格方式*</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+                    </li>
+
+
+
+                    <li>
+                        <label>单价(USD)*</label>
+                            <span>
+                             <input type="text" />
+                            </span>
+
+
+                        <label>折人民币</label>
+                            <span>
+                             <input type="text" />
+                            </span>
+
+                    </li>
+
+
+
+                </ul>
+
+                <div class="right-btn-col"><button type="button" class="green-btn">保存</button></div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="modal hide" id="modifyPriceDialog">
+
+        <div class="modal-dialog">
+
+            <div class="modal-header">
+
+                <h4 class="modal-title">修改产品价格展示维度集配置</h4>
+                <span class="close cancel-modal">×</span>
+
+            </div>
+
+
+            <div class="dialog-body">
+
+                <ul class="info-list">
+                    <li>
+                        <label>水果名称</label>
+                        <span style="width: 130px;">鲜鳄梨</span>
+
+                        <label style="width: auto">水果名称（英文）</label>
+                        <span style="width: 130px;">ABC</span>
+                    </li>
+
+                    <li>
+                        <label>别名</label>
+                            <span>
+                             <input type="text" />
+                            </span>
+
+                    </li>
+
+                    <li>
+                        <label>国家</label>
+                        <span class="checkbox-list">
+                            <span>
+                                <label>美国</label>
+                            </span>
+                             <span>
+                                <label>美国</label>
+                            </span>
+
+                        </span>
+
+                    </li>
+
+                    <li>
+                        <label>维度2</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+                    </li>
+                    <li>
+                        <label>维度3</label>
+                            <span>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </span>
+
+                    </li>
+
+
+
+                </ul>
+
+                <div class="right-btn-col"><button type="button" class="green-btn">确认</button></div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+    <script>
+
+
+
+
+        $(".table-col").on("click",".edit-btn",function()
+        {
+
+            $("#modifyPriceDialog").show();
+            $(".shadow").show();
+
+        });
+
+        $("#addBtn").click(function()
+        {
+            $("#addPriceDialog").show();
+            $(".shadow").show();
+        });
+
+
+        $("#addPriceBtn").click(function()
+        {
+
+            $("#priceList").append('<li>'+
+                    '<div class="select-price-text"><span>属性集1</span> <span>属性集1内容</span></div>'+
+                    '<div class="select-price-row">'+
+                    '<span><label>价格</label><input type="text" /></span>'+
+                    '<span><label>成交量</label><input type="text" /></span>'+
+                    ' <button type="button" class="green-border-btn delete-btn">删除</button>'+
+                    '</div>'+
+                    '</li>');
+
+        });
+
+        $("#priceList").on("click",".delete-btn",function()
+        {
+            $(this).parent().parent().remove();
+        });
+
+
+
+        //分页
+        var initPagination = function() {
+            var num_entries =100;
+            // 创建分页
+            $("#pagination").pagination(num_entries, {
+                num_edge_entries: 1, //边缘页数
+                num_display_entries: 4, //主体页数
+                callback: pageselectCallback,
+                items_per_page:1 //每页显示1项
+            });
+        }();
+
+        function pageselectCallback(page_index, jq){
+
+            //回调函数 写ajax 添加数据
+
+        }
+
+        $(".cancel-modal").click(function()
+        {
+
+            $(".modal").hide();
+            $(".shadow").hide();
+
+        });
+
+    </script>
+
+</body>
+</html>

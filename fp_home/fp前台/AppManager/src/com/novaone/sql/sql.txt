@@ -1,0 +1,28 @@
+1.修改sys_menu表
+alter table sys_menu add isapp VARCHAR(1);
+update sys_menu set isapp='N' where isapp is null;
+2.在users表中增加手机号码phonenum varchar(11)
+alter table users add phonenum varchar(11);
+3.创建customsinfo表
+DROP TABLE IF EXISTS `customsinfo`;
+CREATE TABLE `customsinfo` (
+  `customsinfoID` varchar(36) NOT NULL,
+  `username` varchar(60) default NULL,
+  `company` varchar(60) default NULL,
+  `Email` varchar(60) default NULL,
+  `tel` varchar(60) default NULL,
+  `currentdate` timestamp NULL default NULL,
+  `userid` varchar(36) default NULL,
+  `initial` varchar(1) default NULL,
+  PRIMARY KEY  (`customsinfoID`),
+  UNIQUE KEY `username` USING BTREE (`username`),
+  UNIQUE KEY `tel` (`tel`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+4.增加sys_sql
+INSERT INTO `sys_sql` (`id`, `name`, `sqlcontext`, `sqltype`, `description`, `isusing`) VALUES ('21', 'sys.login.getpost', 'select p.id as postid,p.code as postcode,p.name as postname from d_post p left outer join d_userorgpost uop on p.id = uop.postid where uop.userid=:userid', 'select', NULL, 'Y');
+5.users表中增加字段isapp用来标示是否是app用户
+alter table users add isapp VARCHAR(10);
+6.users中增加字段 nickname 昵称
+alter table users add nickname VARCHAR(50);
+

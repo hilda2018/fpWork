@@ -1,0 +1,226 @@
+	.articleWrap {
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+		height: auto;
+		overflow: hidden;
+		width: 1000px;
+		padding: 30px;
+		margin: 30px auto 60px;
+		background: #fff;
+	}
+	
+	body {
+		background-color: #F6F9FC;
+	}
+	
+	.titleArticle {
+		padding-bottom: 25px;
+		font-size: 30px;
+		width: 100%;
+		line-height: 1.5;
+		padding: 0px;
+		margin-top: 0px;
+		font-weight: bold;
+		color: #666;
+		text-align: left;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+		border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+	}
+	
+	.leftMain {
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+	
+	#J_dotLine {
+		position: absolute;
+		color: #fff;
+		width: 1100px;
+		left: 50%;
+		margin-left: -550px;
+		height: 200px;
+	}
+	
+	.articleHeader {
+		background: #9ac26b;
+		height: 150px;
+		z-index: 1;
+		position: relative;
+		left: 0px;
+		top: -10px;
+	}
+	
+	.articleHeader h1 {
+		color: #fff;
+		font-size: 50px;
+		line-height: 150px;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	
+	h2 {
+		margin-bottom: 0px;
+	}
+	
+	.articleContent p:first-child {
+		text-indent: 0em;
+	}
+	
+	.articleContent:first-letter {
+		background: #2e3134 !important;
+		padding: 0 20px;
+		height: 80px;
+		font-family: "Georgia", "Times New Romans", "Trebuchet MS", "Lucida Grande";
+		font-weight: bold !important;
+		background: #2e3134 !important;
+		float: left !important;
+		font-size: 60px !important;
+		line-height: 80px !important;
+		text-align: center;
+		color: #fff!important;
+		text-transform: uppercase;
+		margin-right: 14px;
+		margin-top: 8px;
+	}
+	
+	.articleContent {
+		text-align: justify;
+		font-size: 18px;
+		line-height: 1.6em;
+		padding-right: 20px;
+		letter-spacing: 1px;
+		font-family: "Georgia", "Times New Romans", "Trebuchet MS", "Lucida Grande";
+		font-weight: 400;
+		color: #888;
+		text-indent: 2em;
+		margin-bottom: 1.5em;
+	}
+	
+	.articleDetail {
+		height: 50px;
+		line-height: 50px;
+		color: #999;
+	}
+	
+	.articleDetail i {
+		margin-right: 20px;
+		color: #aaa;
+		font-style: normal;
+	}
+	
+	.tags {
+		border-top: 1px solid #CCCCCC;
+		padding: 16px 0px;
+		border-bottom: 1px solid #CCCCCC;
+	}
+	
+	.tags span {
+		color: #F04E37;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-right: 14px;
+		font-weight: 400;
+	}
+	
+	.tags a {
+		color: #F04E37;
+		font-size: 16px;
+		margin-right: 10px;
+	}
+	
+	.tags a {
+		display: inline-block;
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+		cursor: pointer;
+		padding: 6px 20px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		font: normal medium/normal Arial, Helvetica, sans-serif;
+		color: #fff;
+		text-overflow: clip;
+		background: #F04E37;
+	}
+	
+	.articleSource {
+		padding: 10px 0;
+		font-size: 14px;
+		line-height: 1.5em;
+		color: #666;
+		letter-spacing: 1px;
+	}
+	
+	.articleSource i {
+		font-style: normal;
+	}
+	
+	.otherArticle a {
+		width: 50%;
+		float: left;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		cursor: pointer;
+		color: #888;
+		line-height: 30px;
+		height: 30px;
+		display: inline-block;
+	}
+	
+	.otherArticle a span {
+		margin-right: 10px;
+	}
+	
+	.otherArticle i {
+		font-style: normal;
+	}
+	
+	.myattachment {
+		cursor: pointer;
+		color: #999;
+	}
+	
+.download-link {
+    line-height: 30px;
+    text-align: center;
+}
+.otherArticle {
+    height: 42px;
+}
+.download-link {
+    background-color: rgb(248, 249, 249);
+    border-left-color: rgb(63, 70, 82);
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 14px 0px;
+    height: 44px;
+    position: relative;
+    text-rendering: optimizelegibility;
+    margin-right: 12px;
+    margin: 0 auto;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.download-link img{
+	height: 30px;line-height: 44px;vertical-align: middle;
+	width: 30px;
+}
+.download-link a{
+display:inline-block;line-height: 44px;vertical-align: middle;
+height: 44px;  margin-right: 16px;
+}
+.download-link svg{
+display:inline-block;line-height: 44px;vertical-align: text-bottom;
+height: 20px;width:20px;fill: #AAA;
+}
+.download-link i{
+font-style: normal;margin-right: 2px;
+}

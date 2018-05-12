@@ -1,0 +1,13 @@
+/*新闻资讯*/
+.news-info h3{ background-color:#f5f7fa; border:1px solid #ccc; height:45px; padding-left:27px;font:bold 16px/45px Arial; color:#54637a}
+.news-info ul{ border:1px solid #ccc; border-top:0; margin-bottom:40px; overflow:hidden;}
+.news-info li{ padding:25px; background:url(../images/news_info_li_bg.jpg) left bottom repeat-x; margin-bottom:-2px;}
+.news-info li:last-child{ background:none}
+.news-info li .item-date{ color:#548ece; font:14px/2 arial;}
+.news-info li .item-name{ color:#333; font:bold 16px/2 arial;}
+.news-info li .item-intro{ color:#666; font:14px/1.5 arial; margin-top:15px; margin-bottom:20px;}
+.news-info li .con-btn{ display:inline-block;*display:inline;*zoom:1; width:75px; height:23px; padding-left:8px; background:#1996e6 url(../images/con_btn_bg.png) 70px 8px no-repeat; border:1px solid #0172bb; color:#fff; font:14px/23px arial;}
+/*新闻资讯-详情*/
+.news-details h3{ font:bold 24px/2 arial; color:#333; text-align:center; margin-top:30px; margin-bottom:20px}
+.news-details p{ font:14px/1.6 arial; color:#333; margin-bottom:20px;}
+.news-details .datePublished{ font:italic 14px/2 arial; color:#00a0ea;}

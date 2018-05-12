@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>外汇支付服务</title>
+	<link rel="shortcut icon" href="../../style/style-common/images/favicon.ico">
+	<link type="text/css" rel="stylesheet" href="../../style/style-common/css/base.css">
+</head>
+<style>
+		#container .pic{margin:10px;background:#000000;height:240px;background:url("../../style/style-common/images/waihui/banner.jpg") center no-repeat;background-size:cover;}
+		
+		.first{position: relative;height:620px;margin:10px 40px;}
+		.vs { display: inline-block;height: 40px;width: 40px; color: #fff;border-radius: 50%;position: absolute;
+    		left: 48%;top: 0;vertical-align: middle;text-align: center;background: #f97f00;line-height: 40px;
+    		font-size: 22px;}
+    	.body{width:100%;height:600px;}
+    	.body_left,.body_right{width:50%;height:100%;}
+    	.body_left{float:left;background: url("../../style/style-common/images/waihui/detail1.gif") left 80px no-repeat;}
+    	.body_right{float:left;background: url("../../style/style-common/images/waihui/detail2.gif") 20px 80px no-repeat;}
+    	.body h2{text-align: center;}
+    	.detail{position: relative;height:550px;}
+    	.body_left .detail{border-right: 1px dotted #ddd;width: 100%;}
+    	.detail div{position: absolute;left:56%;top:20%;}
+    	.detail li{list-style: disc;font-size: 18px;line-height: 1.5em;}
+    	.detail p{margin-top: 14px;font-size: 18px;line-height: 1.5em;}
+    	
+    	/*******/
+	
+		
+		.table{margin:10px 80px;}
+		.table_top{background: #ed7d31;height:42px;line-height: 42px;color:#fff;}
+		.table_top a{text-align: center;}
+		.table a{border-right:0px solid #ddd;padding-left:20px;box-sizing: border-box;}
+		
+		
+		.left{border-left:1px solid #ddd;}
+		.table_top .left,.table_top .right{width:50%;height:100%;float:left;color:#fff;font-size: 20px;}
+		
+		.table_tr {height:150px;color:#666;border:1px solid #ddd;border-top:none;overflow:hidden;}
+	
+		.table_body .left,.table_body .right{color:#666;font-size:18px;line-height:36px;float: left;
+	   	 width: 25%;padding-left:24%;height:90%;padding-top:20px;}
+		.table_body .right{border-left:1px solid #ddd;}
+		.table_body .right li,.table_body .left li{list-style: disc;}
+		.table_body .left{border-left:1px solid #ddd;background: url(../../style/style-common/images/jishou/compare1.gif) 30px center no-repeat;}
+		.table_body .right{border-left:1px solid #ddd;background: url(../../style/style-common/images/jishou/compare2.gif) 30px center no-repeat;}
+		
+			
+		@media all and (max-width: 1066px) {
+			#main { width: 960px;}
+			.detail div {left: 66%; top: 10%;}
+			.table_body .left,.table_body .right{font-size:16px;line-height:32px;}
+			.table{margin:10px 10px;}
+			.first{margin:10px 40px;}
+		}
+		
+		@media all and (max-width: 980px) {
+			#main { width: 860px;}
+		
+		}
+		@media all and (max-width: 880px) {
+			 #main{ width: 780px;}
+			.first{margin:10px 10px;}
+		
+		}	
+		@media all and (max-width: 800px) {
+			#main { width: 700px;}
+			.detail{position: static;}
+			.detail div{position: static;padding-top: 390px;padding-left: 40px;}
+			.body {height: 700px;}
+			.detail{height:600px;}
+			.detail .detail_0{padding-top: 390px;padding-left: 230px;}
+    		.table_tr {height: 180px;}
+    		#container h2 {font-size: 18px;}
+    		.first{margin:10px 0px;}
+		
+		}
+		
+		@media all and (max-width: 720px) {
+			#main { width: 600px;}
+			.detail{height:630px;}
+			.table_tr {height: 220px;}
+			.detail .detail_0{padding-left: 210px;}
+			
+			.table_body .left {background: url(../../style/style-common/images/jishou/compare1.gif)  center top no-repeat;}
+			.table_body .right {background: url(../../style/style-common/images/jishou/compare2.gif)  center top no-repeat;}
+			.table_body .left,.table_body .right{
+			 width: 38%;padding-left:10%;height:100%;padding-top:20%;}
+			.table_body .right{width: 32%;padding-left:14%;}
+		
+			
+		}
+		
+		@media all and (max-width: 620px) {
+			 #main { width: 520px;}
+			.table_tr {height: 280px;}
+/*			.table_body .left, .table_body .right {padding-left: 30px;padding-top: 140px;}
+			.table_body .right {background: url(../../style/style-common/images/jishou/compare2.gif) center 10px no-repeat;}
+			.table_body .left {background: url(../../style/style-common/images/jishou/compare1.gif) center 10px no-repeat;}*/
+			.detail .detail_0 {padding-top: 530px;padding-left: 40px;}
+			.detail div {padding-top: 410px;}
+			.body {height: 740px;}
+			.detail {height: 660px;}
+			
+			.table_body .left,.table_body .right{
+			 width: 38%;padding-left:10%;height:100%;padding-top:26%;}
+			
+		}
+		@media all and (max-width: 560px) {
+			 #footer{font-size: 12px;line-height: 22px;}
+			 .table_tr {height: 300px;}
+			
+		}
+		
+		@media all and (max-width: 540px) {
+			 #main { width: 420px;} 		
+			.outline .title_bg1,.outline .title_bg2{width:0px;}
+			.body_left,.body_right { background-size: 90%;}
+			.vs{left:45%;}
+			.table_top .left, .table_top .right {font-size: 14px;}
+			.table a{padding-left:0px;}
+			.navbar {width: 300px;}
+			.hr{display:none;}
+			#nav{background:url('') #fff;}
+			.table_body .left,.table_body .right{
+			 width: 38%;padding-left:10%;height:100%;padding-top:46%;}
+		
+		}
+		
+		@media all and (max-width: 450px) {
+			 #main { width: 320px;} 		
+			.detail .detail_0 {padding-top: 360px;}
+			.detail div { padding-top: 252px;}
+			.vs{display: none;}
+			#container h2 { font-size: 16px;}
+			.detail {height: 600px;}
+			.body {height: 660px;}
+			.table_tr { height: 340px;}
+			.table_tr li{font-size:16px;}
+		}
+
+</style>
+
+<body>
+
+	<div id="main">
+	
+		<!--导航-->
+		<div id="nav">
+			<a  class="nav_img" href="./index.jsp" target="_blank">
+			<span>信&nbsp;息&nbsp;服&nbsp;务&nbsp;平&nbsp;台</span>
+			</a>
+			<ul class="navbar">
+				<li> <a href="../index/index.jsp" > 首页 </a></li>
+				<li  class="hr" > <a href="#"> | </a></li>						
+				<li> <a href="../index/indexEn.jsp" target="_self" > English </a></li>
+				<li  class="hr" > <a href="#"> | </a></li>
+				<li> <a href="about.html" target="_blank"> 关于我们 </a></li>
+				<li  class="hr" > <a href="#"> | </a></li>
+				<li> <a href="contact.html" target="_blank"> 联系我们 </a></li>
+				
+			</ul>
+		</div>
+
+		<!--导航-->
+
+		
+		<!-- 主体 -->
+		<div id="container" >
+			<div class="pic"></div>
+			<!-- 第一部分 -->
+			<div class="outline">
+			<h2 class="title">
+				<span class="title_bg1">&nbsp;</span>
+				外汇支付操作端介绍
+				<span class="title_bg2">&nbsp;</span>
+				
+			</h2>
+			<span class="en">Foreign Payment operations</span>
+			</div>
+			<div class="first">
+				<span class="vs">VS</span>
+				<div class="body">
+					<div class="body_left">
+						<h2>传统线下支付</h2>
+						<div class="detail">
+							<div class="detail_0">
+								<ul>
+									<h3>缺点:</h3>
+									<li>费时费力</li>
+									<li>效率低下</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="body_right">
+						<h2>生鲜港的在线支付</h2>
+							<div class="detail">
+								<div>
+									<ul>
+										<h3>优点:</h3>
+										<li>省时省力</li>
+										<li>效率提高</li>
+									</ul>
+									<p>
+										生鲜港的在线支付提供与银行的直连的服务只要是开放直连的银行，生鲜港都可能进行对接
+									</p>
+								</div>
+							</div>
+					</div>
+				</div>
+				
+			</div>
+		
+			<!-- 第二部分 -->
+			<div class="outline">
+			<h2 class="title">
+				<span class="title_bg1">&nbsp;</span>
+				外汇支付客户跟踪模块
+				<span class="title_bg2">&nbsp;</span>
+				
+			</h2>
+			<span class="en">Tracking Module</span>
+			</div>
+			
+			<div class="table">
+				
+				<div class="table_top">
+					<a class="left">传统模式</a>
+					<a class="right">生鲜港外汇支付模式</a>
+				</div>
+				<div class="table_body">
+					<div class="table_tr">
+						<ul class="left">
+							<li>两边财务人工沟通</li>
+							<li>核对工作和遗漏</li>
+							<li>效率低下</li>
+					    </ul>
+						<ul class="right">
+							<li>实时查看到每笔支付情况</li>
+							<li>在线下载银行水单</li>
+							<li>实时进行对账</li>
+					    </ul>
+					</div>
+		
+										
+				<br/>
+				</div>
+				<div class="clear:both"></div>
+			</div>
+		</div>	
+		<!-- 主体 -->
+
+		<!--页脚-->
+		<div id="footer">
+			备案/许可证号 沪ICP备15035308&nbsp;&nbsp;|&nbsp;&nbsp;2015 Freshport.com. All rights reserved
+		
+		</div>
+		<!-- 页脚-->
+
+	
+	</div>
+
+
+</body>
+</html>

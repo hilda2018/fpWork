@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a:hover {
+            text-decoration:none;
+        }
+        ul,li,p {
+            margin:0; padding:0;
+        }
+
+        .fp {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #ddd;
+            text-align: center;
+            display: block;
+            margin-bottom: 6px;
+            position: relative;
+            background-color: #fff;
+        }
+        .fp:hover {
+            text-decoration: none;
+        }
+        a.fp i {
+            display: inline-block;
+            margin-top: 5px;
+            color: #999;
+            font-size: 24px;
+        }
+        .fp p {
+            text-decoration: none;
+        }
+
+        .fp span {
+            color: #848484;
+            font-size: 26px;
+            line-height: 48px;
+        }
+
+        .fp p {
+            color: #cf3529;
+            font-size: 14px;
+            line-height: 18px;
+            padding-top: 5px;
+            text-align: center;
+            display: none;
+        }
+
+        .fp-right-meau:hover .fp i {
+            display: none
+        }
+
+        .fp-right-meau:hover .fp p {
+            display: block;
+        }
+
+        .meau-car .fp {
+            border-color: #cf3529;
+            margin-bottom: 20px;
+        }
+
+        .meau-car.fp-right-meau:hover .fp {
+            background-color: #cf3529;
+        }
+
+        .meau-car.fp-right-meau:hover .fp span {
+            color: #fff;
+            display: block;
+        }
+
+        .meau-car .fp span {
+            color: #cf3529;
+        }
+
+        .meau-sev .fp p {
+            color: #fff
+        }
+
+        .meau-sev .fp span {
+            color: #fff
+        }
+
+        .meau-top.fp-right-meau:hover .fp {
+            background-color: #cf3529;
+        }
+
+        .meau-top.fp-right-meau:hover .fp i {
+            display: block;
+            color: #fff
+        }
+
+
+        .fp-right-box .box-border .arrow-right {
+            display: block;
+            width: 13px;
+            height: 16px;
+            background: url(../images/arrow.png) no-repeat;
+            position: absolute;
+            right: -13px;
+            top: 26px;
+        }
+
+        .fp-right-box .box-border .sev-t i.icon {
+            font-size: 42px;
+            float: left;
+            display: block;
+            line-height: 56px;
+            margin-right: 20px;
+            color: #d3d3d3
+        }
+
+        .fp-right-box .box-border .sev-t p {
+            float: left;
+            color: #cf3529;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        .fp-right-box .box-border .sev-t p i {
+            display: block;
+            font-size: 14px;
+            color: #aaa;
+            font-style: normal;
+        }
+
+        .fp-right-box .box-border .sev-b {
+            padding-top: 15px;
+            margin-top: 15px;
+            border-top: 1px solid #e4e4e4
+        }
+
+        .fp-right-box .box-border .sev-b h4 {
+            color: #666;
+            font-size: 14px;
+            font-weight: normal;
+            padding-bottom: 15px;
+        }
+        .fp-right-box .box-border .sev-b textarea {
+            height: 100px;
+        }
+        .fp-right-box .box-border .btnbox {
+            height: 40px;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+
+        .meau-sev .fp-right-box .box-border {
+            width: 430px;
+        }
+
+        .meau-contact .fp-right-box .box-border {
+            width: 250px;
+        }
+        .sev-t {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .fp-right-meau:hover .fp-right-box {
+            display: block
+        }
+
+        .meau-code .fp-right-box {
+            top: inherit;
+            bottom: -35px;
+        }
+
+        .meau-code .fp-right-box .box-border {
+            width: 156px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+        }
+
+        .meau-code .fp-right-box .box-border i {
+            display: block;
+            color: #f66e06;
+            font-size: 12px;
+            line-height: 26px;
+            font-style: normal;
+        }
+
+        .meau-code .fp-right-box .box-border .arrow-right {
+            top: inherit;
+            bottom: 50px;
+        }
+
+        .meau-sev .fp .demo-icon {
+            display: none;
+        }
+
+        .meau-sev:hover .fp {
+            background: #cf3529;
+        }
+
+        .meau-zs .fp {
+            background-color: #cf3529;
+            color: #fff;
+            margin-top: 80px;
+            border-color: #cf3529;
+        }
+
+        .meau-zs .fp span {
+            color: #fff
+        }
+
+        .meau-zs .fp p {
+            color: #fff
+        }
+
+
+
+
+        .closed-signboard {
+            width: 120px;
+            height: 75px;
+            position: relative;
+            transform: scale(1) rotatez(7deg) translate(-17px, 1px);
+            animation: 1s init, 0.7s aa 1s, 3s ab 1.7s infinite;
+        }
+        @keyframes aa {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1) rotatez(7deg) translate(-17px, 1px);
+            }
+        }
+
+        @keyframes ab {
+            0% {
+                transform: rotatez(7deg) translate(-17px, 1px);
+            }
+            50% {
+                transform: rotatez(-7deg) translate(17px, 1px);
+            }
+            100% {
+                transform: rotatez(7deg) translate(-17px, 1px);
+            }
+        }
+
+        .sign {
+            color: white;
+            font-family: "Arial";
+            font-size:16px;
+            font-weight: bold;
+            text-align: center;
+            background: #e00909;
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            position: absolute;
+            bottom: 0;
+            border-radius: 2px / 20px;
+            text-shadow: 0 2px #700a03;
+        }
+
+        .strings {
+            width: 80px;
+            height:80px;
+            border: solid 5px #ad5700;
+            border-bottom: none;
+            border-right: none;
+            position: absolute;
+            top: 30px;
+            left: 58px;
+            transform: rotatez(45deg);
+        }
+
+        .pin {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            border-radius: 15px;
+        }
+
+        .pin.pin1 {
+            background: #9f9f9f;
+            top: 6px;
+            left: 94px;
+        }
+
+        .pin.pin2, .pin.pin3 {
+            background: #9c0a00;
+        }
+
+        .pin.pin2 {
+            top: 70px;
+            left: 35px;
+        }
+
+        .pin.pin3 {
+            top: 70px;
+            right:35px;
+        }
+
+        @keyframes init {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div style="height:2000px;"></div>
+
+<div class="closed-signboard">
+    <div class="sign">
+        FRUITS PRICE
+    </div>
+    <div class="strings"></div>
+    <div class="pin pin1"></div>
+    <div class="pin pin2"></div>
+    <div class="pin pin3"></div>
+</div>
+
+
+
+<div class="fp-right">
+
+    <div class="fp-right-meau meau-contact">
+        <a href="javascript:" class="fp">
+            <i class="iconSvg"></i>
+            <p> CON—<br>TACT</p>
+        </a>
+        <div class="fp-right-box">
+            <div class="box-border">
+                <div class="sev-t">
+                    <i class="iconSvg"></i>
+                    <p>email:
+                        <br>
+                        <i> feedback@freshport.com  </i>
+                    </p>
+                    <div class="clear"></div>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="fp-right-meau meau-top" id="top-back"  >
+        <a href="javascript:" class="fp" onclick="topBack()">
+
+            <em>TOP</em>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

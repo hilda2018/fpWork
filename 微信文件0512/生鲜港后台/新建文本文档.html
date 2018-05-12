@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司单位金融记账管理列表</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+
+
+<div class="table-col">
+    <div class="search-col">
+
+
+        <div class="search-row">
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;编号：</label>
+            <input type="text" />
+        </span>
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客户名称：</label>
+            <input type="text" />
+        </span>
+
+        <span>
+        <label>联系人：</label>
+            <input type="text" />
+        </span>
+
+        <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+             <button type="button" class="green-border-btn">清空</button>
+
+             <button type="button" class="green-btn">新增</button>
+
+
+        </span>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <table id="typeTable">
+        <thead>
+        <tr>
+            <th>操作</th>
+            <th>编号</th>
+            <th>客户名称</th>
+            <th>贷款总额度</th>
+            <th>已提款金额(自有资金)</th>
+            <th>已提款金额(银行贷款)</th>
+            <th>已提款金额(合计)</th>
+            <th>未使用额度</th>
+            <th>已收利息合计</th>
+            <th>内部联系人</th>
+            <th>最新更新人员</th>
+            <th>最新更新日期</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+
+                <button type="button" class="green-btn">编辑</button>
+
+                <button type="button" class="green-border-btn">删除</button>
+
+            </td>
+            <td>1</td>
+            <td>AAA</td>
+            <td>500,000.00</td>
+            <td>250,000.00</td>
+            <td>250,000.00</td>
+            <td>250,000.00</td>
+            <td>3,000.00</td>
+            <td>1,500.00</td>
+            <td>张三</td>
+            <td>Bob</td>
+            <td>2018-01-23</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>合计：3,000.00</td>
+            <td>合计：3,000.00</td>
+            <td>合计：3,000.00</td>
+            <td></td>
+            <td>合计：3,000.00</td>
+            <td></td>
+        </tr>
+        </tfoot>
+
+    </table>
+
+    <div class="pagination-col">
+
+        <span class="pagination" id="pagination"></span>
+
+    </div>
+
+</div>
+
+<script src="assets/lib/jquery.js"></script>
+<script src="assets/lib/laydate/laydate.js"></script>
+<script src="assets/lib/layer/layer.js"></script>
+<script src="assets/lib/jquery.pagination.js"></script>
+
+<script>
+
+
+    //分页
+    var initPagination = function() {
+        var num_entries =100;
+        // 创建分页
+        $("#pagination").pagination(num_entries, {
+            num_edge_entries: 1, //边缘页数
+            num_display_entries: 4, //主体页数
+            callback: pageselectCallback,
+            items_per_page:1 //每页显示1项
+        });
+    }();
+
+    function pageselectCallback(page_index, jq){
+
+        //回调函数 写ajax 添加数据
+
+    }
+
+
+
+</script>
+
+</body>
+</html>

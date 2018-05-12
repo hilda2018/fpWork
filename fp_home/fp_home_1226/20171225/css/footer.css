@@ -1,0 +1,16 @@
+.base-footer{position: relative;}
+.base-footer .row{position: absolute;left:50%;top:70px;margin-left:-425pt;width:825pt;height:14pc}
+.base-footer .footBg{padding-bottom:40px;width:100%;height:30px;background:url(../images/white-pattern.png) transparent no-repeat center top}
+.base-footer .footer-left-content{display:inline-block;margin-bottom:50px;padding:0 10px 0 0;font-size:14px;font-family:Open Sans,sans-serif;line-height:1.5em}
+.base-footer .footer-left-content img{width:10pc;height:auto}
+.base-footer .copyright{position: absolute;left:50%;top:280px;margin-left:-425pt;width:825pt;height:14pc;height:40px;border-top:1px solid #eee;color:#888;text-align:center;font-size:9pt;line-height:40px}
+.base-footer{position:relative;top:-30px;margin:0;padding:0;height:310px}
+.base-footer svg{display:inline-block;margin-right:9pt;width:1pc;height:1pc;color:#777;text-align:left;fill:#888}
+.base-footer a{display:inline-block;margin-bottom:5px;height:20px;color:#555;text-decoration:none;line-height:20px}
+.base-footer .footercontactmore svg{text-align:right;cursor:pointer}
+.base-footer p{margin-top:30px;padding-right:22px;height:102px;border-right:1px solid #eee;color:#888;text-align:left;font-size:9pt}
+.base-footer .about p{border-right:0}
+.base-footer .click{color:#0083d4}
+.base-footer .col-1{float:left;width:360px;height:180px}
+.base-footer .col-2{float:right;margin-top:28px;padding-right:22px;width:210px;height:180px}
+.base-footer .col-2 h4{display:block;margin:0;padding:0;height:40px;color:#8bc34a;text-transform:uppercase;letter-spacing:.5px;font-weight:600;font-size:1pc;font-family:Open Sans,sans-serif;line-height:40px;overflow-wrap:break-word}

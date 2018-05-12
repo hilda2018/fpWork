@@ -1,0 +1,63 @@
+.aboutus{
+	width: 100%;
+}
+.aboutus .box1{
+	background: #fff;
+	height: 430px;
+	position: relative;
+}
+.aboutus .box1 .left{
+	position: absolute;
+	left: 0;
+}
+.aboutus .box1 .left h1{
+	height: 60px;
+    line-height: 60px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #666666;
+}
+.aboutus .box1 .left p{
+	width: 650px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #828181;
+}
+.aboutus .box1 .right{
+	position: absolute;
+	right: 0;
+}
+.aboutus .box2{
+	background: #f6f6f6;
+	height: 430px;
+	position: relative;
+}
+.aboutus .box2 .left{
+	position: absolute;
+	left: 0;
+}
+.aboutus .box2 .right{
+	position: absolute;
+	right: 0;
+}
+.aboutus .box2 .right h1{
+	height: 60px;
+    line-height: 60px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #666666;
+}
+.aboutus .box2 .right p{
+	width: 650px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #828181;
+}
+.pos1l{top: 105px;}
+.pos1r{top: 60px;}
+.pos2l{top: 70px; }
+.pos2r{top: 135px;}
+.pos3l{top: 125px;}
+.pos3r{top: 65px;}
+.pos4l{top: 40px;}
+.pos4r{top: 145px;}

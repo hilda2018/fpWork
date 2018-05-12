@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="fresh_port_shop_gn"
+  id="myeclipse.1438066059762"
+  context-root="/fresh_port_shop"
+  j2ee-spec="5.0"
+  archive="fresh_port_shop_cn.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

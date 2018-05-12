@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.newsOne {
+				background-color: transparent;
+				width: 25%;
+				float: left;
+			}
+			
+			.newsOne a {
+				display: block;
+				border: 1px solid #F3F4F5;
+				margin: 8% 6%;
+				box-shadow: 0 10px 40px 0 rgba(23, 28, 33, 0.13), 0 20px 8px 0 rgba(23, 28, 33, 0.05);
+				border-radius: 5px;
+				padding: 5%;
+				background: #fff;
+				position: relative;
+				cursor: pointer;
+			}
+			
+			.newsOne img {
+				display: block;
+				width: 100%;
+			}
+			
+			.wrap {
+				width: 100%;
+				background: url(https://www.riskfreelife.com/assets/img/bg/bg-wood.jpg) 100% 100% repeat-x #F1F6FA;
+			}
+			
+			.wrapLine {
+				width: 1200px;
+				height: auto;
+				overflow: hidden;
+				margin: 40px auto;
+			}
+			
+			.heading-center-block {
+				border-bottom: 1px solid #eee!important;
+				height: 16px;
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 16px;
+				width: 80%;
+				font-size: 15px;
+			}
+			
+			.newsOne span {
+				display: block;
+				height: 48px;
+				overflow: hidden;
+				color: #333;
+				font-family: "futura-pt", sans-serif;
+				font-size: 15px;
+				text-align: left;
+				line-height: 1.5;
+				font-weight: bold;
+				margin: 0 0 0.5em 0;
+				padding-bottom: 36px;
+			}
+			
+			.newsOne em {
+				font-style: normal;
+				font-size: 12px;
+				color: #888;
+				text-align: left;
+				left: 16px;
+				position: absolute;
+				bottom: 26px;
+			}
+			
+			.newsOne button {
+				font-style: normal;
+				font-size: 12px;
+				color: #98b4eb;
+				background: #fff;
+				border: none;
+				outline: 0px;
+				text-transform: uppercase;
+				right: 16px;
+				position: absolute;
+				bottom: 26px;
+			}
+			
+			body {
+				background-color: #F1F6FA;	padding: 0;
+				margin: 0;
+			}
+			
+			.header {
+				text-align: center;
+				width: 100%;
+				background: #fff;
+				margin-bottom: 20px;
+			}
+			
+			.main{padding-bottom: 40px;}
+		
+		</style>
+	</head>
+
+	<body>
+		
+				<div id="nav" class="header_menu">
+
+			<a href="index.html" class="logo"><img src="images/logo.png" /> </a>
+
+			<ul class="memenu">
+				<li>
+					<a href="#" class="navActive">Home</a>
+				</li>
+				<li>
+					<a href="#">About Us</a>
+				</li>
+				<li>
+					<a href="#">Associations</a>
+				</li>
+				<li>
+					<a href="#">Importers</a>
+				</li>
+				<li>
+					<a href="#">Exporters</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+				<li>
+					<a href="#"> <span class="china">中</span> </a>
+				</li>
+			</ul>
+
+			<div class="subnav">
+				<a id="search" href="#"><img src="./images/search.png" /></a>
+
+				<div class="nav-user" id="LoginU">
+					<a class="nava"> Sign up</a>
+					<a class="nava2"> Login </a>
+				</div>
+
+				<!--登录-->
+				<div class="nav-user" id="LoginA" style="display: none;">
+					<a href="javascript:;" id="enterFP" class="linear-wipe">My Freshport</a>
+					<a href="javascript:;">|</a>
+					<a href="javascript:;" id="logout">Logout</a>
+					<a href="javascript:;">|</a>
+
+					<span><svg class="icon" style="width:20px; height:18px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19014">
+					<path d="M514.594 71.112c-144.11 0-260.979 118.46-260.979 264.558 0 88.783 43.497 166.928 109.711 214.898-135.361 59.354-230.159 195.858-230.159 354.931h0.894c1.541 21.375 18.641 38.377 40.117 38.377s38.575-17.051 40.117-38.377h0.645c0-0.944-0.099-1.79-0.099-2.734 0-0.050 0-0.099 0-0.149 0-0.099-0.050-0.149-0.050-0.199 0.050-159.967 120-291.054 273.009-304.924 8.948 0.944 17.598 2.734 26.844 2.734 144.11 0 260.979-118.46 260.979-264.558s-116.919-264.558-261.029-264.558zM514.594 518.455c-99.769 0-180.698-81.972-180.698-183.183s80.879-183.183 180.698-183.183c99.719 0 180.647 81.972 180.647 183.183s-80.879 183.183-180.647 183.183zM896.021 902.615c0-0.348-0.199-0.645-0.199-0.994-1.043-105.038-43.397-200.034-111.35-269.131v0c-7.157-7.357-17.001-11.98-27.986-11.98-21.574 0-39.122 17.747-39.122 39.668 0 11.135 4.573 21.127 11.83 28.334l-0.099 0.050c52.742 55.229 85.302 130.589 85.302 213.853 0 1.043-0.149 1.987-0.149 3.034h0.994c1.491 21.375 18.691 38.377 40.117 38.377 21.475 0 38.575-17.051 40.117-38.377h0.597c0-0.796-0.099-1.491-0.099-2.287-0.050-0.149 0.050-0.348 0.050-0.547z" p-id="19015"></path>
+				</svg></span>
+					<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+
+				</div>
+
+				<div class="clearfix"> </div>
+
+			</div>
+
+		</div>
+
+		<div class="searchShow" id="searchForm">
+			<div id="page">
+				<div style="padding-top:20px;">
+					<form name="searchform" method="post" class="search radius6">
+						<input name='ecmsfrom' type='hidden' value='9'>
+						<input type="hidden" name="show" value="title,newstext">
+						<select name="classid" id="choose">
+							<option value="0">Importers</option>
+							<option value="1">Exporters</option>
+							<option value="3">Associations</option>
+						</select>
+
+						<input class="inp_srh" name="keyboard" placeholder="Search">
+						<input class="btn_srh" type="submit" name="submit" value="search">
+
+					</form>
+
+					<div class="quickLinkALl"><span>Advanced Search:</span>
+						<a class="quickLink" href="#">Associations</a>
+						<a class="quickLink" href="#">Importers</a>
+						<a class="quickLink" href="#"> Exporters</a>
+					</div>
+					<a id="searchClose">X</a>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="header">
+			<img src="banner1.jpg" />
+		</div>		
+		
+		<div class="main">
+		<div class="wrap">
+			<div class="wrapLine">
+				<div class="newsOne">
+					<a class="">
+
+						<img src="https://www.riskfreelife.com/assets/img/RFL-2.png">
+						<small class="heading-center-block"></small>
+						<span>Introducing the new UX and UI for Google News platform</span>
+
+						<em>2017-03-12</em> <button> more </button>
+					</a>
+				</div>
+
+				<div class="newsOne">
+					<a class="">
+
+						<img src="https://www.riskfreelife.com/assets/img/RFL-2.png">
+						<small class="heading-center-block"></small>
+						<span>Introducing the new UX and UI for Google News platform</span>
+
+						<em>2017-03-12</em> <button> more </button>
+					</a>
+				</div>
+
+				<div class="newsOne">
+					<a class="">
+
+						<img src="https://www.riskfreelife.com/assets/img/RFL-2.png">
+						<small class="heading-center-block"></small>
+						<span>Introducing the new UX and UI for Google News platform</span>
+
+						<em>2017-03-12</em> <button> more </button>
+					</a>
+				</div>
+
+				<div class="newsOne">
+					<a class="">
+
+						<img src="https://www.riskfreelife.com/assets/img/RFL-2.png">
+						<small class="heading-center-block"></small>
+						<span>Introducing the new UX and UI for Google News platform</span>
+
+						<em>2017-03-12</em> <button> more </button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrap">
+			<div class="wrapLine">
+				<div class="newsOne">
+					<a class="">
+
+						<img src="https://www.riskfreelife.com/assets/img/RFL-2.png">
+						<small class="heading-center-block"></small>
+						<span>Introducing the new UX and UI for Google News platform</span>
+
+						<em>2017-03-12</em> <button> more </button>
+					</a>
+				</div>
+
+				<div class="newsOne">
+					<a class="">
+
+						<img src="https://www.riskfreelife.com/assets/img/RFL-2.png">
+						<small class="heading-center-block"></small>
+						<span>Introducing the new UX and UI for Google News platform</span>
+
+						<em>2017-03-12</em> <button> more </button>
+					</a>
+				</div>
+
+				<div class="newsOne">
+					<a class="">
+
+						<img src="https://www.riskfreelife.com/assets/img/RFL-2.png">
+						<small class="heading-center-block"></small>
+						<span>Introducing the new UX and UI for Google News platform</span>
+
+						<em>2017-03-12</em> <button> more </button>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		</div>
+		
+		
+				<div class="base-footer">
+			<div class="footBg"></div>
+			<div class="row">
+
+				<div class="col-2 about">
+					<h4>About FreshPort</h4>
+					<p>
+						<a href="#">Focus on Importing Fruits Service 15 years, <span class="click">click here to view more</span></a>
+					</p>
+				</div>
+				<div class="col-2">
+					<h4>Service For</h4>
+					<p>
+						<a href="#">Association/Organization</a><br>
+						<a href="#">Importers</a><br>
+						<a href="#">Exporters</a>
+					</p>
+				</div>
+				<div class="col-2">
+					<h4>Links</h4>
+					<p>
+						<a href="http://freshcargoperu.com.pe">freshcargoperu</a>
+					</p>
+				</div>
+				<div class="col-area">
+					<a href="地图"><img src="images/area.jpg" /></a>
+				</div>
+			</div>
+			<div class="copyright">
+				<a href="li" target="_blank" title="">备案/许可证号 沪ICP备15035308 | 2015 Freshport.com. All rights reserved</a>
+			</div>
+		</div>
+
+	</body>
+
+</html>

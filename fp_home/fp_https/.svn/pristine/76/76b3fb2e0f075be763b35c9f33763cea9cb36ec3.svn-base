@@ -1,0 +1,228 @@
+
+/*≤…π∫…ÃœÍ«È*/
+.buyer-list{
+	width: 1190px;
+	margin: 0 auto;
+}
+.buyer-list .map{
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+}
+.buyer-list .map a{
+	display: inline-block;
+	padding: 0 5px;
+	color: #54637a;
+	font-weight: bold;
+}
+.buyer-list .map .ser{
+	width: 170px;
+	height: 20px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+.buyer-list .map .ser input{
+	width: 140px;
+	height: 20px;
+	padding-left:5px; 
+	border: none;
+	float: left;
+}
+.buyer-list .map .ser em{
+	width: 25px;
+	height: 20px;
+	background: url(../images/ser.png) no-repeat center center;
+	display: inline-block; 
+	cursor: pointer;
+	vertical-align: middle;
+}
+.buyer-list .map span{
+	font-size: 14px;
+	color: #54637a;
+	vertical-align: middle;
+}
+.buyer-list .company-name{
+	width: 1190px;
+	height: 100px;
+	line-height: 100px;
+	background: #f1f1f1;
+}
+.buyer-list .company-name img{
+	width: 151px;
+	height: 73px;
+	vertical-align: middle;
+	margin:0 10px;
+}
+.buyer-list .company-name span{
+	color: #00a0ea;
+	font-weight:bold;
+	font-size: 36px;
+	vertical-align: middle;
+}
+.buyer-list .company-contact{
+	width: 1190px;
+	border-top: 1px solid #f2f2f2;
+	border-left: 1px solid #f2f2f2;
+	margin-top: 40px;
+}
+.buyer-list .company-contact dl{
+	width: 689px;
+	float: left;
+	font-size: 18px;
+}
+.buyer-list .company-contact dl dt{
+	width: 150px;
+	height: 59px;
+	line-height: 59px;
+	padding-left: 20px;
+	border-bottom: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	background: #f9f9f9;
+	color: #ff761e;
+	float: left;
+}
+.buyer-list .company-contact dl dd{
+	width: 505px;
+	height: 59px;
+	line-height: 59px;
+	border-right: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	padding-left: 12px;
+	color: #333;
+	float: left;
+}
+.buyer-list .company-contact .slide{
+	width: 500px;
+	height: 299px;
+	float: right;
+	border-right: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+.buyer-list .company-contact .slide .banner{
+	width:500px;
+	position:relative;
+}
+.buyer-list .company-contact .slide .banner img{
+	display:block;
+	width: 500px;
+	height: 299px;
+	border:0;
+}
+.buyer-list .company-contact .slide .banner .banner-n{
+	position:absolute;
+	bottom:10px;
+	width: 100%;
+}
+.buyer-list .company-contact .slide .banner .banner-n .banner-n2{
+	width: 70px;
+	margin: 0 auto;
+}
+.buyer-list .company-contact .slide .banner .banner-n .banner-n2 a{
+	height:8px;
+	width:8px;
+	margin:0 3px;
+	border-radius:10px;
+	background-color:#8c8c8c;
+	color:#E0E0E0;
+	font-size:12px;
+	display:inline-block;
+	text-align:center;
+	line-height:20px;
+	float:left;
+}
+.buyer-list .company-contact .slide .banner .banner-n .banner-n2 .banner-arry{
+	background-color:#ff2832;
+}
+.buyer-list .company-profile{
+	width: 1188px;
+	margin-top: 40px;
+	border-top: 1px solid #f2f2f2;
+	border-left: 1px solid #f2f2f2;
+}
+.buyer-list .company-profile dl{
+	width: 1188px;
+	float: left;
+	font-size: 18px;
+}
+.buyer-list .company-profile dl dt{
+	width: 150px;
+	height: 300px;
+	line-height: 300px;
+	padding-left: 20px;
+	border-bottom: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	background: #f9f9f9;
+	color: #ff761e;
+	float: left;
+}
+.buyer-list .company-profile dl dd{
+	width: 992px;
+	height: 276px;
+	line-height: 25px;
+	border-right: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	padding: 12px;
+	font-size: 16px;
+	color: #333;
+	float: left;
+	overflow: hidden;
+}
+.buyer-list .company-product{
+	width: 1188px;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	border-top: 1px solid #f2f2f2;
+	border-left: 1px solid #f2f2f2;
+}
+.buyer-list .company-product dl{
+	width: 1188px;
+	float: left;
+	font-size: 18px;
+}
+.buyer-list .company-product dl dt{
+	width: 150px;
+	height: 237px;
+	line-height: 237px;
+	padding-left: 20px;
+	border-bottom: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	background: #f9f9f9;
+	color: #ff761e;
+	float: left;
+}
+.buyer-list .company-product dl dd{
+	width: 992px;
+	height: 213px;
+	line-height: 25px;
+	border-right: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	padding: 12px;
+	font-size: 14px;
+	color: #333;
+	float: left;
+	overflow: hidden;
+}
+.buyer-list .company-product dl dd ul{
+	width: 984px;
+	margin: 0 4px;
+}
+.buyer-list .company-product dl dd li{
+	width: 146px;
+	padding: 9px;
+	float: left;
+}
+.buyer-list .company-product dl dd li img{
+	width: 146px;
+	height: 146px;
+	margin-bottom: 9px;
+	display: block;
+}
+.buyer-list .company-product dl dd li span{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+}

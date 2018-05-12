@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资讯管理列表</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+
+
+    <div class="table-col">
+    <div class="search-col">
+
+
+        <div class="search-row">
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;分类：</label><input type="text"  />
+        </span>
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编号：</label><input type="text"  />
+        </span>
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;标题：</label><input type="text"   />
+        </span>
+
+        <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+             <button type="button" class="green-border-btn">清空</button>
+
+               <button type="button" class="green-btn" id="addParent">增加</button>
+
+
+        </span>
+        </div>
+
+        <div class="search-row">
+
+
+        <span>
+        <label>关键字：</label><input type="text"  />
+        </span>
+
+        <span>
+        <label>展示状态：</label>
+            <select style="width:143px;">
+                <option>全部</option>
+                <option>展示</option>
+                <option>不展示</option>
+            </select>
+        </span>
+
+        <span>
+        <label>发布状态：</label>
+              <select style="width:143px;">
+                  <option>全部</option>
+                  <option>已发布</option>
+                  <option>待发布</option>
+              </select>
+        </span>
+
+        <span>
+        <label>发布日期：</label>
+        <input type="text" class="laydate-icon" onclick="laydate()" /><span class="unit">至</span>
+        <input type="text" class="laydate-icon" onclick="laydate()" />
+        </span>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+        <table id="typeTable">
+            <thead>
+            <tr>
+                <th>操作</th>
+                <th>展示状态</th>
+                <th>发布状态</th>
+                <th>发布日期</th>
+                <th>置顶权重</th>
+                <th>资讯分类</th>
+                <th>资讯编号</th>
+                <th>标题</th>
+                <th>最新更新人员</th>
+                <th>最新更新日期</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <a href="###"  class="green-btn table-btn">查看</a>
+                    <button type="button" class="green-border-btn">不展示</button>
+                    <button type="button" class="green-btn">修改</button>
+                    <button type="button" class="green-border-btn">置顶</button>
+                    <button type="button" class="green-btn">取消置顶</button>
+                </td>
+                <td>展示</td>
+                <td>已发布</td>
+                <td>2017.11.5</td>
+                <td>3</td>
+                <td>首页资讯</td>
+                <td>10001</td>
+                <td>资讯标题111</td>
+                <td>Bob</td>
+                <td>2017-12-06 11:29:22</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+
+        <div class="pagination-col">
+
+            <span class="pagination" id="pagination"></span>
+
+        </div>
+
+    </div>
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+    <script>
+
+
+        //分页
+        var initPagination = function() {
+            var num_entries =100;
+            // 创建分页
+            $("#pagination").pagination(num_entries, {
+                num_edge_entries: 1, //边缘页数
+                num_display_entries: 4, //主体页数
+                callback: pageselectCallback,
+                items_per_page:1 //每页显示1项
+            });
+        }();
+
+        function pageselectCallback(page_index, jq){
+
+            //回调函数 写ajax 添加数据
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>

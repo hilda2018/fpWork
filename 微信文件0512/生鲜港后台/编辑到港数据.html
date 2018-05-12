@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑到港数据</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+
+
+    <div class="add-form">
+    <ul class="form-list">
+
+        <li>
+            <label>国家<em class="red">*</em></label>
+            <input type="text" />
+        </li>
+        <li>
+            <label>产品<em class="red">*</em></label>
+            <input type="text" />
+        </li>
+        <li>
+            <label>到案港口<em class="red">*</em></label>
+            <input type="text" />
+        </li>
+
+        <li>
+            <label>包装类型<em class="red">*</em></label>
+            <input type="text" />
+        </li>
+
+        <li>
+            <label>年份<em class="red">*</em></label>
+            <input id="yearSelect" type="text" />
+            &nbsp;&nbsp;
+            <button type="button" class="green-border-btn">查询</button>
+
+        </li>
+
+        <li class="editor-col">
+            <label>到港数据<em class="red">*</em></label>
+
+            <div class="data-table">
+
+
+                    <ul class="data-table-list clearfix">
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div>1/2-1/8</div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+
+            </div>
+
+
+
+        </li>
+
+    </ul>
+
+
+        <div class="btn-col">
+
+            <button type="button" class="green-btn">保存</button>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/layDate5/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+    <script>
+
+        $("#addBtn").click(function()
+        {
+            $("#attachments").append('<div class="upload">'+
+                    '<span class="upload-col">'+
+                    '<input type="file">'+
+                    '<button type="button" class="green-border-btn">上传文件</button>'+
+                    '</span>'+
+                    '<button type="button" class="green-border-btn right-btn delete-btn" >删除</button>'+
+                    '</div>');
+
+        });
+
+        $("#attachments").on("click",".delete-btn",function()
+        {
+
+            $(this).parent().remove();
+
+        });
+
+
+        laydate.render({
+            elem: '#yearSelect',
+            type: 'year',
+            done: function(value, date, endDate)
+            {
+                alert("选择事件"+value);
+            }
+        });
+
+    </script>
+
+
+</body>
+</html>

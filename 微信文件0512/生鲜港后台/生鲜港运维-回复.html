@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回复</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+
+    <div class="feedback-main">
+
+    <div class="feedback-form fl">
+
+
+        <div class="feedback-form-col">
+
+
+        <div class="top-title">未 回 复
+
+
+        <span class="date">2017.04.24 10:11</span>
+        </div>
+
+        <div class="feedback-form-row">
+
+            <label>内容</label>
+            <textarea>我的密码忘了，该如何找回？</textarea>
+
+        </div>
+
+
+            <div class="feedback-form-row">
+
+                <label>附件图片 <a href="###" class="green">（全部下载）</a></label>
+
+                <div class="img-list clearfix">
+                    <div class="img-col">
+                    <img class="preview-col" src="assets/img/mien.jpg"/>
+                    <div class="operate"><a class="green preview-col">预览</a><a class="green">下载</a></div>
+                    </div>
+                    <div class="img-col">
+                        <img class="preview-col" src="assets/img/mien.jpg"/>
+                        <div class="operate"><a class="green preview-col">预览</a><a class="green">下载</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="feedback-form-row">
+
+            <label>用户名</label>
+            <input type="text"/>
+
+            </div>
+
+
+            <div class="feedback-form-row">
+
+                <label>邮箱</label>
+                <input type="text"/>
+
+            </div>
+
+
+            <div class="feedback-form-row">
+
+                <label>联系电话或手机</label>
+                <input type="text"/>
+
+            </div>
+
+
+            <div class="feedback-form-row">
+
+                <label>QQ号</label>
+                <input type="text"/>
+
+            </div>
+
+            <div class="btn-col">
+
+            <button type="button" class="green-btn" disabled="disabled">回复提问</button>
+
+            <button type="button" class="green-border-btn" disabled="disabled">关闭提问</button>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="feedback-right fr">
+
+        <div class="title-col">回复内容</div>
+
+        <div class="detail-col" style="height:366px;">我们的密码都是预设的，如果您丢了密码，我们可以帮您重置，请联系我们021-88888888</div>
+
+
+        <div class="row-text">上传图片</div>
+        <div class="upload-list">
+            <div class="upload-col">
+                <input type="file">
+                <div>
+                    <img src="assets/img/addIcon.png">
+                    <p>上传1</p>
+                </div>
+            </div>
+
+            <div class="upload-col">
+                <input type="file">
+                <div>
+                    <img src="assets/img/addIcon.png">
+                    <p>上传1</p>
+                </div>
+            </div>
+
+            <div class="upload-col">
+                <input type="file">
+                <div>
+                    <img src="assets/img/addIcon.png">
+                    <p>上传1</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="row-text"><span>操作人员：</span> ERIC</div>
+
+
+        <button type="button" class="green-btn">  确 认 回 复 </button>
+        <button type="button" class="green-border-btn">   取消 </button>
+
+
+    </div>
+
+    </div>
+
+
+
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+    <script>
+
+
+        $(".preview-col").click(function()
+        {
+
+            layer.open({
+                type: 1,
+                title: false, //不显示标题
+                content: "<img style='width:100%;min-width:300px;display: block;' src='assets/img/mien.jpg' />",
+                cancel: function(){
+
+                }
+            });
+
+        });
+
+
+        $(".cancel-modal").click(function()
+        {
+
+            $(".modal").hide();
+            $(".shadow").hide();
+
+        });
+
+    </script>
+
+</body>
+</html>

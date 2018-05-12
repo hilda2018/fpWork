@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+.banner1{
+	width: 470px;
+	height: 420px;
+	display: block;
+	position:relative;
+}
+.banner1 img{
+	display:block;
+	width:470px;
+	height: 420px;
+	border:0;
+}
+.banner1 .banner-n{
+	position:absolute;
+	bottom:10px;
+	width: 100%;
+}
+.banner1 .banner-n .banner-n2{
+	width: 70px;
+	margin: 0 auto;
+}
+.banner1 .banner-n .banner-n2 a{
+	height:8px;
+	width:8px;
+	margin:0 3px;
+	border-radius:10px;
+	background-color:#8c8c8c;
+	color:#E0E0E0;
+	font-size:12px;
+	display:inline-block;
+	text-align:center;
+	line-height:20px;
+	float:left;
+}
+.banner1 .banner-n .banner-n2 .banner-arry{
+	background-color:#ff2832;
+}
+

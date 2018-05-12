@@ -1,0 +1,74 @@
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+	<!--
+		Configuration file for UrlRewriteFilter http://tuckey.org/urlrewrite/
+	-->
+<urlrewrite>
+	<!-- 首页 -->
+	<rule>
+		<from>^/index.htm$</from>
+		<to>/homePage!index.action</to>
+	</rule>
+	<rule>
+		<from>^/index.html$</from>
+		<to>/homePage!index.action</to>
+	</rule>
+
+	<rule>
+		<from>/404.html$</from>
+		<to>/base/errors/404.jsp</to>
+	</rule>
+	
+	<!-- 会员中心 -->
+	<rule>
+		<from>/m-0.htm</from>
+		<to>/getMemberCenter.action</to>
+	</rule>
+	<rule>
+		<from>/m-1.htm</from>
+		<to>/getMemberCenter.action</to>
+	</rule>
+	<rule>
+		<from>/m-c-([0-9\/]*).html</from>
+		<to>/changeRole.do?positionId=$1</to>
+	</rule>
+	<!-- 基本资料 -->
+	<rule>
+		<from>/m-2.htm</from>
+		<to>/member!getMemberInfo.action</to>
+	</rule>
+	<rule>
+		<from>/memberInfoSuccess.htm</from>
+		<to>/views/account/modifyMemberInfoSuccess.jsp</to>
+	</rule>
+
+	<!-- 修改密码 -->
+	<rule>
+		<from>/m-4.htm</from>
+		<to>/views/account/modifyPassword.jsp</to>
+	</rule>
+
+	<!-- 订单列表 -->
+	<rule>
+		<from>/m-11.htm</from>
+		<to>/order!orderList.action</to>
+	</rule>
+
+	<!-- 询盘管理pages/product/priceInquiry.jsp?productId=14010-->
+	<rule>
+		<from>/m-0-0-0-0-([0-9\/]*).htm</from>
+		<to>/pages/product/priceInquiry.jsp?productId=$1</to>
+	</rule>
+	<rule>
+		<from>/m-9.htm</from>
+		<to>/product!priceEnquiryList.action</to>
+	</rule>
+	<rule>
+		<from>/m-10.htm</from>
+		<to>/inquire!queryBuyerInquireTopicList.action</to>
+	</rule>
+	<rule>
+		<from>/m-buyer-order.html</from>
+		<to>/buyer!jumpBuyerOrder.do</to>
+	</rule>
+</urlrewrite>

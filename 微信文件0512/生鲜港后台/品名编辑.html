@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品名编辑</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+
+
+    <div class="table-col">
+    <div class="search-col">
+
+
+        <span>
+        <label>编号：</label><input type="text"  />
+        </span>
+
+        <span>
+        <label>品名：</label><input type="text" placeholder="英文或中文"  />
+        </span>
+
+        <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+             <button type="button" class="green-btn" id="addParent">增加大类</button>
+
+             <button type="button" class="green-border-btn">清空</button>
+
+
+        </span>
+
+    </div>
+    <table class="type-table-col place-table-col">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>大类（中文）</th>
+                <th>大类（英文）</th>
+                <th>产地</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="mainTbody">
+
+
+        </tbody>
+    </table>
+    </div>
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+
+
+    <script>
+
+        var list=[{
+            id:1,
+            p_id:0,
+            no:'1',
+            name:"柑橘类",
+            place:"上海",
+            e_name:"Citrus",
+            child:[
+                {
+                    id:3,
+                    p_id:1,
+                    no:"3",
+                    name:"橙子",
+                    place:"美国；新西兰；法国...",
+                    e_name:"Oranges",
+                },
+                {
+                    id:4,
+                    p_id:1,
+                    no:"4",
+                    name:"橙子",
+                    place:"美国；新西兰；法国...",
+                    e_name:"Oranges",
+                }
+            ]
+
+        },
+            {
+                id:2,
+                p_id:0,
+                no:'1',
+                name:"柑橘类",
+                place:"美国；新西兰；法国...",
+                e_name:"Citrus",
+                child:[
+                    {
+                        id:5,
+                        p_id:2,
+                        no:"5",
+                        name:"橙子",
+                        place:"美国；新西兰；法国...",
+                        e_name:"Oranges",
+                    },
+                    {
+                        id:6,
+                        p_id:2,
+                        no:"6",
+                        name:"橙子",
+                        place:"美国；新西兰；法国...",
+                        e_name:"Oranges",
+                    }
+                ]
+
+            }];
+
+
+        var html='';
+        for(var i=0;i<list.length;i++)
+        {
+            html=html+'<tr>'+
+                    '<td>001</td>'+
+                    '<td>柑橘类</td>'+
+                    '<td>Citrus</td>'+
+                    '<td>美国；新西兰；法国...</td>'+
+                    '<td>'+
+                    '<div class="operate-col">'+
+                    '<button type="button" class="green-btn edit-parent">编辑</button>'+
+                    '<button type="button" class="green-btn delete-parent">删除</button>'+
+                    '<button type="button" class="green-border-btn add-child">新增子类</button>'+
+                    '<span class="open-close">展开</span>'+
+                    '</div>'+
+                    '</td>'+
+                    '</tr> <tr class="child-tr hide">'+
+                    '<td colspan="5">'+
+                    '<table class="child-table">'+
+                    '<thead>'+
+                    '<th>编号</th>'+
+                    '<th>商品名（中文）</th>'+
+                    '<th>商品名（英文）</th>'+
+                    '<th>产地（中文）</th>'+
+                    '<th>操作</th>'+
+                    '</thead>'+
+                    '<tbody>';
+            for(var j=0;j<list[i].child.length;j++)
+            {
+                html=html+' <tr>'+
+                        '<td>002</td>'+
+                        '<td>橙子</td>'+
+                        '<td>Oranges</td>'+
+                        '<td>美国；新西兰；法国...</td>'+
+                        ' <td>'+
+                        '<button type="button" class="green-btn edit-child">编辑</button>'+
+                        '<button type="button" class="green-border-btn delete-child">删除</button>'+
+                        '<button type="button" class="green-btn edit-place">编辑产地</button>'+
+                        '</td>'+
+                        '</tr>'
+            }
+            html=html+' </tbody></table></td></tr>';
+        }
+
+
+        $("#mainTbody").append(html);
+
+        //编辑产地
+        $(".type-table-col").on("click",".edit-place",function()
+        {
+
+            var formHtml="<ul class='place-form'>" +
+                    "<li class='row'><div>亚洲：</div>  <span><input type='checkbox' /><label>泰国</label></span> " +
+                    "<span><input type='checkbox' /><label>缅甸</label></span>" +
+                    "<span><input type='checkbox' /><label>马来西亚</label></span>" +
+                    "<span><input type='checkbox' /><label>印度</label></span>" +
+                    "<span><input type='checkbox' /><label>印度尼西亚</label></span>" +
+                    "<span><input type='checkbox' /><label>菲律宾</label></span>" +
+                    "<span><input type='checkbox' /><label>韩国</label></span>" +
+                    "<span><input type='checkbox' /><label>日本</label></span>" +
+                    "<span><input type='checkbox' /><label>老挝</label></span>" +
+                    "<span><input type='checkbox' /><label>斯里兰卡</label></span>" +
+                    "<span><input type='checkbox' /><label>以色列</label></span>" +
+                    "<span><input type='checkbox' /><label>朝鲜</label></span>" +
+                    " </li>" +
+                    "<li class='row'><div>欧洲：</div>" +
+                    "<span><input type='checkbox' /><label>法国</label></span>" +
+                    "<span><input type='checkbox' /><label>塞浦路斯</label></span>" +
+                    "<span><input type='checkbox' /><label>土耳其</label></span>" +
+                    "<span><input type='checkbox' /><label>比利时</label></span>" +
+                    "<span><input type='checkbox' /><label>希腊</label></span>" +
+                    "<span><input type='checkbox' /><label>菲律宾</label></span>" +
+                    "<span><input type='checkbox' /><label>波兰</label></span>" +
+                    "<span><input type='checkbox' /><label>荷兰</label></span>" +
+                    "</li>" +
+                    "<li class='row'><div>非洲：</div>" +
+                    "<span><input type='checkbox' /><label>埃及</label></span>" +
+                    "<span><input type='checkbox' /><label>摩洛哥</label></span>" +
+                    "<span><input type='checkbox' /><label>南非</label></span>" +
+                    "</li>" +
+                    "<li class='row'><div>北美洲：</div>" +
+                    "<span><input type='checkbox' /><label>美国</label></span>" +
+                    "<span><input type='checkbox' /><label>加拿大</label></span>" +
+                    "<span><input type='checkbox' /><label>墨西哥</label></span>" +
+                    "<span><input type='checkbox' /><label>巴拿马</label></span>" +
+                    "</li>" +
+                    "<li class='row'><div>南美洲：</div>" +
+                    "<span><input type='checkbox' /><label>智利</label></span>" +
+                    "<span><input type='checkbox' /><label>秘鲁</label></span>" +
+                    "<span><input type='checkbox' /><label>厄瓜多尔</label></span>" +
+                    "<span><input type='checkbox' /><label>阿根廷</label></span>" +
+                    "<span><input type='checkbox' /><label>哥伦比亚</label></span>" +
+                    "</li>" +
+                    "<li class='row'><div>大洋洲：</div>" +
+                    "<span><input type='checkbox' /><label>新西兰</label></span>" +
+                    "<span><input type='checkbox' /><label>澳大利亚</label></span>" +
+                    "</li>" +
+                    "</ul>";
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'编辑产地',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+        });
+
+        $(".type-table-col").on("click",".edit-child",function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>商品名（中文）</label><input type='text'></li>" +
+                    "<li class='row'><label>商品名（英文）</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'编辑子类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+        });
+
+
+        $(".type-table-col").on("click",".add-child",function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>商品名（中文）</label><input type='text'></li>" +
+                    "<li class='row'><label>商品名（英文）</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'新增子类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+        });
+
+        $(".type-table-col").on("click",".edit-parent",function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>大类（中文）</label><input type='text'></li>" +
+                    "<li class='row'><label>大类（英文）</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'编辑大类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+        });
+
+
+        $("#addParent").click(function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>大类（中文）</label><input type='text'></li>" +
+                    "<li class='row'><label>大类（英文）</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'新增大类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+
+        });
+
+        $(".type-table-col").on("click",".delete-parent",function()
+        {
+            layer.confirm("是否删除？");
+
+        });
+
+        $(".type-table-col").on("click",".delete-child",function()
+        {
+            layer.confirm("是否删除？");
+
+        });
+
+
+
+        $(".type-table-col").on("click",".open-close",function()
+        {
+
+            if($(this).hasClass("active"))
+            {
+                $(this).removeClass("active");
+                $(this).text("展开");
+                $(this).parent().parent().parent().next().hide();
+            }
+            else {
+                $(this).addClass("active");
+                $(this).text("关闭");
+                $(this).parent().parent().parent().next().show();
+            }
+
+
+        });
+
+    </script>
+
+</body>
+</html>

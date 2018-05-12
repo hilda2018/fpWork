@@ -1,0 +1,615 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ include file="/base/include/basePage.jsp" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>生鲜港--APP</title>
+	<link rel="shortcut icon" href="../style/style-common/images/favicon.ico">
+	<script type="text/javascript" src="../style/style-module/index/config.js"></script>
+		
+</head>
+<style>
+html,body{width:100%;background:url(../style/style-common/images/bg.png);font-family:"微软雅黑";}
+body{padding:0;margin:0;}
+ul,li{list-style:none;margin:0;padding:0;}
+p{padding:0;margin:0;}
+a{text-decoration:none;color:#333;}
+/* 布局 css   width 1024 需要做适配     */
+	html,
+		body {
+			width: 100%;
+			background: url(../style/style-common/images/bg.png);
+			font-family: "微软雅黑";
+		}
+		
+		body {
+			padding: 0;
+			margin: 0;
+		}
+		
+		ul,
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		p {
+			padding: 0;
+			margin: 0;
+		}
+		
+		a {
+			text-decoration: none;
+			color: #333;
+		}
+		/* 布局 css   width 1024 需要做适配     */
+		
+		#main {
+			padding-top: 74px;
+			padding-bottom: 54px;
+			background: transparent;
+			width: 1080px;
+			box-sizing: border-box;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		#nav {
+			width: 100%;
+			height: 64px;
+			background: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-bottom: 20px;
+			border-radius: 5px;
+		}
+		
+		#footer {
+			width: 100%;
+			height: 24px;
+			background: #fff;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			border-radius: 5px;
+		}
+		
+		#container {
+			width: 100%;
+			height: auto;
+			box-sizing: border-box;
+			border-radius: 5px;
+			padding: 10px;
+			background: url(../style/style-common/images/contact_us.png) no-repeat 20px 38px #fff;
+		}
+		/* nav css */
+		
+		#nav {
+			background: url(../style/style-common/images/logo.png) #fff no-repeat 6px center;
+		}
+		
+		.nav_img {
+			width: 50%;
+			text-decoration: none;
+			float: left;
+		}
+		
+		.nav_img span {
+			display: inline-block;
+			margin-left: 136px;
+			line-height: 64px;
+			color: #fa9d2a;
+			font-size: 16px;
+			float: left;
+			font-weight: 560;
+		}
+		
+		.navbar {
+			width: 300px;
+			float: right;
+			height: 100%;
+		}
+		
+		.navbar li {
+			list-style: none;
+			float: left;
+			padding: 10px;
+			box-sizing: border-box;
+			height: 100%;
+			line-height: 44px;
+		}
+		
+		.navbar a {
+			text-decoration: none;
+			color: #333;
+			height: 100%;
+			line-height: 100%;
+		}
+		/*footer css*/
+		
+		#footer {
+			width: 100%;
+			text-align: center;
+			line-height: 44px;
+			height: 44px;
+			padding: 0;
+			margin: 0;
+			color: #666;
+			font-size: 14px;
+		}
+		/* contact_us  **/
+		
+		#container {
+			width: 100%;
+			height: auto;
+			box-sizing: border-box;
+			border-radius: 5px;
+			padding: 10px;
+			background: #fff;
+		}
+		
+		#container {
+			padding-top: 20px;
+		}
+		
+		#content {
+			width: 100%;
+			box-sizing: border-box;
+		}
+		
+		.title {
+			border-bottom: 1px solid #666;
+			height: 50px;
+		}
+		
+		.title .circle {
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			background: #000;
+			float: left;
+			position: relative;
+			left: -16px;
+			top: 20px;
+		}
+		
+		.title .en {
+			font-size: 12px;
+			margin-left: 4px;
+			font-weight: normal;
+			color: #888;
+		}
+		
+		.title,
+		.title span {
+			line-height: 42px;
+			height: 42px;
+		}
+		
+		.title h2 {
+			float: left;
+			font-size: 22px;
+			line-height: 42px;
+			height: 42px;
+			padding: 0;
+			margin: 0;
+			font-weight: normal;
+		}
+		
+		.title .title_right {
+			float: right;
+			font-size: 14px;
+			margin-top: 4px;
+		}
+		
+		.navbar .active {
+			color: #f97f00;
+		}
+		
+		#pic_header {
+			height: auto;
+			max-width: 1260px;
+			margin: 0 auto;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		
+		#pic_header img {
+			display: block;
+			max-width: 100%;
+			height: auto
+		}
+		
+		.para {
+			font-size: 18px;
+			color: #444;
+			line-height: 2.2em;
+			font-family: "Hiragino Sans GB", "microsoft yahei", arial;
+			width: 800px;
+			margin: 0 auto;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+		
+		.fImg {
+			text-align: right;
+		}
+		
+		.last {
+			border-bottom: 1px solid #fff;
+			margin-bottom: 20px;
+		}
+		
+		.para h2 {
+			margin-bottom: 10px;
+			font-size: 22px;
+		}
+		
+		.ui-step-wrap {
+			position: relative;
+		}
+		
+		.ui-step-wrap .ui-step-bg,
+		.ui-step-wrap .ui-step-progress {
+			height: 6px;
+			position: absolute;
+			bottom: 12px;
+			left: 0;
+		}
+		
+		.ui-step-wrap .ui-step-bg {
+			width: 100%;
+			background: #ddd;
+		}
+		
+		.ui-step-wrap .ui-step-progress {
+			width: 0;
+			background: #44aece;
+		}
+		
+		.ui-step-wrap .ui-step {
+			position: relative;
+			z-index: 1;
+			list-style: none;
+		}
+		
+		.ui-step-wrap .ui-step:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		
+		.ui-step-wrap .ui-step .ui-step-item {
+			float: left;
+		}
+		
+		.ui-step-item div {
+			text-align: center;
+			color: #444;
+			font-size: 14px;
+			line-height: 1.5em;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-right: 1px;
+		}
+		
+		.ui-step .active div {
+			color: #000;
+			font-weight: bold;
+		}
+		
+		.ui-step-item-num {
+			margin-top: 12px;
+		}
+		
+		.ui-step-wrap .ui-step .ui-step-item .ui-step-item-num span {
+			display: inline-block;
+			width: 26px;
+			height: 26px;
+			line-height: 26px;
+			font-size: 12px;
+			border-radius: 50%;
+			background: #dad9d9;
+		}
+		
+		.ui-step-wrap .ui-step .ui-step-item.active .ui-step-item-num span {
+			color: #fff;
+			background: #44aece;
+		}
+		
+		.fl {
+			float: left;
+			height: 400px;
+		}
+		
+		button {
+			display: inline-block;
+			text-align: center;
+			cursor: pointer;
+			border: 1px solid transparent;
+			border-radius: 4px;
+			color: #fff;
+			background-color: #53ADE8;
+		}
+		
+		.credit {
+			width: 100%;
+			margin: 30px auto;
+			position: relative;
+		}
+		
+		#creditStep {
+			margin-bottom: 20px;
+			line-height: 1.5em;
+		}
+		
+		.btns {
+			position: absolute;
+			right: 0px;
+			width: 100%;
+			height: 30px;
+			bottom: 40px;
+		}
+		
+		.btns button,
+		.btns a {
+			display: inline-block;
+		}
+		
+		.btns,
+		.btns button,
+		.btns a {
+			height: 34px;
+			line-height: 34px;
+			text-align: right;
+			margin-left: 12px;
+			font-size: 14px;
+		}
+		
+		.info {
+			line-height: 34px;
+			margin-left: 40px;
+			color: #928787;
+		}
+		
+		.info span {
+			color: red;
+		}
+		
+		.iphone-background {
+			width: 256px;
+			height: 500px;
+			margin: 0 auto;
+			position: relative;
+			background: url(../style/style-common/images/app/iphone.jpg) no-repeat 1px 1px #fff;
+		}
+		
+		.iphone-background p {
+			position: absolute;
+			width: 192px;
+			height: 344px;
+			top: 50%;
+			left: 50%;
+			margin-left: -95px;
+			margin-top: -172px;
+			background: #FFFFFF;
+			border-radius: 12px;
+			border: 2px solid #CCCCCC;
+		}
+		
+		.iphone-background img {
+			position: absolute;
+			top: 50%;
+			right: 0px;
+			margin-top: -172px;
+		}
+</style>
+
+<body>
+
+	<div id="main">
+	
+		<!--导航-->
+		<div id="nav">
+			<a  class="nav_img" href="./index.jsp" target="_blank">
+			<span>信&nbsp;息&nbsp;服&nbsp;务&nbsp;平&nbsp;台</span>
+			</a>
+			<ul class="navbar">
+				<li> <a href="http://www.freshport.com" target="_blank"> English </a></li>
+				<li  class="hr" > <a href="#"> | </a></li>
+				<li> <a href="#"  > 关于我们 </a></li>
+				<li  class="hr" > <a href="#"> | </a></li>
+				<li> <a href="contact.html" target="_blank"> 联系我们 </a></li>
+				
+			</ul>
+		</div>
+
+		<!--导航-->
+
+		
+		<!-- 主体 -->
+		<div id="container">
+		
+			<!-- banner 图片 -->
+			<div id="pic_header">
+				<a href="#step1">
+					<img src="../style/style-common/images/app/appdownload.jpg"  usemap="#Map">
+				</a>
+			</div>
+			
+			<!-- 第一步 -->
+			<div id="step1" class="para">
+				<h2>一、应用市场下载安装<strong style="color:red;">（推荐使用）</strong>： </h2>
+				<p>1、IOS系统：请在APP STORE中搜索“ 生鲜港 ”，点击下载安装即可。<br/>
+					2、Android系统：请在"应用宝”或“360手机助手”中搜索“ 生鲜港 ”，点击下载安装即可。</p>
+			</div>
+			
+			<!-- 第2步 -->
+			<div id="step2" class="para">
+				<h2 style="margin-bottom:30px;">二、扫码下载安装：</h2>
+				<div style="width:40%;" class="fl fImg">
+				<img src="../style/style-common/images/app/appLogo.jpg">
+				
+				</div>
+				<div style="width:60%;margin:0 auto;text-align:center;" class="fl" >
+				<h3 style="font-weight:normal;margin-top:50px;">使用手机扫下侧二维码进行下载并安装</h3>
+				<img src="../style/style-common/images/app/erweima.gif"  style="padding:5px;border:8px solid #eee;">
+				
+				</div>
+				<div style="clear:both;"></div>
+				
+				<div class="para"  style="border-bottom:none;">
+				<h3 >操作方式如下：</h3>
+					1、用微信或QQ等应用自带的扫码工具扫上侧二维码。<br/>
+					2、点击右上角，选择用自带的浏览器打开，Android系统选择”用浏览器打开“，IOS系统用”Safari"打开。
+				</div>
+				
+				<div style="width:42%;padding-left:2%;display: inline-block;">
+				<h4 style="padding-left:50px;background:url(../style/style-common/images/app/ando.gif) no-repeat left top;">
+				Android版客户端下载</h4>
+				<p style="margin-bottom:20px;">
+				<span style="display:inline-block;padding-right:32px;background:url(../style/style-common/images/app/circle1.gif) no-repeat right center;">1,点击手机右上角圆点</span><br/>
+				2,在弹出的面板中选择【在浏览器打开】
+				</p>
+					<div style="text-align: center;">
+							<img src="../style/style-common/images/app/andor.gif" />
+					</div>
+				
+				</div>
+				<div style="width:42%;padding-left:12%;display: inline-block;text-align:left;">
+					<h4>
+					<span style="height:36px;line-height:36px;display:inline-block;margin-right:20px;padding-left:50px;background:url(../style/style-common/images/app/ios.gif) no-repeat left top;">IOS版客户端下载</span>
+					</h4>
+					<p style="margin-bottom:20px;">
+					<span style="display:inline-block;padding-right:18px;background:url(../style/style-common/images/app/circle.gif) no-repeat right 4px;">1,点击手机右上角圆点</span><br/>
+					2,在弹出面板中选择 【在Safari中打开】
+					</p>
+						<div style="text-align: center;">
+						<img src="../style/style-common/images/app/ios2.gif">
+						</div>
+				</div>
+				
+				
+				<div style="clear:both;"></div>
+				<div style="margin-top:20px;position: relative;" id="stall">
+					3、Android与IOS系统各自点击需要的链接，并按各自步骤下载安装。<br/>
+					<span style="font-size:16px;background:url(../style/style-common/images/app/notice.gif) no-repeat left top;">
+					<strong style="color:red;font-weight:normal;padding-left:28px;">特别说明：</strong>IOS系统在首次使用扫码安装后，需要对该应用进行添加信任后，才能正常使用（具体步骤如下）<br/>
+					</span>
+					
+					<div class="credit">
+						<div id="creditStep"></div>
+						
+					</div>
+
+					<div class="iphone-background"  >
+						<P>
+							<img  id="stepImg" src="../style/style-common/images/app/step2.jpg" />																							
+						</p>
+					</div>
+				
+					<div class="btns">
+						<button id="prevBtn">上一步</button>
+						<button id="nextBtn">下一步</button>
+						<a href="javascript:;" class="info" >
+							第
+							<span id="index"></span>
+							 步
+						</a>
+					</div>
+				</div>
+	
+	
+	
+			<!-- 第三步 -->
+			<div id="step3" class="para">
+				<h2>三、关于APP的更新</h2>
+				<p>我们的APP有自动更新功能，只要打开界面，会自动搜索是否是最新版本，如果不是会在后台自动下载更新并安装（安装后界面会跳闪一次，即完成了更新），无需手动更新。</p>
+				
+
+			</div>
+			
+			<!-- 第四步 -->
+			<div id="step4" class="para last">
+				<h2>四、联系我们</h2>
+				<p>若您对下载安装还有其他疑问，可联系我们  021-34780328<br/>
+备注：APP展示的内容需要企业后台进行分配，如有疑问，可以联系我们的客服人员。</p>
+			</div>
+			
+		</div>
+		<!-- 主体 -->
+
+		<!--页脚-->
+		<div id="footer">
+			备案/许可证号 沪ICP备15035308&nbsp;&nbsp;|&nbsp;&nbsp;2015 Freshport.com. All rights reserved
+		
+		</div>
+		<!-- 页脚-->
+
+	
+		</div>
+		<script type="text/javascript" src="../style/style-common/library/jquery/jquery.js"></script>
+		<script type="text/javascript">
+		!function(i){i.fn.step=function(e){var t=this,n={index:0,time:400,title:[]},s=(e=i.extend({},n,e)).title,d=s.length,u=e.time,p=t.width()/d;t.index=e.index;var a=function(){var e="";s.length>0&&(e+='<div class="ui-step-wrap"><div class="ui-step-bg"></div><div class="ui-step-progress"></div><ul class="ui-step">',i.each(s,function(i,t){e+='<li class="ui-step-item"><div class="ui-step-item-title" title="'+t+'" >'+t+'</div><div class="ui-step-item-num"><span>'+(i+1)+"</span></div></li>"}),e+="</ul></div>"),t.append(e),t.find(".ui-step").children(".ui-step-item").width(p),t.toStep(t.index)};return t.toStep=function(e){var n=t.find(".ui-step").children(".ui-step-item");t.index=e,t.find(".ui-step-progress").animate({width:p*(e+1)},u,function(){i.each(n,function(t){t>e?i(this).removeClass("active"):i(this).addClass("active")})})},t.getIndex=function(){return t.index},t.nextStep=function(){t.index>d-2||(t.index++,t.toStep(t.index))},t.prevStep=function(){t.index<1||(t.index--,t.toStep(t.index))},a(),this}}(jQuery);
+		</script>
+
+<script type="text/javascript">
+	var $creditStep = $("#creditStep");
+	var $index = $("#index");
+	var arrImg=['../style/style-common/images/app/step1.png','../style/style-common/images/app/step2.png','../style/style-common/images/app/step3.png','../style/style-common/images/app/step4.png'];
+	
+	var timer = null;
+	
+	$creditStep.step({
+		index: 0,
+		time: 500,
+		title: ["找到【设置】图标", "点击【通用】选项", "点击【设备管理】选项", "在企业级应用中选择【shanghai oheng import & export...】"]
+	});
+
+	$index.text($creditStep.getIndex()+1);
+	$('#stepImg').attr("src",arrImg[0] );
+	
+	$("#prevBtn").on("click", function() {
+		$creditStep.prevStep();
+		$('#stepImg').attr("src",arrImg[ $creditStep.getIndex() ] );
+		$index.text($creditStep.getIndex()+1);
+	});
+
+	$("#nextBtn").on("click", function() {
+		$creditStep.nextStep();
+		$('#stepImg').attr("src",arrImg[ $creditStep.getIndex() ] );
+		$index.text($creditStep.getIndex()+1);
+	});
+
+autoPlay();
+function autoPlay(){
+	
+ timer = setInterval(function(){
+
+ 	if( $creditStep.getIndex() == 3){
+ 		$creditStep.toStep(0);
+ 		$('#stepImg').attr("src",arrImg[0] ); 
+ 		return false;
+ 	}else{
+ 		$("#nextBtn").trigger('click');
+ 	}
+ },2000);
+}
+ 
+ $("#stall").hover(function(){
+ 	clearInterval(timer);
+ },function(){
+ 	autoPlay();
+ });
+ 
+ 
+</script>
+</body>
+</html>

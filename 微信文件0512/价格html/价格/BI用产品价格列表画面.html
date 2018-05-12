@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BI用产品价格列表画面</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+
+    <div class="table-col">
+    <div class="search-col">
+
+        <div class="search-row">
+
+             <span>
+            <label>水果名称（中文）：</label>
+            <input type="text"  />
+
+            </span>
+
+            <span>
+
+            <label>水果名称（英文）：</label>
+            <input type="text"  />
+
+            </span>
+
+              <span>
+                <label>请选择市场：</label>
+                <select>
+                    <option>辉展市场</option>
+                    <option>江南市场</option>
+                </select>
+             </span>
+
+        </div>
+
+        <div class="search-row">
+        <span>
+        <label>日期：</label>
+        <input type="text" class="laydate-icon" onclick="laydate()" /><span class="unit">至</span>
+        <input type="text" class="laydate-icon" onclick="laydate()" />
+        </span>
+
+        <span>
+        <label>国家：</label><input type="text"  />
+        </span>
+
+
+        <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+            <button type="button" class="green-border-btn" id="addPrice">新增价格</button>
+
+
+        </span>
+
+        </div>
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>日期</th>
+                <th>水果名称</th>
+                <th>批发市场</th>
+                <th>国家</th>
+                <th>属性集别名</th>
+                <th>属性集内容</th>
+                <th>价格</th>
+                <th>成交量（单位?）</th>
+                <th>选择</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    2017/9/29
+                </td>
+                <td>鲜鳄梨</td>
+                <td>辉展市场</td>
+                <td></td>
+                <td>属性集1</td>
+                <td>属性集1的维度内容</td>
+
+                <td>100</td>
+                <td>100</td>
+
+                <td>
+                    <button type="button" class="green-btn edit-btn">修改</button>
+                    <button type="button" class="green-border-btn delete-btn">删除</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    2017/9/29
+                </td>
+                <td>鲜鳄梨</td>
+                <td>辉展市场</td>
+                <td></td>
+                <td>属性集1</td>
+                <td>属性集1的维度内容</td>
+
+                <td>100</td>
+                <td>100</td>
+
+                <td>
+                    <button type="button" class="green-btn edit-btn">修改</button>
+                    <button type="button" class="green-border-btn delete-btn">删除</button>
+                </td>
+
+            </tr>
+
+
+        </tbody>
+    </table>
+
+        <div class="pagination-col">
+
+            <span class="pagination" id="pagination"></span>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="shadow"></div>
+
+    <div class="modal hide" id="addPriceDialog">
+
+        <div class="modal-dialog">
+
+            <div class="modal-header">
+
+                <h4 class="modal-title">产品价格录入</h4>
+                <span class="close cancel-modal">×</span>
+
+            </div>
+
+
+                    <div class="dialog-body add-product">
+
+                        <ul class="info-list">
+                            <li>
+                                <label>水果名称</label>
+                                <select>
+                                    <option>avocado - 鲜鳄梨</option>
+                                </select>
+
+                                <label>国家</label>
+                                <select>
+                                    <option>请选择国家</option>
+                                </select>
+
+                                <button type="button" disabled class="green-btn">确认</button>
+
+                            </li>
+
+
+
+
+
+
+                        </ul>
+
+
+                        <div class="select-price">
+
+
+
+                            <ul class="info-list gather-date">
+
+                                <li>
+                                <label>采集日期</label>
+                                <input type="text"/>
+
+
+                                <label>批发市场</label>
+                                <select>
+                                    <option>请选择市场</option>
+                                </select>
+                                </li>
+
+                            </ul>
+
+
+                            <div class="select-price-top">
+                            <label>标准集</label>
+                            <select>
+                                <option>请选择价格所属的配置集</option>
+                                <option>别名1</option>
+                                <option>别名2</option>
+                            </select>
+                            <button type="button" class="green-border-btn" id="addPriceBtn">添加价格</button>
+                            </div>
+
+
+                            <ul id="priceList">
+                                <li>
+                                    <div class="select-price-text"><span>属性集1</span> <span>属性集1内容</span></div>
+                                    <div class="select-price-row">
+                                        <span><label>价格</label><input type="text" /></span>
+                                        <span><label>成交量</label><input type="text" /></span>
+                                        <button type="button" class="green-border-btn delete-btn">删除</button>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="btn-col"><button type="button" class="green-btn">保存</button></div>
+
+
+
+                    </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="modal" id="modifyPriceDialog">
+
+        <div class="modal-dialog">
+
+            <div class="modal-header">
+
+                <h4 class="modal-title">产品价格修改</h4>
+                <span class="close cancel-modal">×</span>
+
+            </div>
+
+
+            <div class="dialog-body">
+
+                <ul class="info-list">
+                    <li>
+                        <label>水果名称</label>
+                       <span style="width: 130px;">鲜鳄梨</span>
+
+                        <label style="width: auto">水果名称（英文）</label>
+                        <span style="width: 130px;">ABC</span>
+                    </li>
+
+                    <li>
+                        <label>采集日期</label>
+                            <span>
+                           2017/9/29
+                            </span>
+
+                    </li>
+
+                    <li>
+                        <label>辉展市场</label>
+                            <span>
+                           美国
+                            </span>
+
+                    </li>
+                    <li class="long-text">
+                        <label>属性集X</label>
+                        <span style="width:auto;">
+                         属性集X内容属性集X内容属性集X内容属性集X内容属性集X内容属性集X内容属性集X内容属性集X内容属性集X内容属性集X内容属性集X内容属性集X内容
+                        </span>
+
+                    </li>
+
+                    <li>
+                        <label>价格</label>
+                        <span>
+                          <input type="text" />
+                        </span>
+
+                    </li>
+                    <li>
+                        <label>成交量</label>
+                        <span>
+                          <input type="text" />
+                        </span>
+
+                    </li>
+
+
+
+                </ul>
+
+                <div class="right-btn-col"><button type="button" class="green-btn">确认</button></div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+    <script>
+
+        $(".table-col").on("click",".edit-btn",function()
+        {
+
+            $("#modifyPriceDialog").show();
+            $(".shadow").show();
+
+        });
+
+        $("#addPrice").click(function()
+        {
+            $("#addPriceDialog").show();
+            $(".shadow").show();
+        });
+
+
+        $("#addPriceBtn").click(function()
+        {
+
+            $("#priceList").append('<li>'+
+                    '<div class="select-price-text"><span>属性集1</span> <span>属性集1内容</span></div>'+
+                    '<div class="select-price-row">'+
+                    '<span><label>价格</label><input type="text" /></span>'+
+                    '<span><label>成交量</label><input type="text" /></span>'+
+                    ' <button type="button" class="green-border-btn delete-btn">删除</button>'+
+                    '</div>'+
+                    '</li>');
+
+        });
+
+        $("#priceList").on("click",".delete-btn",function()
+        {
+            $(this).parent().parent().remove();
+        });
+
+
+
+        //分页
+        var initPagination = function() {
+            var num_entries =100;
+            // 创建分页
+            $("#pagination").pagination(num_entries, {
+                num_edge_entries: 1, //边缘页数
+                num_display_entries: 4, //主体页数
+                callback: pageselectCallback,
+                items_per_page:1 //每页显示1项
+            });
+        }();
+
+        function pageselectCallback(page_index, jq){
+
+            //回调函数 写ajax 添加数据
+
+        }
+
+        $(".cancel-modal").click(function()
+        {
+
+            $(".modal").hide();
+            $(".shadow").hide();
+
+        });
+
+    </script>
+
+</body>
+</html>

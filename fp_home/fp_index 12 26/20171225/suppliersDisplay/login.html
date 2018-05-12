@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>freshport</title>
+		<style>
+			body{
+				background:#8BBC3C;
+				height: 65px;
+				width: 1080px;
+				overflow: hidden;
+			}
+			.nav-user {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				z-index: 999;
+			}
+			
+			.nav a,
+			.nav-user a {
+				padding: 0 16px;
+				font-size: 14px;
+				color: #fff;
+				text-decoration: none;
+				display: inline-block;
+			}
+			
+			.nav .first {
+				padding-left: 0px;
+			}
+			
+			.nav-user a {
+				padding: 0 6px;
+			}
+			
+			.nav-user .social-icons {
+				padding-left: 35px;
+				background: url(person.png) no-repeat left center;
+				line-height: 64px;
+			}
+			
+			#LoginA{display: none;}
+		</style>
+		
+	</head>
+	<body >
+		
+		<!--未登录-->
+		<div class="nav-user" id="LoginU">
+			<a href="javascript:;" class="social-icons">Login</a>
+		</div>
+
+		<!--登录-->
+		<div class="nav-user" id="LoginA" style="display: none;">
+			<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+			<a href="javascript:;">&nbsp;|&nbsp;</a>
+			<a href="javascript:;" id="signUp">Logout</a>
+			<a href="javascript:;">&nbsp;|&nbsp;</a>
+			<a href="javascript:;" id="enterFP">My Freshport</a>
+		</div>
+					
+				<div class="container_right_top" id="top">
+			   
+					 <c:choose>
+			        	<c:when test="${empty cookie.userName }">
+				        	<iframe scrolling="auto" id="framelogin" frameborder="0"  src="${loginPath }/login?service=${sysPath}/redirect.jsp&locale=zh_CN" style="width:100%;height:100%;overflow:hidden;"></iframe>
+				        </c:when>
+				        <c:otherwise>
+				        <div class="fr name" id="LoginA" style="display: block;">
+					        	<a href="" id="usernameInfo"></a>  
+								 <p id="info">
+								  <a href="javascript:void(0);" onclick="clearUser();" id="out">退出登录&nbsp;&nbsp;</a> | <a id="enterFP" href="${foreignprocurementPath }/jump!page.dhtml?p=mainframpage" >&nbsp;&nbsp;我的生鲜港</a> 
+								</p>				        
+						</div>
+  
+				        </c:otherwise>
+			        </c:choose>
+				
+				</div>
+	</body>
+	
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		checkUser();
+		/** ******************检查用户是否登录***************** */
+		$('#join').click(function(){
+				checkUser();
+		});
+		
+		/***************************清空用户*************************/
+			
+		$('#signUp').click(function(){
+				clearUser();
+		});
+			
+		
+		/** ******************清空用户***************** */
+		function clearUser() {
+			var url = "clearname.txt?num=" + Math.random();
+			$.ajax({
+				type : "GET",
+				url : url,
+				async : false,
+				success : function(data) {
+					
+					$("#LoginA").css("display", "none");
+					$("#LoginU").css("display", "block");
+					//不使用单点登录
+					//window.location.href = "newIndex.html";
+					//如果使用单点登录
+					//window.location.href = "";
+				}
+			});
+		}
+		
+		function checkUser(){
+			var url = "username.txt?num=" + Math.random();
+			$.ajax({
+					type : "GET",
+					url : url,
+					async : false,
+					success : function(data) {
+						if (data != "") {//已经登录
+							$("#LoginA").css("display", "block");
+							$("#usernameInfo").empty();
+							$("#usernameInfo").append(data);
+							$("#LoginU").css("display", "none");
+							$("#enterFP").attr("href", "");//后一个参数:生鲜港后台地址
+						} else {
+							$("#LoginA").css("display", "none");
+							$("#LoginU").css("display", "block");
+						}
+					}
+			});
+			
+		}
+
+		
+	</script>
+</html>

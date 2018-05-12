@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- 项目名称 -->
+	<config name="sysName" value="生鲜港商城" ></config>
+	
+	<!-- 前端地址 -->
+	<config name="frontPath" value="https://wwwtest.freshport.com" />
+	<!-- 生鲜港地址 -->
+	<config name="sysPath" value="https://wwwtest.freshport.com/cn" />
+	<!-- 英文 -->
+	<config name="enPath" value="https://entest.freshport.com" />
+	<!-- 后台 -->
+	<config name="foreignprocurementPath" value="https://wwwtest.freshport.com/foreignprocurement" />
+	<!-- 单点登录地址 -->
+	<config name="loginPath" value="https://logintest.freshport.com" />
+	<!-- 库存地址 -->
+	<config name="inventoryPath" value="https://wwwtest.freshport.com/inventory" />
+	<!-- 销售地址 -->
+	<config name="salesPath" value="https://wwwtest.freshport.com/sales" />
+	<!-- 支付地址 -->
+	<config name="payPath" value="https://wwwtest.freshport.com/pay" />
+	<!-- 生鲜港地址 -->
+	<config name="appmanagerPath" value="https://wwwtest.freshport.com/appmanager" />
+	<!-- 采购地址 -->
+	<config name="purchasePath" value="https://wwwtest.freshport.com/purchase" />
+	<!-- 物流税金等 -->
+	<config name="logisticPath" value="https://wwwtest.freshport.com/logistic" />
+	<!-- info冠易地址 -->
+	<config name="infoPath" value="https://infotest.freshport.com/" />
+	
+	<!--图片服务器地址-->
+	<config name="imageServer" value="https://www.freshport.com/fpFile/image/" />
+	<!--小图片服务器地址-->
+	<config name="UploadSmallUrl" value="https://www.freshport.com/fpFile/image_small/" />
+	<!--中图图片服务器地址-->
+	<config name="UploadMiddleUrl" value="https://www.freshport.com/fpFile/image_middle/" />
+	<!--大图图片服务器地址-->
+	<config name="UploadBigUrl" value="https://www.freshport.com/fpFile/image_big/" />
+	
+	<!-- 网站服务器登录地址(用于过滤器中) -->
+	<config name="login" value="https://www.freshport.com/login.htm" />
+	
+	<!-- 发送邮箱地址 -->
+	<config name="emailUrl" value="freshport@vip.163.com" />
+	
+	<!-- 发送邮箱密码 -->
+	<config name="emailPwd" value="secret" />
+	
+	<!-- 服务器-->
+	<config name="SmtpServerStr" value="smtp.vip.163.com" />
+</configs>

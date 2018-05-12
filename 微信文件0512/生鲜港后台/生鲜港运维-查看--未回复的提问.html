@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看--未回复的提问</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+
+
+    <div class="feedback-form">
+
+
+        <div class="feedback-form-col">
+
+
+        <div class="top-title">未 回 复
+
+
+        <span class="date">2017.04.24 10:11</span>
+        </div>
+
+        <div class="feedback-form-row">
+
+            <label>内容</label>
+            <textarea>我的密码忘了，该如何找回？</textarea>
+
+        </div>
+
+
+            <div class="feedback-form-row">
+
+                <label>附件图片 <a href="###" class="green">（全部下载）</a></label>
+
+                <div class="img-list clearfix">
+                    <div class="img-col">
+                    <img class="preview-col" src="assets/img/mien.jpg"/>
+                    <div class="operate"><a class="green preview-col">预览</a><a class="green">下载</a></div>
+                    </div>
+                    <div class="img-col">
+                        <img class="preview-col" src="assets/img/mien.jpg"/>
+                        <div class="operate"><a class="green preview-col">预览</a><a class="green">下载</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="feedback-form-row">
+
+            <label>用户名</label>
+            <input type="text"/>
+
+            </div>
+
+
+            <div class="feedback-form-row">
+
+                <label>邮箱</label>
+                <input type="text"/>
+
+            </div>
+
+
+            <div class="feedback-form-row">
+
+                <label>联系电话或手机</label>
+                <input type="text"/>
+
+            </div>
+
+
+            <div class="feedback-form-row">
+
+                <label>QQ号</label>
+                <input type="text"/>
+
+            </div>
+
+            <div class="btn-col">
+
+            <button type="button" class="green-btn">回复提问</button>
+
+            <button type="button" class="green-border-btn">关闭提问</button>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+    <script>
+        $(".preview-col").click(function()
+        {
+
+            layer.open({
+                type: 1,
+                title: false, //不显示标题
+                content: "<img style='width:100%;min-width:300px;display: block;' src='assets/img/mien.jpg' />",
+                cancel: function(){
+
+                }
+            });
+
+        });
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>生鲜港登录界面</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/base.css">
+
+</head>
+<style>
+
+/* 公共的样式 */
+html,body{width:100%;height:100%;background:url(images/bg.png);font-family:"微软雅黑";}
+body{padding:0;margin:0;}
+ul,li{list-style:none;margin:0;padding:0;}
+p{padding:0;margin:0;}
+a{text-decoration:none;color:#333;}
+
+/* 布局 css   width 1024 需要做适配     */
+#main{padding-top:74px;padding-bottom:54px;background:transparent;width:1280px;height:100%;box-sizing:border-box;margin:0 auto;position:relative;}
+
+#nav{width:100%;height:64px;background:#fff;position:absolute;top:0;left:0;margin-bottom:20px;border-radius:5px;}
+
+#footer{width:100%;height:24px;background:#fff;position:absolute;bottom:0;left:0;border-radius:5px;}
+
+#container{width:100%;height:100%;background:#fff;border-radius:5px;}
+
+
+/* nav css */
+#nav{background:url(images/logo.png) #fff no-repeat 6px center;}
+.nav_img{width:50%;text-decoration:none;float:left;}
+
+.nav_img span{display:inline-block;margin-left:136px;line-height:64px;color:#fa9d2a;font-size:16px;float:left;font-weight:560;}
+.navbar{width:300px;float:right;height:100%;}
+.navbar li{list-style:none;float:left;padding:10px;box-sizing:border-box;height:100%;line-height:44px;}
+.navbar a{text-decoration:none;color:#333;height:100%;line-height:100%;}
+
+/*footer css*/
+#footer{width:100%;text-align:center;line-height:44px;height:44px;padding:0;margin:0;color:#666;font-size:14px;}
+
+
+/*  container css*/
+.container_session{height:98%;background:#fff;margin:1% auto;;box-sizing:border-box;padding:0 10px;}
+.container_left{width:70%;border-right:1px solid #eee;float:left;}
+.container_right{width:30%;float:left;}
+
+.container_top{height:76%;width:100%;box-sizing:border-box;border:1px solid #eee;background-image:url("images/banner_bg.jpg");background-size:cover;background-position:center;}
+.container_bottom{height:24%;width:100%;box-sizing:border-box;border-top:none;position:relative;overflow:hidden;padding-top:10px;}
+
+.container_right_bottom{height:61.8%;width:100%;box-sizing:border-box;padding-bottom: 20px;}
+.container_right_top{height:38.2%;width:100%;box-sizing:border-box;}
+.container_center{height:20px;width:100%;box-sizing:border-box;}
+
+.container_right .register {padding: 10px;width:100%;box-sizing:border-box;border-radius: 6px;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-top: 1px solid rgba(0, 0, 0, .05);box-shadow: 0 1px 2px rgba(0, 0, 0, .2) !important;background: #fff;height:100%;position:relative;overflow:hidden;
+}
+
+.register h1 {
+	font-size:18px;font-weight: 500;padding: 6px;padding-top:0px; margin: 0; border-bottom: 1px solid #eee; text-align: center; padding-bottom: 10px;margin-bottom:10px;
+	
+}
+
+.text {
+	border: 1px solid rgba(0, 0, 0, .1);padding: 6px 12px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;margin-bottom: 5px;font-size: 13px;
+}
+.text1 {
+	border: 1px solid rgba(0, 0, 0, .1);padding: 6px 0px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;margin-bottom: 5px;font-size: 13px;
+}
+.text img {
+	margin-right: 6px;vertical-align: middle;position: relative;
+}
+
+.register input[type=text], .register input[type=password] {
+	border: 0;font-size: 14px;font-weight: 300;height: 22px;position: absolute;margin-top: -2px;width: 80%;
+}
+
+
+
+
+/* 轮播图 的css  */
+.product{width:204px;float:left;height:100%;box-sizing:border-box;float:left;position:relative;}
+
+.product p{position:absolute;bottom:0;height:80px;text-align:center;width:100%;line-height:80px;padding:0;margin:0;color:#fff;font-weight:600;font-size:22px;}
+
+.container_bottom .mark_left,.mark_right{width:6%;height:200px;background:#000;position:absolute;top:0%;filter: alpha(opacity:0); opacity: 0; z-index:3000;  }
+
+.mark_left{left:0;float:left;}
+
+.mark_right{right:0;text-align:right;}
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#playimages{width:100%;height:100%;position:relative;}
+#playimages ul{margin:0;padding:0;list-style:none;position:absolute;left:0;top:0;width:3000px;height:100%;transition:1s easing;}
+
+.arrow{display:none; }
+.prev,.next { width: 60px; height: 60px;  no-repeat; position: absolute; top: 26%; z-index: 3001; cursor: pointer;font-family:"宋体";font-size:48px;line-height:100px;color:#666;font-weight:bold;z-index:3000;text-decoration:none;}
+.prev{left:4px;}
+.next{right:4px;text-align:right;}
+
+
+//公告 css
+/* bcon */
+.bcon{width:100%;border:1px solid #eee;margin:20px auto;box-sizing:border-box;}
+.bcon .more{float:right;line-height:28px;color:#FF3300;}
+.bcon a,.bcon span{font-size:12px;}
+.list_lh{height:100%;overflow:hidden;}
+.a_blue{font-size:14px;}
+.list_lh li{padding:8px;}
+.list_lh li.lieven{background:rgba(221,221,221,0.2);}
+.list_lh li p{height:24px;line-height:24px;}
+.list_lh li p a{float:left;}
+.list_lh li p em{width:30px;font:normal 8px/16px "宋体";color:#FF3300;float:left;display:inline-block;text-align:right;}
+.list_lh li p span{color:#999;float:right;}
+.list_lh li p a{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.list_lh li p a.btn_lh{background:#28BD19;height:17px;line-height:17px;color:#fff;padding:0 5px;margin-top:4px;display:inline-block;float:right;}
+.btn_lh:hover{color:#fff;text-decoration:none;}
+
+// 自定义下拉框
+#comboboxLeft {text-indent:38px!important;background:url(images/email.png) no-repeat 12px;color:#333;font-weight:bold;font-size:14px;}
+#comboboxList{line-height:30px!important;box-sizing:border-box;background:#fff;border-radius:3px;}
+#comboboxList a{display:block;line-height:30px!important;padding-left: 30px;margin-top:-3px;color:#A9A9A9;}
+
+// 6大功能
+#playimages_ul{height:100%;}
+#playimages_ul li{border:1px solid #eee;border-left:none;border-right:1px solid #eee;}
+#playimages_ul li:nth-child(1){background:url("images/1.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(2){background:url("images/2.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(3){background:url("images/3.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(4){background:url("images/4.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(5){background:url("images/5.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(6){background:url("images/6.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(7){background:url("images/1.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(8){background:url("images/2.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(9){background:url("images/3.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(10){background:url("images/4.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(11){background:url("images/5.png") no-repeat;background-position:center;background-size:contain;}
+#playimages_ul li:nth-child(12){background:url("images/6.png") no-repeat;background-position:center;background-size:contain;}
+
+/* 媒询 */
+
+
+@media all and (max-width: 1366px) {
+	#main{width:1024px;}
+		
+}
+
+@media all and (max-width: 1022px) {
+	#main{width:900px;}
+	.container_left{width:61.8%;}
+	.container_right{width:38.2%;}
+}
+
+@media all and (max-width: 900px) {
+	#main{width:800px;}
+	.register input[type=text], .register input[type=password] {width: 70%;}
+}
+
+@media all and (max-width: 808px) {
+	#main{width:700px;}
+}
+
+@media all and (max-width: 706px) {
+	#main{width:600px;}
+	.list_lh li p span{display:none;}
+	input[name="email"]{width:40%!important;}
+	.nav_img span {display:none;}
+}
+
+@media all and (max-width: 602px) {
+	#main{width:500px;}
+	.register input[type=text], .register input[type=password] {width: 60%;}
+	#code{width:40%;}
+	.container_left{width:50%;}
+	.container_right{width:50%;}
+
+}
+@media all and (max-width: 506px) {
+	#main{width:400px;}
+	.register input[type=text], .register input[type=password] {width: 50%;}
+	#code{width:40%;}
+	.container_left{width:10%;visibility:hidden;}
+	.container_right{width:90%;margin-left:-5%;}
+	
+	.navbar {width: 100px;}
+	.navbar li {height: 20px;line-height: 20px;font-size: 12px;}
+	.hr{display:none;}
+	.navbar { margin-top: -8px;}
+	 #footer{font-size: 12px;line-height: 22px;}
+}
+@media all and (max-width:426px) {
+	#main{width:300px;}
+
+}
+
+@media all and (max-width:326px) {
+	#main{width:240px;}
+
+}
+
+
+.product a{width:100%;height:100%;display:block;}
+
+</style>
+
+<body>
+
+	<div id="main">
+	
+		<!--导航-->
+		<div id="nav">
+			<a  class="nav_img" href="index.html">
+			<span>信&nbsp;息&nbsp;服&nbsp;务&nbsp;平&nbsp;台</span>
+			</a>
+			<ul class="navbar">
+				<li> <a href="../index/indexEn.jsp" target="_self"> English </a></li>
+				<li  class="hr" > <a href="#"> | </a></li>
+				<li> <a href="about.html" > 关于我们 </a></li>
+				<li  class="hr" > <a href="#"> | </a></li>
+				<li> <a  href="contact.html"> 联系我们 </a></li>
+				
+			</ul>
+		</div>
+
+		<!--导航-->
+
+		<!-- 主体 -->
+		<div id="container">
+		
+			<div class="container_session container_left">
+				<div class="container_top" ></div>
+				
+				<div class="container_bottom" id="pic" >
+				
+					<a class="mark_left"  href="javascript:;"></a>
+					<a class="mark_right" href="javascript:;"></a>
+					<div class="arrow"> <a class="prev" href="javascript:;"><</a></div>
+					<div class="arrow"><a class="next" href="javascript:;">></a></div>
+				
+				<div  id="playimages">
+					<ul id="playimages_ul">
+				
+			
+					
+					<li class="product" id="product_01" style="border-left:1px solid #eee;">
+						<a href="jishou.html" target="_blank"  title="寄售二次征税"></a>
+					  <!-- <p style="background:rgba(0,0,0,0);">寄售二次征税</p> -->
+					</li>
+					<li class="product" id="product_02" >
+						<a href="waihui.html" target="_blank" title="外汇支付管理"></a>
+					</li>
+					<li class="product" id="product_03">
+
+						<a href="wuliu.html" target="_blank" title="货代物流跟踪"></a>
+					</li>
+					
+					
+					<li class="product" id="product_04">
+						<a href="shichang.html" target="_blank"  title="批发市场信息管理"></a>
+					 
+					</li>
+					<li class="product" id="product_05">
+						<a href="jinrong.html" target="_blank" title="金融服务"></a>
+					</li>
+
+					<li class="product" id="product_06">
+						<a href="guanli.html" target="_blank" title="业务管理系统" ></a>
+					
+					</li>
+										<li class="product" id="product_01" style="border-left:1px solid #eee;">
+						<a href="jishou.html" target="_blank"  title="寄售二次征税"></a>
+					  <!-- <p style="background:rgba(0,0,0,0);">寄售二次征税</p> -->
+					</li>
+					<li class="product" id="product_02" >
+						<a href="waihui.html" target="_blank" title="外汇支付管理"></a>
+					</li>
+					<li class="product" id="product_03">
+
+						<a href="wuliu.html" target="_blank" title="货代物流跟踪"></a>
+					</li>
+					
+					
+					<li class="product" id="product_04">
+						<a href="shichang.html" target="_blank"  title="批发市场信息管理"></a>
+					 
+					</li>
+					<li class="product" id="product_05">
+						<a href="jinrong.html" target="_blank" title="金融服务"></a>
+					</li>
+
+					<li class="product" id="product_06">
+						<a href="guanli.html" target="_blank" title="业务管理系统" ></a>
+					
+					</li>
+					
+					
+					</ul>
+				</div>
+				
+				
+				</div>
+				
+				
+				
+			</div>
+			
+			<!-- 登录 -->
+			<div class="container_session container_right">
+			
+				<div class="container_right_top" id="top">
+			        
+					<iframe scrolling="auto" id="framelogin" frameborder="0"  src="login.html" style="width:100%;height:100%;overflow:hidden;"></iframe>
+					
+				<!-- 	<form class="register" id="account" style="display:none;">
+						<h1>用户注册</h1>
+				
+						<div class="text">
+							<img src="images/username.png" alt="username" />
+							<input type="text" name="username" placeholder="用户名" /><br />
+						</div>
+					
+						<div class="text">
+							<img src="images/password.png" alt="password" />
+							<input type="password" name="password" placeholder="密码" /><br />
+						</div>	
+						<div class="text" >
+							<img src="images/email.png" alt="email" />
+							<input type="text" name="email" placeholder="邮箱" /><br />
+						</div>
+						<div class="text" >
+							<img src="images/email.png" alt="email" />
+							<input type="text" name="email" placeholder="公司" /><br />
+						</div>
+						<div class="text1"  id="kungfu1">
+							<img src="images/email.png" alt="email" />
+							
+							 <a>服务商</a>
+							 <a>采购商</a>
+							 <a>供应商</a>
+							
+						
+						</div>
+						<div class="text" style="width:58%;">
+							<img src="images/email.png" alt="email" />
+							<input type="text" name="email" placeholder="安全验证码" style="width:46%;" /><br />
+						</div>
+						<input type="submit" value="注册" />
+						<br />			
+					
+					</form> -->
+				</div>
+				
+				<div class="container_center"></div>
+				
+				<div class="container_right_bottom" id="tell">
+					<div class="register bcon">
+						<h1>最新公告<a class="more" href="javascript:void(0)">更多</a></h1>
+					
+						<div class="list_lh">
+						<ul >
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em>最新</em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜生</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em>重要</em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em></em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em>推荐</em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em></em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em></em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em></em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em></em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em></em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em></em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em></em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+							<li>
+								<p><a href="http://www.freshport.com">2017/03/22</a><a href="http://www.freshport.com" class="btn_lh">更多</a><em></em></p>
+								<p><a href="http://www.freshport.com" class="a_blue">生鲜港生鲜港生鲜港生鲜港</a><span>17:28:05</span></p>
+							</li>
+						</ul>
+					 </div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<!-- 主体 -->
+
+		<!--页脚-->
+		<div id="footer">
+			备案/许可证号 沪ICP备15035308&nbsp;&nbsp;|&nbsp;&nbsp;2015 Freshport.com. All rights reserved
+		
+		</div>
+		<!-- 页脚-->
+
+	
+	</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+	<script type="text/javascript">
+
+
+	
+	$(document).ready(function(){
+	
+		var widthContaner=$('.container_top').width();
+		$('.product').css({"width":widthContaner/4});
+		$('.product').hover(function(){
+			$(this).css({"border":"2px solid #f97f00"});
+		
+		},function(){
+			$(this).css({"border":"1px solid #eee","border-left":"none"});
+		});
+	
+		$('.list_lh li:even').addClass('lieven');
+		
+		$("div.list_lh").myScroll({
+			speed:80, //数值越大，速度越慢
+			rowHeight:68//li的高度
+		});
+/*
+		$('#register').click(function(){
+			height=$(window).height();
+			$('#login').hide();
+			$('#account').show();
+			$('#top').css({"height":"330px"});
+			$('#tell').css({"height":height-74-64-30-330});
+		});
+		*/
+	
+	
+		combobox({	
+		"id":"kungfu1",
+		"height":19,
+		"line-height":30,
+		"width":352,
+		"backgroundColor":"#fff",
+		"fontSize":14,
+		"fontFamily":"宋体",
+		"color":"#000"
+		});
+	
+		//解决窗口改变问题
+		var height2=document.body.offsetHeight;
+	
+		$(window).resize(function(){
+			$('body').css({"height":height2});
+		
+		});
+		
+	
+		
+		
+		
+	})
+	</script>
+	
+
+<!-- 	<script src="js/jquery.cxdialog.min.js"></script>
+	<script>
+	(function() {
+	  var promptName = document.getElementById('prompt_name');
+
+
+	  $('#playimages_ul').on('click', 'li', function() {
+		var _name = this.id;
+		
+		if (_name == 'product_01') {
+			 $.cxDialog({
+			  title: '寄售二次征税',
+			  info: '对以南美水果为主的进口寄售（代卖）贸易，提供按实际销售结算，如实征税的通道（海关唯一试点，防范法律风险）。',
+			  lockScroll: true,
+			  background: '#000',
+			  width:360
+			});
+		
+			return false;
+
+		} else if (_name == 'product_02') {
+		
+			$.cxDialog({
+			  title: '外汇支付',
+			  info: '<ul ><li>线上跟踪支付进度;</li> <li>线上下载回单;</li>  <li>支付线上对账;</li>  <li>未来提供线上发起支付;</li><li>对支付风险进行管控;</li>',
+			  lockScroll: true,
+			  background: '#000',
+			  width:360
+			});
+		
+			return false;
+		 
+		} else if (_name === 'product_03') {
+		
+			$.cxDialog({
+			  title: '货代物流跟踪',
+			  info: '<ul><li>空运及海运的单证清关物流跟踪（含app）;</li> <li>国际运费、税金、货代费用实时查询;</li> <li>账单管理;</li> </ul>',
+			  lockScroll: true,
+			  background: '#000',
+			  width:360
+			});
+		
+			return false;
+		 
+		}else if (_name === 'product_04') {
+		
+			$.cxDialog({
+			  title: '批发市场信息管理',
+			  info: '<ul><li>对进入市场的货物的物流和操作进行跟踪（含app）;</li> <li>费用的实时查询;</li> <li>线上的账单;</li> </ul>',
+			  lockScroll: true,
+			  background: '#000',
+			  width:360
+			});
+		
+			return false;
+		 
+		}else if (_name === 'product_05') {
+		
+			$.cxDialog({
+			  title: '金融服务',
+			  info: '<ul><li>行业特有的货物担保金融服务;</li> <li>以数据为核心的信用金融服务;</li> <li>传统金融服务;</li> </ul>',
+			  lockScroll: true,
+			  background: '#000',
+			  width:360
+			});
+		
+			return false;
+		 
+		}else if (_name === 'product_06') {
+		
+			$.cxDialog({
+			  title: '贸易管理服务',
+			  info: '<ul><li>按进口水果贸易定制;</li> <li> 国际和国内采购管理;</li> <li>库存管理;</li><li>销售管理（含现场开单app）;</li><li> 财务管理 采购，销售，利润结算;</li>   </ul>',
+			  lockScroll: true,
+			  background: '#000',
+			  width:360
+			});
+		
+			return false;
+		 
+		};
+
+	  });
+	})();
+	</script> -->
+</body>
+</html>

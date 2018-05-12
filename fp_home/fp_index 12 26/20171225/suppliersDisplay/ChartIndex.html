@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>freshport</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/newIndex.css" rel="stylesheet" type="text/css" media="all">
+		<style>
+			body,
+			div,
+			span,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			pre,
+			sup,
+			sub,
+			ul,
+			ol,
+			li,
+			dl,
+			dt,
+			dd,
+			form,
+			fieldset,
+			input,
+			button,
+			textarea,
+			select,
+			iframe,
+			img,
+			a,
+			header,
+			footer,
+			section,
+			article,
+			aside,
+			details,
+			figcaption,
+			figure,
+			hgroup,
+			nav,
+			menu,
+			canvas {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				background-color: #fff;
+				color: #000;
+				font: 12px/20px "Microsoft Yahei", Tahoma, Arial, "Helvetica Neue", "Hiragino Sans GB", Simsun, sans-self;
+			}
+			
+			ul,
+			ol {
+				list-style-type: none;
+			}
+			
+			b,
+			strong {
+				font-weight: normal;
+			}
+			
+			i,
+			em {
+				font-style: normal;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #333;
+			}
+			/*清除浮动*/
+			
+			.clearfix:after {
+				clear: both;
+				display: block;
+				height: 0;
+				content: "";
+			}
+			/*主体部分*/
+			
+			.contains {
+				width: 1260px;
+				margin: 0 auto;
+			}
+			/*面包屑导航*/
+			
+			.crumbNav {
+				padding: 12px 0;
+				color: #323232;
+				line-height: 2em;
+			}
+			
+			.crumbNav a {
+				color: #8BBC3C;
+			}
+			
+			.crumbNav a:hover {
+				color: #d95459;
+			}
+			
+			.crumbNav font {
+				padding: 0 2px;
+				font-family: simsun;
+			}
+			/**选择商品分类**/
+			
+			.wareSort {
+				padding: 15px 8px 15px 7px;
+				border: 1px solid #ddd;
+				background-color: #fff;
+			}
+			
+			.wareSort ul {
+				float: left;
+				width: 376px;
+				padding: 10px;
+				border: 1px solid #ddd;
+				margin-right: 7px;
+				margin-left: 8px;
+				background-color: #fff;
+			}
+			
+			.wareSort ul li a {
+				display: block;
+				padding-right: 25px;
+				padding-left: 10px;
+				border: 1px solid #fff;
+				line-height: 28px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			
+			.wareSort ul li a:hover {
+				color: #222222;
+			}
+			
+			.wareSort ul li.active a {
+				border-color: #ccc;
+				background: #eee url(../img/arrow.png) no-repeat right center;
+				color: #111;
+			}
+			
+			.selectedSort {
+				padding: 0px 10px;
+				border: 1px solid #8BBC3C;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				font-size: 12x;
+				height: 40px;
+				line-height: 40px;
+				background-color: #fff;
+				color: #8BBC3C;
+				font-weight: bold;
+			}
+			
+			.selectedSort i font {
+				font-family: simsun;
+			}
+			
+			.wareSortBtn {
+				padding-bottom: 50px;
+				text-align: center;
+			}
+			
+			.wareSortBtn input {
+				width: 120px;
+				height: 36px;
+				border: 1px solid #8BBC3C;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				border-radius: 4px;
+				background-color: #8BBC3C;
+				color: #fff;
+			}
+			
+			.wareSortBtn input:hover {
+	
+				background-color: #d95459;
+			}
+			
+			.wareSortBtn input:disabled {
+				border-color: #eee;
+				background-color: #8BBC3C;
+				color: #fff;
+				font-weight: bold;
+				cursor: default;
+				line-height: 34px;
+				border-radius: 4px;
+			}
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.ftl {
+				float: left;
+				width: 80px;
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			.tabUl {
+				margin-left: 60px;
+			}
+			
+			.legendsColors .tabLi {
+				float: left;
+				list-style: none;
+				margin-right: 10px;
+				padding: 0 6px;
+				height: 30px;
+				overflow: hidden;
+				font-size: 14px;
+				line-height: 30px;
+				vertical-align: middle;
+			}
+			
+			.legendsColors .tabLi.curr {
+				height: 28px;
+				line-height: 28px;
+				border: 1px solid #8BBC3C;
+				background: #8BBC3C;
+				color: #fff;
+			}
+			
+			.tabConts {
+				position: relative;
+				clear: both;
+			}
+			
+			.legendsColors .tabCont {
+				height: 20px;
+				overflow: hidden;
+			}
+			
+			.legendsColors .tabCont {
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			.tabCont {
+				min-height: 20px;
+			}
+			
+			.dsn {
+				display: none!important;
+			}
+			
+			.icons.checkbox.checked {
+				background-position: 0px -18px;
+			}
+			
+			.icons.checkbox {
+				background-position: 0px 2px;
+				cursor: pointer;
+			}
+			
+			.icons {
+				display: inline-block;
+				vertical-align: middle;
+				line-height: 30px;
+				width: 20px;
+				height: 20px;
+				background: url(sprite.png) no-repeat;
+				font-style: normal;
+			}
+			
+			i,
+			cite,
+			em,
+			var,
+			address,
+			dfn {
+				font-style: italic;
+			}
+			
+			.legendsColors .tabCont .item.toe {
+				padding: 0;
+				width: auto;
+				max-width: 120px;
+				margin-right: 20px;
+				cursor: pointer;
+			}
+			
+			.toe {
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			
+			label {
+				cursor: default;
+			}
+			
+			.legendsColors .tabCont .item.toe {
+				padding: 0;
+				width: auto;
+				max-width: 120px;
+				margin-right: 20px;
+				cursor: pointer;
+			}
+			
+			.toe {
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			
+			.iiTitlbar {
+				height: 50px;
+				padding-left: 40px;
+				background: #f9f9f9;
+				border-bottom: 1px solid #dcdcdc;    line-height: 50px;
+			}
+			
+			.iiTitlbar .btitl {
+				font-size: 15px;
+				font-weight: 700;
+				color: #333c45;
+				line-height: 50px;
+				height: 50px;
+				display: inline-block;
+			}
+			
+			.ctTitles {
+				padding-top: 15px;
+				font-size: 15px;
+				font-weight: 700;
+				text-align: center;
+				color: #8f8f8f;
+			}
+			
+			.shdBox {
+				border: 1px solid #dcdcdc;
+				box-shadow: -1px 1px 5px -2px #aaa;
+				background-color: #fff;
+				height: 730px;
+				width: 600px;
+				float: left;
+			}
+			
+			.tabTitle {
+				width: 100%;
+				height: 30px;
+				overflow: hidden;
+				font-size: 14px;
+				line-height: 30px;
+				vertical-align: middle;
+				margin-bottom: 10px;
+			}
+			
+			.tabConts {
+				width: 100%;
+				height: 30px;
+				font-size: 14px;
+				line-height: 30px;
+				vertical-align: middle;
+			}
+			
+			.label {
+				display: block;
+				font-weight: normal;
+				margin-right: 5px;
+				font-size: 12px;
+				cursor: pointer;
+				margin-bottom: 10px;
+				height: 12px;
+				line-height: 12px;
+				text-align: right;
+				width: 150px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			
+			.label span {
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				line-height: 12px;
+				vertical-align: middle;
+				margin-right: 4px;
+			}
+			
+			#tgsid_2 {
+				float: right;
+			}
+			
+			.main,
+			.main2,
+			.main1 {
+				width: 1260px;
+				margin-left: -630px;
+			}
+	
+	
+			
+			.main2,
+			.main1 {
+				height: 700px;
+			}
+			
+			.main1 {
+				height: 400px;
+			}
+		</style>
+
+	</head>
+
+	<body class="fly-full">
+
+		<!--头部  -->
+		<div class="header">
+
+			<div class="main">
+
+				<div class="nav">
+
+					<a href="newIndex.html" class="first">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="newIndex.html#Importers"><i class="icon-love"></i> &nbsp;Importers</a>
+					<a href="newIndex.html#Exporters"><i class="icon-love"></i>&nbsp;Exporters</a>
+					<a href="contact.html">Contact</a>
+					<a href="">中文</a>
+				</div>
+
+				<!--未登录-->
+				<div class="nav-user" id="LoginU">
+					<a href="javascript:;" class="social-icons" id="login">Login</a>
+				</div>
+
+				<!--登录-->
+				<div class="nav-user" id="LoginA" style="display: none;">
+					<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="logout">Logout</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="enterFP">My Freshport</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 搜索-->
+		<div class="wrapWhite wrapLogo">
+			<div class="main">
+				<div class="logo">
+
+					<a class="navg" href="newIndex.html">
+						<span class="solgan">
+					Online Information & Service Platform for Imported Fruits Industry
+				</span>
+					</a>
+
+				</div>
+
+				<div class="search">
+					<div id="searchInput">
+						<input type="text" value="" placeholder="what are you looking for..." id="ser" />
+
+						<div id="wrapBtn">
+							<a href="#" class="ser-btn">
+								<img src="images/search.png" />
+								<span>Search</span>
+							</a>
+
+						</div>
+					</div>
+
+					<div id="searchBar">
+
+						<div class="searchValue">
+							<span id="searchbarDisplay">Importers</span>
+							<span class="searchbarArrow" id="searchbarArrow">
+								<em></em>
+								<b></b>		
+							</span>
+
+						</div>
+
+						<ul class="searchbarOptions">
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Importers" rel="nofollow">Importers</a>
+							</li>
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Exporters" rel="nofollow">Exporters</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="advanceSearch"> Advanced Search:&nbsp;&nbsp;
+					<a href="newSearch.html" alt="Importers" title="Importers" class="advanceSearchItem">Importers</a>
+					<a href="" class="advanceSearchItem">Exporters</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 生成分类 -->
+		<div class="wrapWhite" style="height: 480px;">
+			<div class="main main1">
+				<div class="contains">
+					<!--面包屑导航-->
+					<div class="crumbNav">
+						<a href="demo.html">首页</a>
+						<font>&gt;</font>
+						查询水果相应价格行情
+					</div>
+					<!--商品分类-->
+					<div class="wareSort clearfix">
+						<ul id="sort1"></ul>
+						<ul id="sort2" style="display: none;"></ul>
+						<ul id="sort3" style="display: none;"></ul>
+					</div>
+					<div class="selectedSort"><b>您当前选择的商品类别是：</b><i id="selectedSort"></i></div>
+					<div class="wareSortBtn">
+						<input id="releaseBtn" type="button" value="生成图表" disabled="disabled" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 图表 -->
+		<div class="wrapWhite" style="height: 740px;">
+
+			<div class="main main2">
+
+				<div id="tgsid_1" class="shdBox mt3 paramsNode" pmv="PMV">
+
+					<div class="iiTitlbar">
+						<b class="btitl">在批发市场，同一国家，不同规格金果的价格行情</b>
+					</div>
+					<div class="pzr" style="padding:0 10px;position: relative;">
+						<div class="ctTitles"><span class="extp">金果的价格行情关注概览</span></div>
+						<div id="main" style="width:520px;height:440px;margin-top:30px;background-color: rgba(0, 0, 0, 0); cursor: default;">
+
+						</div>
+						<div class="legendsColors" style="margin:30px 0px 10px 20px;">
+							<div class="tabUnit" id="iilegColors">
+								<div class="tabTitle">
+									<div class="ftl">规格维度:</div>
+									<ul class="tabUl" style="float: left;padding: 0;margin: 0;margin-left: 14px;">
+										<li class="tabLi curr" val="23">27#</li>
+										<li class="tabLi" val="26">23#</li>
+										<li class="tabLi" val="176">20#</li>
+										<li class="tabLi" val="180">15#</li>
+									</ul>
+								</div>
+								<div class="tabConts">
+									<div class="ftl" style="height: 30px;line-height: 30px;">国家维度:</div>
+									<div class="tabCont" style="margin-left: 14px;float: left;"><label class="item toe"><i class="icons checkbox" val="isv_1_185"></i><span class="text">中国</span></label><label class="item toe"><i class="icons checkbox" val="isv_1_184"></i><span class="text">德国</span></label><label class="item toe"><i class="icons checkbox" val="isv_1_183"></i><span class="text">日本</span></label><label class="item toe"><i class="icons checkbox" val="isv_1_182"></i><span class="text">美国</span></label></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div id="tgsid_2" class="shdBox mt3 paramsNode" pmv="PMV">
+
+					<div class="iiTitlbar">
+						<b class="btitl">不同批发市场的同一规格金果的价格行情</b>
+					</div>
+
+					<div class="pzr2" style="padding:0 10px;position: relative;">
+						<div class="ctTitles"><span class="extp">金果的价格行情关注概览</span></div>
+						<div id="main2" style="width:580px;height:440px;margin:0 auto;margin-top:30px;background-color: rgba(0, 0, 0, 0); cursor: default;">
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--footer start here-->
+		<div id="footeCompany" class="wrapWhite" style="margin-top: 160px;">
+
+			<div class="main footer">
+				<p>备案/许可证号 沪ICP备15035308 &nbsp;&nbsp;|&nbsp;&nbsp;<span> 2015 Freshport.com. All rights reserved </span></p>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/jquery.sort.js"></script>
+
+		<!-- 引入 ECharts 文件 -->
+		<script src="https://unpkg.com/echarts@3.7.2/dist/echarts-en.js"></script>
+		<script type="text/javascript">
+/*			$('#tgsid_1').hide();
+			$('#tgsid_2').hide();
+*/
+
+
+
+
+
+
+$('.checkbox').click(function(){
+	
+	$(this).toggleClass('checked');
+	
+	alert("再请求ajax数据，生成国家数据价格");
+	
+});
+			var option = {
+				title: {
+					x: 'center',
+					textStyle: {
+						fontSize: 16
+					}
+				},
+				color: ["#249f94", "#8BBC3C", "#08655c"],
+				grid: {
+					bottom: 70
+				},
+				legend: {
+
+					type: 'scroll',
+					orient: 'horizontal',
+					data: ["金果27#", "金果20#", "金果15#"],
+					x: 'left',
+					formatter: function(name) {
+						return name;
+					}
+				},
+				tooltip: {
+					trigger: 'axis',
+					z: -1,
+					axisPointer: {
+						type: 'line',
+						lineStyle: {
+							type: 'dashed',
+							color: '#a4a4a4',
+							opacity: 0.7
+						}
+					},
+					formatter: function(params) {
+
+						return params[0].name + '<br/>' +
+							params[0].seriesName + ' : ' + params[0].value + '</br>' +
+							params[1].seriesName + ' : ' + params[1].value + '</br>' +
+							params[2].seriesName + ' : ' + params[2].value;
+					}
+				},
+				dataZoom: [{
+					show: true,
+					realtime: true,
+					start: 30,
+					end: 70,
+					handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z',
+					handleSize: '60%',
+					handleStyle: {
+						color: '#b2d280'
+					},
+					fillerColor: '#d9f0b5',
+					borderColor: "#b1b1b1"
+				}],
+				xAxis: [{
+					type: 'category',
+					axisTick: {
+						show: false
+					},
+					axisLine: {
+						lineStyle: {
+							color: '#90979c'
+						}
+					},
+					data: [
+						'2017/6/1',
+						'2017/6/2',
+						'2017/6/3',
+						'2017/6/4',
+						'2017/6/5',
+						'2017/6/6',
+						'2017/6/7',
+						'2017/6/8',
+						'2017/6/9',
+						'2017/6/10',
+						'2017/6/11',
+						'2017/6/12',
+						'2017/6/13',
+						'2017/6/14',
+						'2017/6/15',
+						'2017/6/16',
+						'2017/6/17',
+						'2017/6/18',
+						'2017/6/19',
+						'2017/6/20',
+						'2017/6/21',
+						'2017/6/22',
+						'2017/6/23',
+						'2017/6/24',
+						'2017/6/25',
+						'2017/6/26',
+						'2017/6/27',
+						'2017/6/28',
+						'2017/6/29',
+						'2017/6/30'
+					].map(function(str) {
+						return str.replace(' ', '\n')
+					})
+				}],
+				yAxis: [{
+					name: '',
+					axisTick: {
+						show: false
+					},
+					axisLine: {
+						lineStyle: {
+							color: '#90979c'
+						}
+					},
+					axisLabel: {
+						formatter: '{value}元'
+					},
+					type: 'value'
+				}],
+				series: [{
+						name: '金果27#',
+						type: 'line',
+						smooth: true,
+						hoverAnimation: true, //包括 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
+						symbol: 'triangle',
+						symbolSize: 8,
+						itemStyle: {
+							emphasis: {
+								color: '#249f94',
+								borderColor: '#fff',
+								borderWidth: 4,
+								borderType: 'solid',
+								shadowBlur: 5,
+								shadowColor: '#9c9a9b',
+							}
+						},
+						lineStyle: {
+							normal: {
+								width: 1,
+							}
+						},
+						data: [
+							10, 36, 58, 67, 43, 96, 123, 354, 256, 24, 65, 89, 92, 72, 61, 45, 115, 127, 39, 156, 147, 213, 35, 66, 88, 77, 99, 55, 33, 168
+						]
+					},
+					{
+						name: '金果20#',
+						type: 'line',
+						smooth: true,
+						hoverAnimation: true, //包括 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
+						symbol: 'rect',
+						itemStyle: {
+							emphasis: {
+								color: '#88e186',
+								borderColor: '#fff',
+								borderWidth: 4,
+								borderType: 'solid',
+								shadowBlur: 5,
+								shadowColor: '#9c9a9b',
+							}
+						},
+						lineStyle: {
+							normal: {
+								width: 1,
+							}
+						},
+						data: [
+							40, 66, 88, 97, 73, 126, 153, 384, 286, 54, 95, 119, 122, 102, 91, 75, 145, 157, 69, 186, 177, 243, 65, 96, 118, 107, 129, 85, 63, 198
+						]
+					},
+					{
+						name: '金果15#',
+						type: 'line',
+						smooth: true,
+						hoverAnimation: true, //包括 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
+						symbol: 'circle',
+						itemStyle: {
+							emphasis: {
+								color: '#acd680',
+								borderColor: '#fff',
+								borderWidth: 4,
+								borderType: 'solid',
+								shadowBlur: 5,
+								shadowColor: '#9c9a9b',
+							}
+						},
+						lineStyle: {
+							normal: {
+								width: 1,
+							}
+						},
+						data: [
+							50, 76, 98, 107, 83, 136, 163, 394, 296, 64, 105, 129, 132, 112, 101, 85, 155, 167, 79, 196, 187, 253, 75, 106, 128, 117, 139, 95, 73, 208
+						]
+					}
+				]
+			};
+
+			$('#releaseBtn').click(function() {
+
+				$('#tgsid_1').fadeIn();
+			});
+
+			var divCharts = $('#main');
+			var $pzr = $('.pzr');
+
+			var analyticChart = echarts.init(divCharts.get(0));
+			analyticChart.setOption(option);
+			//divLegends
+			var divLegends = $('<div style="width:150px;text-align:right;padding:0 2%;position: absolute;right: 5px;top:40px;"></div>').appendTo($pzr);
+
+			var legend;
+
+			for(var i in analyticChart._componentsMap) {
+
+				var str = i;
+
+				if(str.indexOf("legend") != -1) {
+
+					var legend = analyticChart._componentsMap[i].__model._data;
+
+				}
+
+			}
+
+			var colorNameMap;
+			for(var key in legend[0].parentModel.parentModel) {
+
+				var str = key;
+
+				if(str.indexOf("colorNameMap") != -1) {
+
+					colorNameMap = legend[0].parentModel.parentModel[key];
+
+				}
+
+			}
+
+			$.each(colorNameMap, function(key, value) {
+
+				var labelLegend = $('<a class="label" _key=' + key + '> <span  style="background-color:' + value + '"  ></span>查看' + key + '详细 </a>');
+
+				divLegends.append(labelLegend);
+
+			});
+
+			$(".label").click(function() {
+
+				var key = $(this).attr("_key");
+
+
+				$('#tgsid_2').fadeIn();				
+				
+				alert('通过ajax请求，相应生成 ' + key + "图表详情");
+
+			});
+
+			//*******************************************************//
+			var divCharts2 = $('#main2');
+			var option2 = {
+				title: {
+					x: 'center',
+					textStyle: {
+						fontSize: 16
+					}
+				},
+				color: ["#249f94", "#8BBC3C", "#08655c"],
+				grid: {
+					bottom: 70
+				},
+				legend: {
+
+					type: 'scroll',
+					orient: 'horizontal',
+					data: ["辉展市场", "嘉兴市场", "嘉兴市场", "江南市场"],
+					x: 'left',
+					formatter: function(name) {
+						return name;
+					}
+				},
+				tooltip: {
+					trigger: 'axis',
+					z: -1,
+					axisPointer: {
+						type: 'line',
+						lineStyle: {
+							type: 'dashed',
+							color: '#a4a4a4',
+							opacity: 0.7
+						}
+					},
+					formatter: function(params) {
+
+						return params[0].name + '<br/>' +
+							params[0].seriesName + ' : ' + params[0].value + '</br>' +
+							params[1].seriesName + ' : ' + params[1].value + '</br>' +
+							params[3].seriesName + ' : ' + params[3].value;
+					}
+				},
+				dataZoom: [{
+					show: true,
+					realtime: true,
+					start: 30,
+					end: 70,
+					handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z',
+					handleSize: '60%',
+					handleStyle: {
+						color: '#b2d280'
+					},
+					fillerColor: '#d9f0b5',
+					borderColor: "#b1b1b1"
+				}],
+				xAxis: [{
+					type: 'category',
+					axisTick: {
+						show: false
+					},
+					axisLine: {
+						lineStyle: {
+							color: '#90979c'
+						}
+					},
+					data: [
+						'2017/6/1',
+						'2017/6/2',
+						'2017/6/3',
+						'2017/6/4',
+						'2017/6/5',
+						'2017/6/6',
+						'2017/6/7',
+						'2017/6/8',
+						'2017/6/9',
+						'2017/6/10',
+						'2017/6/11',
+						'2017/6/12',
+						'2017/6/13',
+						'2017/6/14',
+						'2017/6/15',
+						'2017/6/16',
+						'2017/6/17',
+						'2017/6/18',
+						'2017/6/19',
+						'2017/6/20',
+						'2017/6/21',
+						'2017/6/22',
+						'2017/6/23',
+						'2017/6/24',
+						'2017/6/25',
+						'2017/6/26',
+						'2017/6/27',
+						'2017/6/28',
+						'2017/6/29',
+						'2017/6/30'
+					].map(function(str) {
+						return str.replace(' ', '\n')
+					})
+				}],
+				yAxis: [{
+					name: '',
+					axisTick: {
+						show: false
+					},
+					axisLine: {
+						lineStyle: {
+							color: '#90979c'
+						}
+					},
+					axisLabel: {
+						formatter: '{value}元'
+					},
+					type: 'value'
+				}],
+				series: [{
+						name: '辉展市场',
+						type: 'line',
+						smooth: true,
+						hoverAnimation: true, 
+						symbol: 'triangle',
+						symbolSize: 8,
+						itemStyle: {
+							emphasis: {
+								color: '#249f94',
+								borderColor: '#fff',
+								borderWidth: 4,
+								borderType: 'solid',
+								shadowBlur: 5,
+								shadowColor: '#9c9a9b',
+							}
+						},
+						lineStyle: {
+							normal: {
+								width: 1,
+							}
+						},
+						data: [
+							10, 36, 58, 67, 43, 96, 123, 354, 256, 24, 65, 89, 92, 72, 61, 45, 115, 127, 39, 156, 147, 213, 35, 66, 88, 77, 99, 55, 33, 168
+						]
+					},
+					{
+						name: '嘉兴市场',
+						type: 'line',
+						smooth: true,
+						hoverAnimation: true, //包括 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
+						symbol: 'rect',
+						itemStyle: {
+							emphasis: {
+								color: '#88e186',
+								borderColor: '#fff',
+								borderWidth: 4,
+								borderType: 'solid',
+								shadowBlur: 5,
+								shadowColor: '#9c9a9b',
+							}
+						},
+						lineStyle: {
+							normal: {
+								width: 1,
+							}
+						},
+						data: ['_', '_', '_','_', '_', '_', '_', '_', '_','_', '_','_', '_', 102, 91, 75, 145, 157, 69, 186, 177, 243, 65, 96, 118, 107, 129, 85, 63, 198
+						]
+					},
+					{
+						name: '嘉兴市场',
+						type: 'line',
+						smooth: true,
+						hoverAnimation: true,
+						symbol: 'rect',
+						itemStyle: {
+							emphasis: {
+								color: '#88e186',
+								borderColor: '#fff',
+								borderWidth: 4,
+								borderType: 'solid',
+								shadowBlur: 5,
+								shadowColor: '#9c9a9b',
+							}
+						},
+						lineStyle: {
+							normal: {
+								width: 1,   
+								type: 'dashed'
+							}
+						},
+						data: [40, 66, 88, 97, 73, 126, 153, 384, 286, 54, 95, 119, 122, 102, '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_'
+						]
+					},
+					{
+						name: '江南市场',
+						type: 'line',
+						smooth: true,
+						hoverAnimation: true, //包括 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
+						symbol: 'circle',
+						itemStyle: {
+							emphasis: {
+								color: '#acd680',
+								borderColor: '#fff',
+								borderWidth: 4,
+								borderType: 'solid',
+								shadowBlur: 5,
+								shadowColor: '#9c9a9b',
+							}
+						},
+						lineStyle: {
+							normal: {
+								width: 1,
+							}
+						},
+						data: [
+							50, 76, 98, 107, 83, 136, 163, 394, 296, 64, 105, 129, 132, 112, 101, 85, 155, 167, 79, 196, 187, 253, 75, 106, 128, 117, 139, 95, 73, 208
+						]
+					}
+				]
+			};
+			var analyticChart2 = echarts.init(divCharts2.get(0));
+			analyticChart2.setOption(option2);
+		</script>
+	</body>
+
+</html>

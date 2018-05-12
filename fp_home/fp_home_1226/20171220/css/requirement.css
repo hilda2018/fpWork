@@ -1,0 +1,36 @@
+.content2_top li{list-style:none}
+.content2_top li,.content2_top ul{margin:0;padding:0}
+.content2_top #boxRequirement{width:625pc;height:66px}
+.content2_top #boxRequirement li{float:left;display:inline;width:530px;height:66px}
+.content2_top #Widget{height:8pc;    border-top: 1px solid #ddd;}
+.content2_top #Widget,.content2_top img{overflow:hidden;width:530px}
+.content2_top img{position:absolute;top:0;left:0;height:100%}
+.content2_top{width:530px;height:190px}
+.content2_top .first{width:100%;height:66px}
+.content2_top #requirementnext,.content2_top #requirementprev{float:right;margin-right:2px;letter-spacing:.5px;font-size:20px;font-family:"å®‹ä½“"!important;line-height:40px;cursor:pointer}
+.content2_top p{margin:0;padding:0}
+.content2_top #requirementprev{margin-right:22px}
+.content2_top .bubble{position:relative;float:left;padding:8px;width:434px;
+border: 1px solid #eee;
+height:46px;border-radius:2px;background:#fff}
+.content2_top .bubble p em{float:left;color:#8BC34A;font-weight:400;font-style:normal;font-size:9pt;line-height:1}
+.content2_top .bubble p strong{float:right;margin-right:10px;color:#668;font-weight:400;font-size:10px}
+.content2_top .bubble .infoPeople{height:1pc;line-height:1pc}
+.content2_top .more{float:right;display:inline-block;margin-top:-10px;margin-right:1pc;padding:0 14px;height:30px;border:none;border-radius:1pc;text-align:center;font-weight:400;font-size:9pt;
+line-height:30px;cursor:pointer;text-decoration:none;text-transform:uppercase;}
+.content2_top #Widget{position:relative;width:530px;height:190px}
+.content2_top #requirementTitle{text-transform:uppercase;color:#8BC34A;}
+.content2_top #Widget h4{display:block;margin:0;padding:0;width:100%;height:60px;color:#689f38;text-indent:1pc;font-size:18px;line-height:60px}
+
+.content2_top .first i{border:1px solid #eee;float:left;display:inline-block;overflow:hidden;margin-right:10px;margin-left:6px;padding:3px;width:42px;height:42px;border-radius:25px;background:#fff;box-shadow:0 1px 0 #eee}
+
+.content2_top .bubble p{margin-bottom:0;color:#777;letter-spacing:0;font-size:11px;line-height:1.5}
+.content2_top .buttonAndSeparatorSidebar{margin-top:25px;height:30px;line-height:30px}
+.content2_top .buttonAndSeparatorSidebar span{position:relative;float:left;width:430px;height:30px;line-height:30px}
+.content2_top .sidebarSeparator{display:block;margin:4px 0 10px;width:100%;height:4px;border-top:1px dotted #ddd}
+.content2_top .white{height:30px;background:#fff;color:#8BC34A;border:1px solid #8BC34A;line-height:30px}
+
+.content2_top #Widget {
+ 
+    border-top: 1px solid #eee;
+}

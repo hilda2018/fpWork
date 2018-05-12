@@ -1,0 +1,63 @@
+a{text-decoration:none}
+body,li,ul{margin:0;padding:0}
+.memenu .navActive,.navActive:hover{border-top:2px solid #6caf50;font-weight:700}
+.memenu{float:left;display:inline-block;margin-bottom:0;margin-left:20px;padding:0;list-style:none;vertical-align:top}
+.memenu,.subnav{height:5pc;line-height:5pc}
+.subnav{position:absolute;top:0;right:0;max-width:380px;min-width:280px}
+.memenu li{float:left;width:auto;height:78px;line-height:78px}
+.input-wrap .input-search:focus,.input-wrap a:focus{outline:0}
+.input-wrap input:focus{float:left;padding:0;width:164px;height:24px;border:1px solid #8bc34a;border-radius:0 15px 15px 0;color:#888;text-indent:10px;font-size:9pt;line-height:78px;line-height:24px;opacity:1}
+#LoginU{width:216px}
+#LoginA,#LoginU{float:right;height:5pc;line-height:5pc}
+#LoginA{width:306px}
+#search{float:right;display:inline-block;margin:3px 0 0 2px;padding:0 10px 0 0;width:22px;height:20px;border-right:1px solid #ddd;text-align:right;line-height:5pc}
+.header_menu .subnav .nava{float:left;margin-right:5px;padding:0 9pt;height:26px;border:1px solid #8bc34a;border-radius:15px;background:#8bc34a;color:#fff;line-height:24px}
+.header_menu .subnav a{padding:0 10px;text-transform:capitalize}
+.header_menu a{float:left;color:#6caf50;text-decoration:none;text-transform:uppercase;font-size:9pt;cursor:pointer}
+.nava{margin-right:15px;-webkit-border-radius:4px;background:#8bc34a}
+.header_menu .subnav .nava2{margin-right:15px;margin-left:10px;background:#fff;color:#8bc34a}
+.header_menu .subnav .nava,.header_menu .subnav .nava2{padding:0 1pc;height:26px;border:1px solid #8bc34a;border-radius:15px;line-height:24px}
+.header_menu .subnav .nava{float:left;margin-top:24px;margin-right:5px;width:50px;color:#fff}
+.header_menu .subnav .nava2{margin-top:24px;margin-right:15px;padding:0 1pc;width:50px;height:26px;border:1px solid #8bc34a;border-radius:15px;background:#fff;color:#8bc34a;line-height:24px}
+.nava{display:inline-block;border-radius:4px;background:#8bc34a}
+.search{position:relative;margin:0 auto;width:526px;height:35px;border:1px solid #8bc34a;border-right:none;border-radius:50px;background:#fff}
+.search select{display:none}
+.search .select_box{position:relative;float:left;width:75pt;color:#555;font-size:9pt;line-height:35px}
+.search .select_showbox{height:35px;background:url(../images/search_ico.png) no-repeat 5pc center;text-indent:1.5em}
+#nav .china{display:inline-block;margin-left:-40px;width:20px;height:20px;border:1px solid #8bc34a;border-radius:50%;line-height:20px}
+.search .select_option{position:absolute;top:35px;left:-1px;z-index:99;display:none;width:75pt;border:1px solid #8bc34a;border-radius:2px;background:#fff}
+.search .select_option li{width:100%;border-bottom:1px dotted #bebebe;text-indent:1.5em;cursor:pointer}
+.search .select_option li.selected{background-color:#f5f5f5;color:#333}
+.search input.btn_srh,.search input.inp_srh{float:left;height:35px;border:none;border-left:1px solid #aaa;background:0 0;line-height:35px;cursor:pointer}
+.search input.inp_srh{padding-left:10px;width:365px;outline:0;color:#666;cursor:pointer}
+.search input.btn_srh{top:0;right:0;z-index:99999999999;padding:0 14px;width:5pc;border-radius:0 50px 50px 0;background:#8bc34a;color:#fff;letter-spacing:1px}
+#searchClose,.search input.btn_srh{position:absolute;font-size:14px;cursor:pointer}
+#searchClose{top:10px;right:10px;width:26px;height:26px;border-radius:2px;color:#fff;color:red;text-align:center;letter-spacing:2px;line-height:26px}
+li{list-style:none}
+.quickLink{margin-top:9pt;color:#fff;font-size:9pt}
+.quickLinkALl{position:absolute;width:100%;height:50px;color:#fff;text-align:center;font-size:9pt;line-height:50px}
+.quickLinkALl a{margin:10px auto;padding:0 10px;color:#666;text-align:center;letter-spacing:.5px}
+.quickLinkALl span{color:#f58400;font-weight:bolder}
+#page{position:absolute;top:86px;left:50%;z-index:9999;display:none;margin:20px auto;margin-left:-25pc;width:50pc;height:110px;border-radius:4px;background:hsla(0,0%,100%,.9);box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.open #page{display:block}
+.logo img{height:60px;vertical-align:top}
+.header{padding:10px;width:40%;height:44px;-webkit-transition:background-color .2s ease;transition:background-color .2s ease}
+#search,.header{float:left;border:none;border-radius:0}
+#search{margin-right:2px;height:24px;outline:0;border-right:1px solid #e7eaf6;box-shadow:none;color:#e7eaf6;-webkit-transition:width .2s ease;transition:width .2s ease}
+#LoginA a{padding:0 4px;width:auto}
+#LoginA a,#LoginA span{float:left;line-height:78px}
+#LoginA span{display:inline-block;overflow:hidden;width:20px;color:#38ab74;vertical-align:top}
+.nav ul .bg{width:10px;height:10px;border:none;background:#8bc34a}
+.nav{position:absolute;bottom:44px;left:50%;margin-left:-40px;width:5pc;height:14px}
+.title{display:inline-block;margin-top:40px;padding:20px;width:50pc;height:220px;border-radius:2px;color:#fff;text-align:center;font-family:Open Sans,sans-serif;line-height:1.5em}
+.title h2{margin-top:10px;margin-left:10px;color:#8bc34a;text-transform:uppercase;font-weight:400;font-size:44px;line-height:1.3em}
+.title p{margin:10px 0;padding:0;width:100%;color:#333;text-align:center;letter-spacing:.5px;font-size:1pc;line-height:20px}
+.header_menu{position:relative;clear:both;margin:0 auto;padding-right:280px;padding-left:220px;height:5pc;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.1);line-height:5pc}
+.header_menu a{z-index:1;float:left;display:inline-block;padding:0 9pt;width:90px;height:78px;background:#fff;color:#6caf50;text-align:center;text-decoration:none;text-transform:uppercase;letter-spacing:.6px;font-weight:500;font-size:9pt;font-size:13px;line-height:78px;cursor:pointer}
+.header_menu .subnav a{height:28px;text-transform:capitalize;line-height:28px}
+#nav img{margin-top:8px}
+.header_menu .memenu{margin:0;padding:0;width:100%}
+#nav .logo{position:absolute;top:0;left:10px;margin-right:20px;margin-left:20px;height:5pc;line-height:5pc}
+#nav .logo,#search{display:inline-block}
+#search{float:left;margin-top:28px;margin-right:2px;height:24px;outline:0;border:none;border-right:1px solid #e7eaf6;border-radius:0;box-shadow:none;color:#e7eaf6;line-height:24px;-webkit-transition:width .2s ease;transition:width .2s ease}
+#search img{display:inline;margin-top:4px;width:1pc;height:1pc}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>freshport</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+
+	<link href="css/register.css" rel="stylesheet" type="text/css" media="all">
+
+	
+	</head>
+
+	<body  style=">
+		<div class="fly-full">
+		<!--头部  -->
+		<div class="header">
+
+			<div class="main">
+
+				<div class="nav">
+
+					<a href="newIndex.html" class="first">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="newIndex.html#Importers"><i class="icon-love"></i> &nbsp;Importers</a>
+					<a href="newIndex.html#Exporters"><i class="icon-love"></i>&nbsp;Exporters</a>
+					<a href="contact.html">Contact</a>
+					<a href="">中文</a>
+				</div>
+
+				<!--未登录-->
+				<div class="nav-user" id="LoginU">
+					<a href="javascript:;" class="social-icons" id="login">Login</a>
+				</div>
+
+				<!--登录-->
+				<div class="nav-user" id="LoginA" style="display: none;">
+					<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="logout">Logout</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="enterFP">My Freshport</a>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<!-- 搜索-->
+		<div class="wrapWhite wrapLogo">
+			<div class="main">
+				<div class="logo">
+
+					<a class="navg" href="newIndex.html">
+						<span class="solgan">
+					Online Information & Service Platform for Imported Fruits Industry
+				</span>
+					</a>
+
+				</div>
+
+				<div class="search">
+					<div id="searchInput">
+						<input type="text" value="" placeholder="what are you looking for..." id="ser" />
+
+						
+
+						<div id="wrapBtn">
+							<a href="#" class="ser-btn">
+								<img src="images/search.png" />
+								<span>Search</span>
+							</a>
+
+						</div>
+					</div>
+					
+					<div id="searchBar" >
+
+						<div class="searchValue">
+							<span id="searchbarDisplay">Importers</span>
+							<span class="searchbarArrow" id="searchbarArrow">
+								<em></em>
+								<b></b>		
+							</span>
+
+						</div>
+
+						<ul class="searchbarOptions" >
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Importers" rel="nofollow">Importers</a>
+							</li>
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Exporters" rel="nofollow">Exporters</a>
+							</li>
+						
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="advanceSearch"> Advanced Search:&nbsp;&nbsp;
+					<a href="newSearch.html" alt="Importers" title="Importers" class="advanceSearchItem">Importers</a>
+					<a href="" class="advanceSearchItem">Exporters</a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="wrapWhite" style="height: 700px;" >
+			<div class="main" style="width:1080px;height: 640px;">
+
+		<div class="login-box f-mt10 f-pb50">
+			<div class="bgf">
+				<div class="reg-box-pan display-inline">
+
+					<div class="header2" style="margin-bottom: 0px;text-align: center;">
+						<h2>Exporter Sign Up</h2>
+						<p>Required fields are indicated by a red asterisk <span style="color:red;">*</span></p>
+					</div>
+
+					<div class="step">
+						<ul>
+							<li class="on">	 
+								<span class="num"><em class="f-r5"></em><i>1</i></span>
+							<span class="line_bg lbg-r"></span>
+							
+							</li>
+		
+													<li >	
+								<span class="num"><em class="f-r5"></em><i>2</i></span>
+							<span class="line_bg lbg-r"></span> 
+					
+							</li>
+		
+	
+		                    <li >
+		                        <span class="num"><em class="f-r5"></em><i>3</i></span>
+		                        <span class="line_bg lbg-l"></span>
+		
+		                    </li>
+						</ul>
+						
+	
+					</div>
+					<div class="tit" >
+												<p class="on">Create your account</p>
+										<p  style="float: left;" >Set password</p>
+							  			<p  style="float: left;">Finish</p>
+					</div>
+
+					<div class="reg-box" id="verifyCheck" style="margin-top:30px;">
+						<div class="part1">
+
+					
+
+                    
+							<div class="item col12">
+								<span class="intelligent-label f-fl"><b class="ftx04">*</b>Username:</span>
+								<div class="f-fl item-ifo"><input  id="adminNo" type="text" maxlength="25" placeholder="Create your username" class="txt03 f-r3 required" tabindex="1" data-valid="isNonEmpty||between:5-25||isUname||isCheckUser" data-error="Please enter your username||between:5-25||5-25 characters, including letters/numbers, no space||repeat of user name"  />
+									<span class="ie8 icon-close close hide">×</span>
+
+									<label class="icon-sucessfill blank hide"> ✔</label>
+									<label class="focus">5-25 characters, including letters/numbers, no space</label>
+									<label class="focus valid"></label>
+
+								</div>
+
+							</div>
+
+							<!--
+                    	作者：2232989975@qq.com
+                    	时间：2017-10-25
+                    	描述：密码
+                    -->
+							<div class="item col12">
+								<span class="intelligent-label f-fl"><b class="ftx04">*</b>Password:</span>
+								<div class="f-fl item-ifo" style=" position: relative;">
+									<input type="password" id="password" maxlength="20"  class="txt03 f-r3 required" tabindex="3" style="ime-mode:disabled;" onpaste="return  false" autocomplete="off" data-valid="isNonEmpty||between:6-20||isPassword" data-error="Please enter your password||between:6-20||6-20 characters, including letters/numbers, no space" />
+									<span class="ie8 icon-close close hide">×</span>
+									<span class="showpwd" data-eye="password"></span>
+
+									<label class="icon-sucessfill blank hide">✔</label>
+									<label class="focus"><span>6-20 characters, including letters/numbers, no space</span></label>
+
+									<label class="focus valid"></label>
+									<span class="clearfix"></span>
+								</div>
+
+							</div>
+
+							<!--
+                    	作者：2232989975@qq.com
+                    	时间：2017-10-25
+                    	描述：确认密码
+                    -->
+
+							<div class="item col12">
+								<span class="intelligent-label f-fl"><b class="ftx04">*</b>Confirm Password:</span>
+								<div class="f-fl item-ifo" style=" position: relative;">
+									<input type="password" maxlength="20" class="txt03 f-r3 required" tabindex="4" style="ime-mode:disabled;" onpaste="return  false" autocomplete="off" data-valid="isNonEmpty||between:6-20||isRepeat:password" data-error="Please re-enter your password||between:6-20||Your password and confirmation password do not match" id="rePassword" />
+									<span class="ie8 icon-close close hide" >×</span>
+									<span class="showpwd" data-eye="rePassword"></span>
+
+									<label class="icon-sucessfill blank hide">✔</label>
+									<label class="focus"></label>
+									<label class="focus valid"></label>
+
+								</div>
+							</div>
+
+							<div class="item col12">
+								<span class="intelligent-label f-fl"><b class="ftx04">*</b>Company Name:</span>
+								<div class="f-fl item-ifo">
+									<input type="text" class="txt03 f-r3 required" tabindex="2" data-valid="isNonEmpty" data-error="Please enter your company Name" placeholder="Enter your company full name"  id="company"/>
+									
+									<span class="ie8 icon-close close hide">×</span>
+
+									<label class="icon-sucessfill blank hide">✔</label>
+									<label class="focus"></label>
+
+									<label class="focus valid"></label>
+
+								</div>
+
+							</div>
+
+							<div class="item col12" style="position: relative;z-index: 9999;" >
+								<span class="intelligent-label f-fl"><b class="ftx04">*</b>Country / Region:</span>
+								<div class="f-fl item-ifo">
+
+									<select class="txt03 f-r3 f-fl required" tabindex="4" data-valid="isNonEmpty" data-error="Pleaselect country / region "  id="country">
+
+						
+									</select>
+
+									<span class="ie8 icon-close close hide">×</span>
+									<label class="icon-sucessfill blank hide">✔</label>
+									<label class="focus"></label>
+									<label class="focus valid"></label>
+								</div>
+
+							</div>
+
+							<!--              非必选  
+                    Contact Person-->
+							<div class="item col12 colStatic" >
+								<span class="intelligent-label f-fl"><b class="ftx04">&nbsp;</b>Contact Person:</span>
+								<div class="f-fl item-ifo">
+									<input type="text" class="txt03 f-r3 f-fl" tabindex="5" id="contact" name="contact" />
+
+									<span class="ie8 icon-close close hide">×</span>
+									<label class="icon-sucessfill blank hide">✔</label>
+									<label class="focus" id="contactMsg"> </label>
+									<label class="focus valid"></label>
+								</div>
+
+							</div>
+
+							<div class="item col12 colStatic">
+								<span class="intelligent-label f-fl"><b class="ftx04">&nbsp;</b>Email:</span>
+								<div class="f-fl item-ifo">
+									<input type="text" class="txt03 f-r3 f-fl" tabindex="6" id="email" name="email" />
+									<span class="ie8 icon-close close hide">×</span>
+									<label class="icon-sucessfill blank hide">✔</label>
+									<label class="focus" id="emailMsg" style="color: red;"></label>
+									<label class="focus valid"></label>
+								</div>×
+
+							</div>
+
+					
+		                   <a href="javascript:;" class="btn btn-green f-r3" disabled="disabled" id="btn_part1" >Create Account</a>
+				  
+
+		
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+			
+
+				</div>
+
+			</div>
+		</div>
+
+		
+
+
+		
+
+		<!--footer start here-->
+		<div id="footeCompany" class="wrapWhite">
+
+			<div class="main footer">
+				<p>备案/许可证号 沪ICP备15035308 &nbsp;&nbsp;|&nbsp;&nbsp;<span> 2015 Freshport.com. All rights reserved </span></p>
+			</div>
+
+		</div>
+
+
+
+<div id="pic" style="width: 100%;height: 100%;display:none;">
+	
+	<div class="flavr-overlay" style="position: fixed;left: 0px;top:0px;right:0px;bottom:0px;background: #000000;z-index: 99999999;opacity: 0.7;filter:alpha(opacity=70);">	</div>
+		
+		
+		
+			<div class="flavr-content" style="height:140px;width:300px;position:absolute;left:50%;top:46%;overflow: hidden;margin-left:-150px;box-shadow: 0px 0px 15px #271c1c;margin-top:-30px;background: #ffffff;;border-radius: 10px;z-index: 999999999999999999;">
+		
+		<p  style="height: 80px;;line-height: 80px;font-size:18px;color:#666;text-align:center;font-weight: bold;font-family:Arial;">Successful!</p>
+
+		<div style="height: 40px;" id="toolbar">		
+			
+			<a href="#" class="flavr-button danger"  id="ok"> OK </a>
+		
+		<a href="#" class="flavr-button danger"  id="login2" >LOGIN</a>
+		
+		</div>
+	
+	</div>
+		
+</div>
+	
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+		<script src="js/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/register.js"></script>
+		<script type="text/javascript" >
+	
+			
+
+		</script>
+	</body>
+
+</html>

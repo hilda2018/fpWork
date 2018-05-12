@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+    if($.browser.msie){
+        alert("IE浏览器");
+        if($.browser.version<8){
+            alert("IE7及其以下");
+        }
+        else{
+            alert("IE8及其以上");
+        }
+    }
+    else if($.browser.webkit){
+        alert("苹果的Safari、谷歌的Chrome浏览器");
+    }
+    else if($.browser.mozilla){
+        alert("野狐禅FireFox浏览器");
+    }
+    else if($.browser .opera){
+        alert("Opera浏览器");
+    }
+</script>
+</html>

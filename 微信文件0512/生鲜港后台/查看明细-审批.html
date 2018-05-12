@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看明细-审批</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+
+
+
+
+
+    <div class="company-edit">
+
+
+        <div class="left-menu">
+
+            <div class="upload-col">
+                <img src="assets/img/company.jpg" />
+                <input type="file" />
+                <div>上传LOGO</div>
+            </div>
+
+            <div class="link-list">
+                <a class="active" href="#section1">公司介绍</a>
+                <a href="#section2">主营商品</a>
+                <a href="#section3">销量统计</a>
+                <a href="#section4">主营区域</a>
+                <a href="#section5">供货商</a>
+                <a href="#section6">业务渠道</a>
+                <a href="#section7">企业风采</a>
+                <a href="#section8">企业团队</a>
+            </div>
+        </div>
+
+
+    <div class="right-col">
+
+        <a name="section1"></a>
+
+        <div class="back-col">
+        <button type="button" class="green-border-btn back-btn" onclick="history.back();">返 回</button>
+        </div>
+
+        <div class="title">1、公司介绍</div>
+        <ul class="list">
+
+            <li>
+                <label><em>*</em>公司全称(英文)：</label>
+                <input type="text">
+            </li>
+            <li>
+                <label><em>*</em>实际控制人(英文)：</label>
+                <input type="text">
+            </li>
+            <li>
+                <label><em>*</em>公司地址  (英文)：</label>
+                <input type="text">
+            </li>
+
+            <li>
+                <label><em>*</em>公司网址：</label>
+                <input type="text">
+            </li>
+
+            <li>
+                <span>
+                <label><em>*</em>公司成立时间：</label>
+                    <select class="year-col" style="width:100px;"></select>
+                    <span>（年）</span>
+                </span>
+
+                <span>
+                <label><em>*</em>核心人员入行时间：</label>
+                    <select class="year-col" style="width:100px;"></select>
+                     <span>（年）</span>
+                </span>
+
+            </li>
+            <li>
+                <label><em>*</em>员工人数：</label>
+                <input style="width:150px;" type="text"><span>（人）</span>
+            </li>
+
+            <li>
+                <label class="top"><em>*</em>公司简介(英文)：</label>
+                <textarea></textarea>
+                <div class="info">可输入字符：5000</div>
+
+            </li>
+
+
+        </ul>
+
+        <a name="section2"></a>
+        <div class="title"><em>*</em>2、主营商品<span>（按大类和品名显示）</span></div>
+        <ul class="list">
+
+            <li>
+                <button type="button" class="green-btn" id="addType">添加类别</button>
+
+                <ul class="add-list-col" id="typeCol">
+                    <li>
+
+                        <div>
+                            <span>1、大类：</span>
+                            <select>
+                                <option>类别一</option>
+                            </select>
+
+                            <span class="percentage">占比 <input type="text"> %</span>
+
+                        </div>
+
+                        <div class="type-row">
+                            <label>品名：</label>
+
+                            <div class="checkbox-list">
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <input type="text" placeholder="请英文输入，要输入多个类别的请用“；”隔开">
+
+                            </div>
+
+                        </div>
+
+
+                    </li>
+
+                    <li>
+
+                        <div>
+                            <span>2、大类：</span>
+                            <select>
+                                <option>类别一</option>
+                            </select>
+                        </div>
+
+                        <div class="type-row">
+                            <label>品名：</label>
+
+                            <div class="checkbox-list">
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                                <input type="text" placeholder="请英文输入，要输入多个类别的请用“；”隔开">
+
+                            </div>
+
+                        </div>
+
+
+                    </li>
+
+
+                    <li>
+
+                        <div>
+                            <span>3、大类：</span>
+                            <select>
+                                <option>类别一</option>
+                            </select>
+                        </div>
+
+                        <div class="type-row">
+                            <label>品名：</label>
+
+                            <div class="checkbox-list">
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox"/>
+                            <label>Cherries Peaches</label>
+                            </span>
+
+                                <input type="text" placeholder="请英文输入，要输入多个类别的请用“；”隔开">
+
+                            </div>
+
+                        </div>
+
+
+                    </li>
+                </ul>
+
+            </li>
+
+
+        </ul>
+
+
+        <a name="section3"></a>
+        <div class="title">3、销售统计<span>（只显示从上一年开始往前共4年的数据）</span></div>
+        <ul class="list">
+
+            <li>
+                <button type="button" class="green-btn" id="addYear">添加年份</button>
+
+                <ul class="add-list-col" id="yearCol">
+                    <li>
+
+                        <div>
+                        <span>1、年度：</span>
+                        <select class="year-col">
+                        </select>
+                        </div>
+
+                        <div class="row">
+                            <label>进口金额总额：</label>
+                            <input type="text">
+                            <span>（万美元）</span>
+                        </div>
+                        <div class="row">
+                            <label>销售总额：</label>
+                            <input type="text">
+                            <span>（万美元）</span>
+                        </div>
+                        <div class="row">
+                            <label>代卖总额：</label>
+                            <input type="text">
+                            <span>（万美元）</span>
+                        </div>
+
+                    </li>
+                </ul>
+
+            </li>
+
+
+        </ul>
+
+        <a name="section4"></a>
+        <div class="title"><em>*</em>4、主营区域<span>（可多选）</span></div>
+        <ul class="list">
+
+            <li>
+
+                <span class="checkbox-col">
+                    <input type="checkbox" />
+                    <label>华东区域</label>
+
+                    <span>（包括上海、江苏、浙江、山东、安徽、福建）</span>
+                </span>
+
+            </li>
+
+            <li>
+
+                <span class="checkbox-col">
+                    <input type="checkbox" />
+                    <label>华南区域</label>
+
+                    <span>（包括广东、广西、海南）</span>
+                </span>
+
+            </li>
+            <li>
+
+                <span class="checkbox-col">
+                    <input type="checkbox" />
+                    <label>华中区域</label>
+
+                    <span>（包括湖北、湖南、河南、江西）</span>
+                </span>
+
+            </li>
+            <li>
+
+                <span class="checkbox-col">
+                    <input type="checkbox" />
+                    <label>华北区域</label>
+
+                    <span>（包括北京、天津、河北、山西、内蒙古）</span>
+                </span>
+
+            </li>
+            <li>
+
+                <span class="checkbox-col">
+                    <input type="checkbox" />
+                    <label>西北区域</label>
+
+                    <span>（包括宁夏、新疆、青海、陕西、甘肃）</span>
+                </span>
+
+            </li>
+            <li>
+
+                <span class="checkbox-col">
+                    <input type="checkbox" />
+                    <label>西南区域</label>
+
+                    <span>（包括四川、云南、贵州、西藏、重庆）</span>
+                </span>
+
+            </li>
+            <li>
+
+                <span class="checkbox-col">
+                    <input type="checkbox" />
+                    <label>东北区域</label>
+
+                    <span>（包括辽宁、吉林、黑龙江）</span>
+                </span>
+
+            </li>
+            <li>
+
+                <span class="checkbox-col">
+                    <input type="checkbox" />
+                    <label>台港澳区域</label>
+
+                    <span>（包括台湾、香港、澳门）</span>
+                </span>
+
+            </li>
+
+
+        </ul>
+
+
+
+        <a name="section5"></a>
+        <div class="title">5、主要供货商<span>（最多输入6个主要的供货商）</span></div>
+        <ul class="list">
+
+            <li>
+                <button type="button" class="green-btn" id="addSupplier">添加</button>
+
+                <ul class="add-list-col supplier-col" >
+                    <li id="supplierCol">
+
+
+                        <div class="row">
+                            <span>1、</span>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <span>2、</span>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <span>3、</span>
+                            <input type="text">
+                        </div>
+
+                    </li>
+                </ul>
+
+            </li>
+
+
+        </ul>
+
+        <a name="section6"></a>
+        <div class="title">6、业务渠道</div>
+        <ul class="list channel-col">
+
+            <li>
+                <span>1、批发市场 <span><span class="gray">（请输入英文的市场名称并输入档口号、与整体销售量的占比，多个市场记录的请用“；”号隔开）</span></span></span>
+
+                <div class="wholesale-market">
+
+                    <button type="button" class="green-btn" id="addMarket">添加</button>
+
+                    <ul class="wholesale-market-list" id="marketCol">
+                        <li>
+                            <select>
+                                <option>JACK</option>
+                            </select>
+                            <span>B25</span>
+                        </li>
+                        <li>
+                            <select>
+                                <option>JACK</option>
+                            </select>
+                            <span>B25</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="proportion">占比 <input type="text"> %</div>
+
+            </li>
+
+            <li>
+                <span>2、连锁超市 <span><span class="gray">（请输入超市的英文名称、与整体销售量的占比，如果多个超市的请用“；”号隔开）</span></span></span>
+                <textarea></textarea>
+                <div class="proportion">占比 <input type="text"> %</div>
+
+            </li>
+
+            <li>
+                <span>3、电子商务 <span><span class="gray">（请输入英文的电子商务销售渠道、与整体销售量的占比，多个电子商务渠道的请用“；”号隔开）</span></span></span>
+                <textarea></textarea>
+                <div class="proportion">占比 <input type="text"> %</div>
+
+            </li>
+
+            <li>
+                <span>4、其他渠道 <span><span class="gray">（请输入英文的渠道名称、与整体销售量的占比，多个渠道的请用“；”号隔开）</span></span></span>
+                <textarea></textarea>
+                <div class="proportion">占比 <input type="text"> %</div>
+
+            </li>
+
+
+        </ul>
+
+
+
+        <a name="section7"></a>
+        <div class="title"><em>*</em>7、企业风采<span>（最多上传5张图片，图片要求：格式为JPEG、JPG、BMP；像素为280x280，最大尺寸<1M）</span></div>
+        <ul class="list img-list clearfix">
+
+            <li>
+                <div>
+                    <img src="assets/img/mien.jpg">
+                    <span class="zoom-in"></span>
+                </div>
+                <span class="delete">删除</span>/<span class="edit"><input type="file"><span>修改</span></span>
+            </li>
+
+            <li>
+                <div>
+                    <img src="assets/img/mien.jpg">
+                    <span class="zoom-in"></span>
+                </div>
+                <span class="delete">删除</span>/<span class="edit"><input type="file"><span>修改</span></span>
+            </li>
+
+            <li>
+                <div>
+                    <img src="assets/img/mien.jpg">
+                    <span class="zoom-in"></span>
+                </div>
+                <span class="delete">删除</span>/
+
+                <span class="edit"><input type="file"><span>修改</span></span>
+            </li>
+
+            <li>
+                <div>
+                    <img src="assets/img/img.png">
+                </div>
+                <span class="upload">
+                    <input type="file"/>
+                    选择图片
+                </span>
+            </li>
+
+
+
+        </ul>
+
+        <a name="section8"></a>
+        <div class="title"><em>*</em>8、我们的团队<span>（最多显示3位主要成员，头像图片要求：格式为JPEG、JPG、BMP；像素为200x200，最大尺寸<1M）</span></div>
+
+        <div class="my-team">
+
+            <div class="my-team-list clearfix">
+            <ul class="list my-team-col">
+
+            <li>
+                <label>职务</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>姓名</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>EMAIL</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>电话</label>
+                <input type="text">
+            </li>
+
+                <li class="language-col">
+                    <label>沟通语言</label>
+                    <div class="checkbox-list">
+                            <span>
+                            <input type="checkbox">
+                            <label>Chinese</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>English</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>French</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>Spanish</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>Russian</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>Other</label>
+                            </span>
+
+                            <input type="text">
+
+                        （请输入英文的语言名，多个语言请用“；”号隔开）
+
+                    </div>
+                </li>
+
+             </ul>
+
+            <div class="right-img">
+                <div>
+                    <img src="assets/img/mien.jpg"/>
+                    <span class="zoom-in"></span>
+                </div>
+                <span class="delete">删除</span>/<span class="edit"><input type="file"><span>修改</span></span>
+
+            </div>
+
+            </div>
+
+            <div class="my-team-list clearfix">
+                <ul class="list my-team-col">
+
+                    <li>
+                        <label>职务</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>姓名</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>EMAIL</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>电话</label>
+                        <input type="text">
+                    </li>
+
+                    <li class="language-col">
+                        <label>沟通语言</label>
+                        <div class="checkbox-list">
+                            <span>
+                            <input type="checkbox">
+                            <label>Chinese</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>English</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>French</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>Spanish</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>Russian</label>
+                            </span>
+
+                            <span>
+                            <input type="checkbox">
+                            <label>Other</label>
+                            </span>
+
+                            <input type="text">
+
+                            （请输入英文的语言名，多个语言请用“；”号隔开）
+
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="right-img">
+                    <div>
+                        <img src="assets/img/mien.jpg"/>
+                        <span class="zoom-in"></span>
+                    </div>
+                    <span class="delete">删除</span>/
+
+                    <span class="edit"><input type="file"><span>修改</span></span>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div>
+
+            <ul class="list result-main">
+
+                <li class="result-col">
+
+                    <div class="title-col">审核意见及结果</div>
+
+                    <textarea id="resultTextarea"></textarea>
+
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="btn-col">
+        <button type="button" class="green-border-btn" id="disagreeBtn">审核不通过</button>
+        <button type="button" class="green-btn" id="agreeBtn">审核通过</button>
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+
+    <script>
+        $("input").attr("disabled","disabled");
+        $("textarea").attr("disabled","disabled");
+        $("select").attr("disabled","disabled");
+        $("#resultTextarea").removeAttr("disabled");
+    </script>
+
+</body>
+</html>

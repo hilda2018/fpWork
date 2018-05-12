@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>freshport</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+		<style>
+			.sort{
+				width: 100px;
+				border-right: 1px solid #bdbdbd;
+				border-bottom: 1px solid #bdbdbd;
+				text-align: center;
+				font-weight: bold;
+			}
+			td,th{border-bottom: 1px solid #bdbdbd;padding:5px;}
+			
+			th{font-size: 18px;line-height: 50px;text-align: center;}
+			.wrapNew{ height: 3100px;}
+			table{font-size: 14px;line-height:30px;border: 1px solid #bdbdbd;margin-top:30px;}
+			.last{border-bottom: 0px solid #bdbdbd;}
+		</style>
+	</head>
+
+	<body class="fly-full">
+
+		<!--头部  -->
+		<div class="header">
+
+			<div class="main">
+
+				<div class="nav">
+
+					<a href="newIndex.html" class="first">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="newIndex.html#Importers"><i class="icon-love"></i> &nbsp;Importers</a>
+					<a href="newIndex.html#Exporters"><i class="icon-love"></i>&nbsp;Exporters</a>
+					<a href="contact.html">Contact</a>
+					<a href="">中文</a>
+				</div>
+
+				<!--未登录-->
+				<div class="nav-user" id="LoginU">
+					<a href="javascript:;" class="social-icons" id="login">Login</a>
+				</div>
+
+				<!--登录-->
+				<div class="nav-user" id="LoginA" style="display: none;">
+					<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="logout">Logout</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="enterFP">My Freshport</a>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<!-- 搜索-->
+		<div class="wrapWhite wrapLogo">
+			<div class="main">
+				<div class="logo">
+
+					<a class="navg" href="newIndex.html">
+						<span class="solgan">
+					Online Information & Service Platform for Imported Fruits Industry
+				</span>
+					</a>
+
+				</div>
+
+				<div class="search">
+					<div id="searchInput">
+						<input type="text" value="" placeholder="what are you looking for..." id="ser" />
+
+						
+
+						<div id="wrapBtn">
+							<a href="#" class="ser-btn">
+								<img src="images/search.png" />
+								<span>Search</span>
+							</a>
+
+						</div>
+					</div>
+					
+					<div id="searchBar" >
+
+						<div class="searchValue">
+							<span id="searchbarDisplay">Importers</span>
+							<span class="searchbarArrow" id="searchbarArrow">
+								<em></em>
+								<b></b>		
+							</span>
+
+						</div>
+
+						<ul class="searchbarOptions" >
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Importers" rel="nofollow">Importers</a>
+							</li>
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Exporters" rel="nofollow">Exporters</a>
+							</li>
+						
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="advanceSearch"> Advanced Search:&nbsp;&nbsp;
+					<a href="newSearch.html" alt="Importers" title="Importers" class="advanceSearchItem">Importers</a>
+					<a href="" class="advanceSearchItem">Exporters</a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- friut List 展示  -->
+		<div class="wrapWhite wrapNew"  >
+
+			<div class="main">
+
+			
+				<div>
+					
+					<table  cellpadding="0" cellspacing="0">
+						
+						<thead>
+							<tr>
+								<th colspan="2">
+									A new list of China allowable import fruits has been released from AQSIQ (Updated 23 Aug 2017)
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="sort">Thailand</td>
+								<td>（Tamarindus indica；Tamarind）、（Annona squamosa；Sugarapple）、（Carica papaya；Papaya）、（Averrhoa carambola；Carambola）、（Psidium guajava；Guava）、（Nephelium lappaceum；Rambutan）,（Syzygium samarangense；Rose apple）、（Artocarpus heterophyllus；Jackfruit）、（Lansium parasiticum；Long kong）、（Ananas comosus；Pineapple）、（Manilkara zapota；Sapodilla）、（Musa sp.；Banana）、（Passiflora caerulea；Passion fruit）、（Cocos nucifera；Coconut）、（Dimocarpus longan；Longan）、（Durio zibethinus；Durian）、（Mangifera indica; Mango）、（Litchi chinensis；Litchi）、（Garcinia mangostana；Mangosteen）、（Citrus reticulata；Mandarin orange）、（Citrus sinensis；Orange）、（Citrus maxima；Pomelo）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Malaysia</td>
+								<td>（Dimocarpus longan；longan）、（Garcinia mangostana；Mangosteen）、（Litchi chinensis；Litchi）、（Cocos nucifera；Coconut）、（Citrullus lanatus；Watermelon）、（Chaenomeles sinensis；Pawpaw）、（Nephelium lappaceum；Rambutan）、（Ananas comosus；Pineapple）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Indonesia</td>
+								<td>（Musa nana；Banana）、（Dimocarpus longan；longan）、（Garcinia mangostana；Mangosteen ,Import suspension）、（Salacca zalacca；Salacca）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Philippine</td>
+								<td>（Ananas comosus；Pineapple）、（Musa sp.；Banana）、（Mangifera indica; Mango）、（Carica papaya；Papaya）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Vietnam</td>
+								<td>（Mangifera indica; Mango）、（Dimocarpus longan；longan）、（Musa sp.；Banana）、（Litchi chinensis；Litchi）、（Citrullus lanatus；Watermelon）、（Nephelium lappaceum；Rambutan）、（Artocarpus heterophyllus；Jackfruit）、（Hylocereus undulatus；Pitaya）
+
+</td>
+							</tr>
+							
+							
+							<tr>
+								<td class="sort">Burma</td>
+								<td>（Dimocarpus longan；Longan）,（Garcinia mangostana；Mangosteen）、（Nephelium lappaceum；Rambutan）、（Litchi chinensis；Litchi）、（Mangifera indica；Mango）、（Citrullus lanatus；Watermelon）、（Cucumis melo；Melon）、（Zizyphus mauritiana；lndian jujube）（Last four varieties can only beimported from Rui Li, Daluo ports）</td>
+							</tr>
+							
+							
+							<tr>
+								<td class="sort">Laos</td>
+								<td>（Citrullus lanatus；Watermelon， Unable to import temporarily）、（Musa supientum；Banana， Unable to import temporarily）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Nepal</td>
+								<td>（Citrus sinensis；Orange， Unable to import temporarily）、（Citrus reticulata；Mandarin， Unable to import temporarily）、（Citrus limon；Lemon， Unable to import temporarily）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">India</td>
+								<td>（Mangifera indica；Mango）、（Vitis vinifera；Grape）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Pakistan</td>
+								<td>（Mangifera indica; Mango）、 (Citrus reticulata；Mandarin)、(Citrus sinensis；Orange)</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Sri Lanka</td>
+								<td>（Musa supientum；Banana， Unable to import temporarily）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Turkey</td>
+								<td>（Prunus avium；Cherry）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Israel</td>
+								<td>（Citrus sinensis；Orange）、（Citrus maxima；Pomelo）、（Citrus reticulata；Mandarin）、（Citrus limon；Lemon）、（Citrus paradisi；Grapefruit）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Tajikistan</td>
+								<td>（Prunus avium；Cherry）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Kyrgyzstan</td>
+								<td>（Prunus avium；Cherry）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Japan</td>
+								<td>（Malus domestica；Apple）、（Pyrus pyrifolia；Pear）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Korea(D.R.P.K)</td>
+								<td>（Lonicera caerulea L. var. edulis Turcz. ex Herd.；Sweet berry honeysuckle）、（Vaccinium sp.；Lingonberry）（Only for the processing purpose）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Korea(R.O.K)</td>
+								<td>（Vitis vinifera；Grape）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Taiwan,China</td>
+								<td>（Ananas comosus；Pineapple）、（Musa sp.；Banana）、（Cocos nucifera；Coconut）、（Annona squamosa；Sugar apple，Sweet sop；Annona cherimola × Annonasquamosa; Atemoya）、（Chaenomeles sinensis；Pawpaw）、（Carica papaya；Papaya）、（Averrhoa carambola；Fruit of Carambola）、（Mangifera indica；Mango）、（Psidium guajava；Guava）、（Syzygium samarangense；Rose apple）、（Areca catechu；Betel nut）、（Prunus salicina；Plum）、（Eriobotrya japonica；Loguat）、（Diospyros kaki；Persimmon）、（Prunus persica；Peach）、（Zizyphus mauritiana；Indian jujube）、（Prunus mume；Japanese apricot，Mei）、（Hylocereus undulatus、Hylocereus polyrhizus、Hylocereus costaricensis；Pitaya）、（Cucunmis melo；Melon，Cantaloupe）、（Pyrus pyrifolia；Pear）、（Vitis vinifera、Vitis labrusca and its hybrids，Majority crops is  Vitis vinifera × Vitis labrusca na Bailey cv. Kyoho；Grape）、（Citrus reticulata；Mandarin） and its hybrids、（Citrus maxima；Pomelo）、（Citrus paradisi；Grapefruit）、（Citrus limon；Lemon）、（Citrus sinensis；Orange）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">U.S.A</td>
+								<td>（Prunus salicina、Prunus domestica；Plum. Only from California），（Prunus avium；Cherry. Only from Washington, Oregon, California and Idaho），（Vitis vinifera；Grape. Only from California）,（Malus domestica；Apple）， （Citrus spp.；Only from California, Florida, Arizona and Texas）， （Pyrus communis；Pear. Only from Califonia, Washington, Oregon）， （Fragaria ananassa；Strawberry. Only from California）</td>
+							</tr>
+							
+							
+							<tr>
+								<td class="sort">Canada</td>
+								<td>（Prunus avium；Cherry. Only from British Columbia）、（Vaccinium spp.；Blueberry；Only from British Columbia）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Mexico</td>
+								<td>（Persea americana Var. Hass；Avocado）、（Vitis vinifera；Grape）、（Rubus ulmifo-lius；Blackberry）, （Rubus idaeus；Raspberry）、 （Vaccinium spp.；Blueberry）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Panama</td>
+								<td>（Musa sp.；Banana）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Ecuador</td>
+								<td>（Musa sp.；Banana）、（Mangifera indica；Mango）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Columbia</td>
+								<td>（Musa sp.；Banana）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Costa Rica</td>
+								<td>（Musa AAA；Banana）、（Ananas comosus；Pineapple）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Uruguay</td>
+								<td>（Citrus spp.，Except Lemon）、（Vaccinium spp.；Blueberry）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Argentina</td>
+								<td>（Citrus sinensis；Orange）、（Citrus paradisi；Grapefruit）、（Citrus reticulata；Mandarin） and its hybirds）、 （Malus domestica；Apple）、 （Pyrus communis；Pear）、 （Vitis vinifera；Grape， Unable to import temporarily）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Chile</td>
+								<td>（（Actinidia chinensis、Actinidia deliciosa；Kiwi fruit）、（Malus domestica；Apple）、 （Vitis vinifera；Grape）、 （Prunus salicina, Prunus domoestica；Plum）、 （Prunus avium；Cherry）、 （Vaccinium spp.；Blueberry）、 （Persea americana；Avocado）、 （Prunus persica var. nectarine；Nectarine）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Peru</td>
+								<td>（Vitis vinifera；Grape）、 （Mangifera indica；Mango）、 （Citrus paradisi；Grapefruit (= Citrus × paradisii，)），（Citrus reticulata；Mandarin (= Citrus reticulate，)）and it hybirds， （Citrus sinensis），（Citrus aurantifolia）and（Citrus latifolia）、（Persea americana；Avocado）、（Vaccinium spp.；Blueberry）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">France</td>
+								<td>（Malus domestica；Apple）、（Actinidia chinensis, Actinidia deliciosa；Kiwi fruit）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Spain</td>
+								<td>（Citrus reticulata；Mandarin）、（Citrus sinensis；Orange）、（Citrus paradisi；Grapefruit）、 （Citrus limon；Lemon）、 （Prunus persica；Peach）、 （Prunus salicina, Prunus domoestica；Plum）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Italy</td>
+								<td>（Actinidia chinensis, Actinidia deliciosa；Kiwi fruit）； （Citrus sinensis cv. Tarocco，cv. Sanguinello，cv. Moro)；Orange）、 （Citrus limon cv. Femminello comune；Lemon）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Cyprus</td>
+								<td>（Citrus sinensis；Orange）、 （Citrus limon；Lemon）、 （Citrus paradisi；Grapefruit）、（Citrus sinensis × Citrus reticulata；Mandora）</td>
+							</tr>
+							
+							
+							<tr>
+								<td class="sort">Belgium</td>
+								<td>（Pyrus communis； pear）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Greece</td>
+								<td>（Actinidia chinensis、Actinidia deliciosa；Kiwi fruit）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Dutch</td>
+								<td>（Pyrus communis；Pear）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Poland</td>
+								<td>（Malus domestica；Apple）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">South Africa</td>
+								<td>（Citrus reticulata；Mandarin）、（Citrus sinensis；Orange）、（Citrus paradisi；Grapefruit）、 （Citrus limon；Lemon）、 （Vitis vinifera；Grape）、（Malus domestica；Apple）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Egypt</td>
+								<td>（Citrus spp.）； （Vitis vinifera；Grape）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Morocco</td>
+								<td>（Citrus sinensis；Orange）、Citrus reticulata；Mandarin）、  (Citrus clementina；Clementine)、 （Citrus paradisi；Grapefruit）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort">Australia</td>
+								<td>（Citrus sinensis；Orange）、（Citrus reticulata；Mandarin）、（Citrus limon; Lemon）、（Citrus paradisi；Grapefruit）、（Citrus aurantifolia、Citrus latifolia、Citrus limonia；Lime）、（Citrus tangelo）、（Citrus grandis × Citrus paradisi）、（Mangifera indica; Mango）、（Malus domestica；Apple，Only from Tasmina）、（Vitis vinifera；Grape）、（Prunus avium；Cherry）、（Prunus persica var. nectarine；Nectarine）</td>
+							</tr>
+							
+							<tr>
+								<td class="sort last">New Zealand</td>
+								<td class="last">（Citrus reticulata、Citrus deliciosa、Citrus unshiu；Mandarin）, （Citrus sinensis；Orange）、（Citrus limon、Citrus meyeri；Lemon）、 （Malus domestica；Apple）、 （Prunus avium；Cherry）、 （Vitis vinifera；Grape）、（Actinidia chinensis、Actinidia deliciosa、Actinidia deliciosa×Actinidia chinensis；Kiwi fruit）、 （Prunus salicina、Prunus domestica；Plum）、（Pyrus pyrifolia、Pyrus communis；Pear）、（Prunus mume；Japanese apricot，Mei）、 （Diospyros kaki；Persimmon）</td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+
+
+		
+
+		<!--footer start here-->
+		<div id="footeCompany" class="wrapGray">
+
+			<div class="main footer">
+				<p>备案/许可证号 沪ICP备15035308 &nbsp;&nbsp;|&nbsp;&nbsp;<span> 2015 Freshport.com. All rights reserved </span></p>
+			</div>
+
+		</div>
+
+		<!--footer end here-->
+
+
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+
+		<script>
+			var $searchbarOptions = $('.searchbarOptions');
+			var clicked = false ;
+			
+			
+			$searchbarOptions.hide();
+			$('.searchValue').click(function(){
+				
+				if(clicked){
+					$searchbarOptions.hide();
+				}else{
+					$searchbarOptions.show();
+				}
+				
+				clicked = !clicked;			
+			})
+			
+
+			
+			$('.searchbarOption').hover(function(){
+				$(this).css({"background":"#efefef"});
+			},function(){
+				$(this).css({"background":"#ffffff"});
+			});
+			
+			$searchbarOptions.delegate('li','click',function(){
+
+				
+				$('#searchbarDisplay').text( $(this).find('a').text()  );
+				$searchbarOptions.hide();
+				clicked = !clicked;	
+			})
+		</script>
+	</body>
+
+</html>

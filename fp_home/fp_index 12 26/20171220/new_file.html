@@ -1,0 +1,147 @@
+var effect = {
+    show: true,
+    scaleSize: require('zrender/tool/env').canvasSupported ? 1 : 2,
+    period: 30,             // 运动周期，无单位，值越大越慢
+    color: '#fff',
+    shadowColor: 'rgba(220,220,220,0.4)',
+    shadowBlur : 5 
+};
+function itemStyle(idx) {
+    return {
+        normal: {
+            color:'#fff',
+            borderWidth:1,
+            borderColor:['rgba(30,144,255,1)','lime'][idx],
+            lineStyle: {
+                //shadowColor : ['rgba(30,144,255,1)','lime'][idx], //默认透明
+                //shadowBlur: 10,
+                //shadowOffsetX: 0,
+                //shadowOffsetY: 0,
+                type: 'solid'
+            }
+        }
+    }
+};
+option = {
+    backgroundColor: '#1b1b1b',
+    color: ['rgba(30,144,255,1)','lime'],
+    title : {
+
+        sublink: 'http://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E9%93%81%E8%B7%AF%E8%BF%90%E8%BE%93',
+        x:'center',
+        textStyle : {
+            color: '#fff'
+        }
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: '{b}'
+    },
+    legend: {
+        orient: 'vertical',
+        x:'left',
+        selectedMode:'single',
+        data:['八纵通道', '八横通道'],
+        textStyle : {
+            color: '#fff'
+        }
+    },
+    toolbox: {
+        show : true,
+        orient : 'vertical',
+        x: 'right',
+        y: 'center',
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    series : [
+        {
+            name: '八纵通道',
+            type: 'map',
+            roam: true,
+            hoverable: false,
+            mapType: 'china',
+            itemStyle:{
+                normal:{
+                    borderColor:'rgba(100,149,237,1)',
+                    borderWidth:0.5,
+                    areaStyle:{
+                        color: '#1b1b1b'
+                    }
+                }
+            },
+            data:[],
+            markLine : {
+                symbol: ['circle', 'circle'],  
+                symbolSize : 1,
+                effect : effect,
+                itemStyle : itemStyle(1),
+                smooth:true,
+                data : [
+                    [{name:'上海'},{name:'包头'}],
+                    [{name:'上海'},{name:'北海'}],
+                    [{name:'上海'},{name:'广州'}],
+                    [{name:'上海'},{name:'郑州'}],
+                    [{name:'上海'},{name:'长春'}],
+                    [{name:'上海'},{name:'重庆'}],
+                    [{name:'上海'},{name:'长沙'}],
+                    [{name:'上海'},{name:'成都'}],
+                    [{name:'上海'},{name:'丹东'}],
+                    [{name:'上海'},{name:'大连'}],
+                    [{name:'上海'},{name:'福州'}],
+                    [{name:'上海'},{name:'海口'}],
+                    [{name:'上海'},{name:'呼和浩特'}],
+                    [{name:'上海'},{name:'合肥'}],
+                    [{name:'上海'},{name:'哈尔滨'}],
+                    [{name:'上海'},{name:'舟山'}],
+                    [{name:'上海'},{name:'银川'}],
+                    [{name:'上海'},{name:'南昌'}],
+                    [{name:'上海'},{name:'昆明'}],
+                    [{name:'上海'},{name:'贵阳'}],
+                    [{name:'上海'},{name:'兰州'}],
+                    [{name:'上海'},{name:'拉萨'}],
+                    [{name:'上海'},{name:'连云港'}],
+                    [{name:'上海'},{name:'临沂'}],
+                    [{name:'上海'},{name:'柳州'}],
+                    [{name:'上海'},{name:'宁波'}],
+                    [{name:'上海'},{name:'南宁'}],
+                    [{name:'上海'},{name:'北京'}],
+                    [{name:'上海'},{name:'沈阳'}],
+                    [{name:'上海'},{name:'秦皇岛'}],
+                    [{name:'上海'},{name:'西安'}],
+                    [{name:'上海'},{name:'石家庄'}],
+                    [{name:'上海'},{name:'汕头'}],
+                    [{name:'上海'},{name:'深圳'}],
+                    [{name:'上海'},{name:'青岛'}],
+                    [{name:'上海'},{name:'济南'}],
+                    [{name:'上海'},{name:'天津'}],
+                    [{name:'上海'},{name:'太原'}],
+                    [{name:'上海'},{name:'乌鲁木齐'}],
+                    [{name:'上海'},{name:'潍坊'}],
+                    [{name:'上海'},{name:'威海'}],
+                    [{name:'上海'},{name:'温州'}],
+                    [{name:'上海'},{name:'武汉'}],
+                    [{name:'上海'},{name:'厦门'}],
+                    [{name:'上海'},{name:'西宁'}],
+                    [{name:'上海'},{name:'徐州'}],
+                    [{name:'上海'},{name:'烟台'}],
+                    [{name:'上海'},{name:'珠海'}]
+                ]
+            }
+        },
+        {
+ 
+ 
+
+            geoCoord: {
+           
+                '上海':[121.4737,31.2304]
+            }
+        }
+    ]
+};
+                    

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金融记账新增记录</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+
+
+
+    <div class="add-form">
+    <ul class="form-list">
+        <li>
+            <label>客户名称<em class="red">*</em></label>
+            <select>
+                <option>请选择客户...</option>
+            </select>
+        </li>
+        <li>
+            <label>贷款总额度</label>
+            <input type="text" />
+        </li>
+        <li>
+            <label>已提款金额</label>
+            <input type="text" />
+        </li>
+
+        <li>
+            <label>未使用额度</label>
+            <input type="text" />
+        </li>
+        <li>
+            <label>提款日</label>
+            <input type="text" class="laydate-icon" onclick="laydate()" />
+        </li>
+        <li>
+            <label>到期日</label>
+            <input type="text" class="laydate-icon" onclick="laydate()" />
+        </li>
+        <li>
+            <label>提款金额(自有资金)</label>
+            <input type="text" />
+        </li>
+        <li>
+            <label>提款金额(银行贷款)</label>
+            <input type="text" />
+        </li>
+        <li>
+            <label>提款金额(合计)</label>
+            <input type="text" />
+        </li>
+        <li>
+            <label>到期利息</label>
+            <input type="text" />
+        </li>
+
+
+
+    </ul>
+
+
+        <div class="btn-col">
+
+            <button type="button" class="green-btn">保存</button>
+            &nbsp;&nbsp;
+            <button type="button" class="green-border-btn">取消</button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 指定 Action 所在包继承的父包 -->
+	<constant name="struts.convention.default.parent.package" value="novaone-default" />
+		
+	 <!-- action后缀 --> 
+	<constant name="struts.convention.action.suffix" value="Action" />
+	<constant name="struts.convention.result.path" value="/WEB-INF/jsp" />
+  <!-- 	<constant name="struts.convention.package.locators" value="control,api"/> -->
+    <constant name="struts.convention.package.locators" value="control,api,singlesignon"/>
+	
+	<!-- 用于约定Action 类的根包，这个包是Java 类的包，搜索此配置下的所有包 
+	<constant name="struts.convention.package.locators.basePackage" value="org.nova.mis"/>-->
+		
+	<!-- 定义默认的访问后缀 --> 
+    <constant name="struts.action.extension" value="dhtml,action" />  
+    
+	<!-- 开启动态方法调用，访问方式形如：loginout!loginPage.action --> 
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" /> 
+    <!-- 是否使用struts的开发模式。开发模式会有更多的调试信息。默认值为false(生产环境下使用),开发阶段最好打开 -->
+    <constant name="struts.devMode" value="false" />
+    <!-- 设置浏览器是否缓存静态内容。默认值为true(生产环境下使用),开发阶段最好关闭 -->
+    <constant name="struts.serve.static.browserCache" value="false" />
+	<!-- 平台专用：设置Convention插件是否从jar包中搜索Action类 [可选] 默认值为true -->
+	<constant name="struts.convention.action.disableJarScanning" value="true" />
+	<!-- 平台专用：设置Convention插件文件协议类型 -->
+	<constant name="struts.convention.action.fileProtocols" value="jar" />
+	<!-- 平台专用：设置Convention插件需要搜索的jar包 -->
+	<constant name="struts.convention.action.includeJars" value=".*?/novaone- *.*?jar(!/)?" />
+	<!-- 平台专用：Convention会试图从指定包中发现Action类 -->
+	<constant name="struts.convention.action.packages" value="com.novaone.control" />
+<!-- 	<constant name="struts.convention.action.packages" value="com.novaone.control.ocr" /> -->
+    <!--设置文件上传的大小 -->
+	<constant name= "struts.multipart.maxSize" value="104857600" />
+    <constant name="struts.multipart.saveDir" value="/tmp"/>
+    <!-- 设置Convention插件需要搜索的jar包 -->
+    <!-- 
+    <constant name="struts.convention.action.includeJars" value=".*?developer*.*?jar(!/)?" />
+    <constant name="struts.convention.action.includeJars" value=".*?struts2-*.*?jar(!/)?" />
+    -->
+    
+	<!-- 继承convention-default包，定义一个默认的拦截器，根据需要还可扩展 
+	<package name="default" extends="convention-default,json-default" namespace="/" />
+
+	-->
+	<!--
+		继承convention-default包，定义一个默认的拦截器，根据需要还可扩展 <package name="default"
+		extends="convention-default,json-default" namespace="/" /> <package
+		name="default" extends="convention-default,json-default" namespace="/"
+		/>
+	-->
+	<!--<package name="novaone-default" extends="convention-default,json-default" namespace="/" />-->
+	<package name="novaone-default" extends="convention-default,struts-default,json-default" namespace="/">
+		<interceptors>
+			<!--  注解解析拦截器，无它找不到result-->
+			<interceptor name="annoInteceptor" class="com.opensymphony.xwork2.interceptor.annotations.AnnotationWorkflowInterceptor" />
+			
+			<!-- <interceptor name="loginInteceptor" class="com.novaone.common.inteceptor.LoginInterceptor" /> -->
+			
+ 			<interceptor name="loginInteceptor" class="com.novaone.singlesignon.LoginInterceptor" />
+			
+			<interceptor name="jumpPageInterceptor" class="com.novaone.common.inteceptor.JumpPageInterceptor" />
+			<interceptor name="marketLoginInterceptor" class="com.novaone.interceptor.MarketLoginInterceptor" />
+			<interceptor name="priceLoginInterceptor" class="com.novaone.interceptor.PriceLoginInterceptor" />
+			<interceptor-stack name="newsoftStack">
+				<!--
+					struts2 提供的拦截器栈,包含了struts2的很多核心拦截器 自己定义的放在最后面,struts2定义的放在前面
+					<interceptor-ref name="annoInteceptor"/>^join![A-Za-z]+(.dhtml)
+				-->
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="loginInteceptor">
+					<param name="excludeActions">
+						jump!page.dhtml?p=login_page,login!login.dhtml,masterlogin!login.dhtml,(.*?)!jc(.*?).action,(.*?)!jz(.*?).action,novaoneUpload!uploadOfAndroid.action,
+						loginOverride!login.dhtml
+					</param>
+				</interceptor-ref>
+				<!-- APP实现自动登录 -->
+			 	<interceptor-ref name="marketLoginInterceptor">
+					<param name="includeMethods">jcadd,jcdetail,jcdelete,jcmodify,jcgetCountryList,jcgetProductList,jcgetCominfoList,jcgetDatas,
+					jcgetDefaultDatas,jcforwardData,jcgetForwardPerson,jcgetDimDatas,jcgetAuthority,jcinsertCominfo,jcaddCustomsInfo,
+					jcdataCopy,jcconfirm,jcmessageBox,jccheckCustomsName,jccheckCustomsTel,jcaddAttention,jcgetAttentionList,
+					jcgetProductListAttention,jcaddTemplate,jcgetTemplateList,jcgetDatasByDate,jcgetTemplateDetail,jcgetTemplateDetailById,
+					jcgetCountryProductForward,jcgetSupplierForward,jcgetDatasForward,jcdeleteTemplate,jcdeleteCominfo,jcgetProductListQuery,
+					jcgetCountryListQuery,jcgetSupplierQuery,jcgetDatasQuery,jcdeleteCustomsInfo
+					</param>
+				</interceptor-ref>
+				
+				<interceptor-ref name="priceLoginInterceptor">
+					<param name="includeMethods">
+					jzadd,jzdetail,jzdelete,jzmodify,jzgetCountryList,jzgetProductList,jzgetCominfoList,jzgetDatas,
+					jzgetDefaultDatas,jzforwardData,jzgetForwardPerson,jzgetDimDatas,jzgetAuthority,jzinsertCominfo,jzaddCustomsInfo,
+					jzdataCopy,jzconfirm,jzmessageBox,jzcheckCustomsName,jzcheckCustomsTel,jzaddAttention,jzgetAttentionList,
+					jzgetProductListUpdatedAttention,jzaddTemplate,jzgetTemplateList,jzgetDatasByDate,jzgetTemplateDetail,jzgetTemplateDetailById,
+					jzgetCountryProductUpdatedForward,jzgetSupplierUpdatedForward,jzgetDatasUpdatedForward,jzdeleteTemplate,jzdeleteCominfo,jzgetProductListUpdatedQuery,
+					jzgetCountryListUpdatedQuery,jzgetSupplierUpdatedQuery,jzgetDatasUpdatedQuery,jzdeleteCustomsInfo,jzgetUserByQuery,jzgetProductCountryList,
+					jzaddCustomsInfoNew,jzupdateMarkettype,jzgetDatasUpdated,jzmodifyUpdated,jzgetDuplicateCountryProductInfo,jzgetDuplicateEntryDatas,
+					jzgetUserById
+					</param>
+				</interceptor-ref>
+				
+				<!--页面动态跳转拦截器-->
+				<interceptor-ref name="jumpPageInterceptor"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<!--  为此包下的所有action应用拦截器 -->
+		<default-interceptor-ref name="newsoftStack"></default-interceptor-ref>
+
+		<global-results>
+			<result name="login">/WEB-INF/jsp/platform/login/timeout.jsp</result>
+			<result name="pop">/WEB-INF/jsp/jump.jsp</result>
+		</global-results>
+	</package>
+</struts>

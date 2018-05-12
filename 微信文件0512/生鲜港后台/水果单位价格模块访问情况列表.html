@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>水果单位价格模块访问情况列表</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+<div class="table-col specialTableCol">
+    <div class="search-col">
+        <span>
+            <label>国家：</label>
+            <input type="text" placeholder="请输入关键字搜索"/>
+        </span>
+
+        <span>
+            <label>水果名称：</label>
+            <input type="text" placeholder="请输入关键字搜索"/>
+        </span>
+
+        <span>
+            <label>统计月份：</label>
+            <input type="text" class="laydate-icon" onclick="laydate()"/>
+        </span>
+
+        <span>
+            <label>访问状态：</label>
+            <select class="mySelect">
+                <option>全部</option>
+            </select>
+        </span>
+
+        <span>
+            <button type="button" class="green-btn">查询</button>
+            <button type="button" class="green-border-btn">清空</button>
+        </span>
+    </div>
+</div>
+
+<div class="table-col noPaddingTop specialTableCol">
+    <div class="search-col">
+        <span>
+            <button type="button" class="green-btn"><<上月信息</button>
+            <button type="button" class="green-btn">下月信息>></button>
+        </span>
+    </div>
+</div>
+
+<div class="table-col noPaddingTop">
+    <table id="typeTable">
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>总次数</th>
+                <th>1</th>
+                <th>2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>智利</td>
+                <td>主公司名2</td>
+                <td>1999990</td>
+                <td>29999</td>
+                <td>19999</td>
+            </tr>
+            <tr>
+                <td>智利</td>
+                <td>主公司名2</td>
+                <td>109999</td>
+                <td>299999</td>
+                <td>1999</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="2" align="center">合计：</td>
+            <td>100999</td>
+            <td>109990</td>
+            <td>109990</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+
+<script src="assets/lib/jquery.js"></script>
+<script src="assets/lib/laydate/laydate.js"></script>
+<script>
+    $(function() {
+
+
+
+    })
+</script>
+
+</body>
+</html>

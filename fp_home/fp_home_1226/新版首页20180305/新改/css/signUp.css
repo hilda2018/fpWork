@@ -1,0 +1,14 @@
+a{text-decoration: none;}
+body{font-family: "Open Sans", sans-serif;font-size: 100%;margin: 0;width:100%;height:3300px;color: #3f4652;background: #f5f5fc;background: -webkit-linear-gradient(to bottom, #fff, #f5f5fc);/* Chrome 10-25, Safari 5.1-6*/background: linear-gradient(to bottom, #fff, #f5f5fc);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/padding-top:20px;}
+.SignUp{background:url(../images/signUpLeft.png) no-repeat right 200px;width:100%;height:3300px;position: relative;background-attachment: fixed;}
+.SignUp .wrap{position: absolute;left: 0px;top:0px;background:url(../images/bg-bottom-left.png) no-repeat left bottom;width:100%;background-attachment: fixed;height:3300px;}
+.step1, .step2, .step3,.step4,.step5,.step6{margin: 40px auto;padding: 1em 2em;background: #fff;border-radius: 5px;border:1px solid #eee;box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0px;width: 86%;}
+.how-to{overflow: hidden;*zoom: 1;border-top:1px solid #eee;min-width: 1080px;width:80%;margin: 0 auto;height:3000px;padding:30px 0;border-radius: 5px;background: #FFFFFF;box-shadow: rgba(0, 0, 0, 0.15) 0 10px 20px 0px;}
+.SignUp h1{width: 600px;margin:0 auto ;text-align: center;letter-spacing:3px;font-weight: 600;font-family:"Microsoft JhengHeiSTHupo"!important;font-size:30px;line-height: 1.5em;margin-top: 0;text-transform: uppercase;padding:30px;color:#689f38;}
+
+.how-to em{text-decoration: none;color: #0083D4;font-style: normal;font-weight: normal;cursor: pointer;}
+.how-to h2{color: #444;margin-bottom: 0;color:#7cb342;font-size: 20px;text-transform: uppercase;}
+.how-to p{font-size: 18px;padding:5px 0;color:#666;}
+p img{width:auto;height: auto;max-width: 100%;max-height: 100%;overflow: hidden;}
+.important{font-weight: bold;color:#333;}
+.center{text-align: center;margin:0;padding:0px;}

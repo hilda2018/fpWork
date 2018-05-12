@@ -1,0 +1,62 @@
+li{list-style:none}
+a{text-decoration:none}
+h2,li,p,ul{margin:0;padding:0}
+em{font-weight:400;font-style:normal}
+.title{display:inline-block;margin-top:40px;padding:20px;width:50pc;height:220px;border-radius:2px;color:#fff;text-align:center;font-family:Open Sans,sans-serif;line-height:1.5em}
+.title h2{margin-top:10px;margin-left:10px;color:#fff;text-transform:uppercase;font-weight:400;font-size:44px;line-height:1.3em}
+.title p{margin:10px 0;padding:0;width:100%;color:#333;text-align:center;letter-spacing:.5px;font-size:1pc;line-height:20px}
+.box{position:relative}
+.nav{position:absolute;bottom:44px;left:50%;margin-left:-50px;width:100px;height:14px}
+.nav ul li{float:left;display:inline;margin-right:6px;width:10px;height:10px;border:none;border:1px solid #8BC34A;border-radius:50%;background:#fff}
+.nav ul .bg{width:10px;height:10px;border:none;background:#8bc34a}
+.nav ul .bg{width:10px;height:10px;border:none;background:#8bc34a}
+.nav ul{width:100%;height:14px}
+.pic{position:relative;overflow:hidden;margin:0 auto;width:100%;height:400px}
+.pic ul li{position:relative;overflow:hidden;margin:0 auto;width:100%;height:400px;background-size:contain;list-style:none;text-align:center}
+.pic ul li .img1{position:absolute;top:0;left:-1980px}
+.pic ul li .img2{position:absolute;top:0;left:-15px;display:none}
+.pic ul{height:400px}
+.pic button{margin-top:12px}
+.mark{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.4}
+.wrap{position:absolute;top:0;left:0;width:100%;height:100%}
+.boxBtn{position:absolute;top:50%;display:inline-block;margin-top:-40px;width:60px;height:80px;-webkit-border-radius:2px;border-radius:2px;background:url(../images/bt-next.png) #000 no-repeat center center;opacity:.5}
+.boxBtn:hover{opacity:1}
+#picWrap span.mainHeadline{display:block;color:#fff;text-align:center;text-transform:uppercase;letter-spacing:.03em;font-weight:700;font-size:30px;line-height:1.8em}
+#picWrap .smalltext{position:relative;display:block;margin:0 auto;margin-top:10px;width:240px;height:38px;text-align:center}
+#picWrap .smalltext span{position:relative;display:inline-block;margin:10px auto;padding-bottom:10px;width:216px;height:16px;border-bottom:1px solid #fff;color:#feffff;text-align:left;font-weight:400;font-size:14px;line-height:16px;opacity:1}
+.moreDetail .smalltext2{display:block;color:#fff;font-size:18px}
+.moreDetail .pictext2{display:block;color:#fff;text-transform:capitalize;font-size:18px}
+.moreDetail .picArrow{position:relative;display:inline-block;margin-top:20px;padding:0 16px;height:36px;border:1px solid #fff;border-radius:2px;background:#fff;color:#8BC34A;vertical-align:middle;text-align:center;text-transform:uppercase;letter-spacing:.1em;font-weight:700;font-size:14px;line-height:1em;line-height:36px}
+.moreDetail .picArrow svg{margin-top:-3px;margin-left:6px;width:16px;height:16px;border:none;fill:#fff}
+.line{display:inline-block;width:200px;border:none;border-bottom:1px solid #eee}
+#boxPrev{left:80px;background:url(../images/bt-prev.png) #000 no-repeat center center;background-size:20px}
+#boxNext{right:80px;background-size:20px}
+#pic0 h2{margin-left:0;text-align:left}
+#pic0 .pictext2{font-size:20px}
+#pic0 .title{float:left;margin-left:14%;width:500px;text-align:left}
+#pic0 svg{fill:#8BC34A}
+#pic2 h2{color:#fff}
+#pic2 hr{border-bottom:1px solid #fff}
+#pic2 .pictext2{color:#eee}
+#pic2 .picArrow{border-color:#fff;background:#FFF;color:#444}
+#pic2 em{font-weight:700}
+#pic2 svg{margin-top:-3px;fill:#444}
+#pic1 h2{color:#316396}
+#pic1 hr{border-bottom:1px solid #316396}
+#pic1 .pictext2{color:#316396;font-size:18px}
+#pic1 .picArrow{border-color:#fff;background:#FFF;color:#316396}
+#pic1 em{font-weight:700}
+#pic1 svg{margin-top:-3px;fill:#316396}
+#pic1 .title{margin-top:28px;height:180px;background-color:rgba(255,255,255,.8);}
+#pic3 .title{float:left;margin-top:22px;margin-left:280px;width:598px;height:240px;text-align:left}
+#pic3 .title h2{margin-top:0;color:#fff;font-size:40px;margin-left: 0px;}
+#pic3 .title svg{fill:#f8b600}
+#pic3 .pictext2{color:#fff;font-size: 16px;}
+#pic3 .picArrow{color:#f8b600}
+#pic0 .title{margin-top:34px}
+#pic4 .title{float:right;margin-top:30px;margin-right:260px;width:598px;height:240px;text-align:right}
+#pic4 hr{border-bottom:1px solid #c76655;text-align:right}
+#pic4 .title h2{margin-top:0;color:#c76655;text-align:right;font-weight:700;font-size:40px}
+#pic4 .picArrow,#pic4 .pictext2{color:#c76655;text-align:right}
+#pic4 em{font-weight:700}
+#pic4 svg{margin-top:-3px;fill:#c76655}

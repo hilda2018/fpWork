@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			#tabbox .tab{overflow: hidden; }
+.tab li {
+  float: left;
+  margin-right: 2px;display: inline;text-align: center;}
+.tab li a {
+  float: left;
+  height:40px;
+  padding:12px;
+  text-decoration: none;
+  color: #555;line-height:18px;
+  font-size: 14px;
+  -webkit-border-radius: 7px 7px 0 0;
+  -khtml-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;background: #f2f3f7;background-size: 20px;
+}
+
+.tab li span {
+	font-size: 12px;
+}
+.tab li:hover a, .tab li a:focus, .tab li.active a {
+  color:#fff; 
+
+}
+.tab .on{z-index:3;color:#fff;
+
+background: #8BBC3C;background-size: 20px;
+}
+
+.on{background:#fff;padding:2em;}
+
+.content {
+    background: #fff;border: 1px solid #bbb;
+    border-top: 2px solid #8BBC3C;
+    color:#aaa;
+    padding: 10px;
+    height:174px;
+}
+
+#tabbox{
+	height: 234px;
+	width: 890px;margin: 20px auto 10px;
+}
+
+.tit{color:#BBBBBB;font-style: italic;}
+.content li img {
+    float: left;
+    margin-right: 10px;
+}
+
+.content h3{
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 1em;margin-top: 1em;
+}
+
+.content p{
+    margin: 0 0 1.5em;
+}
+/***********************产品展示***/
+
+.wrapDiv {
+	float: left;
+	width: 100px;
+	height: 100px;
+	padding: 2px;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+	position: relative;
+}
+
+.wrapDiv .small_pic {
+	width: 100px;
+	height: 100px;
+	background: #eee;
+	position: relative;
+}
+
+.small_pic img {
+	width: 100px;
+	height: 100px;
+}
+
+.wrapDiv .float_layer {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #000;
+	background: #fff;
+	filter: alpha(opacity: 30);
+	opacity: 0.3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.wrapDiv .mark {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 99999999;
+	left: 0px;
+	top: 0px;
+	background: red;
+	filter: alpha(opacity:0);
+	opacity: 0;
+}
+
+.wrapDiv .big_pic {
+	position: absolute;
+	top: -1px;
+	left: 100px;
+	width: 140px;
+	height: 140px;
+	overflow: hidden;
+	border: 2px solid #CCC;
+	display: none;
+	z-index: 99999999;
+}
+
+.wrapDiv .big_pic img {
+	position: absolute;
+	top: -30px;
+	left: -80px;
+}
+
+.active {
+	position: relative;
+}
+	
+	#shopPicShow{height: 148px;position: relative;}
+		</style>
+	</head>
+	<body>
+		
+			<div class="tabbox" id="tabbox">
+				<ul class="tab" ></ul>
+		   		<div class="content"><ul></ul></div>
+		   		<div id="shopPicShow" ></div>
+			</div>
+						
+			
+			
+	<script src="js/jquery.min.js"></script>					
+					
+	<script>
+var cropData = [
+	{"kind":"Apple","origin":"America","content":"111111111111","imgAll":['images/big.png','images/big.png','images/big.png','images/big.png']},
+	{"kind":"Banana","origin":"USA","content":"2222222222222222222222","imgAll":['images/big.png','images/big.png','images/big.png']},
+	{"kind":"Cherry","origin":"Englend","content":"333333333","imgAll":['images/big.png']},
+	{"kind":"Pear","origin":"China","content":"44444444444444","imgAll":['images/big.png','images/big.png','images/big.png','images/big.png','images/big.png','images/big.png','images/big.png','images/big.png']}
+];
+
+
+$(function(){
+	
+	generateTab( cropData )
+	var tabBox = new TabSwitch('tabbox',3000,cropData);//第一个参数 是 ID 值 ，第二个参数是 切换速度
+	
+});
+		
+
+
+
+
+function generateTab( cropData ){
+	var $tempUl = $('<ul></ul>');
+	var $tempUl2 = $('<ul></ul>');
+	var $tab = $('#tabbox .tab');		
+	var $content = $('#tabbox .content ul');	
+	
+	var cropLength = cropData.length;
+	
+	for(var i = 0 ; i < cropLength ; i++ ){
+		
+		if( i == 0){
+			var cropLi = $('<li><a href="javascript:;" class="on"><strong>'+cropData[i]["kind"]+'</strong><br/><span>origins:'+cropData[i]["origin"]+'</span></a></li>');
+		}else{
+			var cropLi = $('<li><a href="javascript:;" ><strong>'+cropData[i]["kind"]+'</strong><br/><span>origins:'+cropData[i]["origin"]+'</span></a></li>');	
+		}
+		
+		var cropContentLi = $('<li><p>'+cropData[i]["content"]+'</p></li>');
+		
+		$tempUl.append( cropLi );
+		$tempUl2.append( cropContentLi );
+	}
+			
+	 $tab.html($tempUl.html());		
+	 $content.html($tempUl2.html());		
+			
+	 $tempU = $tempUl2 = null ;
+}
+	
+//tab 切换对象 构造函数
+function TabSwitch(id,time,cropData){
+	
+	this.tabbox = $('#'+id);
+	this.time = time;
+	this.li = this.tabbox.find('.tab li');
+	this.auto = 1;
+	this.tabChange = null ;
+	this.index = 0;
+	this.number = 0;
+	this.maxNumber = this.li.length;
+	
+	this.shopPicShow = $('#shopPicShow');
+	this.cropData = cropData;
+	
+	var obj = this ;
+	this.li.mouseover(function(){
+		obj.tabs( $(this));
+		obj.pics($(this).index());
+	});
+	
+	if(this.auto ==1){
+		var number = this.number;
+		var maxNumber = this.maxNumber;
+		var index = this.index;
+		obj.autotab(number,maxNumber,index );
+		this.tabChange = setInterval(function(){
+			obj.autotab(number,maxNumber,index );
+		},obj.time);
+		//鼠标悬停暂停切换
+		this.tabbox.mouseover(function(){
+			clearInterval(obj.tabChange);
+		});
+		this.tabbox.mouseout(function(){
+			obj.tabChange = setInterval(function(){
+				obj.autotab(number,maxNumber,index );
+			},obj.time);
+		});
+	}
+	
+	
+}
+
+
+TabSwitch.prototype.pics= function(index){
+	var arrImg  = this.cropData[index]["imgAll"]	
+	var $temp = $('<div></div>');
+	
+	var len = arrImg.length > 7 ? 7 :arrImg.length;
+	 
+	this.shopPicShow.html('');
+	for(var i = 0; i <len; i++ ){
+		
+		var $div = $('<div class="wrapDiv"><div class="small_pic"><span class="mark"></span><span class="float_layer"></span><img src="'+arrImg[i]+'" alt="" longdesc="https://www.freshport.com"  width="100px"/></div><div class="big_pic"><img src="images/big.png" alt="" longdesc="https://www.freshport.com" /></div></div>');
+		
+		$temp.append( $div );
+		
+	}
+	this.shopPicShow.html($temp.html());
+
+	cropFruitPicShow();
+	
+};
+
+
+TabSwitch.prototype.tabs = function(target){
+	this.tabbox.find('a').removeClass('on');
+	target.find('a').addClass('on');
+	this.index  = target.index();
+	this.number = this.index ;
+	this.tabbox.find('.content li').hide();
+	this.tabbox.find('.content li:eq('+this.index+')').show();	
+};
+
+TabSwitch.prototype.autotab= function(number,maxNumber,index){
+	
+	this.number++;
+	this.number == this.maxNumber? this.number = 0 : this.number;
+	this.index = this.number;
+
+	this.tabbox.find('a').removeClass('on');
+	this.tabbox.find('.tab li:eq('+this.number+') a').addClass('on');
+	
+	this.tabbox.find('.content li:eq('+this.index +')').show().siblings().hide();
+	
+ 	this.pics(this.number);
+
+};
+
+//*************产品图片放大
+function show(target){
+	var $oFloat = target.find('.float_layer');
+	var $oBig = target.find('.big_pic');
+	$oFloat.show();
+	$oBig.show();
+}
+
+function hide(target){
+	var $oFloat = target.find('.float_layer');
+	var $oBig = target.find('.big_pic');
+	$oFloat.hide();
+	$oBig.hide();
+}
+
+function showMove(target,event){
+	
+		var oDiv = target.get(0);
+		var oFloat = target.find('.float_layer').get(0);
+		var oSmall =  target.find('.small_pic').get(0);
+		var oMark =  target.find('.mark').get(0);
+		var oImg = target.find('img').get(1);
+		var oBig = target.find('.big_pic').get(0);
+		var oEvent = event.originalEvent
+		
+		var tDis = topHeight - $('body').scrollTop();
+		var l=oEvent.clientX-oDiv.offsetLeft-oSmall.offsetLeft-oFloat.offsetWidth/2-left+2;
+		var t=oEvent.clientY-oDiv.offsetTop-oSmall.offsetTop-oFloat.offsetHeight/2- tDis;
+
+
+		if(l<0)
+		{
+			l=0;
+		}
+		else if(l>oMark.offsetWidth-oFloat.offsetWidth)
+		{
+			l=oMark.offsetWidth-oFloat.offsetWidth;
+		}
+		
+		if(t<0)
+		{
+			t=0;
+		}
+		else if(t>oMark.offsetHeight-oFloat.offsetHeight)
+		{
+			t=oMark.offsetHeight-oFloat.offsetHeight;
+		}
+		
+
+		
+		oFloat.style.left=l+'px';
+		oFloat.style.top=t+'px';
+		
+		var percentX=l/(oMark.offsetWidth-oFloat.offsetWidth);
+		var percentY=t/(oMark.offsetHeight-oFloat.offsetHeight);
+		
+		oImg.style.left=-percentX*(oImg.offsetWidth-oBig.offsetWidth)+'px';
+		oImg.style.top=-percentY*(oImg.offsetHeight-oBig.offsetHeight)+'px';
+}
+
+function cropFruitPicShow(){
+	
+	var $wrapDiv = $('.wrapDiv');
+	left =$('#shopPicShow').offset().left;
+	topHeight  =$('#shopPicShow').offset().top;
+
+	$.each($wrapDiv, function(i,elem) {
+		
+		var oMark =  $(elem).find('.mark');
+		var targetObj = $(elem);
+		
+	
+		$(elem).mouseover(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			show($(this));
+		
+		});
+ 		
+ 		$(elem).mouseout(function(){
+			$(this).removeClass('active');
+			hide( $(this) );	
+		});
+	 
+ 		$(elem).mousemove(function(ev){
+ 		
+			showMove( $(this),ev);
+		});
+
+		
+	});
+
+}
+		
+</script>
+
+
+
+</body>
+</html>

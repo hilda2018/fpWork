@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回款记录</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+    <style>        input.twoW {
+            width:476px !important;
+            vertical-align: middle;
+        }
+        .modal-dialog .info-list li select, .modal-dialog .info-list li input[type=text] {
+              width: 180px;
+            }
+            .modal-dialog .info-list.long li>span {
+                width: 190px;
+            }      .modal-dialog .info-list.long li label {
+            width: 90px;
+        }
+
+        .modal-dialog .dialog-body {
+            padding-top: 0px;
+        }
+  
+        .modal-dialog{top:10%;}
+        .table-col {padding: 10px 20px;}
+    </style>
+</head>
+<body>
+  <div class="modal" >
+     <div class="modal-dialog" style="width:750px;top:20px;  margin-left: 10px;">
+        <div class="dialog-body" >
+                <ul class="info-list long">
+                        <li>   
+                                <label>协议编号</label>
+                                <input type="text" readonly class="twoW"/>
+                                </li><li>
+                                <label>客户名称</label>
+                                <input type="text" readonly class="twoW"/>
+                                </li>
+                                <li>
+                                <label>提款日</label>
+                                <span>
+                                <input type="text" readonly/>
+                                </span>
+                                <label>结息日</label>
+                                <span>
+                                <input type="text" readonly/>
+                                </span>
+                                </li>
+                                <li>
+                                <label>提款金额</label>
+                                <span>
+                                <input type="text">
+                                </span>
+                                <label>到期利息</label>
+                                <span>
+                                <input type="text" readonly/>
+                                </span>
+                                </li>
+                                <li>
+                                <label>已还本金</label>
+                                <span>
+                                <input type="text">
+                                </span>
+                                <label>已收利息</label>
+                                <span>
+                                <input type="text" readonly/>
+                                </span>
+                                </li>
+                                <li>
+                                <label>回款日</label>
+                                <input type="text" readonly class="twoW"/>
+                                </li>
+                                <li>
+                                <label>本次归还本金 </label>
+                                <span>
+                                <input type="text">
+                                </span>
+                                <label>本次支付利息</label>
+                                <span>
+                                <input type="text">
+                                </span>
+                                </li>
+                                <li>
+                                <label>收款账户</label>
+                                <select style="width:476px;">
+                                    <option>请选择客户...</option>
+                                </select>
+                                </li>
+                                <li>
+                                <label>备考</label>
+                                <input type="text" readonly class="twoW"/>
+                                </li>    
+                       
+              </ul>
+                <div style="text-align:left;">
+                        <button type="button" class="green-btn" style="margin: 0 30px 0 106px;">保存</button>
+                        <button type="button" class="green-border-btn">取消</button>
+               </div>
+
+        </div> 
+    </div>
+</div>
+
+
+<!-- 新增弹窗  -->
+    <div class="modal" id="addPriceDialog"  style="background:rgba(0,0,0,0.4)" >
+
+        <div class="modal-dialog" style="width:900px;margin-left:-450px;left:50%;">
+
+            <div class="modal-header">
+
+                <h4 class="modal-title">回款记录表格</h4>
+                <span class="close cancel-modal">×</span>
+
+            </div>
+
+            <div class="dialog-body">
+
+
+                <div class="table-col">
+                
+                    <table id="typeTable">
+                        <thead>
+                            <tr>
+                                <th>回款日</th>
+                                <th>结息日</th>
+                                <th>本次归还本金</th>
+                                <th>本次归还利息</th>
+                                <th>账户</th>
+                                <th>备考</th>
+                                <th>最新更新人员</th>
+                                <th>最新更新日期</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                                <td>1</td>
+                                <td>AAA</td>
+                                <td>500, 000.00
+                                </td>
+                                <td>250, 000.00
+                                </td>
+                                <td>250, 000.00
+                                </td>
+                                <td>250, 000.00
+                                </td>
+                                <td>3, 000.00
+                                </td>
+                                <td>1, 500.00
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                
+                    </table>
+            
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+
+</body>
+</html>

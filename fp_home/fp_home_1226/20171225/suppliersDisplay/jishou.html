@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>freshport</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+		<style>
+			#container .title span {
+				display: inline-block;
+				font-weight: normal;
+			}
+			
+			#container .title {
+				text-align: center;
+				margin-top: 20px;
+				line-height: 40px;
+			}
+			
+			#container h2 {
+				font-size: 20px;
+				margin: 0 auto;
+				margin-top: 20px;
+				margin-bottom: 4px;
+			}
+			
+			.title_bg1 {
+				height: 100%;
+				width: 154px;
+				background: url(images/jishou/title_bg1.png) no-repeat left center;
+			}
+			
+			.title_bg2 {
+				height: 100%;
+				width: 169px;
+				background: url(images/jishou/title_bg2.png) no-repeat right center;
+			}
+			
+			.nav .first1 {
+				padding-left: 0px;
+			}
+			
+			#container .pic {
+				margin: 10px;
+				background: #000000;
+				height: 240px;
+				width: 1070px;
+				border: 5px solid #FFFFFF;
+				border-radius: 16px;
+				-webkit-border-radius: 12px;
+				margin-bottom: 50px;
+				overflow: hidden;
+			}
+			
+			.pic img{width: 1080px;}
+			
+			.first {
+				margin: 10px 10px;
+				background: url("images/jishou/beijing.jpg") left top no-repeat;
+				padding-left: 160px;
+				font-size: 18px;
+				line-height: 1.5em;
+				text-align: left;
+				color: #333;
+			}
+			
+			.second {
+				margin: 10px 10px;
+				height: 400px;
+				font-size: 18px;
+				line-height: 1.5em;
+				text-align: left;
+			}
+			
+			.second_left {
+				background: url("images/jishou/core.jpg") right center no-repeat;
+				width: 34%;
+				height: 100%;
+				float: left;
+			}
+			
+			.second_right {
+				width: 60%;
+				height: 100%;
+				float: left;
+				box-sizing: border-box;
+				padding-left: 5%;
+			}
+			
+			.second_item {
+				height: 80px;
+				line-height: 76px;
+				background: url("images/jishou/core1.jpg") left center no-repeat;
+				padding-left: 80px;
+			}
+			
+			.second_item:nth-of-type(2) {
+				background: url("images/jishou/core2.jpg") left center no-repeat;
+			}
+			
+			.second_item:nth-of-type(3) {
+				background: url("images/jishou/core3.jpg") left center no-repeat;
+			}
+			
+			.second_item:nth-of-type(4) {
+				background: url("images/jishou/core4.jpg") left center no-repeat;
+				padding-top: 14px;
+			}
+			
+			.second_item:nth-of-type(5) {
+				background: url("images/jishou/core5.jpg") left center no-repeat;
+				padding-top: 14px;
+			}
+			/*******/
+			
+			.spec {
+				line-height: 30px;
+			}
+			
+			.spec1 {
+				line-height: 30px;
+			}
+			
+			.advan {
+				height: 90px;
+				width: 968px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			.advan li {
+				display: inline;
+				line-height: 30px;
+				vertical-align: top;
+				margin-top: 30px;
+				width: 50%;
+				float: left;
+			}
+			
+			.advan li img {
+				margin-right: 20px;
+				height: 60px;
+				display: inline;
+			}
+			
+			.advan li span {
+				width: auto;
+				text-align: left;
+			}
+			
+			.advan li span,
+			.advan li img {
+				vertical-align: middle;
+				font-size: 18px;
+				float: left;
+			}
+			
+			.advan .right {
+				float: right;
+			}
+			
+			.advan .right span,
+			.advan .right img {
+				float: right;
+			}
+			
+			.advan li strong {
+				color: #666;
+			}
+		</style>
+
+
+	</head>
+
+	<body class="fly-full">
+		<!--头部  -->
+		<div class="header">
+
+			<div class="main">
+
+				<div class="nav">
+
+					<a href="newIndex.html" class="first2">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="newIndex.html#Importers"><i class="icon-love"></i> &nbsp;Importers</a>
+					<a href="newIndex.html#Exporters"><i class="icon-love"></i>&nbsp;Exporters</a>
+					<a href="contact.html">Contact</a>
+					<a href="">中文</a>
+				</div>
+
+				<!--未登录-->
+				<div class="nav-user" id="LoginU">
+					<a href="javascript:;" class="social-icons" id="login">Login</a>
+				</div>
+
+				<!--登录-->
+				<div class="nav-user" id="LoginA" style="display: none;">
+					<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="logout">Logout</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="enterFP">My Freshport</a>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<!-- 搜索-->
+		<div class="wrapWhite wrapLogo">
+			<div class="main">
+				<div class="logo">
+
+					<a class="navg" href="newIndex.html">
+						<span class="solgan">
+					Online Information & Service Platform for Imported Fruits Industry
+				</span>
+					</a>
+
+				</div>
+
+				<div class="search">
+					<div id="searchInput">
+						<input type="text" value="" placeholder="what are you looking for..." id="ser" />
+
+						
+
+						<div id="wrapBtn">
+							<a href="#" class="ser-btn">
+								<img src="images/search.png" />
+								<span>Search</span>
+							</a>
+
+						</div>
+					</div>
+					
+					<div id="searchBar" >
+
+						<div class="searchValue">
+							<span id="searchbarDisplay">Importers</span>
+							<span class="searchbarArrow" id="searchbarArrow">
+								<em></em>
+								<b></b>		
+							</span>
+
+						</div>
+
+						<ul class="searchbarOptions" >
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Importers" rel="nofollow">Importers</a>
+							</li>
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Exporters" rel="nofollow">Exporters</a>
+							</li>
+						
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="advanceSearch"> Advanced Search:&nbsp;&nbsp;
+					<a href="newSearch.html" alt="Importers" title="Importers" class="advanceSearchItem">Importers</a>
+					<a href="" class="advanceSearchItem">Exporters</a>
+				</div>
+			</div>
+		</div>
+
+	
+
+		
+		<div class="wrapWhite "  style="height:1360px" >
+
+			<div class="main">
+				
+				<!-- 主体 -->
+			<div id="container">
+				<div class="pic">
+					<img src="images/jishou/banner.jpg"  />
+				</div>
+
+				<!-- 第一部分 -->
+				<div class="outline">
+					<h2 class="title">
+				<span class="title_bg1">&nbsp;</span>
+				Background for Consignment Twice Taxation
+				<span class="title_bg2">&nbsp;</span>
+				
+			</h2>
+				
+				</div>
+				<div class="first">
+				There is no settlement price for imported fruit until sales completed (Settlement= Sales price-commission-taxation-sales expenses). So the customs imported taxation is based on price evaluation which is always different from settlement price, so the legal risk for importers and overtax for exporters always exist. To satisfy clients’ requirement and secure long-term healthy development for the whole industry, under the supervision and guidance of Shanghai Customs, FreshPort has set up an open and innovative third-party consignment taxation platform to help importers pay consignment taxation by law and actual returns
+					<br/><br/>
+				</div>
+
+				<!-- 第二部分 -->
+				<div class="outline">
+					<h2 class="title">
+				<span class="title_bg1">&nbsp;</span>
+				Core functions for Consignment Twice Taxation
+				<span class="title_bg2">&nbsp;</span>
+				
+			</h2>
+					
+				</div>
+
+				<div class="second">
+					<div class="second_left"></div>
+					<div class="second_right">
+						<div class="second_item">Forwarders key in basic information for each shipment;</div>
+						<div class="second_item">Importers provide online sales report;</div>
+						<div class="second_item">Importers provide online sales report;</div>
+						<div class="second_item spec1">FreshPort generate twice taxation report automatically to be verified by Customs;</div>
+						<div class="second_item spec">FreshPort assist Customs to dynamically supervise the sales price and expenses.</div>
+
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+				<!-- 第三部分 -->
+				<br />
+				<div class="outline">
+					<h2 class="title">
+				<span class="title_bg1">&nbsp;</span>
+				Why Consignment Twice Taxation
+				<span class="title_bg2">&nbsp;</span>
+				
+			</h2>
+			
+				</div>
+
+				<div class="advan">
+					<ul>
+						<li>
+							<img src="images/jishou/advan2.gif"  />
+							<span>Easy to operate<br/>
+								<strong>Exporters only need to do online confirmation</strong>
+							</span>
+						</li>
+						<li class="right">
+							<span >Avoid legal risk<br/>
+								<strong>No more legal risk for importers</strong>
+							</span>
+							<img src="images/jishou/advan1.gif" />
+						</li>
+					</ul>
+			
+				</div>
+
+			</div>
+			<!-- 主体 -->
+
+			</div>
+
+		</div>
+
+		
+		<!--footer start here-->
+		<div id="footeCompany" class="wrapGray">
+
+			<div class="main footer">
+				<p>备案/许可证号 沪ICP备15035308 &nbsp;&nbsp;|&nbsp;&nbsp;<span> 2015 Freshport.com. All rights reserved </span></p>
+			</div>
+
+		</div>
+
+		<!--footer end here-->
+		
+
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+
+		<script>
+			var $searchbarOptions = $('.searchbarOptions');
+			var clicked = false ;
+			
+			
+			$searchbarOptions.hide();
+			$('.searchValue').click(function(){
+				
+				if(clicked){
+					$searchbarOptions.hide();
+				}else{
+					$searchbarOptions.show();
+				}
+				
+				clicked = !clicked;			
+			})
+			
+
+			
+			$('.searchbarOption').hover(function(){
+				$(this).css({"background":"#efefef"});
+			},function(){
+				$(this).css({"background":"#ffffff"});
+			});
+			
+			$searchbarOptions.delegate('li','click',function(){
+
+				
+				$('#searchbarDisplay').text( $(this).find('a').text()  );
+				$searchbarOptions.hide();
+				clicked = !clicked;	
+			})
+		</script>
+	</body>
+
+</html>

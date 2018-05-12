@@ -1,0 +1,21 @@
+--根据子账号求顶级主账号
+CREATE FUNCTION `getRootUserID`(subuserid varchar(36))
+RETURNS varchar(36)
+BEGIN
+       DECLARE sTemp VARCHAR(60000);
+      DECLARE sTempChd VARCHAR(60000);
+            DECLARE temp int;
+                    set temp=1;
+                    SET sTemp = null;
+          SET sTempChd = subuserid;
+
+       WHILE sTempChd !='0' and  temp !=0 do
+
+        SELECT t.parentid,t.id INTO sTempChd,sTemp from d_user t where t.id=sTempChd;
+                select count(*) into temp from d_user t where t.id=sTempChd;
+       END WHILE;
+
+       RETURN sTemp;
+     END
+
+update customsinfo set rootuserid=getRootUserID(userid);

@@ -1,0 +1,191 @@
+/*头部*/
+.header{
+	width: 100%;
+	height: 135px;
+	background: url(../images/header_bj.jpg) bottom center repeat-x;
+}
+.header .ls_list{
+	/*width:450px;*/
+	height: 35px;
+	line-height: 35px;
+	color: #d9d9d9;
+	font-size: 16px;
+	float: right;
+}
+.header .ls_list .name{margin-right: 50px;}
+.header .ls_list .name a{
+	color: #00a0ea;
+	padding: 0 5px;
+}
+.header .ls_list  a{
+	color: #666;
+	padding: 0 5px;
+}
+.header .logo{
+	height: 90px;
+	float: left;
+}
+.header .search{
+	float: right;
+	height: 46px;
+	width: 680px;
+	border: 2px solid #ff771c;
+	margin-top: 20px;
+	position: relative;
+	z-index: 9;
+}
+.header .search .role{
+	width: 92px; 
+	line-height: 46px;
+	border-right: 1px solid #e6e6e6;
+	border-left: 1px solid #fff;
+	color: #333;
+	font-size: 16px;
+	display: inline-block;
+	float: left;
+	background: #fff;
+	z-index: 2;
+	position: relative;
+}
+.header .search .role .selectbox{
+	font-size:16px;
+	display : block;
+	width:80px;
+	text-align:left;
+	height:46px;
+	line-height: 46px;
+	padding-left: 12px;
+	cursor: pointer;
+	border:none;
+	color:#333;
+	z_index:9999;
+	vertical-align:middle;
+}
+.header .search .role em{
+	width: 8px;
+	height: 4px;
+	background: url(../images/arrow_d.png) no-repeat;
+	display: inline-block;
+	position: absolute;
+	top: 21px;
+	right: 12px;
+}
+.header .search .role:hover{
+	border: 1px solid #e6e6e6;
+	border-top: none;
+}
+.header .search .role ul{
+	width: 93px;
+	float: left;
+}
+.header .search .role ul li{
+	width: 78px;
+	height: 46px;
+	line-height: 46px;
+	padding-left: 15px;
+	cursor: pointer;
+}
+.header .search .role ul li:hover{
+	background: #ff771c;
+	color: #fff;
+
+}
+.header .search .role ul li a{display: block;}
+.header .search input#ser{
+	border: none;
+	width: 474px;
+	height: 46px;
+	line-height: 46px;
+	padding-left: 10px;
+	float: left;
+	font-size: 14px;
+}
+.header .search .ser-btn{
+	display: inline-block;
+	width: 67px;
+	height: 46px;
+	line-height: 46px;
+	color: #fff;
+	background: url(../images/search.png) no-repeat 17px center #ff771c;
+	padding-left: 45px;
+	font-size: 16px;
+}
+
+
+/*尾部*/
+.footer{
+	width: 100%;
+	border-top: 1px solid #cccccc;
+	min-height: 250px;
+}
+.footer dl{
+	width: 237px;
+	float: left;
+	padding-top: 10px;
+}
+.footer dl dt a{
+	width: 237px;
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+}
+.footer dl dd a{
+	width: 237px;
+	height: 30px;
+	line-height: 30px;
+	color: #666;
+	font-size: 14px;
+	text-align: left;
+}
+
+.footer  .wrapper p{height: 18px; line-height: 18px;text-align: center; }
+/*面包屑*/
+.breadcrumb{font:bold 16px/2.8 Arial; color:#54637a}
+.breadcrumb a{color:#54637a}
+.breadcrumb .active{color:#666}
+/*翻页*/
+.pagenation{
+	padding: 60px 0;
+	text-align: center;
+	font-size: 16px;
+}
+.pagenation a{
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	margin:0 8px;
+	background: #f8f8f8;
+}
+.pagenation a.on,.pagenation a:hover{
+	background: #fdeaa6;
+	border:1px solid #f7bf4f;
+	color: #aa558c;
+}
+.pagenation a.prev,.pagenation a.next{
+	width: 72px;
+	height: 38px;
+	border: 1px solid #ccc;
+	line-height: 38px;
+	text-align: center;
+}
+.pagenation input{
+	width: 50px;
+	height: 30px;
+	border: 1px solid #e6e6e6;
+	margin: 0 5px;
+}
+.pagenation a.confirm{
+	border:1px solid #ccc;
+	background: #f1f1f1;
+	text-align: center;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+}

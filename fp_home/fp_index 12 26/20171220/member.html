@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>		
+		<link href="css/member.css" rel="stylesheet" />
+	</head>
+	<body>	
+		
+		
+<div id="work" class="awesome-work">
+	<div class="bgWork"></div>
+	<div class="text-center">
+		<h2>Members</h2>
+		<p class="max-para">
+			Real-time window to know about China market, the professional platform to connect importers, exporters and association to promote the trade, solve the problems during negotiation and after transaction. Find new cooperation opportunities, build mutual trust, guarantee the payment and trade security.
+		</p>
+	</div>
+	<div id="filters" class="button-group">
+		<a class="button is-checked"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_association"></use></svg><span>Associations</span></a>
+		<a class="button"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_buyer"></use></svg><span>Importers</span></a>
+		<a class="button"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_supplier"></use></svg><span>Exporters</span></a>
+	</div>
+	<div class="wrapMenberShow" id="wrapMenberShow">
+		<div class="button_show">
+			<ul class="button_items" id="button_items">
+		<li class="button_item">
+				<div class="shadow">
+					<div class="button_itemsImg">
+						<img src="images/bg1.png"/><span></span>
+					</div>
+					<p>
+						1111Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi Proin gravida nibhvel Proin gravi
+					</p>
+					<a class="btnMember"><span>Read More </span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg></a>
+				</div>
+				</li>
+				
+			</ul>
+		</div>
+		<a id="memberBtnPrev" class="prevMember buttonA"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_left"></use></svg></a>
+		<a id="memberBtnNext" class="buttonA nextMember"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_right"></use></svg></a>
+	</div>
+	<a href="" class="showMoreWork">
+	<span>click here to view more</span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg>
+	</a>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+
+
+$(function(){
+	
+//	generateWorkData( memberdata,'button_items',memberCustomData);
+	$('#filters .button').each(function(i,elem){
+		$(this).click(function(){
+			if($(this).index()==0){
+				 generateWorkData( memberdata,'button_items',memberCustomData);
+			}else{
+				console.log($(this).index());
+				 generateWorkData( memberdata2,'button_items',memberCustomData);
+			}
+			
+		});
+	});
+
+})
+var memberdata=[
+		{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		}
+	];
+	
+var memberdata2=[
+		{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		},
+			{
+			"imgSrc":"images/association.png",
+			"name":"3F,Building 1,No.1688 Yongnan RD,Shanghai,China"
+		}
+	];
+var memberCustomData = $('#button_items').get(0);
+
+
+function generateWorkData(data ,id,customData){
+	var str='';
+	var $box=$('#'+id);
+	for(var i = 0;i<data.length;i++){
+		str+='<li class="button_item"><div class="shadow"><div class="button_itemsImg"><img src='+data[i].imgSrc+'/><span></span></div><p>'+data[i].name+'</p><a class="btnMember"><span>Read More </span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg></a></div></li>'
+	}
+	$box.html(str);
+	$box.get(0).dataComplete=true;
+	if($box.get(0).dataComplete){
+		customData.memberArr = new Array();
+		customData.flag = true;	
+		customData.w = $box.find('li').outerWidth(true);
+		customData.l = $box.find('li').length;	
+		
+		if(	customData.l >4){
+				workShow(id,'memberBtnPrev','memberBtnNext','wrapMenberShow',customData);
+		}else{
+				clearInterval(customData.autoRollTimer);	
+				$('#wrapMenberShow').off('hover');
+				$('#memberBtnNext').add($('#memberBtnPrev')).off('click');
+				return false;
+		}
+		
+	}
+}
+
+
+function workShow (id,prev,next,parent,customData) {
+
+	var $box=$('#'+id);
+
+	$box.html($box.html() + $box.html());
+	$box.css({
+		width: (2 * customData.l * customData.w) + 'px'
+	});
+	auto(customData);
+	$('#'+prev).on('click', function() {	clearInterval(customData.autoRollTimer);	
+		customData.flag ? prevEvent(customData) : "";
+	});
+	$('#'+next).on('click', function() {
+			clearInterval(customData.autoRollTimer);	
+		customData.flag ? nextEvent(customData) : "";
+	});
+	$('#'+parent).hover(function() {	
+		clearInterval(customData.autoRollTimer);	
+	},function() {
+		auto(customData)
+	});
+	
+
+}
+function auto(customData) {
+	var $box=$(customData);
+	customData.autoRollTimer = setInterval(function() {
+		$box.animate({
+			marginLeft: - customData.w
+		}, 1000, function() {
+			$box.find('li').slice(0, 1).appendTo($box);
+			$box.css({
+				marginLeft: 0
+			})
+		})
+	}, 5000);
+	
+	console.log( 	customData.autoRollTimer );
+
+}
+function nextEvent(customData) {
+	var $box=$(customData);
+	customData.flag = false;
+	$box.animate({
+		marginLeft: -customData.w
+	}, 1000, function() {
+		$box.find('li').slice(0, 1).appendTo($box);
+		$box.css({
+			marginLeft: 0
+		});
+		customData.flag = true
+	})
+}
+function prevEvent(customData) {
+	var $box=$(customData);
+	customData.flag = false;
+	customData.memberArr = $box.find('li').slice(-1);
+	for (var i = 0; i < 1; i++) {
+		$(customData.memberArr[i]).css({
+			marginLeft: -customData.w * (i + 1)
+		}).prependTo($box)
+	}
+	$box.animate({
+		marginLeft: customData.w
+	}, 1000, function() {
+		$box.find('li').removeAttr('style');
+		$box.css({
+			marginLeft: 0
+		});
+		customData.flag = true
+	})
+}
+/*
+function generateWorkData(data){
+	
+	var str='';
+	var $button_items=$('#button_items');
+	for(var i = 0;i<data.length;i++){
+		str+='<li class="button_item"><div class="shadow"><div class="button_itemsImg"><img src='+data[i].imgSrc+'/><span></span></div><p>'+data[i].name+'</p><a class="btnMember"><span>Read More </span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_arrow"></use></svg></a></div></li>'
+	}
+	$button_items.html(str);
+	$button_items.get(0).dataComplete=true;
+	if($button_items.get(0).dataComplete){
+	
+
+	workData.autoRollTimer=undefined;
+	workData.memberArr = new Array();
+	workData.flag = true;	
+	workData.w = $button_items.find('li').outerWidth(true);
+	workData.l = $('#button_items li').length;	
+	workShow();
+	}
+}
+	
+
+function workShow () {
+
+	var $button_items = $('#button_items');
+
+
+	
+	$button_items.html($button_items.html() + $button_items.html());
+	$button_items.css({
+		width: (2 * workData.l * workData.w) + 'px'
+	});
+	auto(workData);
+	$('.prevMember').on('click', function() {	clearInterval(workData.autoRollTimer);	
+		workData.flag ? prevEvent(workData) : "";
+	});
+	$('.nextMember').on('click', function() {
+			clearInterval(workData.autoRollTimer);	
+		workData.flag ? nextEvent(workData) : "";
+	});
+	$('.wrapMenberShow').hover(function() {	
+		clearInterval(workData.autoRollTimer);	
+	},function() {
+		auto(workData)
+	});
+	
+
+}
+function auto(workData) {
+	var $button_items=$(workData);
+	workData.autoRollTimer = setInterval(function() {
+		$button_items.animate({
+			marginLeft: - workData.w
+		}, 1000, function() {
+			$button_items.find('li').slice(0, 1).appendTo($button_items);
+			$button_items.css({
+				marginLeft: 0
+			})
+		})
+	}, 5000)
+
+
+console.log(workData.autoRollTimer);
+}
+function nextEvent(workData) {
+	var $button_items=$(workData);
+	workData.flag = false;
+	$button_items.animate({
+		marginLeft: -workData.w
+	}, 1000, function() {
+		$button_items.find('li').slice(0, 1).appendTo($button_items);
+		$button_items.css({
+			marginLeft: 0
+		});
+		workData.flag = true
+	})
+}
+function prevEvent(workData) {
+	var $button_items=$(workData);
+	workData.flag = false;
+	workData.memberArr = $button_items.find('li').slice(-1);
+	for (var i = 0; i < 1; i++) {
+		$(workData.memberArr[i]).css({
+			marginLeft: -workData.w * (i + 1)
+		}).prependTo($button_items)
+	}
+	$button_items.animate({
+		marginLeft: workData.w
+	}, 1000, function() {
+		$button_items.find('li').removeAttr('style');
+		$button_items.css({
+			marginLeft: 0
+		});
+		workData.flag = true
+	})
+}*/
+</script>
+
+	</body>
+</html>

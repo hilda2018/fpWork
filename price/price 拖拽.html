@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>无标题文档</title>
+    <style>
+      .reporting {width: 100px; height: 100px; background: red; position: absolute;}
+
+        </style>
+
+
+    <script  src="js/jquery.js"></script>
+
+</head>
+
+<body style="height:20000px;">
+<div class="reporting"></div>
+
+<script  src="js/jquery.js"></script>
+<script>
+
+    $(function(){
+        drag( 'reporting');
+    });
+
+    function drag(obj) {
+
+        $obj = $('.'+ obj );
+
+        $obj.mousedown(function(ev){
+
+            var disX = ev.pageX - $obj.get(0).offsetLeft;
+            var disY = ev.pageY - $obj.get(0).offsetTop;
+            $(document).mousemove(function(ev) {
+
+                var L = ev.pageX - disX;
+                var T = ev.pageY - disY;
+                var pageWidth =  $(window).width();
+                var pageHeight = $(window).height();
+                var  heightObj = $obj.outerHeight();
+                var  widthObj = $obj.outerWidth();
+                var maxLeft = pageWidth - widthObj;
+
+
+                var scrollTop =  document.documentElement.scrollTop || document.body.scrollTop ;
+                var maxTop =pageHeight - heightObj  + scrollTop   ;
+
+
+
+                if ( L < 0 ) {
+                    L = 0;
+                } else if ( L >  maxLeft ) {
+                    L =  maxLeft ;
+                }
+
+
+
+
+                if ( T <  scrollTop ) {
+                    T =  scrollTop ;
+                } else if ( T >= maxTop  ) {
+                    T = maxTop;
+                }
+
+
+                $obj.css({"left":L ,"top":T });
+
+            } );
+            $(document).mouseup(function(){
+
+                $(document).unbind('mousemove');
+                $(document).unbind('mouseup');
+            });
+            return false;
+
+
+        });
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/price.css"/>
+</head>
+<body class="clearfix">
+<div class="fp-header-search fp-container-fluid ">
+    <div class="fp-row">
+        <div class=" fp-input-wrap maginRight-2em">
+            <input class="fp-input" type="text" value="" placeholder="PRODUCT" readonly/>
+            <b class="fp-triangle"></b>
+        </div>
+        <div class=" fp-input-wrap maginRight-2em">
+            <input class="fp-input" type="text" value="" placeholder="DATE" readonly/>
+            <b class="fp-triangle"></b>
+        </div>
+        <a class="fp-btn disabled">CREAT</a>
+        <a class="fp-btn disabled">RESET</a>
+    </div>
+</div>
+<div id="wrapPrice" class="fp-chart-fluid">
+    <div class="fp-title fp-row">
+        <div class="fp-port">
+            <!--  评论 -->
+            <a class="bg-orange">
+                <svg class="icon" style="width: 30; height:30;vertical-align: middle;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="1494">
+                    <path d="M949.570847 212.673727l-41.801035 41.517579L768.565377 115.843378l41.801035-41.459251c15.340383-15.283078 39.522132-16.084327 53.892421-1.768273l87.024006 86.454024C965.710432 173.382862 964.91123 197.393719 949.570847 212.673727L949.570847 212.673727zM580.373227 579.594491 441.169815 441.244516l306.238706-304.299541 139.205459 138.348951L580.373227 579.594491 580.373227 579.594491zM560.984644 598.869486l-194.863083 55.314817 55.659671-193.666838L560.984644 598.869486 560.984644 598.869486zM236.551554 178.118724c-48.13223 0-87.081311 38.949081-87.081311 87.024006l0 522.372232c0 48.062646 38.962384 87.026052 87.026052 87.026052l522.485819 0c48.063669 0 87.028099-38.963407 87.028099-87.028099L846.010213 439.248046l87.079264-87.028099 0 464.321094c0 80.124875-64.954361 145.078213-145.078213 145.078213L207.468169 961.619254c-80.124875 0-145.078213-64.954361-145.078213-145.078213L62.389956 236.114602c0-80.124875 64.954361-145.078213 145.078213-145.078213l464.435705 0-87.083357 87.083357L236.551554 178.119747 236.551554 178.118724z"
+                          p-id="1495"></path>
+                </svg>
+                <strong> REMARK </strong>
+            </a>
+            <!--  标题-->
+            <a class="bg-green hide" href="javascript:">
+                <svg class="icon"  style="width: 30; height:30;vertical-align: middle;overflow: hidden;"   viewBox="0 0 1024 1024" version="1.1"  style="width: 30; height:30;vertical-align: middle;overflow: hidden;"   xmlns="http://www.w3.org/2000/svg" p-id="2258">
+                    <path d="M960 511.13a32 32 0 0 0-64 0.12v0.75c0 212.08-171.92 384-384 384S128 724.08 128 512s171.92-384 384-384c128.48 0 242.21 63.1 311.92 160H768a32 32 0 0 0 0 64h112a32 32 0 0 0 32-32V176a32 32 0 0 0-64 0v39.69C765.91 122.67 645.81 64 512 64 264.58 64 64 264.58 64 512s200.58 448 448 448 448-200.58 448-448v-0.87zM720 544a32 32 0 0 0-32-32H512V336a32 32 0 0 0-32-32 32 32 0 0 0-32 32v208a32 32 0 0 0 32 32h208a32 32 0 0 0 32-32z"
+                          p-id="2259"></path>
+                </svg>
+                <strong> HISTORY </strong>
+            </a>
+        </div>
+        <div class="fp-col-lg-12 ">
+            <h1><em class="text-green text-bold">Price trends chart</em> for different sizes of fruits in the same
+                country(different size and packing)</h1>
+        </div>
+    </div>
+    <!--  二级筛选 项 -->
+    <div class="fp-filter">
+        <div id="search">
+            <div class="yixuan">
+                <table>
+                    <tbody>
+                    <tr class="new">
+                        <td width="80" align="left"><strong> CHOOSED :</strong></td>
+                        <td>
+                            <div class="yixuanNavList">
+
+
+                            </div>
+                        </td>
+                        <td><span id="showSearch"> <em> SHOW </em><em class="hide_search"  style="display:none;">HIDE</em> </span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="sel">
+
+                <div id="demo1" class="rowFp" data-custom=""   >
+                    <strong>COUNTRY：</strong>
+                    <div class="jzq ">
+                        <a >
+                            <i class="ch" class="selector1i" ></i>
+                            <span class="selector1_span"  >country</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="demo1" class="rowFp"  data-custom="" >
+                    <strong>COUNTRY：</strong>
+                    <div class="jzq ">
+                        <a >
+                            <i class="ch" class="selector1i" ></i>
+                            <span class="selector1_span"  >country</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="demo2" class="rowFp"  data-custom="" >
+                    <strong>WEIGHT：</strong>
+                    <div class="jzq ">
+                        <a >
+                            <i class="ch" class="selector1i" ></i>
+                            <span class="selector1_span"  > 15kg</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="demo3" class="rowFp"  data-custom="">
+                    <strong>VARIATY：</strong>
+                    <div class="jzq ">
+                        <a >
+                            <i class="ch" class="selector1i" ></i>
+                            <span class="selector1_span"  >variaty</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div id="demo4" class="rowFp"  data-custom="">
+                    <strong>Transport：</strong>
+                    <div class="jzq ">
+                        <a >
+                            <i class="ch" class="selector1i" ></i>
+                            <span class="selector1_span"  >transport</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="demo5" class="rowFp"  data-custom="">
+                    <strong>MARKET：</strong>
+                    <div class="jzq ">
+                        <a >
+                            <i class="ch" class="selector1i" ></i>
+                            <span class="selector1_span"  >Market</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="btnArr"><a class="fp-btn bg-success" id="confirmOptions"> CONFIRM </a> <a class="fp-btn bg-dange" id="resetOptions" >RESET </a></div>
+    </div>
+    <div class="fp-chart fp-row">
+
+
+        <div class="fp-col-lg-3 fp-col-md-4   fp-col-sm-12 chart-setting">
+            <h3> <em>Setting</em>(Up to 5 at the same time)</h3>
+            <div class="wrapTable">
+                <table id="tbody">
+                    <tbody></tbody>
+                </table>
+                <table id="tbody2" style="display:none;">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="fp-col-lg-9 fp-col-md-8  fp-col-sm-12 bg-white posRelative">
+
+
+            <div class="wrapContainer">
+                <div id="tabAnother">
+                    <a id="cn" class="active" href="javascript:">
+                        <svg class="icon"   viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             p-id="1368">
+                            <path d="M378.510407 79.375755l251.721045 0 0 62.929506-251.721045 0 0-62.929506ZM944.883011 79.375755 819.021985 79.375755l0 62.929506 125.861026 0 0 188.790532L63.858849 331.095793 63.858849 142.305261l125.860019 0 0-62.929506L63.858849 79.375755c-65.265449 0-62.930513 64.558625-62.930513 62.929506l0 818.093649c0 61.272195 60.59457 62.930513 62.930513 62.930513l881.024162 0c57.399765 0 62.929506-60.593563 62.929506-62.930513l0-818.093649C1007.812517 138.035117 1006.153192 79.375755 944.883011 79.375755M944.883011 960.39891 63.858849 960.39891 63.858849 394.026307l881.024162 0L944.883011 960.39891zM724.870382 204.406112c17.57898 0 31.835282-18.742924 31.835282-41.850639L756.705664 58.234462c0-23.046295-14.256302-41.78922-31.835282-41.78922-17.513533 0-31.835282 18.743931-31.835282 41.78922L693.0351 162.555473C693.0351 185.663188 707.357856 204.406112 724.870382 204.406112M284.42123 204.406112c17.145018 0 31.096238-18.742924 31.096238-41.850639L315.517468 58.234462c0-23.046295-13.95122-41.78922-31.096238-41.78922-17.207444 0-31.22109 18.743931-31.22109 41.78922L253.20014 162.555473C253.201147 185.663188 267.214793 204.406112 284.42123 204.406112M441.499319 897.469404 567.301947 897.469404 567.301947 771.609385 756.092479 771.609385 756.092479 708.678872 567.301947 708.678872 567.301947 645.748359 756.092479 645.748359 756.092479 582.818853 693.161966 582.818853 693.161966 456.957826 630.231453 456.957826 630.231453 519.887333 567.301947 519.887333 567.301947 582.818853 441.499319 582.818853 441.499319 519.887333 378.569813 519.887333 378.569813 456.957826 315.6393 456.957826 315.6393 582.818853 252.708787 582.818853 252.708787 645.748359 441.499319 645.748359 441.499319 708.678872 252.708787 708.678872 252.708787 771.609385 441.499319 771.609385Z"
+                                  p-id="1369"></path>
+                        </svg>
+                        <span> 国内市场价格</span>
+                    </a>
+                    <a id="average" href="javascript:">
+                        <svg class="icon"   viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             p-id="1308">
+                            <path d="M796.444444 924.444444v33.194667A66.360889 66.360889 0 0 1 730.083556 1024H293.916444A66.360889 66.360889 0 0 1 227.555556 957.639111V924.444444h-45.738667A124.928 124.928 0 0 1 56.888889 799.516444V124.928A124.928 124.928 0 0 1 181.816889 0h660.366222A124.928 124.928 0 0 1 967.111111 124.928v674.588444A124.928 124.928 0 0 1 842.183111 924.444444H796.444444zM181.816889 85.333333A39.594667 39.594667 0 0 0 142.222222 124.928v674.588444A39.594667 39.594667 0 0 0 181.816889 839.111111h660.366222A39.594667 39.594667 0 0 0 881.777778 799.516444V124.928A39.594667 39.594667 0 0 0 842.183111 85.333333H181.816889zM686.791111 511.701333h-75.050667v-42.666666h75.050667v42.666666z m-125.184-42.666666h-75.036444v42.666666h75.036444v-42.666666z m250.353778 0h-75.036445v42.666666h75.036445v-42.666666z m-375.523556 0H361.386667v42.666666h75.036444v-42.666666z m-125.169777 0h-75.050667v42.666666h75.050667v-42.666666z m265.813333-54.129778c39.850667-79.488 78.648889-116.380444 113.208889-116.238222 41.642667 0.170667 72.675556 10.638222 94.549333 30.819555l38.584889-41.799111c-33.137778-30.577778-77.895111-45.696-132.892444-45.909333-62.065778-0.241778-115.768889 50.830222-164.309334 147.626666l50.858667 25.500445zM213.333333 686.592c35.299556 33.408 83.043556 47.516444 141.169778 43.008 63.217778-4.906667 115.484444-56.860444 159.075556-151.04L461.952 554.666667c-35.84 77.482667-73.884444 115.271111-111.843556 118.215111-43.050667 3.342222-74.922667-6.072889-97.678222-27.605334L213.333333 686.592z"
+                                  p-id="1309"></path>
+                        </svg>
+                        <span> 平均趋势</span>
+                    </a>
+                </div>
+                <div id="container"></div>
+                <div id="container2" style="display:none;"></div>
+                <div class="mask">  </div>
+
+            </div>
+
+            <div id="chartLabel"></div>
+            <div id="chartLabel2" style="display:none;"></div>
+        </div>
+    </div>
+</div>
+
+<div class="tit">
+    <div class="bounce">
+        <h2>If you already signed up and input your company profile,please login to view price index directly. Or you can join us as below to view more price index:</h2>
+        <p>1. Please sign up and create your own account</p>
+        <p>2. Login to view more fruits price index</p>
+
+        <div class="btn2">
+					<span> <a href="https://wwwtest.freshport.com/fp-online-infoshow/member/login" class="btn btn-large-login"> LOG IN DIRECTLY </a>
+					</span> <span> <a href="https://wwwtest.freshport.com/cn/registrationAction!registration.action" class="btn btn-large-sign"> Go SIGN UP NOW </a>
+					</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="remarkHide" style="position: absolute; right: 60px; top: 150px;">
+    <h2 class="remarktitle">
+        REMARK<a id="closeRemark" href="javascript:;">X</a>
+    </h2>
+    <ul id="remarkItems"><li>暂无数据</li></ul>
+
+    <span id="moreRemarkPage">MORE</span>
+</div>
+
+
+<script src="js/jquery.js "></script>
+<script src="js/highstock.js "></script>
+<script src="js/fpPriceChart.js "></script>
+<script src="js/action.js "></script>
+</body>
+</html>

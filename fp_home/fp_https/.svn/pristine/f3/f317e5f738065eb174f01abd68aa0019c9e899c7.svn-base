@@ -1,0 +1,75 @@
+(function($) {
+	var novaoneKEditor;
+	
+	function init(keditorObj, p){
+		//获得对象id名称
+		var objId = $(keditorObj).attr("id");
+		//传入的参数
+		var parm = "?memberId="+p.memberId;
+		
+		KindEditor.ready(function(K) {
+			novaoneKEditor = K.create('#'+objId, {
+				filePostName : "imgFile",
+				//cssPath : '${wooPlugins}/kindeditor-4.1.10/plugins/code/prettify.css',
+				uploadJson : p.uploadJson + parm,
+				fileManagerJson : p.fileManagerJson + parm,
+				allowFileManager : p.allowFileManager,
+				width : p.width,
+				height : p.height,
+				afterChange : function() {
+					this.sync();
+				}
+			});
+		});
+	}
+	
+	/**
+	 * 富文本编辑初始化<br>
+	 * 使用方式：<br>
+	 * 		1、在需要放置富文本编辑的位置，添加标签(如：<textarea cols="100" rows="8" style="visibility:hidden;" name="testData.context" id="context">${testData.context}</textarea>)<br>
+	 *      2、在js脚本中编写如下代码：$("#context").keditor({json参数}");//参数可以为空
+	 * 
+	 * @param {Object} p json参数
+	 * @param {Object} defautValue 如果执行的是修改操作，此处参数是要修改的内容
+	 * @memberOf {TypeName} 
+	 * @return {TypeName} 
+	 */
+	$.fn.keditor = function(p) {
+		if(typeof p=="string"){
+			return $.fn.keditor.methods[p](this, defautValue);
+		}
+		p = p || {};
+		return this.each(function() {
+			var _obj = $.data(this, "novaone-keditor");
+			if (_obj) {
+				$.extend(_obj.options, p);
+			} else {
+				var setting = $.extend( {}, $.fn.keditor.defaults, p);
+				
+				var r = init(this, setting);
+				_obj = $.data(this, "novaone-keditor", {
+					options : setting
+				});
+			}
+		});
+
+	};
+	
+	//方法
+	$.fn.keditor.methods={
+		
+	};
+	
+	//默认参数
+	$.fn.keditor.defaults = {
+		//上传url
+		uploadJson : basePath + '/upload!uploadOfEditor.action',
+		//已上传文件管理url
+		fileManagerJson : basePath + '/upload!uploadFileManager.action',
+		//必填项：登录用户的ID
+		memberId:"a0b0c0d0",
+		allowFileManager : true,
+		width : '100%',
+		height: '270px'
+	};
+})(jQuery)

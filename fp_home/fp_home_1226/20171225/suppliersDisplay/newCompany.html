@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>freshport</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/exporter.css" rel="stylesheet" type="text/css" media="all">
+
+	</head>
+
+	<body class="fly-full">
+
+		<!-- header-->
+		<div class="header">
+
+			<div class="main">
+
+				<div class="nav">
+
+					<a href="newIndex.html" class="first">Home</a>
+					<a href="about.html">About us</a>
+					<a href="newIndex.html#Importers"><i class="icon-love"></i> &nbsp;Importers</a>
+					<a href="newIndex.html#Exporters"><i class="icon-love"></i>&nbsp;Exporters</a>
+					<a href="contact.html">Contact</a>
+					<a href="">中文</a>
+				</div>
+
+				<!--未登录-->
+				<div class="nav-user" id="LoginU">
+					<a href="javascript:;" class="social-icons">Sign Up</a>
+				</div>
+
+				<!--登录-->
+				<div class="nav-user" id="LoginA" style="display: none;">
+					<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="signUp">Sign In</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="enterFP">My Freshport</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 搜索-->
+		<div class="wrapWhite wrapLogo">
+			<div class="main">
+				<div class="logo">
+
+					<a class="navg" href="newIndex.html">
+						<span class="solgan">
+					Online Information & Service Platform for Imported Fruits Industry
+				</span>
+					</a>
+
+				</div>
+
+				<div class="search">
+					<div id="searchInput">
+						<input type="text" value="" placeholder="what are you looking for..." id="ser" />
+
+						<div id="wrapBtn">
+							<a href="#" class="ser-btn">
+								<img src="images/search.png" />
+								<span>Search</span>
+							</a>
+
+						</div>
+					</div>
+
+					<div id="searchBar">
+
+						<div class="searchValue">
+							<span id="searchbarDisplay">Importers</span>
+							<span class="searchbarArrow" id="searchbarArrow">
+								<em></em>
+								<b></b>		
+							</span>
+
+						</div>
+
+						<ul class="searchbarOptions">
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Importers" rel="nofollow">Importers</a>
+							</li>
+							<li class="searchbarOption">
+								<a href="javascript:void(0)" data-value="Exporters" rel="nofollow">Exporters</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="advanceSearch"> advance search:&nbsp;&nbsp;
+					<a href="newSearch.html" alt="Importers" title="Importers" class="advanceSearchItem">Importers</a>
+					<a href="ExportersSearch.html" class="advanceSearchItem">Exporters</a>
+				</div>
+			</div>
+		</div>
+
+		<!--公司  logo -->
+		<div class="wrapWhite wrapSlogan">
+
+			<div class="main">
+
+				<div class="top-col">
+					<div class="wrapCompanyImg">
+						<img src="images/yarn3.png" id="companyImg" />
+						<span class="companyWrapImg">&nbsp;</span>
+					</div>
+					<p id="companyName">SOCIEDAD SAN FRANCISCO LO GARCES LTDA.
+						<span id="location">SOCIEDAD SAN FRANCISCO LO GARCES LTDA.</span>
+					</p>
+
+				</div>
+
+				<div class="crumbs">
+					<a href="newIndex.html">Home</a> /
+					<a href="javascript:;">Company Profile</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Company Profile -->
+		<div class="wrapWhite wrapCompany" id="all">
+
+			<div class="main">
+
+				<!-- 右侧导航  -->
+				<ul class="nav-list" id="navFixed">
+					<li>
+						<a href="#section1" name="" class="active">Company Profile</a>
+					</li>
+					<li>
+						<a href="#section2">Main Crops Export</a>
+					</li>
+					<li>
+						<a href="#section4">Video</a>
+					</li>
+					<li>
+						<a href="#section7">Our Team</a>
+					</li>
+				</ul>
+
+				<div class="detail-col" id="allSection">
+
+					<div id="section1" name="section1" style="position: relative;">
+						<h3 class="pro-name">Company Profile</h3>
+						<div id="pic">
+							<!--页面必要代码,img标签上请务必带上图片真实尺寸px-->
+							<div id="showbox">
+
+							</div>
+							<div id="showsum"></div>
+							<p class="showpage">
+								<a href="javascript:void(0);" id="showlast">&lt;
+								</a>
+								<a href="javascript:void(0);" id="shownext">&gt; </a>
+							</p>
+							<!-- 国外网站画册宣传 页面下载 最多三个-,如果没有,则隐藏 -->
+							<div id="profileWrap">
+
+							</div>
+						</div>
+
+						<div id="tableIntro">
+
+							<table class="table">
+								<tbody>
+
+									<tr>
+										<td class="headline">Country:</td>
+										<td class="introduct_item"></td>
+									</tr>
+									<tr>
+										<td class="headline">Bussiness type:</td>
+										<td class="introduct_item"></td>
+									</tr>
+									<tr>
+										<td class="headline">Year established:</td>
+										<td class="introduct_item"></td>
+									</tr>
+									<tr>
+										<td class="headline">Websites:</td>
+										<td class="introduct_item"></td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<p class="info-col" id="info"></p>
+											<div class="more">
+												<a href="javascript:void(0)" id="viewMore">View More</a>
+												<a href="javascript:void(0)" class="hide" id="shrink">Shrink</a>
+											</div>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+
+						</div>
+
+					</div>
+					<hr/>
+
+					<!-- Main Fruits Export -->
+					<div id="section2" name="section2">
+						<h3 class="pro-name">Main Fruits Export</h3>
+						<div class="tabbox" id="tabbox">
+
+							<div class="tabWrap">
+								<a href="javascript:;" id="tabPrev"> &lt; </a>
+								<div class="tabWrapUl">
+									<ul class="tab"></ul>
+								</div>
+								<a href="javascript:;" id="tabNext"> &gt; </a>
+							</div>
+
+							<div class="content">
+								<ul></ul>
+
+							</div>
+							<div id="shopPicShow"></div>
+						</div>
+					</div>
+
+					<!-- Main Fruits Export  Season-->
+					<div id="section3" name="section3">
+
+						<h4>Harvest & Export Seasons</h4>
+						<h5>Scale with different varieties</h5>
+						<div class="histogram-container" id="histogram-container">
+							<!--背景方格-->
+							<div class="histogram-bg-line" id="line"></div>
+							<!--柱状条-->
+							<div class="histogram-content">
+								<ul id="bar"></ul>
+							</div>
+							<!--百分比 y轴  -->
+							<div class="histogram-y">
+								<ul id="count"></ul>
+							</div>
+							<!--百分比 X轴 目前  -->
+							<div class="histogram-x">
+								<ul id="xNum"></ul>
+							</div>
+						</div>
+
+					</div>
+
+					<hr/>
+
+					<!-- Main Video -->
+					<div id="section4" name="section4">
+
+						<h3 class="pro-name">Video </h3>
+
+						<div class="wrapVideo" id="video">
+
+							<div class="video_Widge">
+
+							<div class="videoWrap">
+								<div class="video_frame">
+									<embed id="js_videoCon_1" class="js_videoCon" src="" allowFullScreen="true" quality="high" width="600" height="400" align="middle"   autostart="true" loop="false" EnableContextMenu="false"  pluginspage="http://www.macromedia.com/go/getflashplayer"  allowScriptAccess="always"  type="application/x-shockwave-flash" />
+	
+									<a class="wrapArrow arrowPrev" href="javascript:;"><span class="video_prev" id="videoPrev">&lt;</span>
+									</a>
+									<a class="wrapArrow arrowNext" href="javascript:;"><span class="video_next" id="videoNext">&gt;</span>
+									</a>
+
+								</div>
+
+								<div class="caozuo">
+								<p><a class="video_prev" href="javascript:;" id="prevVideo"></a><a class="video_next" id="nextVideo" href="javascript:;"></a></p>
+								<div class="course_nr"><ul id="videoSlideBtns" class="course_nr2"></ul></div>
+
+							</div>
+							<div id="hideYouKu2"></div>
+						</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<hr/>
+
+					<!-- 团队-->
+					<div id="section7" name="section7">
+						<h3 class="pro-name">Our Team</h3>
+						<ul class="our-team-col clearfix" id="team">
+						</ul>
+						<div id="main"></div>
+
+					</div>
+					<hr/>
+					<h4 id="Disclaimer">
+Disclaimer:&nbsp;<div>The company profile information is provided by entrepreneur-self and while Freshport endeavor to keep the information<br/>up to date and display to public.</div></h4>
+				</div>
+			</div>
+
+		</div>
+
+		<!--footer start here-->
+		<div id="footeCompany" class="wrapGray">
+
+			<div class="main footer">
+				<p>
+					<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">备案/许可证号 沪ICP备15035308 </a>&nbsp;&nbsp;|&nbsp;&nbsp;<span> 2015 Freshport.com. All rights reserved </span></p>
+			</div>
+
+		</div>
+		<!--footer end here-->
+		<svg style="display: none;">
+			<defs>
+
+				<symbol id="icon-pin" viewBox="0 0 24 24">
+					<title>pin</title>
+					<path d="M17.6,2.9L17.6,2.9c-3.1-3.1-8.2-3.1-11.3,0l0,0C3.6,5.7,3.2,11,5.6,14.2l6.4,9.2l6.4-9.2C20.8,11,20.4,5.7,17.6,2.9z M12.1,11.1c-1.5,0-2.6-1.2-2.6-2.6s1.2-2.6,2.6-2.6s2.6,1.2,2.6,2.6S13.5,11.1,12.1,11.1z" />
+				</symbol>
+
+			</defs>
+		</svg>
+
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/exporter.js"></script>
+	</body>
+
+</html>

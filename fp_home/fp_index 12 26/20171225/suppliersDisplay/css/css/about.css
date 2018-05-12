@@ -1,0 +1,90 @@
+@charset "utf-8";
+html{
+	position: relative;
+}
+
+.wrapLogo {
+	border-bottom: 1px solid #DEDEDE;
+	height: 114px;
+}
+
+.wrapAbout {
+	height: 620px;
+}
+
+
+/*****************/
+
+.wrapBread {
+	height: 60px;
+	padding-top: 20px;
+}
+
+.crumbs {
+	height: 48px;
+	line-height: 48px;
+	border-bottom: 1px solid #eee;
+}
+
+.crumbs a {
+	color: #777;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+.about-top {
+	float: left;
+	height: auto;
+}
+
+.about-top-left {
+	float: left;
+	width: 300px;
+	height: 290px;
+}
+
+.about-top-left img {
+	margin-top: 50px;
+}
+
+.about-top-right {
+	float: left;
+	width: 768px;
+}
+
+.about-top-right p {
+	font-size: 14px;
+	line-height: 2em;
+}
+
+.about-top-right h4 {
+	color: #8BBC3C;
+	font-size: 20px;
+	font-family: 'Righteous', cursive;
+	line-height: 1.35em;
+	padding: 0;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+h3 {
+	color: #FEAB2D;
+	font-family: 'BreeSerif-Regular';
+}
+
+.other {
+	line-height: 2em;
+	 float: left;
+}
+
+#footeCompany{
+	float: left;
+	margin-top: 20px;
+	height: 60px;
+	overflow: hidden;
+	zoom: 1;
+}

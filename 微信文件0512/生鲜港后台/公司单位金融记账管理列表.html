@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司单位金融记账管理列表</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">   
+    
+    <style>
+            .modal-dialog .dialog-body {
+                padding-top: 0px;
+            }
+    
+            .modal-dialog {
+                top: 10%;
+            }
+    
+            .box {
+                border: 1px dotted #ccc;
+                padding: 10px 14px 10px 10px;
+                min-height: 152px;
+                min-width: 200px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+    
+            .fileItem {
+                border: 1px dotted #ccc;
+                width: 300px;
+                height: 68px;
+                display: inline-block;
+                position: relative;
+                margin: 10px 30px 10px 0;
+                text-align: center;
+                border-radius: 5px;
+                vertical-align: top;
+            }
+    
+            .box .fileItem:nth-child(2n+1) {
+                margin-left: 30px;
+            }
+    
+            .fileItem .status {
+                overflow: hidden;
+                padding: 10px;
+                height: 42px;
+            }
+    
+            .fileItem .status svg {
+                display: block;
+                float: left;
+                position: absolute;
+                left: 10px;width:40px;
+                top: 10px;
+                padding: 2px 5px;
+                fill: #8bc34a;
+                height: 40px;
+                border-radius: 5px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+    
+            .fileItem .fileName {
+                display: inline-block;
+                float: left;
+                line-height: 24px;
+                font-size: 14px;
+                margin-left: 60px;
+                letter-spacing: 0.4px;
+                color: #aaa;
+                text-align: left;
+                height: 52px;
+            }
+        </style>
+</head>
+<body>
+
+
+<div class="table-col">
+    <div class="search-col">
+
+
+        <div class="search-row">
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;编号：</label>
+            <input type="text" />
+        </span>
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客户名称：</label>
+            <input type="text" />
+        </span>
+
+        <span>
+        <label>联系人：</label>
+            <input type="text" />
+        </span>
+
+        <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+             <button type="button" class="green-border-btn">清空</button>
+
+             <button type="button" class="green-btn">新增</button>
+
+
+        </span>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <table id="typeTable">
+        <thead>
+        <tr>
+            <th>操作</th>
+            <th>编号</th>
+            <th>客户名称</th>
+            <th>贷款总额度</th>
+            <th>已提款金额(自有资金)</th>
+            <th>已提款金额(银行贷款)</th>
+            <th>已提款金额(合计)</th>
+            <th>未使用额度</th>
+            <th>已收利息合计</th>
+            <th>内部联系人</th>
+            <th>最新更新人员</th>
+            <th>最新更新日期</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+
+                <button type="button" class="green-btn">编辑</button>
+
+                <button type="button" class="green-border-btn">删除</button>
+
+            </td>
+            <td>1</td>
+            <td>AAA</td>
+            <td>500,000.00</td>
+            <td>250,000.00</td>
+            <td>250,000.00</td>
+            <td>250,000.00</td>
+            <td>3,000.00</td>
+            <td>1,500.00</td>
+            <td>张三</td>
+            <td>Bob</td>
+            <td>2018-01-23</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>合计：3,000.00</td>
+            <td>合计：3,000.00</td>
+            <td>合计：3,000.00</td>
+            <td></td>
+            <td>合计：3,000.00</td>
+            <td></td>
+        </tr>
+        </tfoot>
+
+    </table>
+
+    <div class="pagination-col">
+
+        <span class="pagination" id="pagination"></span>
+
+    </div>
+
+</div>
+   
+
+    
+    <!-- 新增弹窗  -->
+    <div class="modal" id="addPriceDialog" style="background:rgba(0,0,0,0.4)">
+
+            <div class="modal-dialog" style="width:800px;margin-left:-450px;left:50%;">
+    
+                <div class="modal-header">
+    
+                    <h4 class="modal-title">附件下载</h4>
+                    <span class="close cancel-modal">×</span>
+    
+                </div>
+    
+                <div class="dialog-body">
+    
+    
+                    <div class="box">
+    
+    
+    
+    
+                        <a class="fileItem href=" javascript:; " >     
+                            <div class="status "  >							
+                                <svg><use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#download"></use></svg>
+                                <span class="fileName " >  附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名</span>  
+                             </div>     
+                         </a>
+        
+                         <a class="fileItem href=" javascript:; " >     
+                                <div class="status "  >							
+                                    <svg><use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#download"></use></svg>
+                                    <span class="fileName " >  附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名</span>  
+                                 </div>     
+                        </a>
+                        <a class="fileItem href=" javascript:; " >     
+                                <div class="status "  >							
+                                    <svg><use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#download"></use></svg>
+                                    <span class="fileName " >  附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名</span>  
+                                 </div>     
+                             </a>
+            
+                             <a class="fileItem href=" javascript:; " >     
+                                    <div class="status "  >							
+                                        <svg><use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#download"></use></svg>
+                                        <span class="fileName " >  附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名附件名</span>  
+                                     </div>     
+                            </a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    
+    
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" style="display: none;">
+    
+         
+        <symbol id="download"  viewBox="0 0 1024 1024" ><path d="M768 810.7c-23.6 0-42.7-19.1-42.7-42.7s19.1-42.7 42.7-42.7c94.1 0 170.7-76.6 170.7-170.7 0-89.6-70.1-164.3-159.5-170.1L754 383l-10.7-22.7c-42.2-89.3-133-147-231.3-147s-189.1 57.7-231.3 147L270 383l-25.1 1.6c-89.5 5.8-159.5 80.5-159.5 170.1 0 94.1 76.6 170.7 170.7 170.7 23.6 0 42.7 19.1 42.7 42.7s-19.1 42.7-42.7 42.7c-141.2 0-256-114.8-256-256 0-126.1 92.5-232.5 214.7-252.4C274.8 195.7 388.9 128 512 128s237.2 67.7 297.3 174.2C931.5 322.1 1024 428.6 1024 554.7c0 141.1-114.8 256-256 256z" fill="#8bc34a" p-id="1545"></path><path d="M512 938.7c-10.9 0-21.8-4.2-30.2-12.5l-128-128c-16.7-16.7-16.7-43.7 0-60.3 16.6-16.7 43.7-16.7 60.3 0l97.8 97.8 97.8-97.8c16.6-16.7 43.7-16.7 60.3 0 16.7 16.7 16.7 43.7 0 60.3l-128 128c-8.2 8.3-19.1 12.5-30 12.5z" fill="#8bc34a" p-id="1546"></path><path d="M512 938.7c-23.6 0-42.7-19.1-42.7-42.7V597.3c0-23.6 19.1-42.7 42.7-42.7s42.7 19.1 42.7 42.7V896c0 23.6-19.1 42.7-42.7 42.7z" fill="#8bc34a" p-id="1547"></path>
+        </symbol>
+        </svg>
+        
+    
+
+
+        
+<script src="assets/lib/jquery.js"></script>
+<script src="assets/lib/laydate/laydate.js"></script>
+<script src="assets/lib/layer/layer.js"></script>
+<script src="assets/lib/jquery.pagination.js"></script>
+
+<script>
+
+
+    //分页
+    var initPagination = function() {
+        var num_entries =100;
+        // 创建分页
+        $("#pagination").pagination(num_entries, {
+            num_edge_entries: 1, //边缘页数
+            num_display_entries: 4, //主体页数
+            callback: pageselectCallback,
+            items_per_page:1 //每页显示1项
+        });
+    }();
+
+    function pageselectCallback(page_index, jq){
+
+        //回调函数 写ajax 添加数据
+
+    }
+
+
+
+</script>
+
+</body>
+</html>

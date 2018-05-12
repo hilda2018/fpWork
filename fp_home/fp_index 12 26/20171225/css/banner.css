@@ -1,0 +1,191 @@
+
+.pic {
+position: relative;
+				width: 100%;
+				height: 400px;
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			
+			.pic ul li {
+				list-style-type: none;
+				text-align: center;
+				margin: 0 auto;
+				width: 100%;
+				height: 400px;
+				position: relative;
+				overflow: hidden;background-size: contain;
+			}
+			
+			.pic ul li .img1 {
+				position: absolute;
+				left: -1980px;
+				top: 0px;
+			}
+			
+			.pic ul li .img2 {
+				position: absolute;
+				left: -15px;
+				top: 0px;
+				display: none;
+			}
+		
+			.pic ul {
+				height: 400px;
+			}
+	
+			
+			.pic button {
+				margin-top: 12px;
+			}
+	
+			.mark {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+		/*		background: #000;*/
+				opacity: 0.4;
+			}
+			
+			.wrap {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			
+			.boxBtn {
+				display: inline-block;
+				height: 80px;
+				width: 60px;
+				background: url('../images/bt-next.png') #000000 no-repeat center center;
+				position: absolute;
+				top: 50%;
+				margin-top: -40px;
+				border-radius: 2px;
+				-webkit-border-radius: 2px;
+				opacity: 0.5;
+			}
+			
+			.boxBtn:hover {
+				opacity: 1;
+			}
+			
+	
+
+
+#picWrap  span.mainHeadline {
+	font-weight:700;
+	font-size:30px;
+	letter-spacing:0.03em;
+	text-transform:uppercase;
+	color:#fff;
+	display:block;
+	text-align:center;
+	line-height:1.8em;
+}
+#picWrap .smalltext {
+	text-align:center;
+	width:240px;
+	height:38px;
+	margin:0 auto;
+	display:block;
+	position:relative;
+	margin-top:10px;
+}
+#picWrap .smalltext span {
+	opacity:1;
+	font-size:14px;
+	height:16px;
+	font-weight:normal;
+	text-align:left;
+	line-height:16px;
+	color:#feffff;
+	display:inline-block;
+	width:216px;
+	margin:10px auto;
+	padding-bottom:10px;
+	border-bottom:1px solid #fff;
+	position:relative;
+}
+
+#pic0{
+	background:url(../images/bg1.jpg) no-repeat center center;background-size:cover;
+}
+
+/*
+#pic1  {
+	width:100%;
+	height:240px;
+	padding-top:80px;
+	padding-bottom:80px;
+	background:url(../images/bg2.jpg) no-repeat center center
+}
+#pic1  .smalltext img {
+	display:inline-block;
+	height:10px;
+	position:absolute;
+	right:10px;
+	top:16px;
+	line-height:16px;
+}
+#pic1 .title {
+	height: 180px;
+    width: 740px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 20px;
+    padding-top: 30px;
+    border-radius: 2px;
+
+}
+*/
+.moreDetail .smalltext2{
+	display: block;
+	font-size: 16px;
+	color:#666;
+}
+.moreDetail .pictext2{
+	display: block;
+	font-size: 16px;
+	color:#666;
+}
+.moreDetail .picArrow{
+	border: 1px solid #8BC34A;
+    background:#8BC34A;
+    color:#FFFFFF;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    height:36px;line-height: 36px;padding:0 16px;border-radius: 2px;margin-top: 20px;
+}
+.moreDetail .picArrow img{
+	width:16px;border: none;    margin-left: 6px;
+}
+.line{
+	
+	width: 200px;
+    border: none;
+    border-bottom: 1px solid #1d1d1f;
+    display: inline-block;
+}
+
+		#boxPrev {
+				background: url('../images/bt-prev.png') #000000 no-repeat center center;
+				left: 80px;
+				background-size: 20px;
+			}
+			
+			#boxNext {
+				background-size: 20px;
+				right: 80px;
+			}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>freshport</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/newSearch.css" rel="stylesheet" type="text/css" media="all">
+
+		<style>
+
+		</style>
+	</head>
+
+	<body class="fly-full">
+
+		<!--头部  -->
+		<div class="header">
+
+			<div class="main">
+
+				<div class="nav">
+	
+					<a href="newIndex.html" class="first">Home</a>
+					<a href="about.html">About us</a>
+					<a href="newIndex.html#Importers"><i class="icon-love"></i> &nbsp;Importers</a>
+					<a href="newIndex.html#Procurement"><i class="icon-love"></i>&nbsp;Procurement Bulletin</a>
+					<a href="contact.html">Contact</a>
+					<a href="">中文</a>
+				</div>
+
+				<!--未登录-->
+				<div class="nav-user" id="LoginU">
+					<a href="javascript:;" class="social-icons">Sign Up</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="join">Join</a>
+
+				</div>
+				
+				<!--登录-->
+				<div class="nav-user"  id="LoginA" style="display: none;">
+					<a href="javascript:;" class="social-icons" id="usernameInfo">Test Buyer</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;" id="signUp">Sign Up</a>
+					<a href="javascript:;">&nbsp;|&nbsp;</a>
+					<a href="javascript:;"  id="enterFP" >My Freshport</a>
+				</div>
+				
+				
+			</div>
+
+		</div>
+
+		<!-- 搜索-->
+		<div class="wrapWhite wrapLogo">
+			<div class="main">
+				<div class="logo">
+
+						<a class="navg" href="newIndex.html">
+						<span class="solgan">
+					Online Information & Service Platform for Imported Fruits Industry
+				</span>
+					</a>
+
+				</div>
+
+				<div class="search">
+					<div id="searchInput">
+						<input type="text" value="" placeholder="what are you looking for..." id="ser" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'what are you looking for...';}" />
+
+						<div id="wrapBtn">
+							<a href="#" class="ser-btn">
+								<img src="images/search.png" />
+								<span>Search</span>
+							</a>
+
+						</div>
+					</div>
+
+				</div>
+
+				<a href="newSearch.html" class="advanceSearch"> advance search</a>
+			</div>
+		</div>
+
+		<!-- 搜索 界面  -->
+		<div class="wrapSearch">
+
+			<div class="main" id="wrapSearch">
+
+				<div id="section">
+
+					<ul id="type">
+
+					</ul>
+
+					<div id="chooseWrap" style="float:left">
+						<p id="choose" style="float:left">
+							<a href="javascript:;" class="chooseText" style="">Choose:</a>
+							<a href="javascript:;" id="chooseShow"> </a>
+							<a id="delete" class="clear-choice" href="javascript:;">清空所有</a>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<br />
+		<!-- 商品列表 界面 -->
+
+		<div class="wrapWhite wrapSupplier">
+			<div class="main" id="showSupplier">
+				<h3> We Found  &nbsp;<span id="total">30 </span> &nbsp;  Fruit Buyers  <span id="icons-list"></span> </h3>
+				<ul class="thumbnails" id="list">
+
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="wrapWhite wrapPagination" style="height: 100px;">
+			<div class="main" style="height: 100px;line-height: 1.5em;">
+				
+					<div class="pagination-col">
+						<div id="pageSize" class="pagination" >
+							<strong>Show:&nbsp;&nbsp;</strong>
+							<span>20</span>
+							<span>30</span>
+							<span>40</span>
+							<span>50</span>
+						</div>	
+						<div class="pagination" id="pagination"></div>
+													
+					</div>
+					
+
+			</div>
+		</div>
+
+
+		<!--footer start here-->
+		<div id="footeCompany" class="wrapGray" style="clear:both">
+
+			<div class="main footer">
+				<p>备案/许可证号 沪ICP备15035308 &nbsp;&nbsp;|&nbsp;&nbsp;<span> 2015 Freshport.com. All rights reserved </span></p>
+			</div>
+
+		</div>
+
+		<!--footer end here-->
+
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.pagination.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>	
+		<script src="js/newSearch.js"></script>
+
+	</body>
+
+</html>

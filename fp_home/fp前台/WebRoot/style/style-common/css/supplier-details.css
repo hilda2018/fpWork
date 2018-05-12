@@ -1,0 +1,20 @@
+/*供应商详情页*/
+.supplier-details{font:14px/1 arial;}
+.supd-tit{ background-color:#f1f1f1; padding:20px;}
+.supd-tit img{vertical-align: middle; width: 100px; height: 100px;}
+.supd-tit #company{font-style: oblique; font-size:24px; margin-left: 10px;}
+.supplier-details table{ border-collapse:collapse; width:100%; margin:40px 0;}
+.supplier-details th{ border:1px solid #f1f1f1; background-color:#f9f9f9; color:#ff771e; padding:20px; width:130px; text-align:left; font-weight:normal}
+.supplier-details td{ border:1px solid #f1f1f1; background-color:#fff; color:#343434; padding:20px;  word-break: break-all;}
+.supplier-details td p{ line-height:1.6em}
+.supplier-details .pro-list li{ display: inline-block; margin-right:16px; text-align:center}
+.supplier-details .pro-list li img{ display:block; width:140px; height:140px; border:1px solid #f9f9f9;}
+.supplier-details .pro-list li span{height: 30px; line-height: 30px;}
+/* banner */
+td.banner { _z-index:-1; *z-index:-1; width:508px; height:299px; overflow:hidden; position:relative; padding:0;}
+.banner ul {height:299px; position:absolute; top:0}
+.banner ul li {float:left; width:507px; height:299px; overflow:hidden; position:relative; background:#fff;}
+.banner ul li div {position:absolute; overflow:hidden;}
+.banner .btn {position:absolute; width:500px; height:20px; left:0; bottom:4px; padding-left:210px;}
+.banner .btn span {display:inline-block; _display:inline; _zoom:1; width:18px; height:10px; cursor:pointer; background:url(../images/point.png) no-repeat center; }
+.banner .btn span.on { background:url(../images/point-on.png) no-repeat center !important;}

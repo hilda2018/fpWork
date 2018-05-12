@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqlGroup name="userSubDUser">
+	<sql id="getData_1">
+		<![CDATA[ 
+select distinct(drm.menuid) as menuid 
+from d_rolemenu drm where 
+drm.roleid in(
+select distinct roleid from d_userrole where userid=? 
+) and drm.isenable='Y'
+		]]>
+	</sql>
+</sqlGroup>

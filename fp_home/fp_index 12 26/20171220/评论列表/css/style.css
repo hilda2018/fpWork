@@ -1,0 +1,208 @@
+body {
+	background: #f5f6f7;
+	color: #888;
+	font-family: arial, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+.boxRemark {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	top: -10px;
+	background: url("../img/remarkBg.png") no-repeat #9ccc65 center center;
+	background-size: cover;
+}
+
+.item {
+	display: block;
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.item .image {
+	position: absolute;
+	text-align: center;
+	font-size: 0.8em;
+	border-radius: 50%;
+	height: 6em;
+	width: 6em;
+	border: 0.35em solid #9ccc65;
+	background: #fff;
+	top: 0px;
+	left: 0em;
+}
+
+.year {
+	line-height: 1em;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 0.7em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px dotted #9ccc65;
+}
+
+.date {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 0.3em;
+}
+
+.item .image span {
+	display: block;
+	clear: both;
+}
+
+.item .details {
+	position: relative;
+	border: 1px solid #9ccc65;
+	overflow: hidden;
+	border-radius: 0.5em;
+	padding: 1em;
+	margin: 2.4em 0;
+	margin-left: 130px;
+	background: #fff;
+}
+
+.item .details h1 {
+	color: #689f38;
+	font-size: 1.2em;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	margin: 0;
+	padding: 0 0 0.5em 0;
+	letter-spacing: 0.1em;
+}
+
+.item .details p {
+	margin: 0;
+	padding: 0;
+	line-height: 160%;
+}
+
+.line {
+	width: 0;
+	height: 100%;
+	border-left: 1px solid #c5e1a5;
+	position: absolute;
+	top: 0;
+	left: 2.45em;
+	z-index: -1;
+}
+
+.remarkAll {
+	position: relative;
+	height: auto;
+	width: 1200px;
+	margin: 60px auto 90px;
+}
+
+.hline {
+	content: "";
+	width: 200px;
+	height: 0px;
+	position: absolute;
+	top: 3em;
+	left: 2.5em;
+	z-index: -1;
+	border-bottom: 1px solid #c5e1a5;
+}
+
+.tp-caption {
+	border: 4px solid #fff;
+	height: 200px;
+	width: 500px;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	display: block;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -106px;
+}
+
+.tp-caption h2 {
+	text-align: center;
+	font-size: 2.5em;
+	margin: 0px;
+	padding: 0;
+	margin-top: 20px;
+	color: #111;
+}
+
+.tp-caption h2 span {
+	text-align: center;
+	letter-spacing: 4px;
+	font-size: 0.9em;
+	margin: 0px;
+	padding: 10px;
+	margin-top: 6px;
+	color: #111;
+	display: inline-block;
+}
+
+.tp-caption p {
+	width: 150px;
+	letter-spacing: 1px;
+	height: 30px;
+	border: 2px solid #222;
+	margin: 0 auto;
+	margin-top: 16px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #222;
+	cursor: pointer;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+.itemAll {
+	position: relative;
+	height: auto;
+}
+
+.moreImage {
+	text-transform: uppercase;
+	line-height: 6em;
+	color: #689f38;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.more .details {
+	height: 3.8em;
+	text-align: center;
+	cursor: pointer;
+	border-color: #ccc;
+}
+
+.more .details p {
+	font-size: 20px;
+	vertical-align: middle;
+	height: 35px;
+	line-height: 46px;
+	letter-spacing: 4px;
+	color: #aaa;
+}
+
+.more .moreImage {
+	font-size: 13px;
+	border-color: #eee;
+	color: #bbb;
+	cursor: pointer;
+}
+
+.itemAll .item:nth-child(2n) .image,
+.itemAll .item:nth-child(2n) .details {
+	background: #f6f6f6;
+}

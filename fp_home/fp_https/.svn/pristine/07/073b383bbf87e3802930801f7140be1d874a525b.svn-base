@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    
+	<!-- 指定 Action 所在包继承的父包 -->
+	<constant name="struts.convention.default.parent.package" value="fresh-default" />
+	 <!-- action后缀 --> 
+	<constant name="struts.convention.action.suffix" value="Action" />
+	<constant name="struts.convention.result.path" value="/pages" />
+	
+
+	<constant name="struts.convention.package.locators" value="control,api"/>
+	<!-- 用于约定Action 类的根包，这个包是Java 类的包，搜索此配置下的所有包 
+	<constant name="struts.convention.package.locators.basePackage" value="org.nova.mis"/>-->
+		
+	<!-- 定义默认的访问后缀 --> 
+    <constant name="struts.action.extension" value="dhtml,action" />  
+    
+	<!-- 开启动态方法调用，访问方式形如：loginout!loginPage.action --> 
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" /> 
+    <!-- 是否使用struts的开发模式。开发模式会有更多的调试信息。默认值为false(生产环境下使用),开发阶段最好打开 -->
+    <constant name="struts.devMode" value="false" />
+    <!-- 设置浏览器是否缓存静态内容。默认值为true(生产环境下使用),开发阶段最好关闭 -->
+    <constant name="struts.serve.static.browserCache" value="false" />
+	<!-- 平台专用：设置Convention插件是否从jar包中搜索Action类 [可选] 默认值为true -->
+	<constant name="struts.convention.action.disableJarScanning" value="true" />
+	<!-- 平台专用：设置Convention插件文件协议类型 -->
+	<constant name="struts.convention.action.fileProtocols" value="jar" />
+	<!-- 平台专用：设置Convention插件需要搜索的jar包 -->
+	<!--<constant name="struts.convention.action.includeJars" value=".*?/novaone-module *.*?jar(!/)?" />
+	-->
+	<!-- 平台专用：Convention会试图从指定包中发现Action类 -->
+	<constant name="struts.convention.action.packages" value="com.fresh.control" />
+    <!--设置文件上传的大小 -->
+	<constant name= "struts.multipart.maxSize" value="104857600" />
+    
+    <!-- 设置Convention插件需要搜索的jar包 -->
+    <!-- 
+    <constant name="struts.convention.action.includeJars" value=".*?developer*.*?jar(!/)?" />
+    <constant name="struts.convention.action.includeJars" value=".*?struts2-*.*?jar(!/)?" />
+    -->
+    
+	<!-- 继承convention-default包，定义一个默认的拦截器，根据需要还可扩展 
+	<package name="default" extends="convention-default,json-default" namespace="/" />
+
+	-->
+
+	<package name="fresh-default" extends="convention-default,json-default" namespace="/" />
+
+</struts>

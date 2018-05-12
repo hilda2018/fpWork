@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>批发市场</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+
+</head>
+<body>
+
+
+    <div class="table-col">
+    <div class="search-col">
+
+
+        <span>
+        <label>批发市场名称：</label><input type="text" placeholder="请输入关键字搜索" />
+        </span>
+
+        <span>
+
+            <button type="button" class="green-btn">查询</button>
+
+             <button type="button" class="green-btn" id="add">新增</button>
+
+            <button type="button" class="green-border-btn">清空</button>
+
+
+        </span>
+
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>批发市场名称</th>
+                <th>创建日期</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>批发市场名称1</td>
+                <td>2017.06.25</td>
+                <td>
+                    <button type="button" class="green-btn edit">编辑</button>
+                    <button type="button" class="green-border-btn delete">删除</button>
+                </td>
+            </tr>
+            <tr>
+                <td>批发市场名称1</td>
+                <td>2017.06.25</td>
+                <td>
+                    <button type="button" class="green-btn edit">编辑</button>
+                    <button type="button" class="green-border-btn delete">删除</button>
+                </td>
+            </tr>
+            <tr>
+                <td>批发市场名称1</td>
+                <td>2017.06.25</td>
+                <td>
+                    <button type="button" class="green-btn edit">编辑</button>
+                    <button type="button" class="green-border-btn delete">删除</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+
+    <script>
+
+        $(".edit").click(function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>批发市场名称：</label><input type='text'></li>" +
+                    "<li class='row'><label>批发市场英文名：</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'编辑子类',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+        });
+
+        $("#add").click(function()
+        {
+
+            var formHtml="<ul class='type-form'>" +
+                    "<li class='row'><label>批发市场名称：</label><input type='text'></li>" +
+                    "<li class='row'><label>批发市场英文名：</label><input type='text'></li>" +
+                    "</ul>";
+
+
+            layer.open( {
+                content: formHtml,
+                area:['600px', 'auto'],
+                title:'新增批发市场',
+                btn: ['确定'],
+                yes:function(index)
+                {
+
+                    layer.close(index);
+
+                }
+            });
+
+
+        });
+
+        $(".delete").click(function()
+        {
+
+            layer.confirm("是否删除？");
+
+        });
+
+    </script>
+
+
+</body>
+</html>

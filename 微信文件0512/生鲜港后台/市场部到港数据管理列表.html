@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>市场部到港数据管理列表</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/lib/layer/skin/layer.css">
+</head>
+<body>
+
+
+    <div class="table-col">
+    <div class="search-col">
+
+
+        <div class="search-row">
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国家：</label>
+             <select style="width:143px;">
+                 <option>全部</option>
+             </select>
+        </span>
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;产品：</label>
+             <select style="width:143px;">
+                 <option>全部</option>
+                 <option>销售</option>
+                 <option>采购</option>
+             </select>
+        </span>
+
+        <span>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到案港口：</label>
+             <select style="width:143px;">
+                 <option>全部</option>
+                 <option>发布中</option>
+                 <option>已完成</option>
+                 <option>已撤销</option>
+                 <option>已过期</option>
+             </select>
+        </span>
+
+
+        </div>
+
+        <div class="search-row">
+
+
+        <span>
+        <label>包装类型：</label>
+            <select style="width:143px;">
+                <option>全部</option>
+                <option>展示</option>
+                <option>不展示</option>
+            </select>
+        </span>
+
+        <span>
+
+
+            <button type="button" class="green-btn">查询</button>
+
+             <button type="button" class="green-border-btn">清空</button>
+
+               <button type="button" class="green-btn" id="addParent">新增到港数据</button>
+
+
+        </span>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+        <table id="typeTable">
+            <thead>
+            <tr>
+                <th>操作</th>
+                <th>国家</th>
+                <th>产品</th>
+                <th>到案港口</th>
+                <th>包装类型</th>
+                <th>最新更新日期</th>
+
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+
+                    <button type="button" class="green-btn">编辑</button>
+
+                </td>
+                <td>国家</td>
+                <td>2017.11.5</td>
+                <td>10001</td>
+                <td>Bob</td>
+                <td>2017-12-06 11:29:22</td>
+            </tr>
+            <tr>
+                <td>
+
+                    <button type="button" class="green-btn">编辑</button>
+
+                </td>
+                <td>国家</td>
+                <td>2017.11.5</td>
+                <td>10001</td>
+                <td>Bob</td>
+                <td>2017-12-06 11:29:22</td>
+            </tr>
+            <tr>
+                <td>
+
+                    <button type="button" class="green-btn">编辑</button>
+
+                </td>
+                <td>国家</td>
+                <td>2017.11.5</td>
+                <td>10001</td>
+                <td>Bob</td>
+                <td>2017-12-06 11:29:22</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+
+        <div class="pagination-col">
+
+            <span class="pagination" id="pagination"></span>
+
+        </div>
+
+    </div>
+
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/laydate/laydate.js"></script>
+    <script src="assets/lib/layer/layer.js"></script>
+    <script src="assets/lib/jquery.pagination.js"></script>
+
+    <script>
+
+
+        //分页
+        var initPagination = function() {
+            var num_entries =100;
+            // 创建分页
+            $("#pagination").pagination(num_entries, {
+                num_edge_entries: 1, //边缘页数
+                num_display_entries: 4, //主体页数
+                callback: pageselectCallback,
+                items_per_page:1 //每页显示1项
+            });
+        }();
+
+        function pageselectCallback(page_index, jq){
+
+            //回调函数 写ajax 添加数据
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>
